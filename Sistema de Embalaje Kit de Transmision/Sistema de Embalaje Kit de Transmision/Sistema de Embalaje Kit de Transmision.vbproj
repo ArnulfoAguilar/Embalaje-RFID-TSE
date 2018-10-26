@@ -77,17 +77,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.vb" />
+    <Compile Include="Frm_Mtn_Prd.Designer.vb">
+      <DependentUpon>Frm_Mtn_Prd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Mtn_Prd.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Usuarios\Crear_Usuario.Designer.vb">
       <DependentUpon>Crear_Usuario.vb</DependentUpon>
     </Compile>
     <Compile Include="Usuarios\Crear_Usuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Frm_principal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Frm_principal.Designer.vb">
+      <DependentUpon>Frm_principal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -107,11 +113,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Frm_Mtn_Prd.resx">
+      <DependentUpon>Frm_Mtn_Prd.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\Crear_Usuario.resx">
       <DependentUpon>Crear_Usuario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Frm_principal.resx">
+      <DependentUpon>Frm_principal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

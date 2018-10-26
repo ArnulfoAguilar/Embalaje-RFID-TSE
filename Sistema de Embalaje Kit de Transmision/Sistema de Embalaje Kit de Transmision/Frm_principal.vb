@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Frm_principal
 
     Private Sub EscaneoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EscaneoToolStripMenuItem.Click
         Shell("C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\Debug\TSE2018.exe", 1)

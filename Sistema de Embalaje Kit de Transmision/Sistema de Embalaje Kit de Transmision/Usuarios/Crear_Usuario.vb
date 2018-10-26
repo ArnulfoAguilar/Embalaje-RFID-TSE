@@ -35,7 +35,7 @@ Public Class Crear_Usuario
     End Sub
 
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
-        Form1.Show()
+        Frm_principal.Show()
         Me.Close()
     End Sub
 End Class
