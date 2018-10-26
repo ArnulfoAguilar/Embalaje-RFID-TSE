@@ -1,0 +1,9 @@
+c:\users\tse\documents\visual studio 2010\Projects\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\bin\Debug\Sistema de Embalaje Kit de Transmision.exe
+c:\users\tse\documents\visual studio 2010\Projects\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\bin\Debug\Sistema de Embalaje Kit de Transmision.pdb
+c:\users\tse\documents\visual studio 2010\Projects\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\bin\Debug\Sistema de Embalaje Kit de Transmision.xml
+c:\users\tse\documents\visual studio 2010\Projects\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Form1.resources
+c:\users\tse\documents\visual studio 2010\Projects\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Resources.resources
+c:\users\tse\documents\visual studio 2010\Projects\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema de Embalaje Kit de Transmision.vbproj.GenerateResource.Cache
+c:\users\tse\documents\visual studio 2010\Projects\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema de Embalaje Kit de Transmision.exe
+c:\users\tse\documents\visual studio 2010\Projects\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema de Embalaje Kit de Transmision.xml
+c:\users\tse\documents\visual studio 2010\Projects\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema de Embalaje Kit de Transmision.pdb
