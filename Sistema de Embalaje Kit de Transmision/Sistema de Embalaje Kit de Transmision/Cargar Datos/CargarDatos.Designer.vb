@@ -22,16 +22,57 @@ Partial Class CargarDatos
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnImportar = New System.Windows.Forms.Button()
+        Me.btnExportar = New System.Windows.Forms.Button()
+        Me.txtExcel = New System.Windows.Forms.TextBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SuspendLayout()
+        '
+        'btnImportar
+        '
+        Me.btnImportar.Location = New System.Drawing.Point(21, 11)
+        Me.btnImportar.Name = "btnImportar"
+        Me.btnImportar.Size = New System.Drawing.Size(75, 23)
+        Me.btnImportar.TabIndex = 0
+        Me.btnImportar.Text = "Importar"
+        Me.btnImportar.UseVisualStyleBackColor = True
+        '
+        'btnExportar
+        '
+        Me.btnExportar.Location = New System.Drawing.Point(525, 12)
+        Me.btnExportar.Name = "btnExportar"
+        Me.btnExportar.Size = New System.Drawing.Size(75, 23)
+        Me.btnExportar.TabIndex = 1
+        Me.btnExportar.Text = "Exportar"
+        Me.btnExportar.UseVisualStyleBackColor = True
+        '
+        'txtExcel
+        '
+        Me.txtExcel.Location = New System.Drawing.Point(102, 14)
+        Me.txtExcel.Name = "txtExcel"
+        Me.txtExcel.Size = New System.Drawing.Size(408, 20)
+        Me.txtExcel.TabIndex = 2
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'CargarDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(625, 255)
+        Me.Controls.Add(Me.txtExcel)
+        Me.Controls.Add(Me.btnExportar)
+        Me.Controls.Add(Me.btnImportar)
         Me.Name = "CargarDatos"
         Me.Text = "CargarDatos"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+    Friend WithEvents btnImportar As System.Windows.Forms.Button
+    Friend WithEvents btnExportar As System.Windows.Forms.Button
+    Friend WithEvents txtExcel As System.Windows.Forms.TextBox
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
 End Class
