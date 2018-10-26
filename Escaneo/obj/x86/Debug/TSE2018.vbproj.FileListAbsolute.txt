@@ -1,0 +1,160 @@
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\x86\Debug\Symbol.RFID3.Host.dll
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\x86\Debug\Symbol.RFID3.Host.xml
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\x86\Debug\VB_RFID3_Host_Sample1.AppForm.resources
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\x86\Debug\VB_RFID3_Host_Sample1.ConnectionForm.resources
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\x86\Debug\Resources.resources
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\x86\Debug\TSE2018.vbproj.GenerateResource.Cache
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\x86\Debug\impresion.resources
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\x86\Debug\office.dll
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\x86\Debug\office.xml
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\x86\Debug\LoginForm1.resources
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\x86\Debug\UsuarioCrear.resources
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\x86\Debug\editUser.resources
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\obj\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\obj\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\obj\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\bin\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\bin\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\bin\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.dll
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\bin\x86\Debug\office.dll
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\bin\x86\Debug\office.xml
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.xml
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.AppForm.resources
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.ConnectionForm.resources
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\obj\x86\Debug\editUser.resources
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\obj\x86\Debug\impresion.resources
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\obj\x86\Debug\LoginForm1.resources
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\obj\x86\Debug\Resources.resources
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\obj\x86\Debug\UsuarioCrear.resources
+C:\Users\TSE\Documents\RESPALDO RFID\Escaneo\obj\x86\Debug\TSE2018.vbproj.GenerateResource.Cache
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\bin\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\bin\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\bin\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\bin\x86\Debug\office.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\bin\x86\Debug\office.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.AppForm.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.ConnectionForm.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\obj\x86\Debug\editUser.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\obj\x86\Debug\impresion.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\obj\x86\Debug\LoginForm1.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\obj\x86\Debug\Resources.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\obj\x86\Debug\UsuarioCrear.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\obj\x86\Debug\TSE2018.vbproj.GenerateResource.Cache
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\obj\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\obj\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\Escaneo\obj\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION\Escaneo\obj\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION\Escaneo\obj\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION\Escaneo\obj\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\obj\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\obj\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\obj\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\bin\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\bin\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\bin\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\bin\x86\Debug\office.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\bin\x86\Debug\office.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.AppForm.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.ConnectionForm.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\obj\x86\Debug\editUser.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\obj\x86\Debug\impresion.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\obj\x86\Debug\LoginForm1.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\obj\x86\Debug\Resources.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\obj\x86\Debug\UsuarioCrear.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\PROCESO DE RECEPCION - COMPLETO_BASE\Escaneo\obj\x86\Debug\TSE2018.vbproj.GenerateResource.Cache
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\bin\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\bin\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\bin\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\bin\x86\Debug\office.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\bin\x86\Debug\office.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.AppForm.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.ConnectionForm.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\obj\x86\Debug\editUser.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\obj\x86\Debug\impresion.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\obj\x86\Debug\LoginForm1.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\obj\x86\Debug\Resources.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\obj\x86\Debug\UsuarioCrear.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\obj\x86\Debug\TSE2018.vbproj.GenerateResource.Cache
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\obj\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\obj\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 25\Escaneo\obj\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\bin\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\bin\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\bin\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\bin\x86\Debug\office.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\bin\x86\Debug\office.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.AppForm.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.ConnectionForm.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\obj\x86\Debug\editUser.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\obj\x86\Debug\impresion.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\obj\x86\Debug\LoginForm1.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\obj\x86\Debug\Resources.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\obj\x86\Debug\UsuarioCrear.resources
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\obj\x86\Debug\TSE2018.vbproj.GenerateResource.Cache
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\obj\x86\Debug\TSE2018.exe
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\obj\x86\Debug\TSE2018.xml
+C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS PARA SIMULACRO DOMINGO 4 DIA DE ELECCION\Escaneo\obj\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Desktop\SISTEMA RECEPCION DE ACTAS 2018\Escaneo\obj\x86\Debug\TSE2018.exe
+C:\Users\TSE\Desktop\SISTEMA RECEPCION DE ACTAS 2018\Escaneo\obj\x86\Debug\TSE2018.xml
+C:\Users\TSE\Desktop\SISTEMA RECEPCION DE ACTAS 2018\Escaneo\obj\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\obj\x86\Debug\TSE2018.exe
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\obj\x86\Debug\TSE2018.xml
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\obj\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.AppForm.resources
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.ConnectionForm.resources
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\obj\x86\Debug\editUser.resources
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\obj\x86\Debug\impresion.resources
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\obj\x86\Debug\LoginForm1.resources
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\obj\x86\Debug\Resources.resources
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\obj\x86\Debug\UsuarioCrear.resources
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\obj\x86\Debug\TSE2018.vbproj.GenerateResource.Cache
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\Debug\TSE2018.exe
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\Debug\TSE2018.pdb
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\Debug\TSE2018.xml
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.dll
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\Debug\office.dll
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\Debug\office.xml
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.xml

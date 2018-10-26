@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_RECEPCION" msprop:Generator_TableClassName="DT_RECEPCIONDataTable" msprop:Generator_RowEvArgName="DT_RECEPCIONRowChangeEvent" msprop:Generator_TablePropName="DT_RECEPCION" msprop:Generator_TableVarName="tableDT_RECEPCION" msprop:Generator_RowEvHandlerName="DT_RECEPCIONRowChangeEventHandler" msprop:Generator_RowDeletingName="DT_RECEPCIONRowDeleting" msprop:Generator_RowChangingName="DT_RECEPCIONRowChanging" msprop:Generator_RowDeletedName="DT_RECEPCIONRowDeleted" msprop:Generator_UserTableName="DT_RECEPCION" msprop:Generator_RowChangedName="DT_RECEPCIONRowChanged" msprop:Generator_RowClassName="DT_RECEPCIONRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOMBRE_DEPARTAMENTO" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_DEPARTAMENTO" msprop:Generator_ColumnPropNameInRow="NOMBRE_DEPARTAMENTO" msprop:Generator_ColumnPropNameInTable="NOMBRE_DEPARTAMENTOColumn" msprop:Generator_UserColumnName="NOMBRE_DEPARTAMENTO" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_SEDE" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_SEDE" msprop:Generator_ColumnPropNameInRow="NOMBRE_SEDE" msprop:Generator_ColumnPropNameInTable="NOMBRE_SEDEColumn" msprop:Generator_UserColumnName="NOMBRE_SEDE" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_MUNICIPIO" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_MUNICIPIO" msprop:Generator_ColumnPropNameInRow="NOMBRE_MUNICIPIO" msprop:Generator_ColumnPropNameInTable="NOMBRE_MUNICIPIOColumn" msprop:Generator_UserColumnName="NOMBRE_MUNICIPIO" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_CENTRO_VOTACION" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_CENTRO_VOTACION" msprop:Generator_ColumnPropNameInRow="NOMBRE_CENTRO_VOTACION" msprop:Generator_ColumnPropNameInTable="NOMBRE_CENTRO_VOTACIONColumn" msprop:Generator_UserColumnName="NOMBRE_CENTRO_VOTACION" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_RUTA" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_RUTA" msprop:Generator_ColumnPropNameInRow="NOMBRE_RUTA" msprop:Generator_ColumnPropNameInTable="NOMBRE_RUTAColumn" msprop:Generator_UserColumnName="NOMBRE_RUTA" type="xs:string" minOccurs="0" />
+              <xs:element name="RUTA" msprop:Generator_ColumnVarNameInTable="columnRUTA" msprop:Generator_ColumnPropNameInRow="RUTA" msprop:Generator_ColumnPropNameInTable="RUTAColumn" msprop:Generator_UserColumnName="RUTA" type="xs:string" minOccurs="0" />
+              <xs:element name="SEDE" msprop:Generator_ColumnVarNameInTable="columnSEDE" msprop:Generator_ColumnPropNameInRow="SEDE" msprop:Generator_ColumnPropNameInTable="SEDEColumn" msprop:Generator_UserColumnName="SEDE" type="xs:string" minOccurs="0" />
+              <xs:element name="ID_BOLSA_SEGURIDAD" msprop:Generator_ColumnVarNameInTable="columnID_BOLSA_SEGURIDAD" msprop:Generator_ColumnPropNameInRow="ID_BOLSA_SEGURIDAD" msprop:Generator_ColumnPropNameInTable="ID_BOLSA_SEGURIDADColumn" msprop:Generator_UserColumnName="ID_BOLSA_SEGURIDAD" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGO_BARRA" msprop:Generator_ColumnVarNameInTable="columnCODIGO_BARRA" msprop:Generator_ColumnPropNameInRow="CODIGO_BARRA" msprop:Generator_ColumnPropNameInTable="CODIGO_BARRAColumn" msprop:Generator_UserColumnName="CODIGO_BARRA" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

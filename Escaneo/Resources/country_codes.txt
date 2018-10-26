@@ -1,0 +1,239 @@
+4	Afghanistan
+8	Albania, People's Socialist Republic of
+12	Algeria, People's Democratic Republic of
+16	American Samoa
+20	Andorra, Principality of
+24	Angola, Republic of
+660	Anguilla
+010	Antarctica (the territory South of 60 deg S)
+028	Antigua and Barbuda
+032	Argentina, Argentine Republic
+051	Armenia
+533	Aruba
+036	Australia, Commonwealth of
+040	Austria, Republic of
+031	Azerbaijan, Republic of
+044	Bahamas, Commonwealth of the
+048	Bahrain, Kingdom of
+050	Bangladesh, People's Republic of
+052	Barbados
+112	Belarus
+056	Belgium, Kingdom of
+084	Belize
+204	Benin (was Dahomey), People's Republic of
+060	Bermuda
+064	Bhutan, Kingdom of
+068	Bolivia, Republic of
+070	Bosnia and Herzegovina
+072	Botswana, Republic of
+074	Bouvet Island (Bouvetoya)
+076	Brazil, Federative Republic of
+086	British Indian Ocean Territory (Chagos Archipelago)
+092	British Virgin Islands
+096	Brunei Darussalam
+100	Bulgaria, People's Republic of
+854	Burkina Faso (was Upper Volta)
+108	Burundi, Republic of
+116	Cambodia, Kingdom of (was Khmer Republic/Kampuchea, Democratic)
+120	Cameroon, United Republic of
+124	Canada
+132	Cape Verde, Republic of
+136	Cayman Islands
+140	Central African Republic
+148	Chad, Republic of
+152	Chile, Republic of
+156	China, People's Republic of
+162	Christmas Island
+166	Cocos (Keeling) Islands
+170	Colombia, Republic of
+174	Comoros, Union of the
+180	Congo, Democratic Republic of (was Zaire)
+178	Congo, People's Republic of
+184	Cook Islands
+188	Costa Rica, Republic of
+384	Cote D'Ivoire, Ivory Coast, Republic of the
+192	Cuba, Republic of
+196	Cyprus, Republic of
+203	Czech Republic
+208	Denmark, Kingdom of
+262	Djibouti, Republic of (was French Afars and Issas)
+212	Dominica, Commonwealth of
+214	Dominican Republic
+218	Ecuador, Republic of
+818	Egypt, Arab Republic of
+222	El Salvador, Republic of
+226	Equatorial Guinea, Republic of
+232	Eritrea
+233	Estonia
+231	Ethiopia
+234	Faeroe Islands
+238	Falkland Islands (Malvinas)
+242	Fiji, Republic of the Fiji Islands
+246	Finland, Republic of
+250	France, French Republic
+254	French Guiana
+258	French Polynesia
+260	French Southern Territories
+266	Gabon, Gabonese Republic
+270	Gambia, Republic of the
+268	Georgia
+276	Germany
+288	Ghana, Republic of
+292	Gibraltar
+300	Greece, Hellenic Republic
+304	Greenland
+308	Grenada
+312	Guadaloupe
+316	Guam
+320	Guatemala, Republic of
+324	Guinea, Revolutionary People's Rep'c of
+624	Guinea-Bissau, Republic of (was Portuguese Guinea)
+328	Guyana, Republic of
+332	Haiti, Republic of
+334	Heard and McDonald Islands
+336	Holy See (Vatican City State)
+340	Honduras, Republic of
+344	Hong Kong, Special Administrative Region of China
+191	Hrvatska (Croatia)
+348	Hungary, Hungarian People's Republic
+352	Iceland, Republic of
+356	India, Republic of
+360	Indonesia, Republic of
+364	Iran, Islamic Republic of
+368	Iraq, Republic of
+372	Ireland
+376	Israel, State of
+380	Italy, Italian Republic
+388	Jamaica
+392	Japan
+400	Jordan, Hashemite Kingdom of
+398	Kazakhstan, Republic of
+404	Kenya, Republic of
+296	Kiribati, Republic of (was Gilbert Islands)
+408	Korea, Democratic People's Republic of
+410	Korea, Republic of
+414	Kuwait, State of
+417	Kyrgyz Republic
+418	Lao People's Democratic Republic
+428	Latvia
+422	Lebanon, Lebanese Republic
+426	Lesotho, Kingdom of
+430	Liberia, Republic of
+434	Libyan Arab Jamahiriya
+438	Liechtenstein, Principality of
+440	Lithuania
+442	Luxembourg, Grand Duchy of
+446	Macao, Special Administrative Region of China
+807	Macedonia, the former Yugoslav Republic of
+450	Madagascar, Republic of
+454	Malawi, Republic of
+458	Malaysia
+462	Maldives, Republic of
+466	Mali, Republic of
+470	Malta, Republic of
+584	Marshall Islands
+474	Martinique
+478	Mauritania, Islamic Republic of
+480	Mauritius
+175	Mayotte
+484	Mexico, United Mexican States
+583	Micronesia, Federated States of
+498	Moldova, Republic of
+492	Monaco, Principality of
+496	Mongolia, Mongolian People's Republic
+500	Montserrat
+504	Morocco, Kingdom of
+508	Mozambique, People's Republic of
+104	Myanmar (was Burma)
+516	Namibia
+520	Nauru, Republic of
+524	Nepal, Kingdom of
+530	Netherlands Antilles
+528	Netherlands, Kingdom of the
+540	New Caledonia
+554	New Zealand
+558	Nicaragua, Republic of
+562	Niger, Republic of the
+566	Nigeria, Federal Republic of
+570	Niue, Republic of
+574	Norfolk Island
+580	Northern Mariana Islands
+578	Norway, Kingdom of
+512	Oman, Sultanate of (was Muscat and Oman)
+586	Pakistan, Islamic Republic of
+585	Palau
+275	Palestinian Territory, Occupied
+591	Panama, Republic of
+598	Papua New Guinea
+600	Paraguay, Republic of
+604	Peru, Republic of
+608	Philippines, Republic of the
+612	Pitcairn Island
+616	Poland, Polish People's Republic
+620	Portugal, Portuguese Republic
+630	Puerto Rico
+634	Qatar, State of
+638	Reunion
+642	Romania, Socialist Republic of
+643	Russian Federation
+646	Rwanda, Rwandese Republic
+654	St. Helena
+659	St. Kitts and Nevis
+662	St. Lucia
+666	St. Pierre and Miquelon
+670	St. Vincent and the Grenadines
+882	Samoa, Independent State of (was Western Samoa)
+674	San Marino, Republic of
+678	Sao Tome and Principe, Democratic Republic of
+682	Saudi Arabia, Kingdom of
+686	Senegal, Republic of
+891	Serbia and Montenegro
+690	Seychelles, Republic of
+694	Sierra Leone, Republic of
+702	Singapore, Republic of
+703	Slovakia (Slovak Republic)
+705	Slovenia
+090	Solomon Islands (was British Solomon Islands)
+706	Somalia, Somali Republic
+710	South Africa, Republic of
+239	South Georgia and the South Sandwich Islands
+724	Spain, Spanish State
+144	Sri Lanka, Democratic Socialist Republic of (was Ceylon)
+736	Sudan, Democratic Republic of the
+740	Suriname, Republic of
+744	Svalbard & Jan Mayen Islands
+748	Swaziland, Kingdom of
+752	Sweden, Kingdom of
+756	Switzerland, Swiss Confederation
+760	Syrian Arab Republic
+158	Taiwan, Province of China
+762	Tajikistan
+834	Tanzania, United Republic of
+764	Thailand, Kingdom of
+626	Timor-Leste, Democratic Republic of
+768	Togo, Togolese Republic
+772	Tokelau (Tokelau Islands)
+776	Tonga, Kingdom of
+780	Trinidad and Tobago, Republic of
+788	Tunisia, Republic of
+792	Turkey, Republic of
+795	Turkmenistan
+796	Turks and Caicos Islands
+798	Tuvalu (was part of Gilbert & Ellice Islands)
+850	US Virgin Islands
+800	Uganda, Republic of
+804	Ukraine
+784	United Arab Emirates (was Trucial States)
+826	United Kingdom of Great Britain & N. Ireland
+581	United States Minor Outlying Islands
+840	United States of America
+858	Uruguay, Eastern Republic of
+860	Uzbekistan
+548	Vanuatu (was New Hebrides)
+862	Venezuela, Bolivarian Republic of
+704	Viet Nam, Socialist Republic of (was Democratic Republic of & Republic of)
+876	Wallis and Futuna Islands
+732	Western Sahara (was Spanish Sahara)
+887	Yemen
+894	Zambia, Republic of
+716	Zimbabwe (was Southern Rhodesia)
