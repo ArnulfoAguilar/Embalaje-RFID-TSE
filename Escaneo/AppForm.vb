@@ -316,6 +316,9 @@ Namespace VB_RFID3_Host_Sample1
             Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
             Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
             Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
             Me.mainMenuStrip = New System.Windows.Forms.MenuStrip
             Me.configToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
             Me.connectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -367,6 +370,8 @@ Namespace VB_RFID3_Host_Sample1
             Me.TextBox1 = New System.Windows.Forms.TextBox
             Me.Label13 = New System.Windows.Forms.Label
             Me.DataGridENCONTRADOS = New System.Windows.Forms.DataGridView
+            Me.DataGridView1 = New System.Windows.Forms.DataGridView
+            Me.Label14 = New System.Windows.Forms.Label
             Me.mainMenuStrip.SuspendLayout()
             Me.statusStrip.SuspendLayout()
             Me.dataContextMenuStrip.SuspendLayout()
@@ -374,6 +379,7 @@ Namespace VB_RFID3_Host_Sample1
             CType(Me.DataGrid_no_encontrados, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.DataGridENCONTRADOS, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'mainMenuStrip
@@ -671,7 +677,7 @@ Namespace VB_RFID3_Host_Sample1
             Me.totalTagLabel.Name = "totalTagLabel"
             Me.totalTagLabel.Size = New System.Drawing.Size(62, 16)
             Me.totalTagLabel.TabIndex = 25
-            Me.totalTagLabel.Text = "Total Tags: "
+            Me.totalTagLabel.Text = "Total Articulos: "
             '
             'clearReports_CB
             '
@@ -710,11 +716,11 @@ Namespace VB_RFID3_Host_Sample1
             'Label1
             '
             Me.Label1.AutoSize = True
-            Me.Label1.Location = New System.Drawing.Point(772, 36)
+            Me.Label1.Location = New System.Drawing.Point(645, 36)
             Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(94, 13)
+            Me.Label1.Size = New System.Drawing.Size(110, 13)
             Me.Label1.TabIndex = 29
-            Me.Label1.Text = "Tags Encontrados"
+            Me.Label1.Text = "Articulos Encontrados"
             '
             'txt_tags_encontrados
             '
@@ -755,7 +761,7 @@ Namespace VB_RFID3_Host_Sample1
             DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
             DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
             Me.DataGViewFaltantes.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-            Me.DataGViewFaltantes.Size = New System.Drawing.Size(383, 395)
+            Me.DataGViewFaltantes.Size = New System.Drawing.Size(236, 395)
             Me.DataGViewFaltantes.TabIndex = 34
             '
             'DataGrid_no_encontrados
@@ -788,9 +794,9 @@ Namespace VB_RFID3_Host_Sample1
             Me.Label13.AutoSize = True
             Me.Label13.Location = New System.Drawing.Point(123, 254)
             Me.Label13.Name = "Label13"
-            Me.Label13.Size = New System.Drawing.Size(120, 13)
+            Me.Label13.Size = New System.Drawing.Size(126, 13)
             Me.Label13.TabIndex = 40
-            Me.Label13.Text = "Codigo de barra de JRV"
+            Me.Label13.Text = "Codigo de barra de CAJA"
             '
             'DataGridENCONTRADOS
             '
@@ -812,7 +818,7 @@ Namespace VB_RFID3_Host_Sample1
             DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
             DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
             Me.DataGridENCONTRADOS.DefaultCellStyle = DataGridViewCellStyle5
-            Me.DataGridENCONTRADOS.Location = New System.Drawing.Point(775, 59)
+            Me.DataGridENCONTRADOS.Location = New System.Drawing.Point(648, 59)
             Me.DataGridENCONTRADOS.Name = "DataGridENCONTRADOS"
             DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
             DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
@@ -822,17 +828,61 @@ Namespace VB_RFID3_Host_Sample1
             DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
             DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
             Me.DataGridENCONTRADOS.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
-            Me.DataGridENCONTRADOS.Size = New System.Drawing.Size(383, 395)
+            Me.DataGridENCONTRADOS.Size = New System.Drawing.Size(237, 395)
             Me.DataGridENCONTRADOS.TabIndex = 41
+            '
+            'DataGridView1
+            '
+            Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+            DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+            DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+            DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+            Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+            Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+            DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+            DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
+            DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+            Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle8
+            Me.DataGridView1.Location = New System.Drawing.Point(905, 59)
+            Me.DataGridView1.Name = "DataGridView1"
+            DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
+            DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+            DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+            Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
+            Me.DataGridView1.Size = New System.Drawing.Size(237, 395)
+            Me.DataGridView1.TabIndex = 43
+            '
+            'Label14
+            '
+            Me.Label14.AutoSize = True
+            Me.Label14.Location = New System.Drawing.Point(902, 36)
+            Me.Label14.Name = "Label14"
+            Me.Label14.Size = New System.Drawing.Size(118, 13)
+            Me.Label14.TabIndex = 42
+            Me.Label14.Text = "Articulos Inconsistentes"
             '
             'AppForm
             '
             Me.AutoScroll = True
             Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
             Me.ClientSize = New System.Drawing.Size(1235, 498)
+            Me.Controls.Add(Me.DataGridView1)
+            Me.Controls.Add(Me.Label14)
             Me.Controls.Add(Me.DataGViewFaltantes)
-            Me.Controls.Add(Me.DataGridENCONTRADOS)
             Me.Controls.Add(Me.Label13)
+            Me.Controls.Add(Me.DataGridENCONTRADOS)
             Me.Controls.Add(Me.TextBox1)
             Me.Controls.Add(Me.PictureBox1)
             Me.Controls.Add(Me.clearReports_CB)
@@ -840,8 +890,8 @@ Namespace VB_RFID3_Host_Sample1
             Me.Controls.Add(Me.DataGrid_no_encontrados)
             Me.Controls.Add(Me.txt_tags_encontrados)
             Me.Controls.Add(Me.mainMenuStrip)
-            Me.Controls.Add(Me.Label1)
             Me.Controls.Add(Me.verificadosList)
+            Me.Controls.Add(Me.Label1)
             Me.Controls.Add(Me.totalTagValueLabel)
             Me.Controls.Add(Me.totalTagLabel)
             Me.Controls.Add(Me.inventoryList)
@@ -861,6 +911,7 @@ Namespace VB_RFID3_Host_Sample1
             CType(Me.DataGrid_no_encontrados, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.DataGridENCONTRADOS, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -966,6 +1017,8 @@ Namespace VB_RFID3_Host_Sample1
         Friend WithEvents Label13 As System.Windows.Forms.Label
         Friend WithEvents DataGridENCONTRADOS As System.Windows.Forms.DataGridView
         Public codigo_barra_bolsa As String
+        Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+        Friend WithEvents Label14 As System.Windows.Forms.Label
         Dim acta_recibida As Integer = 0
 
         Private Sub actualizar_folio(ByVal parametroConsulta As String)
@@ -1321,7 +1374,7 @@ Namespace VB_RFID3_Host_Sample1
                                 '
                                 If lector.HasRows Then
                                     cargar_GRID()
-                                    
+
 
                                     Me.m_ReaderAPI.Actions.Inventory.Perform(Nothing, Nothing, Nothing)
                                     Me.inventoryList.Items.Clear()
@@ -1418,6 +1471,7 @@ Namespace VB_RFID3_Host_Sample1
         Private Sub myUpdateStatus(ByVal eventData As Events.StatusEventData)
 
         End Sub
+
     End Class
 
 End Namespace

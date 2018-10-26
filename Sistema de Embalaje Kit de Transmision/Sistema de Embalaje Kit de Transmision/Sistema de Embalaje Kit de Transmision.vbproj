@@ -77,10 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.vb" />
-    <Compile Include="Crear_Usuario.Designer.vb">
+    <Compile Include="Usuarios\Crear_Usuario.Designer.vb">
       <DependentUpon>Crear_Usuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="Crear_Usuario.vb">
+    <Compile Include="Usuarios\Crear_Usuario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -107,7 +107,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Crear_Usuario.resx">
+    <EmbeddedResource Include="Usuarios\Crear_Usuario.resx">
       <DependentUpon>Crear_Usuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
