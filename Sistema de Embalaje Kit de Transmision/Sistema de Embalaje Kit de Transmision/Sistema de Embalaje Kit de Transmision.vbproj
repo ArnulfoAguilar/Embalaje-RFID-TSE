@@ -51,6 +51,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="system.data.oracleclient">
+      <HintPath>bin\Debug\system.data.oracleclient.dll</HintPath>
+    </Reference>
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -73,6 +76,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conexion.vb" />
     <Compile Include="Crear_Usuario.Designer.vb">
       <DependentUpon>Crear_Usuario.vb</DependentUpon>
     </Compile>

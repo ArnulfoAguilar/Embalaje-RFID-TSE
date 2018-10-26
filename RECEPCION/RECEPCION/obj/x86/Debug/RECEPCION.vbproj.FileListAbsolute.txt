@@ -69,3 +69,15 @@ C:\Users\TSE\Documents\Visual Studio 2008\Projects\SOFTWARE RECEPCION DE ACTAS P
 C:\Users\TSE\Desktop\SISTEMA RECEPCION DE ACTAS 2018\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.exe
 C:\Users\TSE\Desktop\SISTEMA RECEPCION DE ACTAS 2018\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.xml
 C:\Users\TSE\Desktop\SISTEMA RECEPCION DE ACTAS 2018\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.pdb
+C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.exe
+C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.xml
+C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.pdb
+C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\bin\x86\Debug\RECEPCION.exe
+C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\bin\x86\Debug\RECEPCION.pdb
+C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\bin\x86\Debug\RECEPCION.xml
+C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.vbprojResolveAssemblyReference.cache
+C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.Form1.resources
+C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.LoginForm1.resources
+C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.Resources.resources
+C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.reporte.resources
+C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.vbproj.GenerateResource.Cache
