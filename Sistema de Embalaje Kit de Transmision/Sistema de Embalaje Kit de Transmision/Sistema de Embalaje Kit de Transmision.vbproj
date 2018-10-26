@@ -77,10 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.vb" />
-    <Compile Include="Frm_Mtn_Prd.Designer.vb">
-      <DependentUpon>Frm_Mtn_Prd.vb</DependentUpon>
+    <Compile Include="Frm_Mtn_Producto.Designer.vb">
+      <DependentUpon>Frm_Mtn_Producto.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Mtn_Prd.vb">
+    <Compile Include="Frm_Mtn_Producto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Usuarios\Crear_Usuario.Designer.vb">
@@ -113,8 +113,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Frm_Mtn_Prd.resx">
-      <DependentUpon>Frm_Mtn_Prd.vb</DependentUpon>
+    <EmbeddedResource Include="Frm_Mtn_Producto.resx">
+      <DependentUpon>Frm_Mtn_Producto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\Crear_Usuario.resx">
       <DependentUpon>Crear_Usuario.vb</DependentUpon>
@@ -139,6 +139,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Productos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

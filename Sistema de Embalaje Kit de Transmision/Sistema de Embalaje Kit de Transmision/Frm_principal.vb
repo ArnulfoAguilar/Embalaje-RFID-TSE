@@ -17,4 +17,8 @@
         Crear_Usuario.Show()
         Me.Close()
     End Sub
+
+    Private Sub Frm_principal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
