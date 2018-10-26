@@ -17,4 +17,9 @@
         Crear_Usuario.Show()
         Me.Close()
     End Sub
+
+    Private Sub CargarDatosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CargarDatosToolStripMenuItem.Click
+        CargarDatos.Show()
+        Me.Close()
+    End Sub
 End Class

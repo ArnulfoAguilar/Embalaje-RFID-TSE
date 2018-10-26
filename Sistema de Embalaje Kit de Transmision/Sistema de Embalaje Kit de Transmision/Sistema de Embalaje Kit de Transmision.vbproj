@@ -76,6 +76,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cargar Datos\CargarDatos.Designer.vb">
+      <DependentUpon>CargarDatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cargar Datos\CargarDatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Conexion.vb" />
     <Compile Include="Frm_Mtn_Prd.Designer.vb">
       <DependentUpon>Frm_Mtn_Prd.vb</DependentUpon>
@@ -113,6 +119,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Cargar Datos\CargarDatos.resx">
+      <DependentUpon>CargarDatos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Mtn_Prd.resx">
       <DependentUpon>Frm_Mtn_Prd.vb</DependentUpon>
     </EmbeddedResource>

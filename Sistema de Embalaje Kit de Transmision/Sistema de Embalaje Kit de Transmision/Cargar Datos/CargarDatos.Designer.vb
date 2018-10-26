@@ -25,6 +25,7 @@ Partial Class CargarDatos
         Me.btnImportar = New System.Windows.Forms.Button()
         Me.btnExportar = New System.Windows.Forms.Button()
         Me.txtExcel = New System.Windows.Forms.TextBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SuspendLayout()
         '
         'btnImportar
@@ -52,6 +53,10 @@ Partial Class CargarDatos
         Me.txtExcel.Size = New System.Drawing.Size(408, 20)
         Me.txtExcel.TabIndex = 2
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'CargarDatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -69,4 +74,5 @@ Partial Class CargarDatos
     Friend WithEvents btnImportar As System.Windows.Forms.Button
     Friend WithEvents btnExportar As System.Windows.Forms.Button
     Friend WithEvents txtExcel As System.Windows.Forms.TextBox
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
 End Class
