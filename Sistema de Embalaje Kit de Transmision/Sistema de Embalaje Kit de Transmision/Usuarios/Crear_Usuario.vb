@@ -1,7 +1,5 @@
 ﻿Imports System.Data.OracleClient
-Imports Sistema_de_Embalaje_Kit_de_Transmision.Conexion
 Public Class Crear_Usuario
-    Dim Conexion As New Conexion
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
         If txtNombre.Text <> "" Then
             If txtIP.Text <> "" Then
