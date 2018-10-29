@@ -77,10 +77,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.vb" />
-    <Compile Include="Frm_Mtn_Producto.Designer.vb">
+    <Compile Include="Productos\Frm_Mtn_Articulo.Designer.vb">
+      <DependentUpon>Frm_Mtn_Articulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\Frm_Mtn_Articulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\Frm_Mtn_Producto.Designer.vb">
       <DependentUpon>Frm_Mtn_Producto.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Mtn_Producto.vb">
+    <Compile Include="Productos\Frm_Mtn_Producto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Usuarios\Crear_Usuario.Designer.vb">
@@ -113,7 +119,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Frm_Mtn_Producto.resx">
+    <EmbeddedResource Include="Productos\Frm_Mtn_Articulo.resx">
+      <DependentUpon>Frm_Mtn_Articulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\Frm_Mtn_Producto.resx">
       <DependentUpon>Frm_Mtn_Producto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\Crear_Usuario.resx">
@@ -140,9 +149,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Productos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

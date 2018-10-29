@@ -23,11 +23,12 @@ Partial Class Frm_Mtn_Producto
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txt_nombre = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txt_nomenclatura = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cbx_ret = New System.Windows.Forms.ComboBox()
+        Me.btn_guardar_prd = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -39,12 +40,12 @@ Partial Class Frm_Mtn_Producto
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nombre del Producto"
         '
-        'TextBox1
+        'txt_nombre
         '
-        Me.TextBox1.Location = New System.Drawing.Point(131, 43)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.txt_nombre.Location = New System.Drawing.Point(131, 43)
+        Me.txt_nombre.Name = "txt_nombre"
+        Me.txt_nombre.Size = New System.Drawing.Size(100, 20)
+        Me.txt_nombre.TabIndex = 2
         '
         'Label3
         '
@@ -55,13 +56,13 @@ Partial Class Frm_Mtn_Producto
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Nomenclatura"
         '
-        'TextBox3
+        'txt_nomenclatura
         '
-        Me.TextBox3.Location = New System.Drawing.Point(131, 100)
-        Me.TextBox3.MaxLength = 3
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(59, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.txt_nomenclatura.Location = New System.Drawing.Point(131, 100)
+        Me.txt_nomenclatura.MaxLength = 3
+        Me.txt_nomenclatura.Name = "txt_nomenclatura"
+        Me.txt_nomenclatura.Size = New System.Drawing.Size(59, 20)
+        Me.txt_nomenclatura.TabIndex = 5
         '
         'Label4
         '
@@ -80,16 +81,26 @@ Partial Class Frm_Mtn_Producto
         Me.cbx_ret.Size = New System.Drawing.Size(121, 21)
         Me.cbx_ret.TabIndex = 7
         '
+        'btn_guardar_prd
+        '
+        Me.btn_guardar_prd.Location = New System.Drawing.Point(115, 220)
+        Me.btn_guardar_prd.Name = "btn_guardar_prd"
+        Me.btn_guardar_prd.Size = New System.Drawing.Size(75, 23)
+        Me.btn_guardar_prd.TabIndex = 8
+        Me.btn_guardar_prd.Text = "Guardar"
+        Me.btn_guardar_prd.UseVisualStyleBackColor = True
+        '
         'Frm_Mtn_Producto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(309, 275)
+        Me.Controls.Add(Me.btn_guardar_prd)
         Me.Controls.Add(Me.cbx_ret)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txt_nomenclatura)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_nombre)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Frm_Mtn_Producto"
         Me.Text = "Frm_Mtn_Producto"
@@ -98,9 +109,10 @@ Partial Class Frm_Mtn_Producto
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txt_nombre As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txt_nomenclatura As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents cbx_ret As System.Windows.Forms.ComboBox
+    Friend WithEvents btn_guardar_prd As System.Windows.Forms.Button
 End Class
