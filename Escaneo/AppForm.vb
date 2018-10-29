@@ -370,8 +370,15 @@ Namespace VB_RFID3_Host_Sample1
             Me.TextBox1 = New System.Windows.Forms.TextBox
             Me.Label13 = New System.Windows.Forms.Label
             Me.DataGridENCONTRADOS = New System.Windows.Forms.DataGridView
-            Me.DataGridView1 = New System.Windows.Forms.DataGridView
+            Me.DGViewInconsistentes = New System.Windows.Forms.DataGridView
             Me.Label14 = New System.Windows.Forms.Label
+            Me.txtCantidad_inconsistentes = New System.Windows.Forms.Label
+            Me.Departamento = New System.Windows.Forms.Label
+            Me.Sede = New System.Windows.Forms.Label
+            Me.Municipio = New System.Windows.Forms.Label
+            Me.txt_Departamento = New System.Windows.Forms.Label
+            Me.txt_Sede = New System.Windows.Forms.Label
+            Me.txt_Municipio = New System.Windows.Forms.Label
             Me.mainMenuStrip.SuspendLayout()
             Me.statusStrip.SuspendLayout()
             Me.dataContextMenuStrip.SuspendLayout()
@@ -379,7 +386,7 @@ Namespace VB_RFID3_Host_Sample1
             CType(Me.DataGrid_no_encontrados, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.DataGridENCONTRADOS, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.DGViewInconsistentes, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'mainMenuStrip
@@ -447,7 +454,7 @@ Namespace VB_RFID3_Host_Sample1
             'readButton
             '
             Me.readButton.Enabled = False
-            Me.readButton.Location = New System.Drawing.Point(126, 323)
+            Me.readButton.Location = New System.Drawing.Point(126, 396)
             Me.readButton.Name = "readButton"
             Me.readButton.Size = New System.Drawing.Size(127, 23)
             Me.readButton.TabIndex = 2
@@ -784,7 +791,7 @@ Namespace VB_RFID3_Host_Sample1
             '
             'TextBox1
             '
-            Me.TextBox1.Location = New System.Drawing.Point(63, 282)
+            Me.TextBox1.Location = New System.Drawing.Point(61, 358)
             Me.TextBox1.Name = "TextBox1"
             Me.TextBox1.Size = New System.Drawing.Size(244, 20)
             Me.TextBox1.TabIndex = 39
@@ -792,7 +799,7 @@ Namespace VB_RFID3_Host_Sample1
             'Label13
             '
             Me.Label13.AutoSize = True
-            Me.Label13.Location = New System.Drawing.Point(123, 254)
+            Me.Label13.Location = New System.Drawing.Point(123, 342)
             Me.Label13.Name = "Label13"
             Me.Label13.Size = New System.Drawing.Size(126, 13)
             Me.Label13.TabIndex = 40
@@ -831,9 +838,9 @@ Namespace VB_RFID3_Host_Sample1
             Me.DataGridENCONTRADOS.Size = New System.Drawing.Size(237, 395)
             Me.DataGridENCONTRADOS.TabIndex = 41
             '
-            'DataGridView1
+            'DGViewInconsistentes
             '
-            Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+            Me.DGViewInconsistentes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
             DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
             DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
             DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -841,8 +848,8 @@ Namespace VB_RFID3_Host_Sample1
             DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
             DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
             DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-            Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
-            Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+            Me.DGViewInconsistentes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+            Me.DGViewInconsistentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
             DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
             DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
             DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -850,9 +857,9 @@ Namespace VB_RFID3_Host_Sample1
             DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
             DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
             DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-            Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle8
-            Me.DataGridView1.Location = New System.Drawing.Point(905, 59)
-            Me.DataGridView1.Name = "DataGridView1"
+            Me.DGViewInconsistentes.DefaultCellStyle = DataGridViewCellStyle8
+            Me.DGViewInconsistentes.Location = New System.Drawing.Point(905, 59)
+            Me.DGViewInconsistentes.Name = "DGViewInconsistentes"
             DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
             DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
             DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -860,9 +867,9 @@ Namespace VB_RFID3_Host_Sample1
             DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
             DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
             DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-            Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
-            Me.DataGridView1.Size = New System.Drawing.Size(237, 395)
-            Me.DataGridView1.TabIndex = 43
+            Me.DGViewInconsistentes.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
+            Me.DGViewInconsistentes.Size = New System.Drawing.Size(237, 395)
+            Me.DGViewInconsistentes.TabIndex = 43
             '
             'Label14
             '
@@ -873,12 +880,82 @@ Namespace VB_RFID3_Host_Sample1
             Me.Label14.TabIndex = 42
             Me.Label14.Text = "Articulos Inconsistentes"
             '
+            'txtCantidad_inconsistentes
+            '
+            Me.txtCantidad_inconsistentes.AutoSize = True
+            Me.txtCantidad_inconsistentes.Location = New System.Drawing.Point(1026, 35)
+            Me.txtCantidad_inconsistentes.Name = "txtCantidad_inconsistentes"
+            Me.txtCantidad_inconsistentes.Size = New System.Drawing.Size(13, 13)
+            Me.txtCantidad_inconsistentes.TabIndex = 44
+            Me.txtCantidad_inconsistentes.Text = "0"
+            '
+            'Departamento
+            '
+            Me.Departamento.AutoSize = True
+            Me.Departamento.Location = New System.Drawing.Point(25, 232)
+            Me.Departamento.Name = "Departamento"
+            Me.Departamento.Size = New System.Drawing.Size(77, 13)
+            Me.Departamento.TabIndex = 45
+            Me.Departamento.Text = "Departamento:"
+            '
+            'Sede
+            '
+            Me.Sede.AutoSize = True
+            Me.Sede.Location = New System.Drawing.Point(58, 265)
+            Me.Sede.Name = "Sede"
+            Me.Sede.Size = New System.Drawing.Size(35, 13)
+            Me.Sede.TabIndex = 46
+            Me.Sede.Text = "Sede:"
+            '
+            'Municipio
+            '
+            Me.Municipio.AutoSize = True
+            Me.Municipio.Location = New System.Drawing.Point(38, 298)
+            Me.Municipio.Name = "Municipio"
+            Me.Municipio.Size = New System.Drawing.Size(55, 13)
+            Me.Municipio.TabIndex = 47
+            Me.Municipio.Text = "Municipio:"
+            '
+            'txt_Departamento
+            '
+            Me.txt_Departamento.AutoSize = True
+            Me.txt_Departamento.Location = New System.Drawing.Point(105, 232)
+            Me.txt_Departamento.Name = "txt_Departamento"
+            Me.txt_Departamento.Size = New System.Drawing.Size(74, 13)
+            Me.txt_Departamento.TabIndex = 48
+            Me.txt_Departamento.Text = "Departamento"
+            '
+            'txt_Sede
+            '
+            Me.txt_Sede.AutoSize = True
+            Me.txt_Sede.Location = New System.Drawing.Point(105, 265)
+            Me.txt_Sede.Name = "txt_Sede"
+            Me.txt_Sede.Size = New System.Drawing.Size(32, 13)
+            Me.txt_Sede.TabIndex = 49
+            Me.txt_Sede.Text = "Sede"
+            '
+            'txt_Municipio
+            '
+            Me.txt_Municipio.AutoSize = True
+            Me.txt_Municipio.Location = New System.Drawing.Point(105, 298)
+            Me.txt_Municipio.Name = "txt_Municipio"
+            Me.txt_Municipio.Size = New System.Drawing.Size(52, 13)
+            Me.txt_Municipio.TabIndex = 50
+            Me.txt_Municipio.Text = "Municipio"
+            '
             'AppForm
             '
             Me.AutoScroll = True
             Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
             Me.ClientSize = New System.Drawing.Size(1235, 498)
-            Me.Controls.Add(Me.DataGridView1)
+            Me.Controls.Add(Me.txt_Municipio)
+            Me.Controls.Add(Me.txt_Sede)
+            Me.Controls.Add(Me.txt_Departamento)
+            Me.Controls.Add(Me.Municipio)
+            Me.Controls.Add(Me.Sede)
+            Me.Controls.Add(Me.Departamento)
+            Me.Controls.Add(Me.txtCantidad_inconsistentes)
+            Me.Controls.Add(Me.DGViewInconsistentes)
             Me.Controls.Add(Me.Label14)
             Me.Controls.Add(Me.DataGViewFaltantes)
             Me.Controls.Add(Me.Label13)
@@ -901,7 +978,7 @@ Namespace VB_RFID3_Host_Sample1
             Me.MinimumSize = New System.Drawing.Size(8, 250)
             Me.Name = "AppForm"
             Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-            Me.Text = "ESCANEO"
+            Me.Text = "Sede"
             Me.mainMenuStrip.ResumeLayout(False)
             Me.mainMenuStrip.PerformLayout()
             Me.statusStrip.ResumeLayout(False)
@@ -911,7 +988,7 @@ Namespace VB_RFID3_Host_Sample1
             CType(Me.DataGrid_no_encontrados, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.DataGridENCONTRADOS, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.DGViewInconsistentes, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -991,7 +1068,7 @@ Namespace VB_RFID3_Host_Sample1
                             inventoryList.EndUpdate()
                             'Dim row As DataGridViewRow
                             Dim tags_encontrados As Integer = 0
-                            consulta_actas(item.Text)
+                            consulta_Articulos(item.Text)
                             SyncLock m_TagTable.SyncRoot
                                 m_TagTable.Add(tagID, item)
                                 totalTagValueLabel.Text = m_TagTable.Count
@@ -1005,8 +1082,8 @@ Namespace VB_RFID3_Host_Sample1
         End Sub
 
         'Conexion a bases de datos
-        Dim cadena As String = "server = ORCL; User id = prue_recep_cambio; Password = usi123; Unicode =True"
-        Dim conn As New OracleConnection(cadena)
+        'Dim cadena As String = "Data Source=172.16.1.16:1521/RFID; User id=EMBALAJE; password=embalaje01"
+        'Dim conn As New OracleConnection(cadena)
         ' /Fin conexion a base de datos
         Friend WithEvents DataGViewFaltantes As System.Windows.Forms.DataGridView
         Friend WithEvents DataGrid_no_encontrados As System.Windows.Forms.DataGridView
@@ -1017,16 +1094,24 @@ Namespace VB_RFID3_Host_Sample1
         Friend WithEvents Label13 As System.Windows.Forms.Label
         Friend WithEvents DataGridENCONTRADOS As System.Windows.Forms.DataGridView
         Public codigo_barra_bolsa As String
-        Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+        Friend WithEvents DGViewInconsistentes As System.Windows.Forms.DataGridView
         Friend WithEvents Label14 As System.Windows.Forms.Label
+        Friend WithEvents txtCantidad_inconsistentes As System.Windows.Forms.Label
+        Friend WithEvents Departamento As System.Windows.Forms.Label
+        Friend WithEvents Sede As System.Windows.Forms.Label
+        Friend WithEvents Municipio As System.Windows.Forms.Label
+        Friend WithEvents txt_Departamento As System.Windows.Forms.Label
+        Friend WithEvents txt_Sede As System.Windows.Forms.Label
+        Friend WithEvents txt_Municipio As System.Windows.Forms.Label
         Dim acta_recibida As Integer = 0
 
-        Private Sub actualizar_folio(ByVal parametroConsulta As String)
+        'Funcion para actualizar el articulo cuando ya se detecto por RFID 
+        Private Sub actualizar_Articulo_recibido(ByVal parametroConsulta As String)
             Try
 
-                Dim sqlConsulta_actualizar_acta As String = "update FOLIO set id_catalogo_recibida=2 where codigo_rfid =:CODIGO_rfid"
+                Dim sqlConsulta_actualizar_acta As String = "UPDATE ARTICULO SET id_est_art=1 where RFID =:CODIGO_RFID"
                 Dim comando1 As New OracleCommand(sqlConsulta_actualizar_acta, conn)
-                comando1.Parameters.Add(":CODIGO_rfid", OracleType.VarChar, 32).Value = parametroConsulta
+                comando1.Parameters.Add(":CODIGO_RFID", OracleType.VarChar, 32).Value = parametroConsulta
                 conn.Open()
                 comando1.ExecuteNonQuery()
                 conn.Close()
@@ -1036,43 +1121,44 @@ Namespace VB_RFID3_Host_Sample1
                 MessageBox.Show(ex.ToString)
                 conn.Close()
             End Try
-            If acta_recibida = 0 Then
-                Try
-                    Dim sqlConsult As String = "update acta set id_catalogo_recibida=3 where barcode=:codigo_BOLSA_JRV"
-                    Dim comando1 As New OracleCommand(sqlConsult, conn)
-                    comando1.Parameters.Add(":codigo_BOLSA_JRV", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
-                    conn.Open()
-                    comando1.ExecuteNonQuery()
-                    conn.Close()
+            ' No recuerdo para que hice esto
+            'If acta_recibida = 0 Then
+            '    Try
+            '        Dim sqlConsult As String = "update acta set id_catalogo_recibida=3 where barcode=:codigo_BOLSA_JRV"
+            '        Dim comando1 As New OracleCommand(sqlConsult, conn)
+            '        comando1.Parameters.Add(":codigo_BOLSA_JRV", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
+            '        conn.Open()
+            '        comando1.ExecuteNonQuery()
+            '        conn.Close()
 
-                Catch ex As Exception
-                    MessageBox.Show(ex.ToString)
-                End Try
-            End If
+            '    Catch ex As Exception
+            '        MessageBox.Show(ex.ToString)
+            '    End Try
+            'End If
         End Sub
 
 
-        'FUNCION PARA HACER EL UPDATE AL FOLIO, SI SE ENCUENTRA CON EL CODIGO RFID
+        'FUNCION PARA HACER EL UPDATE AL ARTICULO, SI SE ENCUENTRA CON EL CODIGO RFID
         'Funciona de la siguiente manera:
         'primero toma el valor leido desde la antena RFID y hace una consulta a la base de datos, si este valor no se encuentra en la base,
-        'no hace nada. En cambio si el valor se encuentra en la base de datos, hace un update de el atributo RECIBIDA de la tabla ACTA
-        'y vuelve a cargar el data grid con los campos no recibidos
-        Private Sub consulta_actas(ByVal parametroConsulta As String)
+        'no hace nada. En cambio si el valor se encuentra en la base de datos, hace un update de el atributo id_est_art de la tabla Articulo
+        'y actualiza el data grid con los articulos no recibidos
+        Private Sub consulta_Articulos(ByVal parametroConsulta As String)
             ' If bandera = 0 Then
 
             Try
-                Dim sqlConsulta_Seleccionar_bolsas_Folios As String = "select * from folio fol join acta ac on fol.ID_ACTA = ac.ID_ACTA where  fol.CODIGO_RFID=:CODIGO_RFID_FOLIO"
+                Dim sqlConsulta_Seleccionar_bolsas_Folios As String = "select RFID from articulo a where a.RFID=:CODIGO_RFID_ARTICULO"
                 Dim comando As New OracleCommand(sqlConsulta_Seleccionar_bolsas_Folios, conn)
-                comando.Parameters.Add(":CODIGO_RFID_FOLIO", OracleType.VarChar, 32).Value = parametroConsulta
+                comando.Parameters.Add(":CODIGO_RFID_ARTICULO", OracleType.VarChar, 32).Value = parametroConsulta
                 Dim lector2 As OracleDataReader = Nothing
                 conn.Open()
                 lector2 = comando.ExecuteReader()
                 If lector2.HasRows Then
                     conn.Close()
-                    verificar_jrv_correcta(parametroConsulta)
+                    verificar_caja_correcta(parametroConsulta)
 
                 Else
-                    MessageBox.Show("Surgio un problema, Este codigo de rfid no se encuentra en la base de datos")
+                    MessageBox.Show("Este codigo de rfid no se encuentra en la base de datos")
                     conn.Close()
                 End If
             Catch ex As Exception
@@ -1084,33 +1170,33 @@ Namespace VB_RFID3_Host_Sample1
             conn.Close()
         End Sub
 
-        'FUNCION PARA CARGAR EL GRID CON TODOS LOS FOLIOS NO RECIBIDOS
+        'FUNCION PARA CARGAR EL GRID CON TODOS LOS ARTICULOS NO DETECTADOS
         Public Sub cargar_GRID()
             conn.Close()
-            Dim sqlConsult As String = "select JRV,nombre_tipo_eleccion,nombre_tipo_folio " & _
-                " from folio fol join acta ac on fol.id_acta=ac.id_acta " & _
-                " join tipo_eleccion tipel on fol.id_tipo_eleccion=tipel.ID_TIPO_ELECION " & _
-               " join tipo_folio tipol on tipol.id_tipo_folio=fol.id_tipo_folio " & _
-                   " where ac.barcode=:barcode_JRV and fol.ID_CATALOGO_RECIBIDA=1"
+            Dim sqlConsult As String = "select TP.NOMBRE_ARTICULO " & _
+                                        " from articulo a join caja c on A.ID_ARTICULO=C.ID_CAJA" & _
+                                        " join TIPOARTICULO tp on A.ID_TIPO=TP.ID_TIPO " & _
+                                        " where C.CODEBAR=:barcode_CAJA and a.id_est_art=0" 'FALTA AGREGAR EL ESTADO DE RECIBIDO DE UN ARTICULO 
             Dim comando1 As New OracleCommand(sqlConsult, conn)
-            comando1.Parameters.Add(":barcode_JRV", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
+            comando1.Parameters.Add(":barcode_CAJA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
             Dim lector As OracleDataReader = Nothing
             conn.Open()
             lector = comando1.ExecuteReader()
             If lector.HasRows Then
-
                 Dim dataAdapter As New OracleDataAdapter(comando1)
                 Dim dataSet As New DataSet
                 dataAdapter.Fill(dataSet, "Faltantes")
                 Me.DataGViewFaltantes.DataSource = dataSet.Tables("Faltantes")
                 conn.Close()
             Else
+                ' Si ya no se detectan articulos 
+                'Se pone el Grid a cero y se actualiza la caja como COMPLETA
                 DataGViewFaltantes.DataSource = Nothing
                 conn.Close()
                 Try
-                    Dim sqlConsultaActualizar_recibida As String = "update acta set id_catalogo_recibida=3 where barcode=:codigo_BOLSA_JRV"
+                    Dim sqlConsultaActualizar_recibida As String = "update caja c set C.ID_COMPLETO=1 where C.CODEBAR=:codigo_BARRA_CAJA"
                     Dim comandoActualizar_recibida As New OracleCommand(sqlConsultaActualizar_recibida, conn)
-                    comandoActualizar_recibida.Parameters.Add(":codigo_BOLSA_JRV", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
+                    comandoActualizar_recibida.Parameters.Add(":codigo_BARRA_CAJA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
                     conn.Open()
                     comandoActualizar_recibida.ExecuteNonQuery()
                     conn.Close()
@@ -1118,45 +1204,50 @@ Namespace VB_RFID3_Host_Sample1
                 Catch ex As Exception
                     MessageBox.Show(ex.ToString)
                 End Try
-                MessageBox.Show("JRV COMPLETA")
+                MessageBox.Show("CAJA COMPLETA")
                 TextBox1.Focus()
             End If
         End Sub
 
-        'FUNCION para verificar que el folio pertenezca a la JRV
-        Private Sub verificar_jrv_correcta(ByVal parametroConsulta As String)
+        'FUNCION para verificar que el articulo pertenezca a la CAJA correcta
+        ' Sirve para comprobar que el codigo RFID leido, pertenezca a la caja que se pistoleo con el codigo de barra
+        Private Sub verificar_caja_correcta(ByVal parametroConsulta As String)
             Try
-                Dim sqlConsulta_Seleccionar_bolsas_Folios As String = "select * from folio fol join acta ac on fol.ID_ACTA = ac.ID_ACTA " & _
-                                                                    " where  fol.CODIGO_RFID=:CODIGO_RFID_FOLIO and ac.Barcode=:codigo_barra_jrv  "
+                Dim sqlConsulta_Seleccionar_bolsas_Folios As String = "select a.RFID, C.CODEBAR from articulo a join caja c  " & _
+                                                                        "on A.ID_ARTICULO=C.ID_CAJA2 " & _
+                                                                        "where a.RFID=:CODIGO_RFID_ARTICULO and c.codebar=:codigo_barra_caja  "
                 Dim comando As New OracleCommand(sqlConsulta_Seleccionar_bolsas_Folios, conn)
-                comando.Parameters.Add(":CODIGO_RFID_FOLIO", OracleType.VarChar, 32).Value = parametroConsulta
-                comando.Parameters.Add(":CODIGO_BARRA_jrv", OracleType.VarChar, 30).Value = TextBox1.Text.ToUpper
+                comando.Parameters.Add(":CODIGO_RFID_ARTICULO", OracleType.VarChar, 32).Value = parametroConsulta
+                comando.Parameters.Add(":CODIGO_BARRA_caja", OracleType.VarChar, 30).Value = TextBox1.Text.ToUpper
                 Dim lector2 As OracleDataReader = Nothing
                 conn.Open()
                 lector2 = comando.ExecuteReader()
                 If lector2.HasRows Then
                     conn.Close()
-                    actualizar_folio(parametroConsulta)
+                    actualizar_Articulo_recibido(parametroConsulta)
                     txt_tags_encontrados.Text += 1
                     cargar_GRID_recibidas()
                     cargar_GRID()
                     'bandera = 1
                 Else
                     conn.Close()
-                    actualizar_folio_no_pertenece(parametroConsulta)
-
+                    ' Se actualiza el articulo como inconsistente,
+                    'Agregandole el ID de la caja en la que se encontro
+                    actualizar_articulo_no_pertenece(parametroConsulta)
+                    txtCantidad_inconsistentes.Text += 1
+                    cargar_GRID_Inconsistentes()
                 End If
             Catch ex As Exception
                 conn.Close()
                 MessageBox.Show(ex.ToString)
             End Try
         End Sub
-        'FUNCION para actualizar el folio con inconsistencia, cuando se encuentre en una JRV distinta a la que pertenece
-        Private Sub actualizar_folio_no_pertenece(ByVal parametroConsulta As String)
+        'FUNCION para actualizar el Articulo con inconsistencia, cuando se encuentre en una CAJA distinta a la que pertenece
+        Private Sub actualizar_articulo_no_pertenece(ByVal parametroConsulta As String)
             Try
-                Dim sqlConsulta_Seleccionar_bolsas_Folios As String = "select * from folio " & _
-                                                                    " where  CODIGO_RFID=:CODIGO_RFID_FOLIO and id_catalogo_recibida=1  "
-                Dim comando As New OracleCommand(sqlConsulta_Seleccionar_bolsas_Folios, conn)
+                Dim sqlConsulta_Seleccionar_CAJA_ARTICULOS As String = "select * from Articulo " & _
+                                                                    " where CODIGO_RFID=:CODIGO_RFID_FOLIO and id_est_art=0 and Inconsistente=0 "
+                Dim comando As New OracleCommand(sqlConsulta_Seleccionar_CAJA_ARTICULOS, conn)
                 comando.Parameters.Add(":CODIGO_RFID_FOLIO", OracleType.VarChar, 32).Value = parametroConsulta
                 Dim lector2 As OracleDataReader = Nothing
                 conn.Open()
@@ -1164,10 +1255,11 @@ Namespace VB_RFID3_Host_Sample1
                 If lector2.HasRows Then
                     conn.Close()
                     Try
-                        MessageBox.Show("Se ha encontrado un folio que no pertenece a esta JRV")
-                        Dim sqlConsulta_actualizar_acta As String = "update FOLIO set inconsistencia=2 where codigo_rfid =:CODIGO_rfid"
+                        MessageBox.Show("Se ha encontrado un articulo que no pertenece a esta CAJA")
+                        Dim sqlConsulta_actualizar_acta As String = "update articulo set inconsistencia=:id_caja where codigo_rfid =:CODIGO_rfid"
                         Dim comando1 As New OracleCommand(sqlConsulta_actualizar_acta, conn)
                         comando1.Parameters.Add(":CODIGO_rfid", OracleType.VarChar, 32).Value = parametroConsulta
+                        comando1.Parameters.Add(":id_caja", OracleType.Int32, 32).Value = id_caja
                         conn.Open()
                         comando1.ExecuteNonQuery()
                         conn.Close()
@@ -1181,14 +1273,16 @@ Namespace VB_RFID3_Host_Sample1
                 MessageBox.Show(ex.ToString)
             End Try
         End Sub
-        'FUNCION PARA CARGAR EL GRID CON LOS FOLIOS RECIBIDOS
+        'FUNCION PARA CARGAR EL GRID CON LOS ARTICULOS RECIBIDOS
+        'Se invoca esta funcion cada vezz que se ha detectado un 
+        'Codigo RFID que pertenece a una caja en especifico
         Public Sub cargar_GRID_recibidas()
-            Dim sqlConsult As String = "select tpfol.NOMBRE_TIPO_FOLIO as FOLIO, ac.JRV,nombre_tipo_eleccion " & _
-                                        " from TIPO_FOLIO tpfol join folio fol on tpfol.ID_TIPO_FOLIO=fol.ID_TIPO_FOLIO " & _
-                                        " join ACTA ac on fol.ID_ACTA=ac.ID_ACTA join tipo_eleccion tipel on TIPEL.ID_TIPO_ELECION=FOL.ID_TIPO_ELECCION " & _
-                                        " where AC.BARCODE=:codigo_BOLSA_JRV and fol.ID_CATALOGO_RECIBIDA=2"
+            Dim sqlConsult As String = "select TP.NOMBRE_ARTICULO " & _
+                                        " from articulo a join caja c on A.ID_ARTICULO=C.ID_CAJA" & _
+                                        " join TIPOARTICULO tp on A.ID_TIPO=TP.ID_TIPO " & _
+                                        " where C.CODEBAR=::codigo_BOLSA_CAJA and a.id_est_art=1"
             Dim comando1 As New OracleCommand(sqlConsult, conn)
-            comando1.Parameters.Add(":codigo_BOLSA_JRV", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
+            comando1.Parameters.Add(":codigo_BOLSA_CAJA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
             Dim dataAdapter As New OracleDataAdapter(comando1)
             Dim dataSet As New DataSet
             dataAdapter.Fill(dataSet, "ENCONTRADOS")
@@ -1196,6 +1290,22 @@ Namespace VB_RFID3_Host_Sample1
             conn.Close()
         End Sub
 
+        'Funcion para cargar el Grid con los articulos que no pertenecen a la Caja que se esta ESCANEANDO
+        'Primero se compara que el numero de Inconsistencia sea igual al ID de la caja
+        'Despues se compara que el id del articulo sea distinto del id de la caja 
+        ' Para comprobar 2 veces que sea inconsistencia
+        Public Sub cargar_GRID_Inconsistentes()
+            Dim sqlConsult As String = "select TP.NOMBRE_ARTICULO from articulo a join caja c on A.INCONSISTENCIA=C.ID_CAJA " & _
+                                        " join TIPOARTICULO tp on TP.ID_TIPO=A.ID_TIPO " & _
+                                        " where C.CODEBAR =:codigo_barra_caja and and A.ID_ARTICULO<>C.ID_CAJA"
+            Dim comando1 As New OracleCommand(sqlConsult, conn)
+            comando1.Parameters.Add(":codigo_barra_caja", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
+            Dim dataAdapter As New OracleDataAdapter(comando1)
+            Dim dataSet As New DataSet
+            dataAdapter.Fill(dataSet, "Inconsistentes")
+            Me.DGViewInconsistentes.DataSource = dataSet.Tables("Inconsistentes")
+            conn.Close()
+        End Sub
 
         Private Sub readButton_Click(ByVal sender As Object, ByVal e As EventArgs) Handles readButton.Click
             If TextBox1.Text = "" Then
@@ -1354,14 +1464,13 @@ Namespace VB_RFID3_Host_Sample1
             Try
                 If Me.m_IsConnected Then
                     If (Me.readButton.Text = "Empezar") Then
-
                         Try
-                            ''HACER CONSULTA DE ACTA
+                            'HACER CONSULTA DE CAJA
                             Try
 
-                                Dim paquete As String = "select * from acta where barcode=:codigo_ACTA"
+                                Dim paquete As String = "select id_caja, id_depto, id_sede, id_muni from caja where codebar=:codigo_CAJA"
                                 Dim comando As New OracleCommand(paquete, conn)
-                                comando.Parameters.Add(":codigo_ACTA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
+                                comando.Parameters.Add(":codigo_CAJA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
                                 Dim lector As OracleDataReader = Nothing
                                 '
                                 conn.Open()
@@ -1369,13 +1478,23 @@ Namespace VB_RFID3_Host_Sample1
                                 '
                                 lector = comando.ExecuteReader()
                                 ' Si el lector tiene alguna fila, es porque al menos existe
-                                ' un registro con los datos especificados, por tanto, podemos
+                                ' una caja con los datos especificados, por tanto, podemos
                                 ' decir que la validación ha sido satisfactoria.
                                 '
                                 If lector.HasRows Then
+                                    'Se carga el grid con los articulos que deberia tener la caja
                                     cargar_GRID()
+                                    Do While lector.Read
+                                        'Le asigno valor a la variable global
+                                        id_caja = lector.GetInt32(0)
 
+                                        ' Le asigno los siguientes valores a los LABEL
 
+                                        txt_Departamento.Text = lector.GetString(1)
+                                        txt_Sede.Text = lector.GetString(2)
+                                        txt_Municipio.Text = lector.GetString(3)
+                                    Loop
+                                    conn.Close()
                                     Me.m_ReaderAPI.Actions.Inventory.Perform(Nothing, Nothing, Nothing)
                                     Me.inventoryList.Items.Clear()
                                     Me.verificadosList.Items.Clear()
@@ -1384,7 +1503,7 @@ Namespace VB_RFID3_Host_Sample1
                                     Me.readButton.Text = "Parar"
 
                                 Else
-                                    MessageBox.Show("No se tienen registros de este CODIGO de JRV en la base de datos.")
+                                    MessageBox.Show("Este codigo de barra no esta en la base de datos de CAJAS.")
                                     conn.Close()
                                     lector.Close()
                                     TextBox1.Clear()
