@@ -161,3 +161,6 @@ C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\D
 C:\Users\TSE\Desktop\Embalaje RFID\Escaneo\obj\x86\Debug\TSE2018.exe
 C:\Users\TSE\Desktop\Embalaje RFID\Escaneo\obj\x86\Debug\TSE2018.xml
 C:\Users\TSE\Desktop\Embalaje RFID\Escaneo\obj\x86\Debug\TSE2018.pdb
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\TSE2018.exe
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\TSE2018.xml
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\TSE2018.pdb

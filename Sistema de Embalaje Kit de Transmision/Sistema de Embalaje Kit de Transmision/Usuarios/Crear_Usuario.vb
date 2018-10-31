@@ -6,11 +6,12 @@ Public Class Crear_Usuario
                 If txtContra.Text <> "" Then
                     Try
                         Conexion.con.Close()
-                        Dim SQL As String = "INSERT INTO USUARIOS (NOMBRE, CONTRA, IPREADER) VALUES (:NOMBRE, :PASS, :IPREADER)"
+                        Dim SQL As String = "INSERT INTO USUARIOS (NOMBRE, CONTRA) VALUES (:NOMBRE, :PASS)"
+                        'Dim SQL As String = "INSERT INTO USUARIOS (NOMBRE, CONTRA, IPREADER) VALUES (:NOMBRE, :PASS, :IPREADER)"
                         Dim comando As New OracleCommand(SQL, Conexion.con)
                         comando.Parameters.Add(":NOMBRE", OracleType.VarChar, 30).Value = txtNombre.Text
                         comando.Parameters.Add(":PASS", OracleType.VarChar, 30).Value = txtContra.Text
-                        comando.Parameters.Add(":IPREADER", OracleType.VarChar, 30).Value = txtIP.Text
+                        'comando.Parameters.Add(":IPREADER", OracleType.VarChar, 30).Value = txtIP.Text
                         Conexion.con.Open()
                         comando.ExecuteNonQuery()
                         Conexion.con.Close()
@@ -33,7 +34,12 @@ Public Class Crear_Usuario
     End Sub
 
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
-        Frm_principal.Show()
+        User.Show()
         Me.Close()
+    End Sub
+
+    Private Sub btn_limpiar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_limpiar.Click
+        txtNombre.Text = ""
+        txtContra.Text = ""
     End Sub
 End Class

@@ -90,7 +90,7 @@ Namespace VB_RFID3_Host_Sample1
             Me.hostname_TB.Name = "hostname_TB"
             Me.hostname_TB.Size = New System.Drawing.Size(152, 20)
             Me.hostname_TB.TabIndex = 1
-            Me.hostname_TB.Text = LoginForm1.Ipreader
+            Me.hostname_TB.Text = Ipreader
             '
             'ConnectionForm
             '
