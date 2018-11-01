@@ -23,7 +23,7 @@ Partial Class add_ubicaciones
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btn_agregar = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DGView_ubicaciones = New System.Windows.Forms.DataGridView()
         Me.txtIp = New System.Windows.Forms.MaskedTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -31,7 +31,7 @@ Partial Class add_ubicaciones
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btn_limpiar = New System.Windows.Forms.Button()
         Me.btn_cancelar = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGView_ubicaciones, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn_agregar
@@ -43,13 +43,13 @@ Partial Class add_ubicaciones
         Me.btn_agregar.Text = "Agregar"
         Me.btn_agregar.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'DGView_ubicaciones
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(26, 177)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(282, 218)
-        Me.DataGridView1.TabIndex = 1
+        Me.DGView_ubicaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGView_ubicaciones.Location = New System.Drawing.Point(26, 177)
+        Me.DGView_ubicaciones.Name = "DGView_ubicaciones"
+        Me.DGView_ubicaciones.Size = New System.Drawing.Size(282, 218)
+        Me.DGView_ubicaciones.TabIndex = 1
         '
         'txtIp
         '
@@ -124,18 +124,18 @@ Partial Class add_ubicaciones
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtNombre)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DGView_ubicaciones)
         Me.Controls.Add(Me.btn_agregar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "add_ubicaciones"
         Me.Text = "add_ubicaciones"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGView_ubicaciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents btn_agregar As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents DGView_ubicaciones As System.Windows.Forms.DataGridView
     Friend WithEvents txtIp As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label

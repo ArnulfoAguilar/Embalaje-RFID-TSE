@@ -22,10 +22,11 @@ Partial Class Ubicaciones
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Ubicaciones))
         Me.btn_agregar = New System.Windows.Forms.Button()
         Me.btn_modificar = New System.Windows.Forms.Button()
         Me.btn_eliminar = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DGView_ubicaciones = New System.Windows.Forms.DataGridView()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.InicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EscaneoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -46,45 +47,45 @@ Partial Class Ubicaciones
         Me.EliminarProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CargarDatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGView_ubicaciones, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btn_agregar
         '
         Me.btn_agregar.Font = New System.Drawing.Font("Arial", 8.25!)
-        Me.btn_agregar.Location = New System.Drawing.Point(46, 129)
+        Me.btn_agregar.Image = CType(resources.GetObject("btn_agregar.Image"), System.Drawing.Image)
+        Me.btn_agregar.Location = New System.Drawing.Point(46, 96)
         Me.btn_agregar.Name = "btn_agregar"
-        Me.btn_agregar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_agregar.Size = New System.Drawing.Size(60, 56)
         Me.btn_agregar.TabIndex = 0
-        Me.btn_agregar.Text = "Agregar"
         Me.btn_agregar.UseVisualStyleBackColor = True
         '
         'btn_modificar
         '
-        Me.btn_modificar.Location = New System.Drawing.Point(192, 128)
+        Me.btn_modificar.Image = CType(resources.GetObject("btn_modificar.Image"), System.Drawing.Image)
+        Me.btn_modificar.Location = New System.Drawing.Point(192, 96)
         Me.btn_modificar.Name = "btn_modificar"
-        Me.btn_modificar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_modificar.Size = New System.Drawing.Size(58, 55)
         Me.btn_modificar.TabIndex = 1
-        Me.btn_modificar.Text = "Modificar"
         Me.btn_modificar.UseVisualStyleBackColor = True
         '
         'btn_eliminar
         '
-        Me.btn_eliminar.Location = New System.Drawing.Point(321, 128)
+        Me.btn_eliminar.Image = CType(resources.GetObject("btn_eliminar.Image"), System.Drawing.Image)
+        Me.btn_eliminar.Location = New System.Drawing.Point(334, 96)
         Me.btn_eliminar.Name = "btn_eliminar"
-        Me.btn_eliminar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_eliminar.Size = New System.Drawing.Size(62, 55)
         Me.btn_eliminar.TabIndex = 2
-        Me.btn_eliminar.Text = "Eliminar"
         Me.btn_eliminar.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'DGView_ubicaciones
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(23, 157)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(400, 224)
-        Me.DataGridView1.TabIndex = 3
+        Me.DGView_ubicaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGView_ubicaciones.Location = New System.Drawing.Point(23, 157)
+        Me.DGView_ubicaciones.Name = "DGView_ubicaciones"
+        Me.DGView_ubicaciones.Size = New System.Drawing.Size(400, 224)
+        Me.DGView_ubicaciones.TabIndex = 3
         '
         'MenuStrip1
         '
@@ -224,14 +225,14 @@ Partial Class Ubicaciones
         Me.ClientSize = New System.Drawing.Size(459, 396)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DGView_ubicaciones)
         Me.Controls.Add(Me.btn_eliminar)
         Me.Controls.Add(Me.btn_modificar)
         Me.Controls.Add(Me.btn_agregar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "Ubicaciones"
         Me.Text = "Ubicaciones"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGView_ubicaciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -241,7 +242,7 @@ Partial Class Ubicaciones
     Friend WithEvents btn_agregar As System.Windows.Forms.Button
     Friend WithEvents btn_modificar As System.Windows.Forms.Button
     Friend WithEvents btn_eliminar As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents DGView_ubicaciones As System.Windows.Forms.DataGridView
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents InicioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EscaneoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

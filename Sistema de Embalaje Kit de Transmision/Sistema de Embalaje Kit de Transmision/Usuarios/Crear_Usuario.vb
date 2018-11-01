@@ -17,6 +17,7 @@ Public Class Crear_Usuario
                     comando.ExecuteNonQuery()
                     Conexion.con.Close()
                     MessageBox.Show("Usuario Ingresado exitosamente")
+                    llenar_Grid()
                     txtNombre.Text = ""
                     txtContra.Text = ""
                     txtNombre.Focus()
@@ -44,6 +45,9 @@ Public Class Crear_Usuario
     End Sub
 
     Private Sub Crear_Usuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        llenar_Grid()
+    End Sub
+    Private Sub llenar_Grid()
         Try
             Dim sqlConsult As String = " select * from USUARIOS"
             Dim comando As New OracleCommand(sqlConsult, con)
@@ -59,8 +63,6 @@ Public Class Crear_Usuario
                 con.Close()
             Else
                 con.Close()
-                MessageBox.Show("No se tienen registros de Usuarios, porfavor ingrese uno.") ' + vbCrLf + "O YA SE ENTREGARON TODAS LAS BOLSAS DE LOS CENTROS DE VOTACION DE ESA RUTA")
-                'DataGViewArticulos.DataSource = null
                 DGView_Usuarios.Columns.Clear()
                 DGView_Usuarios.Refresh()
             End If
