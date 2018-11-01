@@ -2,28 +2,28 @@
 Public Class Crear_Usuario
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
         If txtNombre.Text <> "" Then
-            If txtIP.Text <> "" Then
-                If txtContra.Text <> "" Then
-                    Try
-                        Conexion.con.Close()
-                        Dim SQL As String = "INSERT INTO USUARIOS (NOMBRE, CONTRA) VALUES (:NOMBRE, :PASS)"
-                        'Dim SQL As String = "INSERT INTO USUARIOS (NOMBRE, CONTRA, IPREADER) VALUES (:NOMBRE, :PASS, :IPREADER)"
-                        Dim comando As New OracleCommand(SQL, Conexion.con)
-                        comando.Parameters.Add(":NOMBRE", OracleType.VarChar, 30).Value = txtNombre.Text
-                        comando.Parameters.Add(":PASS", OracleType.VarChar, 30).Value = txtContra.Text
-                        'comando.Parameters.Add(":IPREADER", OracleType.VarChar, 30).Value = txtIP.Text
-                        Conexion.con.Open()
-                        comando.ExecuteNonQuery()
-                        Conexion.con.Close()
-                        MessageBox.Show("Usuario Ingresado exitosamente")
-                    Catch ex As Exception
-                        MessageBox.Show(ex.ToString)
-                        Conexion.con.Close()
-                    End Try
-                Else
-                    MessageBox.Show("Llene todos los campos")
-                End If
 
+            If txtContra.Text <> "" Then
+                Try
+                    Conexion.con.Close()
+                    Dim SQL As String = "INSERT INTO USUARIOS (NOMBRE, CONTRA, ID_ROL) VALUES (:NOMBRE, :PASS, ID_ROL)"
+                    'Dim SQL As String = "INSERT INTO USUARIOS (NOMBRE, CONTRA, IPREADER) VALUES (:NOMBRE, :PASS, :IPREADER)"
+                    Dim comando As New OracleCommand(SQL, Conexion.con)
+                    comando.Parameters.Add(":NOMBRE", OracleType.VarChar, 30).Value = txtNombre.Text
+                    comando.Parameters.Add(":PASS", OracleType.VarChar, 30).Value = txtContra.Text
+                    comando.Parameters.Add(":ID_ROL", OracleType.VarChar, 30).Value = combo_rol.SelectedValue.ToString
+                    'comando.Parameters.Add(":IPREADER", OracleType.VarChar, 30).Value = txtIP.Text
+                    Conexion.con.Open()
+                    comando.ExecuteNonQuery()
+                    Conexion.con.Close()
+                    MessageBox.Show("Usuario Ingresado exitosamente")
+                    txtNombre.Text = ""
+                    txtContra.Text = ""
+                    txtNombre.Focus()
+                Catch ex As Exception
+                    MessageBox.Show(ex.ToString)
+                    Conexion.con.Close()
+                End Try
             Else
                 MessageBox.Show("Llene todos los campos")
             End If
@@ -41,5 +41,31 @@ Public Class Crear_Usuario
     Private Sub btn_limpiar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_limpiar.Click
         txtNombre.Text = ""
         txtContra.Text = ""
+    End Sub
+
+    Private Sub Crear_Usuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Try
+            Dim sqlConsult As String = " select * from USUARIOS"
+            Dim comando As New OracleCommand(sqlConsult, con)
+            Dim lector As OracleDataReader = Nothing
+            con.Open()
+            lector = comando.ExecuteReader()
+            If lector.HasRows Then
+                DGView_Usuarios.Refresh()
+                Dim dataAdapter As New OracleDataAdapter(comando)
+                Dim dataSet As New DataSet
+                dataAdapter.Fill(dataSet, "usuarios")
+                Me.DGView_Usuarios.DataSource = dataSet.Tables("usuarios")
+                con.Close()
+            Else
+                con.Close()
+                MessageBox.Show("No se tienen registros de Usuarios, porfavor ingrese uno.") ' + vbCrLf + "O YA SE ENTREGARON TODAS LAS BOLSAS DE LOS CENTROS DE VOTACION DE ESA RUTA")
+                'DataGViewArticulos.DataSource = null
+                DGView_Usuarios.Columns.Clear()
+                DGView_Usuarios.Refresh()
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 End Class

@@ -25,13 +25,13 @@ Partial Class Edit_User
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DGView_Usuarios = New System.Windows.Forms.DataGridView()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txt_nombre = New System.Windows.Forms.TextBox()
+        Me.txt_contraseña = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.modificar_txt = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Combo_rol = New System.Windows.Forms.ComboBox()
         CType(Me.DGView_Usuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,19 +61,19 @@ Partial Class Edit_User
         Me.Button2.Text = "Cancelar"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txt_nombre
         '
-        Me.TextBox1.Location = New System.Drawing.Point(31, 390)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(168, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.txt_nombre.Location = New System.Drawing.Point(31, 390)
+        Me.txt_nombre.Name = "txt_nombre"
+        Me.txt_nombre.Size = New System.Drawing.Size(168, 20)
+        Me.txt_nombre.TabIndex = 3
         '
-        'TextBox2
+        'txt_contraseña
         '
-        Me.TextBox2.Location = New System.Drawing.Point(34, 440)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(165, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.txt_contraseña.Location = New System.Drawing.Point(34, 440)
+        Me.txt_contraseña.Name = "txt_contraseña"
+        Me.txt_contraseña.Size = New System.Drawing.Size(165, 20)
+        Me.txt_contraseña.TabIndex = 4
         '
         'Label1
         '
@@ -112,26 +112,26 @@ Partial Class Edit_User
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Rol"
         '
-        'ComboBox1
+        'Combo_rol
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(231, 388)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 9
+        Me.Combo_rol.FormattingEnabled = True
+        Me.Combo_rol.Location = New System.Drawing.Point(231, 388)
+        Me.Combo_rol.Name = "Combo_rol"
+        Me.Combo_rol.Size = New System.Drawing.Size(121, 21)
+        Me.Combo_rol.TabIndex = 9
         '
         'Edit_User
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(390, 534)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Combo_rol)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.modificar_txt)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_contraseña)
+        Me.Controls.Add(Me.txt_nombre)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.DGView_Usuarios)
         Me.Controls.Add(Me.Button1)
@@ -146,11 +146,11 @@ Partial Class Edit_User
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents DGView_Usuarios As System.Windows.Forms.DataGridView
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txt_nombre As System.Windows.Forms.TextBox
+    Friend WithEvents txt_contraseña As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents modificar_txt As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Combo_rol As System.Windows.Forms.ComboBox
 End Class
