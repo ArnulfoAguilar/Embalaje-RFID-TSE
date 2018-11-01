@@ -30,3 +30,4 @@ C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje 
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema de Embalaje Kit de Transmision.vbproj.GenerateResource.Cache
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema de Embalaje Kit de Transmision.vbprojResolveAssemblyReference.cache
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Mtn_Articulo.resources
+C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Articulos.resources

@@ -77,6 +77,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.vb" />
+    <Compile Include="Productos\Articulos.Designer.vb">
+      <DependentUpon>Articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\Articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Productos\Frm_Mtn_Articulo.Designer.vb">
       <DependentUpon>Frm_Mtn_Articulo.vb</DependentUpon>
     </Compile>
@@ -119,6 +125,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Productos\Articulos.resx">
+      <DependentUpon>Articulos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Productos\Frm_Mtn_Articulo.resx">
       <DependentUpon>Frm_Mtn_Articulo.vb</DependentUpon>
     </EmbeddedResource>
