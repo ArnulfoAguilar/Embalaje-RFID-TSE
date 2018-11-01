@@ -23,12 +23,12 @@ Partial Class Edit_rol
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btn_cancelar = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DGView_Roles = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txt_rol = New System.Windows.Forms.TextBox()
         Me.btn_Ingresar = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGView_Roles, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn_cancelar
@@ -40,13 +40,13 @@ Partial Class Edit_rol
         Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'DGView_Roles
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(34, 58)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(199, 226)
-        Me.DataGridView1.TabIndex = 10
+        Me.DGView_Roles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGView_Roles.Location = New System.Drawing.Point(34, 58)
+        Me.DGView_Roles.Name = "DGView_Roles"
+        Me.DGView_Roles.Size = New System.Drawing.Size(199, 226)
+        Me.DGView_Roles.TabIndex = 10
         '
         'Label2
         '
@@ -67,12 +67,12 @@ Partial Class Edit_rol
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Modificar Rol"
         '
-        'TextBox1
+        'txt_rol
         '
-        Me.TextBox1.Location = New System.Drawing.Point(34, 323)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(199, 20)
-        Me.TextBox1.TabIndex = 7
+        Me.txt_rol.Location = New System.Drawing.Point(34, 323)
+        Me.txt_rol.Name = "txt_rol"
+        Me.txt_rol.Size = New System.Drawing.Size(199, 20)
+        Me.txt_rol.TabIndex = 7
         '
         'btn_Ingresar
         '
@@ -89,23 +89,23 @@ Partial Class Edit_rol
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(250, 407)
         Me.Controls.Add(Me.btn_cancelar)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DGView_Roles)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_rol)
         Me.Controls.Add(Me.btn_Ingresar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "Edit_rol"
         Me.Text = "Modificar Rol"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGView_Roles, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents btn_cancelar As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents DGView_Roles As System.Windows.Forms.DataGridView
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txt_rol As System.Windows.Forms.TextBox
     Friend WithEvents btn_Ingresar As System.Windows.Forms.Button
 End Class

@@ -23,7 +23,7 @@ Partial Class Add_Rol
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btn_Ingresar = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TXT_NOMBRE = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -40,12 +40,12 @@ Partial Class Add_Rol
         Me.btn_Ingresar.Text = "Ingresar"
         Me.btn_Ingresar.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'TXT_NOMBRE
         '
-        Me.TextBox1.Location = New System.Drawing.Point(25, 99)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(199, 20)
-        Me.TextBox1.TabIndex = 1
+        Me.TXT_NOMBRE.Location = New System.Drawing.Point(25, 99)
+        Me.TXT_NOMBRE.Name = "TXT_NOMBRE"
+        Me.TXT_NOMBRE.Size = New System.Drawing.Size(199, 20)
+        Me.TXT_NOMBRE.TabIndex = 1
         '
         'Label1
         '
@@ -92,7 +92,7 @@ Partial Class Add_Rol
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TXT_NOMBRE)
         Me.Controls.Add(Me.btn_Ingresar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "Add_Rol"
@@ -103,7 +103,7 @@ Partial Class Add_Rol
 
     End Sub
     Friend WithEvents btn_Ingresar As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TXT_NOMBRE As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
