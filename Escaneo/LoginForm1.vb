@@ -8,14 +8,14 @@ Imports VB_RFID3_Host_Sample1
 
 Public Class LoginForm1
     
-    Dim cmd As OracleCommand
+
     Dim dataReader As OracleDataReader
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
         Try
             Dim username As String = UsernameTextBox.Text
             Dim password As String = PasswordTextBox.Text
-            Dim sqlConsult As String = "select us.ipReader,  rl.nombre_rol, us.nombre_usuario from usuario us" & _
-                                    " join rol rl on us.id_rol=rl.id_rol where us.NOMBRE_USUARIO =:username   AND us.PASSWORD =:password"
+            Dim sqlConsult As String = "SELECT ID_USER, R.NOMBRE_ROL,NOMBRE_USER FROM USUARIOS US JOIN ROL R ON US.ID_ROL=R.ID_ROL " & _
+                                    " where us.NOMBRE_USER =:username   AND us.CONTRASENIA =:password"
             Dim comando As New OracleCommand(sqlConsult, conn)
             comando.Parameters.Add(":username", OracleType.Char, 20).Value = username
             comando.Parameters.Add(":password", OracleType.Char, 20).Value = password
@@ -35,7 +35,7 @@ Public Class LoginForm1
 
             If lector.HasRows Then
                 Do While lector.Read
-                    Ipreader = lector.GetString(0)
+                    Ipreader = ComboUbicacion.SelectedValue.ToString
                     ROL = lector.GetString(1)
                     USUARIO = lector.GetString(2)
 
@@ -69,4 +69,25 @@ Public Class LoginForm1
         Me.Close()
     End Sub
 
+    Private Sub LogoPictureBox_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LogoPictureBox.Click
+
+    End Sub
+
+    Private Sub LoginForm1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        cargar_ubicacion()
+    End Sub
+    Private Sub cargar_ubicacion()
+        Try
+
+            Dim sqlConsult As String = "select NOMBRE_UBI, DIRECCION_IP from UBICACION"
+            Dim dataAdapter As New OracleDataAdapter(sqlConsult, conn)
+            Dim DT As New DataTable
+            dataAdapter.Fill(DT)
+            Me.ComboUbicacion.DataSource = DT
+            ComboUbicacion.ValueMember = "DIRECCION_IP"
+            ComboUbicacion.DisplayMember = "NOMBRE_UBI"
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
+    End Sub
 End Class

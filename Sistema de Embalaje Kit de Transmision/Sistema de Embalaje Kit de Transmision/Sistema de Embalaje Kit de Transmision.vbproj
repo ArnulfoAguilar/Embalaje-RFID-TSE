@@ -89,6 +89,42 @@
     <Compile Include="Frm_Mtn_Producto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Roles\Add_Rol.Designer.vb">
+      <DependentUpon>Add_Rol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roles\Add_Rol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roles\Edit_rol.Designer.vb">
+      <DependentUpon>Edit_rol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roles\Edit_rol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roles\Rol.Designer.vb">
+      <DependentUpon>Rol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roles\Rol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\add_ubicaciones.Designer.vb">
+      <DependentUpon>add_ubicaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\add_ubicaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\Edit_Ubicacion.Designer.vb">
+      <DependentUpon>Edit_Ubicacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\Edit_Ubicacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones\Ubicaciones.Designer.vb">
+      <DependentUpon>Ubicaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones\Ubicaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Usuarios\Crear_Usuario.Designer.vb">
       <DependentUpon>Crear_Usuario.vb</DependentUpon>
     </Compile>
@@ -117,10 +153,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Usuarios\Delete_User.Designer.vb">
+      <DependentUpon>Delete_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\Delete_User.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Usuarios\Edit_User.Designer.vb">
       <DependentUpon>Edit_User.vb</DependentUpon>
     </Compile>
     <Compile Include="Usuarios\Edit_User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\User.Designer.vb">
+      <DependentUpon>User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\User.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -130,6 +178,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Mtn_Producto.resx">
       <DependentUpon>Frm_Mtn_Producto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roles\Add_Rol.resx">
+      <DependentUpon>Add_Rol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roles\Edit_rol.resx">
+      <DependentUpon>Edit_rol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roles\Rol.resx">
+      <DependentUpon>Rol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\add_ubicaciones.resx">
+      <DependentUpon>add_ubicaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\Edit_Ubicacion.resx">
+      <DependentUpon>Edit_Ubicacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones\Ubicaciones.resx">
+      <DependentUpon>Ubicaciones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\Crear_Usuario.resx">
       <DependentUpon>Crear_Usuario.vb</DependentUpon>
@@ -143,8 +209,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\Delete_User.resx">
+      <DependentUpon>Delete_User.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\Edit_User.resx">
       <DependentUpon>Edit_User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\User.resx">
+      <DependentUpon>User.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

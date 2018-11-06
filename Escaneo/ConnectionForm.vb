@@ -22,8 +22,6 @@ Namespace VB_RFID3_Host_Sample1
             End Try
         End Sub
 
-        Private Sub ConnectionForm_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
-        End Sub
 
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
             If (disposing AndAlso (Not Me.components Is Nothing)) Then
