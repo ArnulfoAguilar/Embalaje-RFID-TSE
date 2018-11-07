@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Frm_Mtn_Producto
+Partial Class Frm_Articulo_Nuevo
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -36,9 +36,9 @@ Partial Class Frm_Mtn_Producto
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(13, 43)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 13)
+        Me.Label1.Size = New System.Drawing.Size(99, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nombre del Producto"
+        Me.Label1.Text = "Nombre del Articulo"
         '
         'txt_nombre
         '
@@ -90,7 +90,7 @@ Partial Class Frm_Mtn_Producto
         Me.btn_guardar_prd.Text = "Guardar"
         Me.btn_guardar_prd.UseVisualStyleBackColor = True
         '
-        'Frm_Mtn_Producto
+        'Frm_Articulo_Nuevo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -102,8 +102,8 @@ Partial Class Frm_Mtn_Producto
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txt_nombre)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Frm_Mtn_Producto"
-        Me.Text = "Frm_Mtn_Producto"
+        Me.Name = "Frm_Articulo_Nuevo"
+        Me.Text = "Ingresar Articulo"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

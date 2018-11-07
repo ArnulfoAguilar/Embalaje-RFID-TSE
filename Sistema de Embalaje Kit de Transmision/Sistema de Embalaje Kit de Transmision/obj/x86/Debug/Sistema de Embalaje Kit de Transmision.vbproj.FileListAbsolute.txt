@@ -23,11 +23,16 @@ C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje 
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\bin\Debug\Sistema de Embalaje Kit de Transmision.exe
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\bin\Debug\Sistema de Embalaje Kit de Transmision.pdb
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\bin\Debug\Sistema de Embalaje Kit de Transmision.xml
-C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Mtn_Producto.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Crear_Usuario.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_principal.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Resources.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema de Embalaje Kit de Transmision.vbproj.GenerateResource.Cache
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema de Embalaje Kit de Transmision.vbprojResolveAssemblyReference.cache
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Mtn_Articulo.resources
-C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Articulos.resources
+C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Articulo.resources
+C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Articulo_Nuevo.resources
+C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Articulo_Edit.resources
+C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Evento.resources
+C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Evento_nuevo.resources
+C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Evento_Edit.resources
+C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Paquete.resources

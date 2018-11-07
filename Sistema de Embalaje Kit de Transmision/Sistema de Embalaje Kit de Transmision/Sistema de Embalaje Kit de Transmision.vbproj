@@ -77,22 +77,52 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.vb" />
-    <Compile Include="Productos\Articulos.Designer.vb">
-      <DependentUpon>Articulos.vb</DependentUpon>
+    <Compile Include="Eventos\Frm_Evento.Designer.vb">
+      <DependentUpon>Frm_Evento.vb</DependentUpon>
     </Compile>
-    <Compile Include="Productos\Articulos.vb">
+    <Compile Include="Eventos\Frm_Evento.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Productos\Frm_Mtn_Articulo.Designer.vb">
+    <Compile Include="Articulos\Frm_Articulo.Designer.vb">
+      <DependentUpon>Frm_Articulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Articulos\Frm_Articulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulos\Frm_Articulo_Edit.Designer.vb">
+      <DependentUpon>Frm_Articulo_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Articulos\Frm_Articulo_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulos\Frm_Mtn_Articulo.Designer.vb">
       <DependentUpon>Frm_Mtn_Articulo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Productos\Frm_Mtn_Articulo.vb">
+    <Compile Include="Articulos\Frm_Mtn_Articulo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Productos\Frm_Mtn_Producto.Designer.vb">
-      <DependentUpon>Frm_Mtn_Producto.vb</DependentUpon>
+    <Compile Include="Articulos\Frm_Articulo_Nuevo.Designer.vb">
+      <DependentUpon>Frm_Articulo_Nuevo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Productos\Frm_Mtn_Producto.vb">
+    <Compile Include="Articulos\Frm_Articulo_Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\Frm_Evento_Edit.Designer.vb">
+      <DependentUpon>Frm_Evento_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\Frm_Evento_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\Frm_Evento_Nuevo.Designer.vb">
+      <DependentUpon>Frm_Evento_Nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\Frm_Evento_Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paquetes\Frm_Paquete.Designer.vb">
+      <DependentUpon>Frm_Paquete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paquetes\Frm_Paquete.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Usuarios\Crear_Usuario.Designer.vb">
@@ -125,14 +155,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Productos\Articulos.resx">
-      <DependentUpon>Articulos.vb</DependentUpon>
+    <EmbeddedResource Include="Eventos\Frm_Evento.resx">
+      <DependentUpon>Frm_Evento.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos\Frm_Mtn_Articulo.resx">
+    <EmbeddedResource Include="Articulos\Frm_Articulo.resx">
+      <DependentUpon>Frm_Articulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulos\Frm_Articulo_Edit.resx">
+      <DependentUpon>Frm_Articulo_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulos\Frm_Mtn_Articulo.resx">
       <DependentUpon>Frm_Mtn_Articulo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos\Frm_Mtn_Producto.resx">
-      <DependentUpon>Frm_Mtn_Producto.vb</DependentUpon>
+    <EmbeddedResource Include="Articulos\Frm_Articulo_Nuevo.resx">
+      <DependentUpon>Frm_Articulo_Nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventos\Frm_Evento_Edit.resx">
+      <DependentUpon>Frm_Evento_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventos\Frm_Evento_Nuevo.resx">
+      <DependentUpon>Frm_Evento_Nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paquetes\Frm_Paquete.resx">
+      <DependentUpon>Frm_Paquete.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\Crear_Usuario.resx">
       <DependentUpon>Crear_Usuario.vb</DependentUpon>
