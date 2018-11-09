@@ -24,7 +24,6 @@ Partial Class User
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(User))
         Me.btn_Add_User = New System.Windows.Forms.Button()
-        Me.btn_delete_user = New System.Windows.Forms.Button()
         Me.DGView_user = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_upd_user = New System.Windows.Forms.Button()
@@ -54,23 +53,19 @@ Partial Class User
         'btn_Add_User
         '
         Me.btn_Add_User.Image = CType(resources.GetObject("btn_Add_User.Image"), System.Drawing.Image)
-        Me.btn_Add_User.Location = New System.Drawing.Point(43, 89)
+        Me.btn_Add_User.Location = New System.Drawing.Point(120, 89)
         Me.btn_Add_User.Name = "btn_Add_User"
         Me.btn_Add_User.Size = New System.Drawing.Size(59, 60)
         Me.btn_Add_User.TabIndex = 0
         Me.btn_Add_User.UseVisualStyleBackColor = True
         '
-        'btn_delete_user
-        '
-        Me.btn_delete_user.Image = CType(resources.GetObject("btn_delete_user.Image"), System.Drawing.Image)
-        Me.btn_delete_user.Location = New System.Drawing.Point(337, 89)
-        Me.btn_delete_user.Name = "btn_delete_user"
-        Me.btn_delete_user.Size = New System.Drawing.Size(57, 60)
-        Me.btn_delete_user.TabIndex = 1
-        Me.btn_delete_user.UseVisualStyleBackColor = True
-        '
         'DGView_user
         '
+        Me.DGView_user.AllowUserToAddRows = False
+        Me.DGView_user.AllowUserToDeleteRows = False
+        Me.DGView_user.AllowUserToResizeColumns = False
+        Me.DGView_user.AllowUserToResizeRows = False
+        Me.DGView_user.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGView_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGView_user.Location = New System.Drawing.Point(43, 155)
         Me.DGView_user.Name = "DGView_user"
@@ -89,7 +84,7 @@ Partial Class User
         'btn_upd_user
         '
         Me.btn_upd_user.Image = CType(resources.GetObject("btn_upd_user.Image"), System.Drawing.Image)
-        Me.btn_upd_user.Location = New System.Drawing.Point(194, 89)
+        Me.btn_upd_user.Location = New System.Drawing.Point(247, 89)
         Me.btn_upd_user.Name = "btn_upd_user"
         Me.btn_upd_user.Size = New System.Drawing.Size(59, 60)
         Me.btn_upd_user.TabIndex = 4
@@ -225,7 +220,6 @@ Partial Class User
         Me.Controls.Add(Me.btn_upd_user)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DGView_user)
-        Me.Controls.Add(Me.btn_delete_user)
         Me.Controls.Add(Me.btn_Add_User)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "User"
@@ -238,7 +232,6 @@ Partial Class User
 
     End Sub
     Friend WithEvents btn_Add_User As System.Windows.Forms.Button
-    Friend WithEvents btn_delete_user As System.Windows.Forms.Button
     Friend WithEvents DGView_user As System.Windows.Forms.DataGridView
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btn_upd_user As System.Windows.Forms.Button

@@ -42,10 +42,15 @@ Partial Class Edit_rol
         '
         'DGView_Roles
         '
+        Me.DGView_Roles.AllowUserToAddRows = False
+        Me.DGView_Roles.AllowUserToDeleteRows = False
+        Me.DGView_Roles.AllowUserToResizeColumns = False
+        Me.DGView_Roles.AllowUserToResizeRows = False
+        Me.DGView_Roles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGView_Roles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGView_Roles.Location = New System.Drawing.Point(34, 58)
         Me.DGView_Roles.Name = "DGView_Roles"
-        Me.DGView_Roles.Size = New System.Drawing.Size(199, 226)
+        Me.DGView_Roles.Size = New System.Drawing.Size(310, 226)
         Me.DGView_Roles.TabIndex = 10
         '
         'Label2
@@ -87,7 +92,7 @@ Partial Class Edit_rol
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(250, 407)
+        Me.ClientSize = New System.Drawing.Size(356, 407)
         Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.DGView_Roles)
         Me.Controls.Add(Me.Label2)

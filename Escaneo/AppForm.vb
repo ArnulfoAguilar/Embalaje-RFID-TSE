@@ -1682,7 +1682,7 @@ Namespace VB_RFID3_Host_Sample1
         Private Sub myUpdateStatus(ByVal eventData As Events.StatusEventData)
 
         End Sub
-        Private Sub CargarCombobox_sede()
+        Private Sub CargarCombobox_Rol()
             Try
 
                 Dim sqlConsult As String = "select ID_SEDE, NOMBRE_SEDE from SEDE_LOGISTICA"

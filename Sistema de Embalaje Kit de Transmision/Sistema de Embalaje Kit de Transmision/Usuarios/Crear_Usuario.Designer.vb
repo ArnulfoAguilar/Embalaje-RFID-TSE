@@ -83,11 +83,17 @@ Partial Class Crear_Usuario
         '
         Me.txtContra.Location = New System.Drawing.Point(109, 114)
         Me.txtContra.Name = "txtContra"
+        Me.txtContra.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtContra.Size = New System.Drawing.Size(218, 20)
         Me.txtContra.TabIndex = 8
         '
         'DGView_Usuarios
         '
+        Me.DGView_Usuarios.AllowUserToAddRows = False
+        Me.DGView_Usuarios.AllowUserToDeleteRows = False
+        Me.DGView_Usuarios.AllowUserToResizeColumns = False
+        Me.DGView_Usuarios.AllowUserToResizeRows = False
+        Me.DGView_Usuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGView_Usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGView_Usuarios.Location = New System.Drawing.Point(33, 238)
         Me.DGView_Usuarios.Name = "DGView_Usuarios"
@@ -107,6 +113,7 @@ Partial Class Crear_Usuario
         '
         'combo_rol
         '
+        Me.combo_rol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_rol.FormattingEnabled = True
         Me.combo_rol.Location = New System.Drawing.Point(109, 155)
         Me.combo_rol.Name = "combo_rol"

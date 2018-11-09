@@ -38,4 +38,29 @@
         Frm_Paquete.Show()
         Me.Close()
     End Sub
+
+    Private Sub CrearRolToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CrearRolToolStripMenuItem.Click
+        Add_Rol.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub ActualizarRolToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ActualizarRolToolStripMenuItem.Click
+        Edit_rol.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub CrearUbicacionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CrearUbicacionToolStripMenuItem.Click
+        add_ubicaciones.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub EditarUbicacionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditarUbicacionToolStripMenuItem.Click
+        Edit_Ubicacion.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub ModificarUsuarioToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ModificarUsuarioToolStripMenuItem.Click
+        Edit_User.Show()
+        Me.Close()
+    End Sub
 End Class

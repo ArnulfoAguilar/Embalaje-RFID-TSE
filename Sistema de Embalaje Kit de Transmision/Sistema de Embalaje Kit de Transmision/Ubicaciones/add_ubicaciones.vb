@@ -17,7 +17,7 @@ Public Class add_ubicaciones
 
     Private Sub llenar_Grid()
         Try
-            Dim sqlConsult As String = " select * from UBICACION"
+            Dim sqlConsult As String = " select NOMBRE_UBI,DIRECCION_IP from UBICACION"
             Dim comando As New OracleCommand(sqlConsult, con)
             Dim lector As OracleDataReader = Nothing
             con.Open()
@@ -48,16 +48,15 @@ Public Class add_ubicaciones
             Else
                 Try
                     Conexion.con.Close()
-                    Dim SQL As String = "INSERT INTO UBICACION (NOMBRE, DIRECCION_IP) VALUES (:NOMBRE, :IP)"
-                    'Dim SQL As String = "INSERT INTO USUARIOS (NOMBRE, CONTRA, IPREADER) VALUES (:NOMBRE, :PASS, :IPREADER)"
+                    Dim SQL As String = "INSERT INTO UBICACION (ID_UBICACION, NOMBRE_UBI, DIRECCION_IP) VALUES ((SEQ_UBICACION.nextval),:NOMBRE, :IP)"
+
                     Dim comando As New OracleCommand(SQL, Conexion.con)
                     comando.Parameters.Add(":NOMBRE", OracleType.VarChar, 30).Value = txtNombre.Text
                     comando.Parameters.Add(":IP", OracleType.VarChar, 30).Value = txtIp.Text
                     'comando.Parameters.Add(":IPREADER", OracleType.VarChar, 30).Value = txtIP.Text
-                    Conexion.con.Open()
+                    con.Open()
                     comando.ExecuteNonQuery()
-                    Conexion.con.Close()
-                    MessageBox.Show("Ubicacion Ingresada exitosamente")
+                    con.Close()
                     llenar_Grid()
                     txtNombre.Text = ""
                     txtIp.Text = ""

@@ -11,14 +11,14 @@ Public Class User
         Me.Close()
     End Sub
 
-    Private Sub btn_delete_user_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_delete_user.Click
+    Private Sub btn_delete_user_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Delete_User.Show()
         Me.Close()
     End Sub
 
     Private Sub User_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
-            Dim sqlConsult As String = " select * from USUARIOS"
+            Dim sqlConsult As String = " select ID_USER,NOMBRE_USER from USUARIOS"
             Dim comando As New OracleCommand(sqlConsult, con)
             Dim lector As OracleDataReader = Nothing
             con.Open()

@@ -46,6 +46,11 @@ Partial Class Edit_User
         '
         'DGView_Usuarios
         '
+        Me.DGView_Usuarios.AllowUserToAddRows = False
+        Me.DGView_Usuarios.AllowUserToDeleteRows = False
+        Me.DGView_Usuarios.AllowUserToResizeColumns = False
+        Me.DGView_Usuarios.AllowUserToResizeRows = False
+        Me.DGView_Usuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGView_Usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGView_Usuarios.Location = New System.Drawing.Point(34, 48)
         Me.DGView_Usuarios.Name = "DGView_Usuarios"

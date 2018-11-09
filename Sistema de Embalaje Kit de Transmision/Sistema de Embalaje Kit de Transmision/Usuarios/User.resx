@@ -142,33 +142,6 @@
         xyahyGy1k+dv3UUvJ53xJacAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btn_delete_user.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAGYktHRAD/AP8A/6C9p5MAAATKSURBVGhD7VhdTBRXFAaJaR/sQ41N7IMPtbK8tLEJ7i5UicvM
-        2gXWWSy4agsm2hJ9tG00GpWkaU1Ln1rS1h8wFmq0BVTEH36EBkQaE1/VKE2LSKtRAzZxZ4GywOm5A7Ps
-        zM7uzNx7RU2Y5GTv3nPPud93fu7c3ZSUuWcuAnMR4BYBj8ezQBTFUkEQ6lFuoDxEAVVyc3NXctuMtyME
-        V4gyEAtYP0Z9O+99ufhDYOXJgOt01/F7RU5OzutcNmd1gmB22wAfLSe0kZF4Mev+TPZY81kIJEJJgJAZ
-        RxIiEwgWYwTQxQBezUZ/ZmbmfBYcVLYYuUyr4EveF6Fqjw96f/IrnwZ2QSoQLEZ4XH6RjMDWoBdq9vvg
-        znE/QIukETIfa4u+almwUNkalU9spPWg9d91mbhGBYLFSD3zk0XajERMJvpZsFDZYgbCpAzMQJrpp0tJ
-        pgLBYqTWsBlAM73qhwULle0LTQB+TV/7Wcm7w7xKaO+WlTKccBRQRZLGCH5xDEyczIAfdvk0PVD1sQOq
-        yzIS9oWRnpxGkycdgD5nr5Fxs39Q4oAe3poORz6Kn1f7IKGe+MKg0ASTyoaUEG54D5r9k2ZNaq5HHyQg
-        s1lCKmtoCfSaA9S+hQ3W36KKIg8jBHOEmUCrdJAHFiof0BZYw0ygWRKoNudlhAQ6GEi08cJB7Qf7IANa
-        pX8pSAxBa2AZ9cY8DaFZWo0EhmyQGIRWfw5PDMy+4IJ/KTRmm1/uzmQBtElvMG/4NBzA4RSAmtcAGt4B
-        OC8CviemhIwblgPUog7XRI/h/GUvyaKzNCy4T4dE11+y1/WYCBmHRecp1JUArnkaWA19KgQsCDEOie71
-        sui6gwIm0hfyumfn3wsr4OFQKgJ2V1oAriXmdX4LwWAa92wUXv7v7SX7268u2FY3evF7cdSMxB9lq8Zt
-        g49myV3JjUCgJ7yi8MpIBwosKW+H1I3V8OanxyPJCIyXvxpXLuEiH8jerPgywjlFpy2xybDglJhIeDrh
-        ZQRdhTJBwBNZVXdXIUBk29efG/fBj/NgYO1qDaDhzUUw+egBRDovgfxe9owOx5GudkVH1uhI9FE3dkGn
-        vBgBX1WBx36mV/RESby1swZ+riyCwYMLFSHjT8r2aYCEi30wce9vUJ9Ic9NUJlAiLeei82SNPhMhwWX/
-        fySp88kiBNxrBF6Z6x4Bxze/w7xNR6NE1KyQz9qCD3RN6YaxpoYoUDKIXO5QJPYZO9uApNxaW8F1wl4Z
-        AaQiwLaE4KdLieg9jfdh6YFuwKaGtA+PKfLK9jq4JeUb1DmSQICJHkPwUz1x2xaBdd0jW6yAT7ZmKF9b
-        /9G6xuiONZ2K40CyExf5mYZ+YplAsB7SEFgfK4HBvAQESMPqykYpJ2xiTWNrTyPrBAI9o2tYwRP7PzcU
-        x5eQctpoaz42FURnSEJwW/8Vt+7K8Hc8CHTs2KMloET+N23DNtbDGIopCTtNnOjYtEuq4tDFZ3OMItAH
-        dsEarS/qCsWVUXh9Hkz092HU67QNSxob54iOrNG9yG7YuhMhmFEeBIiPL6uxMXW3z1m/Slg+vhIsxDv+
-        V7SXuZDXdYB1f2Z7kv7n6jpNy+i5/EFjlwy5VSKRTVhStSg3UUamhYxrQqJzo9nN8390S1hbRXMENAAA
-        AABJRU5ErkJggg==
-</value>
-  </data>
   <data name="btn_upd_user.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

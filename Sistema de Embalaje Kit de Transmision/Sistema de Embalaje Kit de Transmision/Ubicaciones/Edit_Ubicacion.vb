@@ -11,6 +11,7 @@ Public Class Edit_Ubicacion
         llenar_Grid()
     End Sub
     Private Sub llenar_Grid()
+        con.Close()
         Try
             Dim sqlConsult As String = " select * from UBICACION"
             Dim comando As New OracleCommand(sqlConsult, con)
@@ -32,10 +33,11 @@ Public Class Edit_Ubicacion
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         End Try
+        con.Close()
     End Sub
 
     Private Sub btn_agregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_agregar.Click
-        Dim sqlConsulta As String = "update ubicacion set Nombre=:Nombre, ip=:Ip where id_ubicaion=:id_ubicacion"
+        Dim sqlConsulta As String = "update ubicacion set Nombre_UBI=:Nombre, Direccion_IP=:Ip where id_ubicacion=:id_ubicacion"
         Dim comando1 As New OracleCommand(sqlConsulta, con)
         comando1.Parameters.Add(":id_UBICACION", OracleType.Int32, 30).Value = id
         comando1.Parameters.Add(":Nombre", OracleType.VarChar, 30).Value = txtNombre.Text
@@ -43,15 +45,17 @@ Public Class Edit_Ubicacion
         con.Open()
         comando1.ExecuteNonQuery()
         con.Close()
+        llenar_Grid()
     End Sub
 
-    Private Sub DGView_ubicaciones_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DGView_ubicaciones.CellContentClick
+
+    Private Sub DGView_ubicaciones_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DGView_ubicaciones.CellClick
         'Lleno las variables para que guarde la posicion donde se hizo click y el id
         i = DGView_ubicaciones.CurrentRow.Index
         id = DGView_ubicaciones.Item(0, i).Value
         'Le asigno el valor del nombre del rol al textbox para que se edite 
         txtNombre.Text = DGView_ubicaciones.Item(1, i).Value
-        txtIP = DGView_ubicaciones.Item(2, i).Value
+        txtIP.Text = DGView_ubicaciones.Item(2, i).Value
 
     End Sub
 End Class

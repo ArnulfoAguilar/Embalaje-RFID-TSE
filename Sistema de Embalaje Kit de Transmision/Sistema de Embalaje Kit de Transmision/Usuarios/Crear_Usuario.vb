@@ -6,17 +6,14 @@ Public Class Crear_Usuario
             If txtContra.Text <> "" Then
                 Try
                     Conexion.con.Close()
-                    Dim SQL As String = "INSERT INTO USUARIOS (NOMBRE, CONTRA, ID_ROL) VALUES (:NOMBRE, :PASS, ID_ROL)"
-                    'Dim SQL As String = "INSERT INTO USUARIOS (NOMBRE, CONTRA, IPREADER) VALUES (:NOMBRE, :PASS, :IPREADER)"
+                    Dim SQL As String = "INSERT INTO USUARIOS (ID_USER, NOMBRE_USER, CONTRASENIA, ID_ROL) VALUES ((SEQ_USUARIO.nextval),:NOMBRE, :PASS, :ID_ROL)"
                     Dim comando As New OracleCommand(SQL, Conexion.con)
                     comando.Parameters.Add(":NOMBRE", OracleType.VarChar, 30).Value = txtNombre.Text
                     comando.Parameters.Add(":PASS", OracleType.VarChar, 30).Value = txtContra.Text
-                    comando.Parameters.Add(":ID_ROL", OracleType.VarChar, 30).Value = combo_rol.SelectedValue.ToString
-                    'comando.Parameters.Add(":IPREADER", OracleType.VarChar, 30).Value = txtIP.Text
+                    comando.Parameters.Add(":ID_ROL", OracleType.Int32, 30).Value = combo_rol.SelectedValue.ToString
                     Conexion.con.Open()
                     comando.ExecuteNonQuery()
                     Conexion.con.Close()
-                    MessageBox.Show("Usuario Ingresado exitosamente")
                     llenar_Grid()
                     txtNombre.Text = ""
                     txtContra.Text = ""
@@ -33,6 +30,22 @@ Public Class Crear_Usuario
             MessageBox.Show("Llene todos los campos")
         End If
     End Sub
+    Private Sub CargarCombobox_Rol()
+        con.Close()
+        Try
+
+            Dim sqlConsult As String = "select * from Rol"
+            Dim dataAdapter As New OracleDataAdapter(sqlConsult, con)
+            Dim DT As New DataTable
+            dataAdapter.Fill(DT)
+            Me.combo_rol.DataSource = DT
+            combo_rol.ValueMember = "ID_ROL"
+            combo_rol.DisplayMember = "NOMBRE_ROL"
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
+        con.Close()
+    End Sub
 
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         User.Show()
@@ -46,10 +59,11 @@ Public Class Crear_Usuario
 
     Private Sub Crear_Usuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         llenar_Grid()
+        CargarCombobox_Rol()
     End Sub
     Private Sub llenar_Grid()
         Try
-            Dim sqlConsult As String = " select * from USUARIOS"
+            Dim sqlConsult As String = " select ID_USER, NOMBRE_USER from USUARIOS"
             Dim comando As New OracleCommand(sqlConsult, con)
             Dim lector As OracleDataReader = Nothing
             con.Open()

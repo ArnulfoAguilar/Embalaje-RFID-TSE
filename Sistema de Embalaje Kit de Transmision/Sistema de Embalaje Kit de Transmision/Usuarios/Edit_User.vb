@@ -10,18 +10,9 @@ Public Class Edit_User
         Me.Close()
     End Sub
 
-    Private Sub DGView_Usuarios_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DGView_Usuarios.CellContentClick
-        'Lleno las variables para que guarde la posicion donde se hizo click y el id
-        i = DGView_Usuarios.CurrentRow.Index
-        id = DGView_Usuarios.Item(0, i).Value
-        'Le asigno el valor del nombre del rol al textbox para que se edite 
-        txt_nombre.Text = DGView_Usuarios.Item(1, i).Value
-        txt_contraseña = DGView_Usuarios.Item(2, i).Value
-        Combo_rol.ValueMember() = DGView_Usuarios.Item(3, i).Value
-    End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim sqlConsulta As String = "update usuarios set Nombre_user=:Nombre, Contrasenia:pass, id_rol:rol where id_user=:id_usuario"
+        Dim sqlConsulta As String = "update usuarios set Nombre_user=:Nombre, Contrasenia=:pass, id_rol=:rol where id_user=:id_usuario"
         Dim comando1 As New OracleCommand(sqlConsulta, con)
         comando1.Parameters.Add(":id_usuario", OracleType.Int32, 30).Value = id
         comando1.Parameters.Add(":Nombre", OracleType.VarChar, 30).Value = txt_nombre.Text
@@ -30,12 +21,17 @@ Public Class Edit_User
         con.Open()
         comando1.ExecuteNonQuery()
         con.Close()
+        cargarGrid()
     End Sub
 
     Private Sub Edit_User_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        cargarGrid()
+    End Sub
+    Private Sub cargarGrid()
+        con.Close()
         'Cargar datagrid
         Try
-            Dim sqlConsult As String = " select * from USUARIOS"
+            Dim sqlConsult As String = " select ID_USER,NOMBRE_USER, CONTRASENIA,ID_ROL from USUARIOS"
             Dim comando As New OracleCommand(sqlConsult, con)
             Dim lector As OracleDataReader = Nothing
             con.Open()
@@ -68,6 +64,16 @@ Public Class Edit_User
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         End Try
+        con.Close()
+    End Sub
 
+    Private Sub DGView_Usuarios_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DGView_Usuarios.CellClick
+        'Lleno las variables para que guarde la posicion donde se hizo click y el id
+        i = DGView_Usuarios.CurrentRow.Index
+        id = DGView_Usuarios.Item(0, i).Value
+        'Le asigno el valor del nombre del rol al textbox para que se edite 
+        txt_nombre.Text = DGView_Usuarios.Item(1, i).Value
+        txt_contraseña.Text = DGView_Usuarios.Item(2, i).Value
+        Combo_rol.SelectedIndex = DGView_Usuarios.Item(3, i).Value
     End Sub
 End Class

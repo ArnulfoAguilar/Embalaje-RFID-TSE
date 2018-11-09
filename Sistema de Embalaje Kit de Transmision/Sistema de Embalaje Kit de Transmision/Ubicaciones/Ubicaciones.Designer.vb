@@ -25,7 +25,6 @@ Partial Class Ubicaciones
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Ubicaciones))
         Me.btn_agregar = New System.Windows.Forms.Button()
         Me.btn_modificar = New System.Windows.Forms.Button()
-        Me.btn_eliminar = New System.Windows.Forms.Button()
         Me.DGView_ubicaciones = New System.Windows.Forms.DataGridView()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.InicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -55,7 +54,7 @@ Partial Class Ubicaciones
         '
         Me.btn_agregar.Font = New System.Drawing.Font("Arial", 8.25!)
         Me.btn_agregar.Image = CType(resources.GetObject("btn_agregar.Image"), System.Drawing.Image)
-        Me.btn_agregar.Location = New System.Drawing.Point(46, 96)
+        Me.btn_agregar.Location = New System.Drawing.Point(128, 95)
         Me.btn_agregar.Name = "btn_agregar"
         Me.btn_agregar.Size = New System.Drawing.Size(60, 56)
         Me.btn_agregar.TabIndex = 0
@@ -64,20 +63,11 @@ Partial Class Ubicaciones
         'btn_modificar
         '
         Me.btn_modificar.Image = CType(resources.GetObject("btn_modificar.Image"), System.Drawing.Image)
-        Me.btn_modificar.Location = New System.Drawing.Point(192, 96)
+        Me.btn_modificar.Location = New System.Drawing.Point(299, 96)
         Me.btn_modificar.Name = "btn_modificar"
         Me.btn_modificar.Size = New System.Drawing.Size(58, 55)
         Me.btn_modificar.TabIndex = 1
         Me.btn_modificar.UseVisualStyleBackColor = True
-        '
-        'btn_eliminar
-        '
-        Me.btn_eliminar.Image = CType(resources.GetObject("btn_eliminar.Image"), System.Drawing.Image)
-        Me.btn_eliminar.Location = New System.Drawing.Point(334, 96)
-        Me.btn_eliminar.Name = "btn_eliminar"
-        Me.btn_eliminar.Size = New System.Drawing.Size(62, 55)
-        Me.btn_eliminar.TabIndex = 2
-        Me.btn_eliminar.UseVisualStyleBackColor = True
         '
         'DGView_ubicaciones
         '
@@ -226,7 +216,6 @@ Partial Class Ubicaciones
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.DGView_ubicaciones)
-        Me.Controls.Add(Me.btn_eliminar)
         Me.Controls.Add(Me.btn_modificar)
         Me.Controls.Add(Me.btn_agregar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
@@ -241,7 +230,6 @@ Partial Class Ubicaciones
     End Sub
     Friend WithEvents btn_agregar As System.Windows.Forms.Button
     Friend WithEvents btn_modificar As System.Windows.Forms.Button
-    Friend WithEvents btn_eliminar As System.Windows.Forms.Button
     Friend WithEvents DGView_ubicaciones As System.Windows.Forms.DataGridView
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents InicioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

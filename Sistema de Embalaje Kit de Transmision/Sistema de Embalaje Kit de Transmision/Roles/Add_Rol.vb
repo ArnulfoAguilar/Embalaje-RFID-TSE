@@ -2,17 +2,25 @@
 Public Class Add_Rol
 
     Private Sub btn_Ingresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_Ingresar.Click
-        Dim sqlConsulta As String = "INSERT INTO ROL (ID_ROL,NOMBRE_ROL) VALUES ((SEQ_ROL.nextval),:ROL)"
-        Dim comando1 As New OracleCommand(sqlConsulta, con)
-        comando1.Parameters.Add(":ROL", OracleType.VarChar, 30).Value = TXT_NOMBRE.Text
-        con.Open()
-        comando1.ExecuteNonQuery()
-        con.Close()
+        Try
+            Dim sqlConsulta As String = "INSERT INTO ROL (ID_ROL,NOMBRE_ROL) VALUES ((SEQ_ROL.nextval),:ROL)"
+            Dim comando1 As New OracleCommand(sqlConsulta, con)
+            comando1.Parameters.Add(":ROL", OracleType.VarChar, 30).Value = TXT_NOMBRE.Text
+            con.Open()
+            comando1.ExecuteNonQuery()
+            con.Close()
+            CargarRoles()
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub Add_Rol_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        CargarRoles()
+    End Sub
+    Private Sub CargarRoles()
         Try
-            Dim sqlConsult As String = " select * from rol"
+            Dim sqlConsult As String = " select ID_ROL, NOMBRE_ROL from rol"
             Dim comando As New OracleCommand(sqlConsult, con)
             Dim lector As OracleDataReader = Nothing
             con.Open()
@@ -35,5 +43,10 @@ Public Class Add_Rol
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         End Try
+    End Sub
+
+    Private Sub btn_cancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cancelar.Click
+        Rol.Show()
+        Me.Close()
     End Sub
 End Class
