@@ -1,0 +1,11 @@
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\Release\TSE2018.exe
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\Release\TSE2018.xml
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\Release\Symbol.RFID3.Host.dll
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\Release\Symbol.RFID3.Host.xml
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Release\VB_RFID3_Host_Sample1.AppForm.resources
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Release\VB_RFID3_Host_Sample1.ConnectionForm.resources
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Release\Resources.resources
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Release\TSE2018.vbproj.GenerateResource.Cache
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Release\TSE2018.exe
+C:\Users\TSE\Documents\RFID\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Release\TSE2018.xml

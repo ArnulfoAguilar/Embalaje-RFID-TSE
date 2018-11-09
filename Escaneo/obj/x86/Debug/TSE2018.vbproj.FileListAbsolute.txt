@@ -161,3 +161,25 @@ C:\Users\TSE\Desktop\SISTEMA EMBALAJE  KIT DE TRANSMISION 2019\Escaneo\bin\x86\D
 C:\Users\TSE\Desktop\Embalaje RFID\Escaneo\obj\x86\Debug\TSE2018.exe
 C:\Users\TSE\Desktop\Embalaje RFID\Escaneo\obj\x86\Debug\TSE2018.xml
 C:\Users\TSE\Desktop\Embalaje RFID\Escaneo\obj\x86\Debug\TSE2018.pdb
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\TSE2018.exe
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\TSE2018.xml
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\TSE2018.pdb
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.AppForm.resources
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\VB_RFID3_Host_Sample1.ConnectionForm.resources
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\editUser.resources
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\impresion.resources
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\LoginForm1.resources
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\Resources.resources
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\UsuarioCrear.resources
+C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\TSE2018.vbproj.GenerateResource.Cache
+C:\Embalaje-RFID-TSE\Escaneo\bin\x86\Debug\TSE2018.exe
+C:\Embalaje-RFID-TSE\Escaneo\bin\x86\Debug\TSE2018.pdb
+C:\Embalaje-RFID-TSE\Escaneo\bin\x86\Debug\TSE2018.xml
+C:\Embalaje-RFID-TSE\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Embalaje-RFID-TSE\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.dll
+C:\Embalaje-RFID-TSE\Escaneo\bin\x86\Debug\office.dll
+C:\Embalaje-RFID-TSE\Escaneo\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+C:\Embalaje-RFID-TSE\Escaneo\bin\x86\Debug\office.xml
+C:\Embalaje-RFID-TSE\Escaneo\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+C:\Embalaje-RFID-TSE\Escaneo\bin\x86\Debug\Symbol.RFID3.Host.xml

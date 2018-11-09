@@ -81,3 +81,6 @@ C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.L
 C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.Resources.resources
 C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.reporte.resources
 C:\Users\TSE\Desktop\Embalaje RFID\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.vbproj.GenerateResource.Cache
+C:\Embalaje-RFID-TSE\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.exe
+C:\Embalaje-RFID-TSE\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.xml
+C:\Embalaje-RFID-TSE\RECEPCION\RECEPCION\obj\x86\Debug\RECEPCION.pdb

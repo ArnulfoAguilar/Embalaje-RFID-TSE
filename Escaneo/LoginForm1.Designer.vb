@@ -38,6 +38,8 @@ Partial Class LoginForm1
         Me.PasswordTextBox = New System.Windows.Forms.TextBox
         Me.OK = New System.Windows.Forms.Button
         Me.Cancel = New System.Windows.Forms.Button
+        Me.ComboUbicacion = New System.Windows.Forms.ComboBox
+        Me.Label1 = New System.Windows.Forms.Label
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -46,13 +48,14 @@ Partial Class LoginForm1
         Me.LogoPictureBox.Image = CType(resources.GetObject("LogoPictureBox.Image"), System.Drawing.Image)
         Me.LogoPictureBox.Location = New System.Drawing.Point(2, -4)
         Me.LogoPictureBox.Name = "LogoPictureBox"
-        Me.LogoPictureBox.Size = New System.Drawing.Size(519, 205)
+        Me.LogoPictureBox.Size = New System.Drawing.Size(333, 157)
+        Me.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.LogoPictureBox.TabIndex = 0
         Me.LogoPictureBox.TabStop = False
         '
         'UsernameLabel
         '
-        Me.UsernameLabel.Location = New System.Drawing.Point(41, 213)
+        Me.UsernameLabel.Location = New System.Drawing.Point(368, 57)
         Me.UsernameLabel.Name = "UsernameLabel"
         Me.UsernameLabel.Size = New System.Drawing.Size(220, 23)
         Me.UsernameLabel.TabIndex = 0
@@ -61,7 +64,7 @@ Partial Class LoginForm1
         '
         'PasswordLabel
         '
-        Me.PasswordLabel.Location = New System.Drawing.Point(283, 213)
+        Me.PasswordLabel.Location = New System.Drawing.Point(368, 106)
         Me.PasswordLabel.Name = "PasswordLabel"
         Me.PasswordLabel.Size = New System.Drawing.Size(220, 23)
         Me.PasswordLabel.TabIndex = 2
@@ -70,14 +73,14 @@ Partial Class LoginForm1
         '
         'UsernameTextBox
         '
-        Me.UsernameTextBox.Location = New System.Drawing.Point(41, 239)
+        Me.UsernameTextBox.Location = New System.Drawing.Point(371, 83)
         Me.UsernameTextBox.Name = "UsernameTextBox"
         Me.UsernameTextBox.Size = New System.Drawing.Size(220, 20)
         Me.UsernameTextBox.TabIndex = 1
         '
         'PasswordTextBox
         '
-        Me.PasswordTextBox.Location = New System.Drawing.Point(286, 239)
+        Me.PasswordTextBox.Location = New System.Drawing.Point(371, 132)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PasswordTextBox.Size = New System.Drawing.Size(220, 20)
@@ -85,7 +88,7 @@ Partial Class LoginForm1
         '
         'OK
         '
-        Me.OK.Location = New System.Drawing.Point(286, 288)
+        Me.OK.Location = New System.Drawing.Point(371, 177)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(94, 23)
         Me.OK.TabIndex = 4
@@ -94,11 +97,28 @@ Partial Class LoginForm1
         'Cancel
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(386, 288)
+        Me.Cancel.Location = New System.Drawing.Point(497, 177)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(94, 23)
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&Cancel"
+        '
+        'ComboUbicacion
+        '
+        Me.ComboUbicacion.FormattingEnabled = True
+        Me.ComboUbicacion.Location = New System.Drawing.Point(371, 33)
+        Me.ComboUbicacion.Name = "ComboUbicacion"
+        Me.ComboUbicacion.Size = New System.Drawing.Size(217, 21)
+        Me.ComboUbicacion.TabIndex = 6
+        '
+        'Label1
+        '
+        Me.Label1.Location = New System.Drawing.Point(368, 7)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(220, 23)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Ubicacion"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'LoginForm1
         '
@@ -106,7 +126,9 @@ Partial Class LoginForm1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel
-        Me.ClientSize = New System.Drawing.Size(540, 323)
+        Me.ClientSize = New System.Drawing.Size(609, 219)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ComboUbicacion)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.PasswordTextBox)
@@ -114,7 +136,7 @@ Partial Class LoginForm1
         Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.UsernameLabel)
         Me.Controls.Add(Me.LogoPictureBox)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "LoginForm1"
@@ -126,5 +148,7 @@ Partial Class LoginForm1
         Me.PerformLayout()
 
     End Sub
+    Friend WithEvents ComboUbicacion As System.Windows.Forms.ComboBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 
 End Class
