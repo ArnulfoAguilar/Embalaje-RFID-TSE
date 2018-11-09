@@ -38,4 +38,15 @@ Public Class Frm_Paquete
         i = dtg_Paquete.CurrentRow.Index
         num = dtg_Paquete.Item(0, i).Value()
     End Sub
+
+    Private Sub btn_editar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_editar.Click
+        con2.Close()
+        If num < 0 Then
+            MessageBox.Show("Elija una fila para editar")
+        Else
+            Frm_Paquete_Edit.ShowDialog()
+        End If
+        cargar_paquetes()
+        num = -1
+    End Sub
 End Class

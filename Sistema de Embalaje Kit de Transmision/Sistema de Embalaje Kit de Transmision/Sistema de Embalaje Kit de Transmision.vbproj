@@ -125,6 +125,18 @@
     <Compile Include="Paquetes\Frm_Paquete.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Paquetes\Frm_Paquete_Edit.Designer.vb">
+      <DependentUpon>Frm_Paquete_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paquetes\Frm_Paquete_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paquetes\Frm_Paquete_Nuevo.Designer.vb">
+      <DependentUpon>Frm_Paquete_Nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paquetes\Frm_Paquete_Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Usuarios\Crear_Usuario.Designer.vb">
       <DependentUpon>Crear_Usuario.vb</DependentUpon>
     </Compile>
@@ -178,6 +190,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Paquetes\Frm_Paquete.resx">
       <DependentUpon>Frm_Paquete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paquetes\Frm_Paquete_Edit.resx">
+      <DependentUpon>Frm_Paquete_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paquetes\Frm_Paquete_Nuevo.resx">
+      <DependentUpon>Frm_Paquete_Nuevo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\Crear_Usuario.resx">
       <DependentUpon>Crear_Usuario.vb</DependentUpon>

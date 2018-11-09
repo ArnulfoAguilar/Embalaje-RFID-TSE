@@ -1,16 +1,17 @@
 ﻿Imports System.Data.OracleClient
-Public Class Frm_Paquete_Nuevo
+Public Class Frm_Paquete_Edit
     Dim ban As Boolean
-    Dim id_pack As Integer
 
-    Private Sub Frm_Paquete_Nuevo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub Frm_Paquete_Edit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        combobox_evento()
+        cargar()
         ban = True
         txt_art.AutoCompleteCustomSource = AutoCompletar()
         txt_art.AutoCompleteMode = AutoCompleteMode.Suggest
         txt_art.AutoCompleteSource = AutoCompleteSource.CustomSource
-        combobox_evento()
         cambiar(ban)
         con2.Close()
+
     End Sub
 
     Private Sub combobox_evento()
@@ -26,16 +27,32 @@ Public Class Frm_Paquete_Nuevo
             'bandera = 1
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
+            'select NOMBRE_PAQUETE, ID_EVENTO  from PAQUETE
         End Try
+    End Sub
+
+    Private Sub cargar()
+        Dim sql As String = "select NOMBRE_PAQUETE, ID_EVENTO from PAQUETE where id_paquete=:id_paq"
+        Dim comando As New OracleCommand(sql, con2)
+        comando.Parameters.Add(":id_paq", OracleType.UInt32).Value = num
+        con2.Open()
+        Dim lector As OracleDataReader = comando.ExecuteReader()
+        If lector.HasRows Then
+            Do While lector.Read
+                txt_nombre.Text = lector.GetString(0)
+                'cbx_evento.ValueMember = lector.GetString(1)
+            Loop
+        End If
+        con2.Close()
     End Sub
 
     Private Sub btn_guardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_guardar.Click
         Dim i As Integer = 0
-        Dim sql As String = "insert into paquete (id_paquete, id_evento, nombre_paquete) values " & _
-                            " ((seq_paquete.nextval), :id_evento, :nombre)"
+        Dim sql As String = "update PAQUETE set nombre_paq=:name, id_evento=:even where id_paquete=:id_paq"
         Dim cmd As New OracleCommand(sql, con2)
-        cmd.Parameters.Add(":id_evento", OracleType.VarChar, 5).Value = cbx_evento.SelectedValue.ToString
-        cmd.Parameters.Add(":nombre", OracleType.VarChar, 50).Value = txt_nombre.Text
+        cmd.Parameters.Add(":even", OracleType.VarChar, 5).Value = cbx_evento.SelectedValue.ToString
+        cmd.Parameters.Add(":name", OracleType.VarChar, 50).Value = txt_nombre.Text
+        cmd.Parameters.Add(":id_paq", OracleType.UInt32).Value = num
         Try
             con2.Open()
             cmd.ExecuteNonQuery()
@@ -52,22 +69,7 @@ Public Class Frm_Paquete_Nuevo
         Else
             ban = False
             cambiar(ban)
-            paquete_actual()
             cargar_articulos()
-        End If
-    End Sub
-    'INICIA EL CODIGO PARA AÑADIR ARTICULOS A CADA PAQUETE
-
-    Private Sub num_registros()
-        Dim sql As String = "select count(*) from LISTA_ART_PACK where ID_PAQUETE =:id_paq"
-        Dim comando As New OracleCommand(sql, con2)
-        comando.Parameters.Add(":id_paq", OracleType.UInt32).Value = id_pack
-        con2.Open()
-        Dim lector As OracleDataReader = comando.ExecuteReader()
-        If lector.HasRows Then
-            lector.Read()
-            lb_reg.Text = lector.GetInt32(0)
-            con2.Close()
         End If
     End Sub
 
@@ -75,7 +77,7 @@ Public Class Frm_Paquete_Nuevo
         Dim sql As String = "select A.NOMBRE_ARTICULO from ARTICULO a join LISTA_ART_PACK l " & _
                             " on A.ID_ARTICULO=L.ID_ARTICULO where L.ID_PAQUETE =:id_paq"
         Dim comando As New OracleCommand(sql, con2)
-        comando.Parameters.Add(":id_paq", OracleType.UInt32).Value = id_pack
+        comando.Parameters.Add(":id_paq", OracleType.UInt32).Value = num
         con2.Open()
         Dim dataAdapter As New OracleDataAdapter(comando)
         Dim dataSet As New DataSet
@@ -85,16 +87,17 @@ Public Class Frm_Paquete_Nuevo
         num_registros()
     End Sub
 
-    Private Sub paquete_actual()
-        Dim sql As String = "select ID_PAQUETE, NOMBRE_PAQUETE from PAQUETE  where rownum=1 order by ID_PAQUETE desc"
+    Private Sub num_registros()
+        Dim sql As String = "select count(*) from LISTA_ART_PACK where ID_PAQUETE =:id_paq"
         Dim comando As New OracleCommand(sql, con2)
+        comando.Parameters.Add(":id_paq", OracleType.UInt32).Value = num
         con2.Open()
         Dim lector As OracleDataReader = comando.ExecuteReader()
         If lector.HasRows Then
             lector.Read()
-            id_pack = lector.GetInt32(0)
+            lb_reg.Text = lector.GetInt32(0)
+            con2.Close()
         End If
-        con2.Close()
     End Sub
 
     Private Function comprobar_art() As Integer
@@ -119,7 +122,7 @@ Public Class Frm_Paquete_Nuevo
         If i > 0 Then
             Dim sql As String = "insert into LISTA_ART_PACK values (:id_pk, :id_art)"
             Dim cmd As New OracleCommand(sql, con2)
-            cmd.Parameters.Add(":id_pk", OracleType.UInt32).Value = id_pack
+            cmd.Parameters.Add(":id_pk", OracleType.UInt32).Value = num
             cmd.Parameters.Add(":id_art", OracleType.UInt32).Value = i
             Try
                 con2.Open()
@@ -135,7 +138,7 @@ Public Class Frm_Paquete_Nuevo
             MessageBox.Show("NO EXISTE ESTE ARTICULO")
             txt_art.Text = ""
         End If
-        
+
     End Sub
 
     ' FUNCIONES Y METODOS GENERALES

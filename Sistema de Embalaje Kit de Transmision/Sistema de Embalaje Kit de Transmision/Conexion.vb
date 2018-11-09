@@ -7,6 +7,7 @@ Module Conexion
     Public con2 As New OracleConnection(cadena2)
 
     Public num As Integer
+
     Public user As String
 End Module
 

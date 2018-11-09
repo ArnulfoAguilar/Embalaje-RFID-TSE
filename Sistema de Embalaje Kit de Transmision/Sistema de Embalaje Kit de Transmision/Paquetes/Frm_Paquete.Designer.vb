@@ -52,6 +52,8 @@ Partial Class Frm_Paquete
         '
         'dtg_Paquete
         '
+        Me.dtg_Paquete.AllowUserToAddRows = False
+        Me.dtg_Paquete.AllowUserToDeleteRows = False
         Me.dtg_Paquete.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dtg_Paquete.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders
         Me.dtg_Paquete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize

@@ -42,6 +42,7 @@ Partial Class Frm_Articulo_Edit
         '
         'cbx_ret
         '
+        Me.cbx_ret.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbx_ret.FormattingEnabled = True
         Me.cbx_ret.Location = New System.Drawing.Point(138, 152)
         Me.cbx_ret.Name = "cbx_ret"

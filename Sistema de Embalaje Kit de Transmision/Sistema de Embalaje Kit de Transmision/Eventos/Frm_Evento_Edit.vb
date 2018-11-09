@@ -31,6 +31,7 @@ Public Class Frm_Evento_Edit
             cmd.Parameters.Add(":name", OracleType.VarChar, 50).Value = txt_nombre.Text
             cmd.Parameters.Add(":fecha", OracleType.DateTime).Value = txt_fecha.Value
             cmd.Parameters.Add(":obsv", OracleType.VarChar, 255).Value = txt_obsv.Text
+            cmd.Parameters.Add(":id_even", OracleType.UInt32).Value = num
 
             con2.Open()
             cmd.ExecuteNonQuery()
