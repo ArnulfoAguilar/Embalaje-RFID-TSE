@@ -1,6 +1,7 @@
 ﻿Imports System.Data.OracleClient
 Public Class Frm_Paquete_Edit
     Dim ban As Boolean
+    Dim j As Integer
 
     Private Sub Frm_Paquete_Edit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         combobox_evento()
@@ -48,7 +49,7 @@ Public Class Frm_Paquete_Edit
 
     Private Sub btn_guardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_guardar.Click
         Dim i As Integer = 0
-        Dim sql As String = "update PAQUETE set nombre_paq=:name, id_evento=:even where id_paquete=:id_paq"
+        Dim sql As String = "update PAQUETE set nombre_paquete=:name, id_evento=:even where id_paquete=:id_paq"
         Dim cmd As New OracleCommand(sql, con2)
         cmd.Parameters.Add(":even", OracleType.VarChar, 5).Value = cbx_evento.SelectedValue.ToString
         cmd.Parameters.Add(":name", OracleType.VarChar, 50).Value = txt_nombre.Text
@@ -57,7 +58,7 @@ Public Class Frm_Paquete_Edit
             con2.Open()
             cmd.ExecuteNonQuery()
             con2.Close()
-            MessageBox.Show("Registro Guardado")
+            MessageBox.Show("Registro Actualizado")
             i = 1
         Catch ex As Exception
             i = 0
@@ -72,9 +73,10 @@ Public Class Frm_Paquete_Edit
             cargar_articulos()
         End If
     End Sub
+    'INICIA EL CODIGO PARA AÑADIR ARTICULOS A CADA PAQUETE
 
     Private Sub cargar_articulos()
-        Dim sql As String = "select A.NOMBRE_ARTICULO from ARTICULO a join LISTA_ART_PACK l " & _
+        Dim sql As String = "select A.ID_ARTICULO A.NOMBRE_ARTICULO from ARTICULO a join LISTA_ART_PACK l " & _
                             " on A.ID_ARTICULO=L.ID_ARTICULO where L.ID_PAQUETE =:id_paq"
         Dim comando As New OracleCommand(sql, con2)
         comando.Parameters.Add(":id_paq", OracleType.UInt32).Value = num

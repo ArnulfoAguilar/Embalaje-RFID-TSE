@@ -35,6 +35,7 @@ Partial Class Frm_Paquete_Edit
         Me.txt_art = New System.Windows.Forms.TextBox()
         Me.lb_art = New System.Windows.Forms.Label()
         Me.lb_titulo = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.dtg_art, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -151,11 +152,23 @@ Partial Class Frm_Paquete_Edit
         Me.lb_titulo.TabIndex = 16
         Me.lb_titulo.Text = "AGREGAR ARTICULOS AL PAQUETE"
         '
+        'Button1
+        '
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(553, 301)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(83, 81)
+        Me.Button1.TabIndex = 23
+        Me.Button1.Text = "eliminar"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Frm_Paquete_Edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(668, 476)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lb_reg)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.dtg_art)
@@ -187,4 +200,5 @@ Partial Class Frm_Paquete_Edit
     Friend WithEvents txt_art As System.Windows.Forms.TextBox
     Friend WithEvents lb_art As System.Windows.Forms.Label
     Friend WithEvents lb_titulo As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
