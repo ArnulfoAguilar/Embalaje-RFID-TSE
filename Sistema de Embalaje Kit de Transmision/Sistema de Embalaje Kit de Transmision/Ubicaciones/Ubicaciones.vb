@@ -13,7 +13,7 @@ Public Class Ubicaciones
 
     Private Sub Ubicaciones_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
-            Dim sqlConsult As String = " select * from UBICACIONES"
+            Dim sqlConsult As String = " select * from UBICACION"
             Dim comando As New OracleCommand(sqlConsult, con)
             Dim lector As OracleDataReader = Nothing
             con.Open()

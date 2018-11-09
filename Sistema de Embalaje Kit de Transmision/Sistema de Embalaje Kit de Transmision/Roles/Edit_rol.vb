@@ -14,7 +14,7 @@ Public Class Edit_rol
     End Sub
 
     Private Sub btn_Ingresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_Ingresar.Click
-        Dim sqlConsulta As String = "update Rol set Nombre=:Nombre where id_rol=:id_rol"
+        Dim sqlConsulta As String = "update Rol set Nombre_rol=:Nombre where id_rol=:id_rol"
         Dim comando1 As New OracleCommand(sqlConsulta, con)
         comando1.Parameters.Add(":id_rol", OracleType.Int32, 30).Value = id
         comando1.Parameters.Add(":Nombre", OracleType.VarChar, 30).Value = txt_rol.Text

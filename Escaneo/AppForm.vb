@@ -1269,7 +1269,7 @@ Namespace VB_RFID3_Host_Sample1
                 DataGViewFaltantes.DataSource = Nothing
                 conn.Close()
                 Try
-                    Dim sqlConsultaActualizar_recibida As String = "update caja c set C.ID_COMPLETO=1 where C.CODEBAR=:codigo_BARRA_CAJA"
+                    Dim sqlConsultaActualizar_recibida As String = "update caja c set C.ID_COMPLETO=1, ID_ESTADO=1 where C.CODEBAR=:codigo_BARRA_CAJA"
                     Dim comandoActualizar_recibida As New OracleCommand(sqlConsultaActualizar_recibida, conn)
                     comandoActualizar_recibida.Parameters.Add(":codigo_BARRA_CAJA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
                     conn.Open()

@@ -2,7 +2,7 @@
 Public Class Add_Rol
 
     Private Sub btn_Ingresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_Ingresar.Click
-        Dim sqlConsulta As String = "INSERT INTO ROL (ID,NOMBRE) VALUES (SEQ_ROL,:ROL)"
+        Dim sqlConsulta As String = "INSERT INTO ROL (ID_ROL,NOMBRE_ROL) VALUES ((SEQ_ROL.nextval),:ROL)"
         Dim comando1 As New OracleCommand(sqlConsulta, con)
         comando1.Parameters.Add(":ROL", OracleType.VarChar, 30).Value = TXT_NOMBRE.Text
         con.Open()

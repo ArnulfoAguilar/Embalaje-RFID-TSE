@@ -21,7 +21,7 @@ Public Class Edit_User
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim sqlConsulta As String = "update usuarios set Nombre=:Nombre, pass:pass, rol:rol where id_usuario=:id_usuario"
+        Dim sqlConsulta As String = "update usuarios set Nombre_user=:Nombre, Contrasenia:pass, id_rol:rol where id_user=:id_usuario"
         Dim comando1 As New OracleCommand(sqlConsulta, con)
         comando1.Parameters.Add(":id_usuario", OracleType.Int32, 30).Value = id
         comando1.Parameters.Add(":Nombre", OracleType.VarChar, 30).Value = txt_nombre.Text

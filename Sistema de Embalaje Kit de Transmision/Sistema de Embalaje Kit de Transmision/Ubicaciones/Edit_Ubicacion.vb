@@ -12,7 +12,7 @@ Public Class Edit_Ubicacion
     End Sub
     Private Sub llenar_Grid()
         Try
-            Dim sqlConsult As String = " select * from UBICACIONES"
+            Dim sqlConsult As String = " select * from UBICACION"
             Dim comando As New OracleCommand(sqlConsult, con)
             Dim lector As OracleDataReader = Nothing
             con.Open()
@@ -35,7 +35,7 @@ Public Class Edit_Ubicacion
     End Sub
 
     Private Sub btn_agregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_agregar.Click
-        Dim sqlConsulta As String = "update ubicaciones set Nombre=:Nombre, ip=:Ip where id_ubicaion=:id_ubicacion"
+        Dim sqlConsulta As String = "update ubicacion set Nombre=:Nombre, ip=:Ip where id_ubicaion=:id_ubicacion"
         Dim comando1 As New OracleCommand(sqlConsulta, con)
         comando1.Parameters.Add(":id_UBICACION", OracleType.Int32, 30).Value = id
         comando1.Parameters.Add(":Nombre", OracleType.VarChar, 30).Value = txtNombre.Text
