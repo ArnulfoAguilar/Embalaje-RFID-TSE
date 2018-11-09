@@ -58,4 +58,9 @@ Public Class Frm_Articulo_Edit
         txt_nomenclatura.Text = ""
         Me.Close()
     End Sub
+
+    Private Sub btn_cancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cancelar.Click
+        Frm_principal.Show()
+        Me.Close()
+    End Sub
 End Class

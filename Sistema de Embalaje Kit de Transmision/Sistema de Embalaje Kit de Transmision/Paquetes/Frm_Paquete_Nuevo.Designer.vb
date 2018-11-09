@@ -35,6 +35,7 @@ Partial Class Frm_Paquete_Nuevo
         Me.dtg_art = New System.Windows.Forms.DataGridView()
         Me.lb_reg = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btn_cancelar = New System.Windows.Forms.Button()
         CType(Me.dtg_art, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -150,11 +151,21 @@ Partial Class Frm_Paquete_Nuevo
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Registros Encontrados"
         '
+        'btn_cancelar
+        '
+        Me.btn_cancelar.Location = New System.Drawing.Point(556, 415)
+        Me.btn_cancelar.Name = "btn_cancelar"
+        Me.btn_cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_cancelar.TabIndex = 16
+        Me.btn_cancelar.Text = "Cancelar"
+        Me.btn_cancelar.UseVisualStyleBackColor = True
+        '
         'Frm_Paquete_Nuevo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(668, 476)
+        Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.lb_reg)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.dtg_art)
@@ -186,4 +197,5 @@ Partial Class Frm_Paquete_Nuevo
     Friend WithEvents dtg_art As System.Windows.Forms.DataGridView
     Friend WithEvents lb_reg As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents btn_cancelar As System.Windows.Forms.Button
 End Class

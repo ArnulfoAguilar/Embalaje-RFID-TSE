@@ -29,6 +29,7 @@ Partial Class Frm_Evento_Edit
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btn_guardar
@@ -91,11 +92,21 @@ Partial Class Frm_Evento_Edit
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Nombre del Evento"
         '
+        'btn_cancelar
+        '
+        Me.btn_cancelar.Location = New System.Drawing.Point(286, 279)
+        Me.btn_cancelar.Name = "btn_cancelar"
+        Me.btn_cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_cancelar.TabIndex = 14
+        Me.btn_cancelar.Text = "Cancelar"
+        Me.btn_cancelar.UseVisualStyleBackColor = True
+        '
         'Frm_Evento_Edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(391, 348)
+        Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.btn_guardar)
         Me.Controls.Add(Me.txt_obsv)
         Me.Controls.Add(Me.txt_fecha)
@@ -116,4 +127,5 @@ Partial Class Frm_Evento_Edit
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btn_cancelar As System.Windows.Forms.Button
 End Class

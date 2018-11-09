@@ -29,6 +29,7 @@ Partial Class Frm_Evento_nuevo
         Me.txt_fecha = New System.Windows.Forms.DateTimePicker()
         Me.txt_obsv = New System.Windows.Forms.TextBox()
         Me.btn_guardar = New System.Windows.Forms.Button()
+        Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -91,11 +92,21 @@ Partial Class Frm_Evento_nuevo
         Me.btn_guardar.Text = "Guardar"
         Me.btn_guardar.UseVisualStyleBackColor = True
         '
+        'btn_cancelar
+        '
+        Me.btn_cancelar.Location = New System.Drawing.Point(256, 267)
+        Me.btn_cancelar.Name = "btn_cancelar"
+        Me.btn_cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_cancelar.TabIndex = 7
+        Me.btn_cancelar.Text = "Cancelar"
+        Me.btn_cancelar.UseVisualStyleBackColor = True
+        '
         'Frm_Evento_nuevo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(373, 311)
+        Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.btn_guardar)
         Me.Controls.Add(Me.txt_obsv)
         Me.Controls.Add(Me.txt_fecha)
@@ -117,4 +128,5 @@ Partial Class Frm_Evento_nuevo
     Friend WithEvents txt_fecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents txt_obsv As System.Windows.Forms.TextBox
     Friend WithEvents btn_guardar As System.Windows.Forms.Button
+    Friend WithEvents btn_cancelar As System.Windows.Forms.Button
 End Class

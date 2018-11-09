@@ -215,4 +215,9 @@ Public Class Frm_Paquete_Edit
             cargar_articulos()
         End If
     End Sub
+
+    Private Sub btn_cancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cancelar.Click
+        Frm_principal.Show()
+        Me.Close()
+    End Sub
 End Class

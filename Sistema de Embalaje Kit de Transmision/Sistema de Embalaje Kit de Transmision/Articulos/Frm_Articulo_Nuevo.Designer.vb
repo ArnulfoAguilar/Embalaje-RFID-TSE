@@ -29,6 +29,7 @@ Partial Class Frm_Articulo_Nuevo
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cbx_ret = New System.Windows.Forms.ComboBox()
         Me.btn_guardar_prd = New System.Windows.Forms.Button()
+        Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -91,11 +92,21 @@ Partial Class Frm_Articulo_Nuevo
         Me.btn_guardar_prd.Text = "Guardar"
         Me.btn_guardar_prd.UseVisualStyleBackColor = True
         '
+        'btn_cancelar
+        '
+        Me.btn_cancelar.Location = New System.Drawing.Point(196, 220)
+        Me.btn_cancelar.Name = "btn_cancelar"
+        Me.btn_cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_cancelar.TabIndex = 9
+        Me.btn_cancelar.Text = "Cancelar"
+        Me.btn_cancelar.UseVisualStyleBackColor = True
+        '
         'Frm_Articulo_Nuevo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(309, 275)
+        Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.btn_guardar_prd)
         Me.Controls.Add(Me.cbx_ret)
         Me.Controls.Add(Me.Label4)
@@ -116,4 +127,5 @@ Partial Class Frm_Articulo_Nuevo
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents cbx_ret As System.Windows.Forms.ComboBox
     Friend WithEvents btn_guardar_prd As System.Windows.Forms.Button
+    Friend WithEvents btn_cancelar As System.Windows.Forms.Button
 End Class
