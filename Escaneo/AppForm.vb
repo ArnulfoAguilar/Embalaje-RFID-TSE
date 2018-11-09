@@ -1588,6 +1588,7 @@ Namespace VB_RFID3_Host_Sample1
                                     MessageBox.Show("Este codigo de barra no esta en la base de datos de CAJAS.")
                                     conn.Close()
                                     lector.Close()
+                                    TextBox1.Enabled = True
                                     TextBox1.Clear()
                                     TextBox1.Focus()
                                 End If
