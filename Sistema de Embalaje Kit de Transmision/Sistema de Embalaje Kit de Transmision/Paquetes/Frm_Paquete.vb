@@ -49,4 +49,9 @@ Public Class Frm_Paquete
         cargar_paquetes()
         num = -1
     End Sub
+
+    Private Sub btn_nuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_nuevo.Click
+        Frm_Paquete_Nuevo.Show()
+        Me.Close()
+    End Sub
 End Class
