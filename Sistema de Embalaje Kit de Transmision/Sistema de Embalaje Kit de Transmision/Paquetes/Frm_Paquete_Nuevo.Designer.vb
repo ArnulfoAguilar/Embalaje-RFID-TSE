@@ -127,7 +127,6 @@ Partial Class Frm_Paquete_Nuevo
         Me.dtg_art.AllowUserToDeleteRows = False
         Me.dtg_art.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dtg_art.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtg_art.Enabled = False
         Me.dtg_art.Location = New System.Drawing.Point(65, 241)
         Me.dtg_art.Name = "dtg_art"
         Me.dtg_art.Size = New System.Drawing.Size(467, 213)

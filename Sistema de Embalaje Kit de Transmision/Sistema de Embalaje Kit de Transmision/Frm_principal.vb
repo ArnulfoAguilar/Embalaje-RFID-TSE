@@ -33,4 +33,9 @@
 
         Me.Close()
     End Sub
+
+    Private Sub PaqueteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PaqueteToolStripMenuItem.Click
+        Frm_Paquete.Show()
+        Me.Close()
+    End Sub
 End Class

@@ -76,7 +76,7 @@ Public Class Frm_Paquete_Edit
     'INICIA EL CODIGO PARA AÑADIR ARTICULOS A CADA PAQUETE
 
     Private Sub cargar_articulos()
-        Dim sql As String = "select A.ID_ARTICULO A.NOMBRE_ARTICULO from ARTICULO a join LISTA_ART_PACK l " & _
+        Dim sql As String = "select A.ID_ARTICULO, A.NOMBRE_ARTICULO from ARTICULO a join LISTA_ART_PACK l " & _
                             " on A.ID_ARTICULO=L.ID_ARTICULO where L.ID_PAQUETE =:id_paq"
         Dim comando As New OracleCommand(sql, con2)
         comando.Parameters.Add(":id_paq", OracleType.UInt32).Value = num
@@ -188,4 +188,28 @@ Public Class Frm_Paquete_Edit
         End If
     End Sub
 
+    Private Sub dtg_art_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dtg_art.CellClick
+        Dim i As Integer
+        i = dtg_art.CurrentRow.Index
+        j = dtg_art.Item(0, i).Value()
+    End Sub
+
+
+    Private Sub btn_elim_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_elim.Click
+        Dim sql As String = "delete from LISTA_ART_PACK  where id_paquete=:ip_paq and id_articulo =:idtipo "
+        Try
+            Dim cmd As New OracleCommand(sql, con2)
+            cmd.Parameters.Add(":idtipo", OracleType.UInt32).Value
+            con2.Open()
+            cmd.ExecuteNonQuery()
+            con2.Close()
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
+        num = -1
+        btn_elim.Enabled = True
+        cargar_articulos()
+        btn_elim_reg.Hide()
+        btn_cancel.Hide()
+    End Sub
 End Class

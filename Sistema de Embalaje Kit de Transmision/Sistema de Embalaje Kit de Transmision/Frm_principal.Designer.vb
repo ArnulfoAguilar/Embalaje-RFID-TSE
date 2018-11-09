@@ -37,8 +37,9 @@ Partial Class Frm_principal
         Me.ModificarSedeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarSedeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CargarDatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EventoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CargarDatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PaqueteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -77,7 +78,7 @@ Partial Class Frm_principal
         '
         'MantenimientosToolStripMenuItem
         '
-        Me.MantenimientosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.SedesToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.EventoToolStripMenuItem})
+        Me.MantenimientosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.SedesToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.EventoToolStripMenuItem, Me.PaqueteToolStripMenuItem})
         Me.MantenimientosToolStripMenuItem.Name = "MantenimientosToolStripMenuItem"
         Me.MantenimientosToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
         Me.MantenimientosToolStripMenuItem.Text = "Mantenimientos"
@@ -138,17 +139,23 @@ Partial Class Frm_principal
         Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ProductosToolStripMenuItem.Text = "Articulo"
         '
+        'EventoToolStripMenuItem
+        '
+        Me.EventoToolStripMenuItem.Name = "EventoToolStripMenuItem"
+        Me.EventoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EventoToolStripMenuItem.Text = "Evento"
+        '
         'CargarDatosToolStripMenuItem
         '
         Me.CargarDatosToolStripMenuItem.Name = "CargarDatosToolStripMenuItem"
         Me.CargarDatosToolStripMenuItem.Size = New System.Drawing.Size(87, 20)
         Me.CargarDatosToolStripMenuItem.Text = "Cargar Datos"
         '
-        'EventoToolStripMenuItem
+        'PaqueteToolStripMenuItem
         '
-        Me.EventoToolStripMenuItem.Name = "EventoToolStripMenuItem"
-        Me.EventoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EventoToolStripMenuItem.Text = "Evento"
+        Me.PaqueteToolStripMenuItem.Name = "PaqueteToolStripMenuItem"
+        Me.PaqueteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PaqueteToolStripMenuItem.Text = "Paquete"
         '
         'Frm_principal
         '
@@ -182,5 +189,6 @@ Partial Class Frm_principal
     Friend WithEvents ProductosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CargarDatosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EventoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PaqueteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
