@@ -196,20 +196,23 @@ Public Class Frm_Paquete_Edit
 
 
     Private Sub btn_elim_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_elim.Click
-        Dim sql As String = "delete from LISTA_ART_PACK  where id_paquete=:ip_paq and id_articulo =:idtipo "
-        Try
-            Dim cmd As New OracleCommand(sql, con2)
-            cmd.Parameters.Add(":idtipo", OracleType.UInt32).Value
-            con2.Open()
-            cmd.ExecuteNonQuery()
-            con2.Close()
-        Catch ex As Exception
-            MessageBox.Show(ex.ToString)
-        End Try
-        num = -1
-        btn_elim.Enabled = True
-        cargar_articulos()
-        btn_elim_reg.Hide()
-        btn_cancel.Hide()
+        con2.Close()
+        If j < 0 Then
+            MessageBox.Show("Elija una fila para eliminar")
+        Else
+            Dim sql As String = "delete from LISTA_ART_PACK  where id_paquete=:ip_paq and id_articulo =:idtipo "
+            Try
+                Dim cmd As New OracleCommand(sql, con2)
+                cmd.Parameters.Add(":id_paq", OracleType.UInt32).Value = num
+                cmd.Parameters.Add(":idtipo", OracleType.UInt32).Value = j
+                con2.Open()
+                cmd.ExecuteNonQuery()
+                con2.Close()
+                MessageBox.Show("Registro eliminado")
+            Catch ex As Exception
+                MessageBox.Show(ex.ToString)
+            End Try
+            cargar_articulos()
+        End If
     End Sub
 End Class
