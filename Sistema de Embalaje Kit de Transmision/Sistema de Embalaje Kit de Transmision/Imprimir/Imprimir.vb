@@ -116,20 +116,20 @@ Public Class Imprimir
             Dim consulta As String
             If rb_articulo.Checked Then
 
-                consulta = "SELECT DET.CODEBAR, DET.RFID,A.NOMBRE_ARTICULO FROM DETALLE_CAJA det " & _
+                consulta = "SELECT DET.CODEBAR BARCODE, DET.RFID,A.NOMBRE_ARTICULO ARTICULO FROM DETALLE_CAJA det " & _
                             " JOIN ARTICULO a on DET.ID_ARTICULO=A.ID_ARTICULO " & _
                             " JOIN CAJA c on DET.ID_CAJA=C.ID_CAJA " & _
                             " where DET.ID_ARTICULO=:ID_ARTICULO and " & _
                             " C.ID_SEDE=:ID_SEDE"
             ElseIf rb_caja.Checked Then
-                consulta = "SELECT DET.CODEBAR, DET.RFID,A.NOMBRE_ARTICULO FROM DETALLE_CAJA det " & _
+                consulta = "SELECT DET.CODEBAR BARCODE, DET.RFID,A.NOMBRE_ARTICULO ARTICULO FROM DETALLE_CAJA det " & _
                             " JOIN ARTICULO a on DET.ID_ARTICULO=A.ID_ARTICULO " & _
                             " JOIN CAJA c on DET.ID_CAJA=C.ID_CAJA " & _
                             " where " & _
                             " C.ID_CAJA=:ID_CAJA "
             ElseIf rb_individual.Checked Then
 
-                consulta = "SELECT DET.CODEBAR, DET.RFID,A.NOMBRE_ARTICULO FROM DETALLE_CAJA det " & _
+                consulta = "SELECT DET.CODEBAR BARCODE, DET.RFID,A.NOMBRE_ARTICULO ARTICULO FROM DETALLE_CAJA det " & _
                             "JOIN ARTICULO a on DET.ID_ARTICULO=A.ID_ARTICULO" & _
                             " JOIN CAJA c on DET.ID_CAJA=C.ID_CAJA " & _
                             " where DET.ID_ARTICULO=:ID_ARTICULO and " & _
