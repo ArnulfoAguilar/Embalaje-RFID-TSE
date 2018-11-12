@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -125,6 +125,12 @@
     <Compile Include="Eventos\Frm_Evento_Nuevo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Frm_login.Designer.vb">
+      <DependentUpon>Frm_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Paquetes\Frm_Paquete.Designer.vb">
       <DependentUpon>Frm_Paquete.vb</DependentUpon>
     </Compile>
@@ -227,7 +233,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-
     <EmbeddedResource Include="Eventos\Frm_Evento.resx">
       <DependentUpon>Frm_Evento.vb</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +254,9 @@
     <EmbeddedResource Include="Eventos\Frm_Evento_Nuevo.resx">
       <DependentUpon>Frm_Evento_Nuevo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_login.resx">
+      <DependentUpon>Frm_login.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Paquetes\Frm_Paquete.resx">
       <DependentUpon>Frm_Paquete.vb</DependentUpon>
     </EmbeddedResource>
@@ -257,7 +265,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Paquetes\Frm_Paquete_Nuevo.resx">
       <DependentUpon>Frm_Paquete_Nuevo.vb</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Roles\Add_Rol.resx">
       <DependentUpon>Add_Rol.vb</DependentUpon>
