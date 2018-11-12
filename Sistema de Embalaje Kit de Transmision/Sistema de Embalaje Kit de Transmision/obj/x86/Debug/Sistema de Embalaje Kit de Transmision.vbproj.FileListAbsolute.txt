@@ -47,4 +47,4 @@ C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje 
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Ubicaciones.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Delete_User.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.User.resources
-C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_login.resources
+C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Imprimir.resources

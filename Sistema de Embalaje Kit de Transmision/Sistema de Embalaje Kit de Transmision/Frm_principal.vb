@@ -2,7 +2,7 @@
 
     Private Sub EscaneoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EscaneoToolStripMenuItem.Click
         Shell("C:\Embalaje-RFID-TSE\Escaneo\bin\x86\Debug\TSE2018.exe", 1)
-        Me.Close()
+
     End Sub
 
     Private Sub DespachoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DespachoToolStripMenuItem.Click
@@ -17,6 +17,11 @@
         Crear_Usuario.Show()
         Me.Close()
     End Sub
+
+    Private Sub Frm_principal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
 
     Private Sub ProductosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductosToolStripMenuItem.Click
         Frm_Articulo.Show()
@@ -63,5 +68,8 @@
         If rol_global <> 0 Then
             MantenimientosToolStripMenuItem.Enabled = False
         End If
+	End Sub
+    Private Sub ImprimirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ImprimirToolStripMenuItem.Click
+        Imprimir.ShowDialog()
     End Sub
 End Class
