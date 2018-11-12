@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -49,6 +49,11 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="system.data.oracleclient">
@@ -123,6 +128,12 @@
       <DependentUpon>Frm_Evento_Nuevo.vb</DependentUpon>
     </Compile>
     <Compile Include="Eventos\Frm_Evento_Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir\Imprimir.Designer.vb">
+      <DependentUpon>Imprimir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir\Imprimir.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Paquetes\Frm_Paquete.Designer.vb">
@@ -227,7 +238,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-
     <EmbeddedResource Include="Eventos\Frm_Evento.resx">
       <DependentUpon>Frm_Evento.vb</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +259,9 @@
     <EmbeddedResource Include="Eventos\Frm_Evento_Nuevo.resx">
       <DependentUpon>Frm_Evento_Nuevo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir\Imprimir.resx">
+      <DependentUpon>Imprimir.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Paquetes\Frm_Paquete.resx">
       <DependentUpon>Frm_Paquete.vb</DependentUpon>
     </EmbeddedResource>
@@ -257,7 +270,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Paquetes\Frm_Paquete_Nuevo.resx">
       <DependentUpon>Frm_Paquete_Nuevo.vb</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Roles\Add_Rol.resx">
       <DependentUpon>Add_Rol.vb</DependentUpon>
