@@ -106,7 +106,11 @@ Public Class Imprimir
             appXL.Visible = False 'Para que no se muestre mientras se crea
             wbXl = appXL.Workbooks.Add
             shXL = wbXl.ActiveSheet
-            ' Añadimos las cabeceras de las columnas            
+
+            ' Añadimos las cabeceras de las columnas
+            Dim formatRange As Excel.Range
+            formatRange = shXL.Range("a2,b2")
+            formatRange.EntireColumn.NumberFormat = "@"
             shXL.Cells(1, 1).Value = "BARCODE"
             shXL.Cells(1, 2).Value = "RFID"
             shXL.Cells(1, 3).Value = "ARTICULO"
@@ -162,7 +166,7 @@ Public Class Imprimir
                 ' Mostramos un dialog para que el usuario indique donde quiere guardar el excel
                 Dim saveFileDialog1 As New SaveFileDialog()
                 saveFileDialog1.Title = "Guardar documento Excel"
-                saveFileDialog1.Filter = "Excel File|*.xls"
+                saveFileDialog1.Filter = "Excel File|*.xlsx"
                 saveFileDialog1.FileName = "Codigos para viñetas " + DateTime.Now.ToString("dd_MM_yyyy")
                 saveFileDialog1.ShowDialog()
                 ' Guardamos el excel en la ruta que ha especificado el usuario
