@@ -189,11 +189,13 @@ Partial Class Frm_principal
         Me.ActualizarRolToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.ActualizarRolToolStripMenuItem.Text = "Editar Rol"
         '
+
         'ImprimirToolStripMenuItem
         '
         Me.ImprimirToolStripMenuItem.Name = "ImprimirToolStripMenuItem"
         Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(93, 20)
         Me.ImprimirToolStripMenuItem.Text = "Imprimir Tags"
+
         '
         'Frm_principal
         '

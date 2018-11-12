@@ -6,7 +6,7 @@ Public Class Crear_Usuario
             If txtContra.Text <> "" Then
                 Try
                     Conexion.con.Close()
-                    Dim SQL As String = "INSERT INTO USUARIOS (ID_USER, NOMBRE_USER, CONTRASENIA, ID_ROL) VALUES ((SEQ_USUARIO.nextval),:NOMBRE, :PASS, :ID_ROL)"
+                    Dim SQL As String = "INSERT INTO USUARIOS (ID_USER, NOMBRE_USER, CONTRASENIA, ID_ROL) VALUES ((SEQ_USUARIO.nextval),:NOMBRE, fn_valor_encrypt(:pass), :ID_ROL)"
                     Dim comando As New OracleCommand(SQL, Conexion.con)
                     comando.Parameters.Add(":NOMBRE", OracleType.VarChar, 30).Value = txtNombre.Text
                     comando.Parameters.Add(":PASS", OracleType.VarChar, 30).Value = txtContra.Text

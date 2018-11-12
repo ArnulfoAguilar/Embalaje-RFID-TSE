@@ -31,11 +31,12 @@ Public Class Frm_Paquete_Nuevo
 
     Private Sub btn_guardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_guardar.Click
         Dim i As Integer = 0
-        Dim sql As String = "insert into paquete (id_paquete, id_evento, nombre_paquete) values " & _
-                            " ((seq_paquete.nextval), :id_evento, :nombre)"
+        Dim sql As String = "insert into paquete (id_paquete, id_evento, nombre_paquete, id_user) values " & _
+                            " ((seq_paquete.nextval), :id_evento, :nombre, :useri)"
         Dim cmd As New OracleCommand(sql, con2)
         cmd.Parameters.Add(":id_evento", OracleType.VarChar, 5).Value = cbx_evento.SelectedValue.ToString
         cmd.Parameters.Add(":nombre", OracleType.VarChar, 50).Value = txt_nombre.Text
+        cmd.Parameters.Add(":useri", OracleType.UInt32).Value = user_global
         Try
             con2.Open()
             cmd.ExecuteNonQuery()

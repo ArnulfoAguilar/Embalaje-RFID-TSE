@@ -24,14 +24,15 @@ Public Class Frm_Articulo_Nuevo
     End Sub
 
     Private Sub btn_guardar_prd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_guardar_prd.Click
-        Dim sql As String = " insert into ARTICULO (id_articulo, id_retorno, nombre_articulo, nomenclatura) values " & _
-                            " ((seq_articulo.nextval), :id_retorno, :nombre, :nomenclatura)"
+        Dim sql As String = " insert into ARTICULO (id_articulo, id_retorno, nombre_articulo, nomenclatura, id_user) values " & _
+                            " ((seq_articulo.nextval), :id_retorno, :nombre, :nomenclatura, :useri)"
         Try
             Dim comando1 As New OracleCommand(sql, con2)
 
             comando1.Parameters.Add(":id_retorno", OracleType.VarChar, 30).Value = cbx_ret.SelectedValue.ToString
             comando1.Parameters.Add(":nombre", OracleType.VarChar, 50).Value = txt_nombre.Text
             comando1.Parameters.Add(":nomenclatura", OracleType.VarChar, 30).Value = txt_nomenclatura.Text
+            comando1.Parameters.Add(":useri", OracleType.UInt32).Value = user_global
 
             con2.Open()
             comando1.ExecuteNonQuery()

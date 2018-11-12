@@ -6,12 +6,13 @@ Public Class Frm_Evento_nuevo
     End Sub
 
     Private Sub btn_guardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_guardar.Click
-        Dim sql As String = " insert into EVENTO (id_evento, nombre_evento, fecha, observaciones) values " & _
-                           " ((seq_evento.nextval), :nombre, :fecha, :obsv)"
+        Dim sql As String = " insert into EVENTO (id_evento, nombre_evento, fecha, observaciones, id_user) values " & _
+                           " ((seq_evento.nextval), :nombre, :fecha, :obsv, :useri)"
         Dim cmd As New OracleCommand(sql, con2)
         cmd.Parameters.Add(":nombre", OracleType.VarChar, 30).Value = txt_nombre.Text
         cmd.Parameters.Add(":obsv", OracleType.VarChar, 255).Value = txt_obsv.Text
         cmd.Parameters.Add(":fecha", OracleType.DateTime).Value = Convert.ToDateTime(txt_fecha.Text)
+        cmd.Parameters.Add(":useri", OracleType.UInt32).Value = user_global
 
         Try
             con2.Open()
