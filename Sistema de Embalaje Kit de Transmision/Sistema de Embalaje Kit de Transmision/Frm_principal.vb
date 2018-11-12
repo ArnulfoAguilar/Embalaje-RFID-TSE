@@ -58,4 +58,10 @@
         Edit_User.Show()
         Me.Close()
     End Sub
+
+    Private Sub Frm_principal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        If rol_global <> 0 Then
+            MantenimientosToolStripMenuItem.Enabled = False
+        End If
+    End Sub
 End Class
