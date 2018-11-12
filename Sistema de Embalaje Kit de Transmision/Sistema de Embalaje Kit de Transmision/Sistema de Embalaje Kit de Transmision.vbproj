@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -130,10 +130,17 @@
     <Compile Include="Eventos\Frm_Evento_Nuevo.vb">
       <SubType>Form</SubType>
     </Compile>
+
     <Compile Include="Imprimir\Imprimir.Designer.vb">
       <DependentUpon>Imprimir.vb</DependentUpon>
     </Compile>
     <Compile Include="Imprimir\Imprimir.vb">
+
+    <Compile Include="Frm_login.Designer.vb">
+      <DependentUpon>Frm_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_login.vb">
+
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Paquetes\Frm_Paquete.Designer.vb">
@@ -259,8 +266,13 @@
     <EmbeddedResource Include="Eventos\Frm_Evento_Nuevo.resx">
       <DependentUpon>Frm_Evento_Nuevo.vb</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="Imprimir\Imprimir.resx">
       <DependentUpon>Imprimir.vb</DependentUpon>
+
+    <EmbeddedResource Include="Frm_login.resx">
+      <DependentUpon>Frm_login.vb</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Paquetes\Frm_Paquete.resx">
       <DependentUpon>Frm_Paquete.vb</DependentUpon>
