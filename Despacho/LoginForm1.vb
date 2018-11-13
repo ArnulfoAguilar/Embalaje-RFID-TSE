@@ -40,19 +40,13 @@ Public Class LoginForm1
                     USUARIO = lector.GetString(2)
 
                 Loop
-                If ROL = "ADMIN" Or ROL = "ESCANEO" Then
-                    MessageBox.Show("BIENVENIDO AL SISTEMA " + USUARIO)
-                    conn.Close()
-                    lector.Close()
-                    AppForm.Show()
-                    Me.Close()
-                Else
-                    MessageBox.Show("No cuenta con los suficientes privilegios para manipular esta aplicacion")
-                    UsernameTextBox.Clear()
-                    UsernameTextBox.Focus()
-                    PasswordTextBox.Clear()
-                    conn.Close()
-                End If
+
+                MessageBox.Show("BIENVENIDO AL SISTEMA " + USUARIO)
+                conn.Close()
+                lector.Close()
+                AppForm.Show()
+                Me.Close()
+
 
             Else
                 MessageBox.Show("EL USUARIO O LA CONTRASEÑA SON INCORRECTOS")
