@@ -107,6 +107,7 @@ Partial Class LoginForm1
         '
         'ComboUbicacion
         '
+        Me.ComboUbicacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboUbicacion.FormattingEnabled = True
         Me.ComboUbicacion.Location = New System.Drawing.Point(371, 33)
         Me.ComboUbicacion.Name = "ComboUbicacion"
