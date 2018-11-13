@@ -136,10 +136,10 @@
     <Compile Include="Imprimir\Imprimir.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm1.Designer.vb">
-      <DependentUpon>LoginForm1.vb</DependentUpon>
+    <Compile Include="Frm_Login.Designer.vb">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm1.vb">
+    <Compile Include="Frm_Login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Paquetes\Frm_Paquete.Designer.vb">
@@ -268,8 +268,8 @@
     <EmbeddedResource Include="Imprimir\Imprimir.resx">
       <DependentUpon>Imprimir.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm1.resx">
-      <DependentUpon>LoginForm1.vb</DependentUpon>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paquetes\Frm_Paquete.resx">
       <DependentUpon>Frm_Paquete.vb</DependentUpon>
