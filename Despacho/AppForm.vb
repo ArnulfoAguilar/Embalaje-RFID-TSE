@@ -871,7 +871,7 @@ Namespace VB_RFID3_Host_Sample1
             Me.readButton.BackColor = System.Drawing.SystemColors.Control
             Me.readButton.Enabled = False
             Me.readButton.Image = CType(resources.GetObject("readButton.Image"), System.Drawing.Image)
-            Me.readButton.Location = New System.Drawing.Point(50, 268)
+            Me.readButton.Location = New System.Drawing.Point(75, 305)
             Me.readButton.Name = "readButton"
             Me.readButton.Size = New System.Drawing.Size(64, 57)
             Me.readButton.TabIndex = 2
@@ -892,7 +892,7 @@ Namespace VB_RFID3_Host_Sample1
             Me.btn_stop.BackColor = System.Drawing.SystemColors.Control
             Me.btn_stop.Enabled = False
             Me.btn_stop.Image = CType(resources.GetObject("btn_stop.Image"), System.Drawing.Image)
-            Me.btn_stop.Location = New System.Drawing.Point(185, 268)
+            Me.btn_stop.Location = New System.Drawing.Point(227, 305)
             Me.btn_stop.Name = "btn_stop"
             Me.btn_stop.Size = New System.Drawing.Size(72, 57)
             Me.btn_stop.TabIndex = 57
@@ -903,10 +903,10 @@ Namespace VB_RFID3_Host_Sample1
             Me.AutoScroll = True
             Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
             Me.ClientSize = New System.Drawing.Size(1068, 570)
-            Me.Controls.Add(Me.btn_stop)
             Me.Controls.Add(Me.Label15)
             Me.Controls.Add(Me.ComboPaquete)
             Me.Controls.Add(Me.ComboSede)
+            Me.Controls.Add(Me.btn_stop)
             Me.Controls.Add(Me.btn_aceptar)
             Me.Controls.Add(Me.Label16)
             Me.Controls.Add(Me.Label17)
