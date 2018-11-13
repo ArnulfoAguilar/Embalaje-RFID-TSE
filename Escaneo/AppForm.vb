@@ -959,6 +959,7 @@ Namespace VB_RFID3_Host_Sample1
             '
             'ComboSede
             '
+            Me.ComboSede.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
             Me.ComboSede.FormattingEnabled = True
             Me.ComboSede.Location = New System.Drawing.Point(374, 127)
             Me.ComboSede.Name = "ComboSede"
@@ -985,6 +986,7 @@ Namespace VB_RFID3_Host_Sample1
             '
             'ComboPaquete
             '
+            Me.ComboPaquete.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
             Me.ComboPaquete.FormattingEnabled = True
             Me.ComboPaquete.Location = New System.Drawing.Point(718, 127)
             Me.ComboPaquete.Name = "ComboPaquete"
@@ -1280,8 +1282,10 @@ Namespace VB_RFID3_Host_Sample1
                 End Try
                 MessageBox.Show("CAJA COMPLETA")
                 Caja_completa = 1
-                TextBox1.Focus()
-
+                conn.Close()
+                parar()
+                Me.readButton.Text = "Empezar"
+                Caja_completa = 1
             End If
         End Sub
 
@@ -1582,8 +1586,9 @@ Namespace VB_RFID3_Host_Sample1
                                         Me.verificadosList.Items.Clear()
                                         Me.m_TagTable.Clear()
                                         Me.m_TagTotalCount = 0
+                                        Me.readButton.Text = "Parar"
                                     End If
-                                    Me.readButton.Text = "Parar"
+
                                 Else
                                     MessageBox.Show("Este codigo de barra no esta en la base de datos de CAJAS.")
                                     conn.Close()
@@ -1619,19 +1624,6 @@ Namespace VB_RFID3_Host_Sample1
         End Sub
         Private Sub parar()
             TextBox1.Focus()
-            'Try
-            '    Dim sqlConsult As String = "update Caja set estado=2 where barcode=:codigo_BOLSA_JRV"
-            '    Dim comando1 As New OracleCommand(sqlConsult, conn)
-            '    comando1.Parameters.Add(":codigo_BOLSA_JRV", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
-            '    conn.Open()
-            '    comando1.ExecuteNonQuery()
-            '    conn.Close()
-            '    TextBox1.Focus()
-            'Catch ex As Exception
-            '    MessageBox.Show(ex.ToString)
-            'End Try
-            TextBox1.Clear()
-            TextBox1.Focus()
             totalTagValueLabel.Text = 0
             txt_tags_encontrados.Text = 0
             txtCantidad_inconsistentes.Text = 0
@@ -1647,6 +1639,7 @@ Namespace VB_RFID3_Host_Sample1
                 Me.m_ReaderAPI.Actions.Inventory.Stop()
             End If
             Me.readButton.Text = "Empezar"
+            TextBox1.Clear()
             TextBox1.Focus()
 
         End Sub

@@ -1128,6 +1128,7 @@ Namespace VB_RFID3_Host_Sample1
                 conn.Open()
                 lector2 = comando.ExecuteReader()
                 If lector2.HasRows Then
+                    lector2.Read()
                     id_caja = lector2.GetInt32(0)
                     conn.Close()
                     actualizar_Caja_despachada()

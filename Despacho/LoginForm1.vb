@@ -14,7 +14,7 @@ Public Class LoginForm1
         Try
             Dim username As String = UsernameTextBox.Text
             Dim password As String = PasswordTextBox.Text
-            Dim sqlConsult As String = "SELECT ID_USER, R.NOMBRE_ROL,NOMBRE_USER FROM USUARIOS US JOIN ROL R ON US.ID_ROL=R.ID_ROL " & _
+            Dim sqlConsult As String = "SELECT ID_USER, R.NOMBRE_ROL,NOMBRE_USER FROM vista_users US JOIN ROL R ON US.ID_ROL=R.ID_ROL " & _
                                     " where us.NOMBRE_USER =:username   AND us.CONTRASENIA =:password"
             Dim comando As New OracleCommand(sqlConsult, conn)
             comando.Parameters.Add(":username", OracleType.Char, 20).Value = username
