@@ -3,7 +3,7 @@ Public Class Edit_Ubicacion
     Dim i As Integer
     Dim id As Integer
     Private Sub btn_cancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cancelar.Click
-        Ubicaciones.Show()
+        Frm_principal.Show()
         Me.Close()
     End Sub
 
