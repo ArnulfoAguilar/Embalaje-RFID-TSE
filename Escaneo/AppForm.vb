@@ -1281,7 +1281,6 @@ Namespace VB_RFID3_Host_Sample1
                     MessageBox.Show(ex.ToString)
                 End Try
                 MessageBox.Show("CAJA COMPLETA")
-                Caja_completa = 1
                 conn.Close()
                 parar()
                 Me.readButton.Text = "Empezar"
@@ -1316,8 +1315,7 @@ Namespace VB_RFID3_Host_Sample1
                     ' Se actualiza el articulo como inconsistente,
                     'Agregandole el ID de la caja en la que se encontro
                     actualizar_articulo_no_pertenece(parametroConsulta)
-                    txtCantidad_inconsistentes.Text += 1
-                    cargar_GRID_Inconsistentes()
+                    
                 End If
             Catch ex As Exception
                 conn.Close()
@@ -1348,6 +1346,8 @@ Namespace VB_RFID3_Host_Sample1
                         conn.Open()
                         comando1.ExecuteNonQuery()
                         conn.Close()
+                        txtCantidad_inconsistentes.Text += 1
+                        cargar_GRID_Inconsistentes()
                     Catch ex As Exception
                         MessageBox.Show(ex.ToString)
                         conn.Close()
@@ -1546,15 +1546,20 @@ Namespace VB_RFID3_Host_Sample1
             End If
         End Sub
         Private Sub empezar()
+            conn.Close()
 
             Try
                 If Me.m_IsConnected Then
                     If (Me.readButton.Text = "Empezar") Then
+                        Caja_completa = 0
                         Try
                             'HACER CONSULTA DE CAJA
                             Try
 
-                                Dim paquete As String = "select id_caja, id_depto, id_sede, id_muni from caja where codebar=:codigo_CAJA"
+                                Dim paquete As String = "select c.id_caja,M.NOMBRE_MUNI,D.NOMBRE_DEPTO from caja c " & _
+                                                        " join municipio m on C.ID_MUNI=M.ID_MUNI " & _
+                                                        " join departamento d on C.ID_DEPTO=D.ID_DEPTO " & _
+                                                        " where M.ID_DEPTO=D.ID_DEPTO and codebar=:codigo_CAJA"
                                 Dim comando As New OracleCommand(paquete, conn)
                                 comando.Parameters.Add(":codigo_CAJA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
                                 Dim lector As OracleDataReader = Nothing
@@ -1568,27 +1573,59 @@ Namespace VB_RFID3_Host_Sample1
                                 ' decir que la validación ha sido satisfactoria.
                                 '
                                 If lector.HasRows Then
-
-                                    Do While lector.Read
-                                        '    'Le asigno valor a la variable global
-                                        id_caja = lector.GetInt32(0)
-                                        '    'Le asigno los siguientes valores a los LABEL
-                                        '    txt_Departamento.Text = lector.GetString(1)
-                                        '    txt_Municipio.Text = lector.GetString(3)
-                                    Loop
-
-                                    'Se carga el grid con los articulos que deberia tener la caja
-                                    cargar_GRID()
                                     conn.Close()
-                                    If Caja_completa = 0 Then
-                                        Me.m_ReaderAPI.Actions.Inventory.Perform(Nothing, Nothing, Nothing)
-                                        Me.inventoryList.Items.Clear()
-                                        Me.verificadosList.Items.Clear()
-                                        Me.m_TagTable.Clear()
-                                        Me.m_TagTotalCount = 0
-                                        Me.readButton.Text = "Parar"
-                                    End If
+                                    Try
+                                        Dim paquete_sede As String = "select c.id_caja,M.NOMBRE_MUNI,D.NOMBRE_DEPTO from caja c " & _
+                                                                                                " join municipio m on C.ID_MUNI=M.ID_MUNI " & _
+                                                                                                " join departamento d on C.ID_DEPTO=D.ID_DEPTO " & _
+                                                                                                " where M.ID_DEPTO=D.ID_DEPTO and codebar=:codigo_CAJA" & _
+                                                                                                " and c.ID_SEDE=:SEDE and c.ID_PAQUETE=:PAQUETE"
+                                        Dim comando_sede As New OracleCommand(paquete_sede, conn)
+                                        comando_sede.Parameters.Add(":codigo_CAJA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
+                                        MessageBox.Show(ComboSede.SelectedValue.ToString)
+                                        comando_sede.Parameters.Add(":SEDE", OracleType.Int32, 50).Value = ComboSede.SelectedValue.ToString
+                                        comando_sede.Parameters.Add(":PAQUETE", OracleType.Int32, 50).Value = ComboPaquete.SelectedValue.ToString
+                                        Dim lector_sede As OracleDataReader = Nothing
+                                        '
+                                        conn.Open()
+                                        ' Ejecutamos el comando
+                                        '
+                                        lector_sede = comando.ExecuteReader()
+                                        ' Si el lector tiene alguna fila, es porque al menos existe
+                                        ' una caja con los datos especificados, por tanto, podemos
+                                        ' decir que la validación ha sido satisfactoria.
+                                        '
+                                        If lector_sede.HasRows Then
+                                            Do While lector_sede.Read
+                                                '    'Le asigno valor a la variable global
+                                                id_caja = lector_sede.GetInt32(0)
+                                                '    'Le asigno los siguientes valores a los LABEL
+                                                txt_Departamento.Text = lector_sede.GetString(2)
+                                                txt_Municipio.Text = lector_sede.GetString(1)
+                                            Loop
+                                            'Se carga el grid con los articulos que deberia tener la caja
+                                            cargar_GRID()
+                                            conn.Close()
+                                            If Caja_completa = 0 Then
+                                                Me.m_ReaderAPI.Actions.Inventory.Perform(Nothing, Nothing, Nothing)
+                                                Me.inventoryList.Items.Clear()
+                                                Me.verificadosList.Items.Clear()
+                                                Me.m_TagTable.Clear()
+                                                Me.m_TagTotalCount = 0
+                                                Me.readButton.Text = "Parar"
+                                            End If
+                                            Caja_completa = 0
+                                        Else
+                                            MessageBox.Show("Esta caja no pertenece a la sede o Paquete seleccionado")
+                                            conn.Close()
+                                            parar()
+                                            Caja_completa = 0
+                                        End If
 
+
+                                    Catch ex As Exception
+                                        MessageBox.Show(ex.ToString)
+                                    End Try
                                 Else
                                     MessageBox.Show("Este codigo de barra no esta en la base de datos de CAJAS.")
                                     conn.Close()
