@@ -25,7 +25,6 @@
 
     Private Sub EventoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EventoToolStripMenuItem.Click
         Frm_Evento.Show()
-
         Me.Close()
     End Sub
 
@@ -61,10 +60,11 @@
 
     Private Sub Frm_principal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         If rol_global <> 0 Then
-            MantenimientosToolStripMenuItem.Enabled = False
+            MantenimientosToolStripMenuItem.HideDropDown()
         End If
 	End Sub
     Private Sub ImprimirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ImprimirToolStripMenuItem.Click
         Imprimir.ShowDialog()
     End Sub
+
 End Class

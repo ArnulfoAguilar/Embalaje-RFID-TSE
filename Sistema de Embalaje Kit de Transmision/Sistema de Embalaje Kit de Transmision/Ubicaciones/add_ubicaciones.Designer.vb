@@ -114,7 +114,7 @@ Partial Class add_ubicaciones
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Size = New System.Drawing.Size(75, 23)
         Me.btn_cancelar.TabIndex = 15
-        Me.btn_cancelar.Text = "Cancelar"
+        Me.btn_cancelar.Text = "Regresar"
         Me.btn_cancelar.UseVisualStyleBackColor = True
         '
         'add_ubicaciones
