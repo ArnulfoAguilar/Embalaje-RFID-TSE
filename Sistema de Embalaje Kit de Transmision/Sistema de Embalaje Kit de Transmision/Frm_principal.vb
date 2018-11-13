@@ -18,11 +18,6 @@
         Me.Close()
     End Sub
 
-    Private Sub Frm_principal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
-
     Private Sub ProductosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductosToolStripMenuItem.Click
         Frm_Articulo.Show()
         Me.Close()
