@@ -41,4 +41,9 @@ Public Class User
             MessageBox.Show(ex.ToString)
         End Try
     End Sub
+
+    Private Sub InicioToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InicioToolStripMenuItem.Click
+        Frm_principal.Show()
+        Me.Close()
+    End Sub
 End Class
