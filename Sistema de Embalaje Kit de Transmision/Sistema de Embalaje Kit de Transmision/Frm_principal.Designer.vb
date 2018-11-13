@@ -32,10 +32,6 @@ Partial Class Frm_principal
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SedesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CrearSedeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificarSedeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarSedeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EventoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PaqueteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -46,6 +42,10 @@ Partial Class Frm_principal
         Me.CrearRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ActualizarRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImprimirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CrearSedeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarSedeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarSedeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SedesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -93,7 +93,7 @@ Partial Class Frm_principal
         '
         Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUsuarioToolStripMenuItem, Me.ModificarUsuarioToolStripMenuItem})
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'CrearUsuarioToolStripMenuItem
@@ -108,12 +108,67 @@ Partial Class Frm_principal
         Me.ModificarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.ModificarUsuarioToolStripMenuItem.Text = "Modificar usuario"
         '
-        'SedesToolStripMenuItem
+        'ProductosToolStripMenuItem
         '
-        Me.SedesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearSedeToolStripMenuItem, Me.ModificarSedeToolStripMenuItem, Me.EliminarSedeToolStripMenuItem})
-        Me.SedesToolStripMenuItem.Name = "SedesToolStripMenuItem"
-        Me.SedesToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.SedesToolStripMenuItem.Text = "Sedes"
+        Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ProductosToolStripMenuItem.Text = "Articulo"
+        '
+        'EventoToolStripMenuItem
+        '
+        Me.EventoToolStripMenuItem.Name = "EventoToolStripMenuItem"
+        Me.EventoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EventoToolStripMenuItem.Text = "Evento"
+        '
+        'PaqueteToolStripMenuItem
+        '
+        Me.PaqueteToolStripMenuItem.Name = "PaqueteToolStripMenuItem"
+        Me.PaqueteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PaqueteToolStripMenuItem.Text = "Paquete"
+        '
+        'UbicacionToolStripMenuItem
+        '
+        Me.UbicacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUbicacionToolStripMenuItem, Me.EditarUbicacionToolStripMenuItem})
+        Me.UbicacionToolStripMenuItem.Name = "UbicacionToolStripMenuItem"
+        Me.UbicacionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UbicacionToolStripMenuItem.Text = "Ubicacion"
+        '
+        'CrearUbicacionToolStripMenuItem
+        '
+        Me.CrearUbicacionToolStripMenuItem.Name = "CrearUbicacionToolStripMenuItem"
+        Me.CrearUbicacionToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.CrearUbicacionToolStripMenuItem.Text = "Crear ubicacion"
+        '
+        'EditarUbicacionToolStripMenuItem
+        '
+        Me.EditarUbicacionToolStripMenuItem.Name = "EditarUbicacionToolStripMenuItem"
+        Me.EditarUbicacionToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.EditarUbicacionToolStripMenuItem.Text = "Editar Ubicacion"
+        '
+        'RolesToolStripMenuItem
+        '
+        Me.RolesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearRolToolStripMenuItem, Me.ActualizarRolToolStripMenuItem})
+        Me.RolesToolStripMenuItem.Name = "RolesToolStripMenuItem"
+        Me.RolesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RolesToolStripMenuItem.Text = "Roles"
+        '
+        'CrearRolToolStripMenuItem
+        '
+        Me.CrearRolToolStripMenuItem.Name = "CrearRolToolStripMenuItem"
+        Me.CrearRolToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.CrearRolToolStripMenuItem.Text = "Crear Rol"
+        '
+        'ActualizarRolToolStripMenuItem
+        '
+        Me.ActualizarRolToolStripMenuItem.Name = "ActualizarRolToolStripMenuItem"
+        Me.ActualizarRolToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.ActualizarRolToolStripMenuItem.Text = "Editar Rol"
+        '
+        'ImprimirToolStripMenuItem
+        '
+        Me.ImprimirToolStripMenuItem.Name = "ImprimirToolStripMenuItem"
+        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(92, 20)
+        Me.ImprimirToolStripMenuItem.Text = "Imprimir Tags"
         '
         'CrearSedeToolStripMenuItem
         '
@@ -133,69 +188,12 @@ Partial Class Frm_principal
         Me.EliminarSedeToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.EliminarSedeToolStripMenuItem.Text = "Eliminar Sede"
         '
-        'ProductosToolStripMenuItem
+        'SedesToolStripMenuItem
         '
-        Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.ProductosToolStripMenuItem.Text = "Articulo"
-        '
-        'EventoToolStripMenuItem
-        '
-        Me.EventoToolStripMenuItem.Name = "EventoToolStripMenuItem"
-        Me.EventoToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.EventoToolStripMenuItem.Text = "Evento"
-        '
-        'PaqueteToolStripMenuItem
-        '
-        Me.PaqueteToolStripMenuItem.Name = "PaqueteToolStripMenuItem"
-        Me.PaqueteToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.PaqueteToolStripMenuItem.Text = "Paquete"
-        '
-        'UbicacionToolStripMenuItem
-        '
-        Me.UbicacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUbicacionToolStripMenuItem, Me.EditarUbicacionToolStripMenuItem})
-        Me.UbicacionToolStripMenuItem.Name = "UbicacionToolStripMenuItem"
-        Me.UbicacionToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.UbicacionToolStripMenuItem.Text = "Ubicacion"
-        '
-        'CrearUbicacionToolStripMenuItem
-        '
-        Me.CrearUbicacionToolStripMenuItem.Name = "CrearUbicacionToolStripMenuItem"
-        Me.CrearUbicacionToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.CrearUbicacionToolStripMenuItem.Text = "Crear ubicacion"
-        '
-        'EditarUbicacionToolStripMenuItem
-        '
-        Me.EditarUbicacionToolStripMenuItem.Name = "EditarUbicacionToolStripMenuItem"
-        Me.EditarUbicacionToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.EditarUbicacionToolStripMenuItem.Text = "Editar Ubicacion"
-        '
-        'RolesToolStripMenuItem
-        '
-        Me.RolesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearRolToolStripMenuItem, Me.ActualizarRolToolStripMenuItem})
-        Me.RolesToolStripMenuItem.Name = "RolesToolStripMenuItem"
-        Me.RolesToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.RolesToolStripMenuItem.Text = "Roles"
-        '
-        'CrearRolToolStripMenuItem
-        '
-        Me.CrearRolToolStripMenuItem.Name = "CrearRolToolStripMenuItem"
-        Me.CrearRolToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
-        Me.CrearRolToolStripMenuItem.Text = "Crear Rol"
-        '
-        'ActualizarRolToolStripMenuItem
-        '
-        Me.ActualizarRolToolStripMenuItem.Name = "ActualizarRolToolStripMenuItem"
-        Me.ActualizarRolToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
-        Me.ActualizarRolToolStripMenuItem.Text = "Editar Rol"
-        '
-
-        'ImprimirToolStripMenuItem
-        '
-        Me.ImprimirToolStripMenuItem.Name = "ImprimirToolStripMenuItem"
-        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(93, 20)
-        Me.ImprimirToolStripMenuItem.Text = "Imprimir Tags"
-
+        Me.SedesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearSedeToolStripMenuItem, Me.ModificarSedeToolStripMenuItem, Me.EliminarSedeToolStripMenuItem})
+        Me.SedesToolStripMenuItem.Name = "SedesToolStripMenuItem"
+        Me.SedesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SedesToolStripMenuItem.Text = "Sedes"
         '
         'Frm_principal
         '
@@ -225,10 +223,6 @@ Partial Class Frm_principal
     Friend WithEvents UsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CrearUsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ModificarUsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SedesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CrearSedeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ModificarSedeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EliminarSedeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProductosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ImprimirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EventoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -239,5 +233,9 @@ Partial Class Frm_principal
     Friend WithEvents RolesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CrearRolToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ActualizarRolToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SedesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CrearSedeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ModificarSedeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EliminarSedeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
