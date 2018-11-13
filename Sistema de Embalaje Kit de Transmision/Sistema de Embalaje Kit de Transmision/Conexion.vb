@@ -9,7 +9,8 @@ Module Conexion
     Public con2 As New OracleConnection(cadena)
 
     Public num As Integer
-    Public user As String
+    Public user_global As Integer
+    Public rol_global As Integer
 End Module
 
 
