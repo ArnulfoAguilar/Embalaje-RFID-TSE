@@ -1578,11 +1578,10 @@ Namespace VB_RFID3_Host_Sample1
                                         Dim paquete_sede As String = "select c.id_caja,M.NOMBRE_MUNI,D.NOMBRE_DEPTO from caja c " & _
                                                                                                 " join municipio m on C.ID_MUNI=M.ID_MUNI " & _
                                                                                                 " join departamento d on C.ID_DEPTO=D.ID_DEPTO " & _
-                                                                                                " where M.ID_DEPTO=D.ID_DEPTO and codebar=:codigo_CAJA" & _
-                                                                                                " and c.ID_SEDE=:SEDE and c.ID_PAQUETE=:PAQUETE"
+                                                                                                " where M.ID_DEPTO=D.ID_DEPTO and codebar=:codigo_CAJA and c.ID_SEDE=:SEDE and c.ID_PAQUETE=:PAQUETE" ' & _
+                                        '" and c.ID_SEDE=:SEDE and c.ID_PAQUETE=:PAQUETE"
                                         Dim comando_sede As New OracleCommand(paquete_sede, conn)
                                         comando_sede.Parameters.Add(":codigo_CAJA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
-                                        MessageBox.Show(ComboSede.SelectedValue.ToString)
                                         comando_sede.Parameters.Add(":SEDE", OracleType.Int32, 50).Value = ComboSede.SelectedValue.ToString
                                         comando_sede.Parameters.Add(":PAQUETE", OracleType.Int32, 50).Value = ComboPaquete.SelectedValue.ToString
                                         Dim lector_sede As OracleDataReader = Nothing
@@ -1590,7 +1589,7 @@ Namespace VB_RFID3_Host_Sample1
                                         conn.Open()
                                         ' Ejecutamos el comando
                                         '
-                                        lector_sede = comando.ExecuteReader()
+                                        lector_sede = comando_sede.ExecuteReader()
                                         ' Si el lector tiene alguna fila, es porque al menos existe
                                         ' una caja con los datos especificados, por tanto, podemos
                                         ' decir que la validación ha sido satisfactoria.
