@@ -33,7 +33,7 @@ Namespace VB_RFID3_Host_Sample1
         End Sub
         'Variables
         Dim id_paquete As Integer ' variable para guardar el id de la sede y hacer consulta de la caja
-        Dim id_sede As Integer 'Variable para guardar el id del paquete y hacer consulta a la caja
+        Dim id_ruta As Integer 'Variable para guardar el id del paquete y hacer consulta a la caja
         Dim BANDERA_BUTTON_READ As Integer = 0 ' VARIABLE PARA ACTIVAR LA BANDERA Y HABILITAR LA LECTURA
         Dim Caja_completa As Integer = 0 'bandera para determinar si la caja esta completa y que no siga leyendo
 
@@ -387,7 +387,7 @@ Namespace VB_RFID3_Host_Sample1
             Me.Municipio = New System.Windows.Forms.Label
             Me.txt_Departamento = New System.Windows.Forms.Label
             Me.txt_Municipio = New System.Windows.Forms.Label
-            Me.ComboSede = New System.Windows.Forms.ComboBox
+            Me.ComboRuta = New System.Windows.Forms.ComboBox
             Me.Label15 = New System.Windows.Forms.Label
             Me.Label16 = New System.Windows.Forms.Label
             Me.ComboPaquete = New System.Windows.Forms.ComboBox
@@ -957,28 +957,28 @@ Namespace VB_RFID3_Host_Sample1
             Me.txt_Municipio.TabIndex = 50
             Me.txt_Municipio.Text = "Municipio"
             '
-            'ComboSede
+            'ComboRuta
             '
-            Me.ComboSede.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-            Me.ComboSede.FormattingEnabled = True
-            Me.ComboSede.Location = New System.Drawing.Point(374, 127)
-            Me.ComboSede.Name = "ComboSede"
-            Me.ComboSede.Size = New System.Drawing.Size(298, 21)
-            Me.ComboSede.TabIndex = 51
+            Me.ComboRuta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+            Me.ComboRuta.FormattingEnabled = True
+            Me.ComboRuta.Location = New System.Drawing.Point(398, 127)
+            Me.ComboRuta.Name = "ComboRuta"
+            Me.ComboRuta.Size = New System.Drawing.Size(172, 21)
+            Me.ComboRuta.TabIndex = 51
             '
             'Label15
             '
             Me.Label15.AutoSize = True
-            Me.Label15.Location = New System.Drawing.Point(371, 111)
+            Me.Label15.Location = New System.Drawing.Point(395, 111)
             Me.Label15.Name = "Label15"
-            Me.Label15.Size = New System.Drawing.Size(77, 13)
+            Me.Label15.Size = New System.Drawing.Size(37, 13)
             Me.Label15.TabIndex = 52
-            Me.Label15.Text = "Sede Logistica"
+            Me.Label15.Text = "RUTA"
             '
             'Label16
             '
             Me.Label16.AutoSize = True
-            Me.Label16.Location = New System.Drawing.Point(715, 111)
+            Me.Label16.Location = New System.Drawing.Point(642, 111)
             Me.Label16.Name = "Label16"
             Me.Label16.Size = New System.Drawing.Size(86, 13)
             Me.Label16.TabIndex = 54
@@ -988,7 +988,7 @@ Namespace VB_RFID3_Host_Sample1
             '
             Me.ComboPaquete.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
             Me.ComboPaquete.FormattingEnabled = True
-            Me.ComboPaquete.Location = New System.Drawing.Point(718, 127)
+            Me.ComboPaquete.Location = New System.Drawing.Point(645, 127)
             Me.ComboPaquete.Name = "ComboPaquete"
             Me.ComboPaquete.Size = New System.Drawing.Size(205, 21)
             Me.ComboPaquete.TabIndex = 53
@@ -1005,7 +1005,7 @@ Namespace VB_RFID3_Host_Sample1
             '
             'btn_aceptar
             '
-            Me.btn_aceptar.Location = New System.Drawing.Point(950, 125)
+            Me.btn_aceptar.Location = New System.Drawing.Point(924, 125)
             Me.btn_aceptar.Name = "btn_aceptar"
             Me.btn_aceptar.Size = New System.Drawing.Size(75, 23)
             Me.btn_aceptar.TabIndex = 56
@@ -1020,10 +1020,10 @@ Namespace VB_RFID3_Host_Sample1
             Me.Controls.Add(Me.Label17)
             Me.Controls.Add(Me.Label16)
             Me.Controls.Add(Me.btn_aceptar)
-            Me.Controls.Add(Me.Label15)
-            Me.Controls.Add(Me.ComboSede)
             Me.Controls.Add(Me.ComboPaquete)
             Me.Controls.Add(Me.DGViewInconsistentes)
+            Me.Controls.Add(Me.Label15)
+            Me.Controls.Add(Me.ComboRuta)
             Me.Controls.Add(Me.txt_Departamento)
             Me.Controls.Add(Me.txt_Municipio)
             Me.Controls.Add(Me.TextBox1)
@@ -1174,7 +1174,7 @@ Namespace VB_RFID3_Host_Sample1
         Friend WithEvents Municipio As System.Windows.Forms.Label
         Friend WithEvents txt_Departamento As System.Windows.Forms.Label
         Friend WithEvents txt_Municipio As System.Windows.Forms.Label
-        Friend WithEvents ComboSede As System.Windows.Forms.ComboBox
+        Friend WithEvents ComboRuta As System.Windows.Forms.ComboBox
         Friend WithEvents Label15 As System.Windows.Forms.Label
         Friend WithEvents Label16 As System.Windows.Forms.Label
         Friend WithEvents ComboPaquete As System.Windows.Forms.ComboBox
@@ -1315,7 +1315,7 @@ Namespace VB_RFID3_Host_Sample1
                     ' Se actualiza el articulo como inconsistente,
                     'Agregandole el ID de la caja en la que se encontro
                     actualizar_articulo_no_pertenece(parametroConsulta)
-                    
+
                 End If
             Catch ex As Exception
                 conn.Close()
@@ -1575,14 +1575,15 @@ Namespace VB_RFID3_Host_Sample1
                                 If lector.HasRows Then
                                     conn.Close()
                                     Try
-                                        Dim paquete_sede As String = "select c.id_caja,M.NOMBRE_MUNI,D.NOMBRE_DEPTO from caja c " & _
-                                                                                                " join municipio m on C.ID_MUNI=M.ID_MUNI " & _
-                                                                                                " join departamento d on C.ID_DEPTO=D.ID_DEPTO " & _
-                                                                                                " where M.ID_DEPTO=D.ID_DEPTO and codebar=:codigo_CAJA and c.ID_SEDE=:SEDE and c.ID_PAQUETE=:PAQUETE" ' & _
-                                        '" and c.ID_SEDE=:SEDE and c.ID_PAQUETE=:PAQUETE"
+                                        Dim paquete_sede As String = "select c.id_caja,M.NOMBRE_MUNI,D.NOMBRE_DEPTO from caja c  join municipio m on C.ID_MUNI=M.ID_MUNI " & _
+                                                                    "  join departamento d on C.ID_DEPTO=D.ID_DEPTO " & _
+                                                                    " join sede_logistica se on C.ID_SEDE=SE.ID_SEDE " & _
+                                                                    " where M.ID_DEPTO=D.ID_DEPTO and codebar=:codigo_CAJA " & _
+                                                                    " and SE.RUTA_SEDE=:RUTA and c.ID_PAQUETE=:PAQUETE " & _
+                                                                    " and SE.ID_DEPTO=D.ID_DEPTO "
                                         Dim comando_sede As New OracleCommand(paquete_sede, conn)
                                         comando_sede.Parameters.Add(":codigo_CAJA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
-                                        comando_sede.Parameters.Add(":SEDE", OracleType.Int32, 50).Value = ComboSede.SelectedValue.ToString
+                                        comando_sede.Parameters.Add(":RUTA", OracleType.Int32, 50).Value = ComboRuta.SelectedValue.ToString
                                         comando_sede.Parameters.Add(":PAQUETE", OracleType.Int32, 50).Value = ComboPaquete.SelectedValue.ToString
                                         Dim lector_sede As OracleDataReader = Nothing
                                         '
@@ -1615,7 +1616,7 @@ Namespace VB_RFID3_Host_Sample1
                                             End If
                                             Caja_completa = 0
                                         Else
-                                            MessageBox.Show("Esta caja no pertenece a la sede o Paquete seleccionado")
+                                            MessageBox.Show("Esta caja no pertenece a la Ruta o Paquete seleccionado")
                                             conn.Close()
                                             parar()
                                             Caja_completa = 0
@@ -1684,7 +1685,7 @@ Namespace VB_RFID3_Host_Sample1
             DataGridENCONTRADOS.Enabled = False
             DataGrid_no_encontrados.Enabled = False
             DataGViewFaltantes.Enabled = False
-            CargarCombobox_sede()
+            CargarCombobox_ruta()
             CargarCombobox_Paquete()
             Try
                 connectBackgroundWorker.RunWorkerAsync("Connect")
@@ -1710,16 +1711,16 @@ Namespace VB_RFID3_Host_Sample1
         Private Sub myUpdateStatus(ByVal eventData As Events.StatusEventData)
 
         End Sub
-        Private Sub CargarCombobox_sede()
+        Private Sub CargarCombobox_ruta()
             Try
 
-                Dim sqlConsult As String = "select ID_SEDE, NOMBRE_SEDE from SEDE_LOGISTICA"
+                Dim sqlConsult As String = "select distinct RUTA_SEDE from SEDE_LOGISTICA order by 1"
                 Dim dataAdapter As New OracleDataAdapter(sqlConsult, conn)
                 Dim DT As New DataTable
                 dataAdapter.Fill(DT)
-                Me.ComboSede.DataSource = DT
-                ComboSede.ValueMember = "ID_SEDE"
-                ComboSede.DisplayMember = "NOMBRE_SEDE"
+                Me.ComboRuta.DataSource = DT
+                ComboRuta.ValueMember = "RUTA_SEDE"
+                ComboRuta.DisplayMember = "RUTA_SEDE"
             Catch ex As Exception
                 MessageBox.Show(ex.ToString)
             End Try
@@ -1741,12 +1742,12 @@ Namespace VB_RFID3_Host_Sample1
 
         Private Sub btn_aceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_aceptar.Click
             If btn_aceptar.Text = "Aceptar" Then
-                If ComboSede.Items.Count <= 0 Or ComboPaquete.Items.Count <= 0 Then
+                If ComboRuta.Items.Count <= 0 Or ComboPaquete.Items.Count <= 0 Then
                     MessageBox.Show("Hay campos Vacios")
                 Else
-                    id_sede = ComboSede.SelectedValue.ToString
+                    id_ruta = ComboRuta.SelectedValue.ToString
                     id_paquete = ComboPaquete.SelectedValue.ToString
-                    ComboSede.Enabled = False
+                    ComboRuta.Enabled = False
                     ComboPaquete.Enabled = False
                     TextBox1.Enabled = True
                     BANDERA_BUTTON_READ = 1
@@ -1755,7 +1756,7 @@ Namespace VB_RFID3_Host_Sample1
                     TextBox1.Focus()
                 End If
             ElseIf btn_aceptar.Text = "Cancelar" Then
-                ComboSede.Enabled = True
+                ComboRuta.Enabled = True
                 ComboPaquete.Enabled = True
                 TextBox1.Enabled = False
                 readButton.Enabled = False
@@ -1765,7 +1766,7 @@ Namespace VB_RFID3_Host_Sample1
                 DataGViewFaltantes.DataSource = Nothing
                 DGViewInconsistentes.DataSource = Nothing
             End If
-            
+
         End Sub
     End Class
 
