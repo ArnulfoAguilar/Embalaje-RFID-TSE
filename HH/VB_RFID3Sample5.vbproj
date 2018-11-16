@@ -165,10 +165,10 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://localhost:50633/WS_RFID.asmx">
+    <WebReferenceUrl Include="http://172.16.1.226:8091/WS_RFID.asmx">
       <UrlBehavior>Static</UrlBehavior>
       <RelPath>Web References\WS_RFID\</RelPath>
-      <UpdateFromURL>http://localhost:50633/WS_RFID.asmx</UpdateFromURL>
+      <UpdateFromURL>http://172.16.1.226:8091/WS_RFID.asmx</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>

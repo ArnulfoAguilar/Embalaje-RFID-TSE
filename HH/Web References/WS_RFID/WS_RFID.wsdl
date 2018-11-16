@@ -383,10 +383,10 @@
   </wsdl:binding>
   <wsdl:service name="WebService1">
     <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
-      <soap:address location="http://localhost:50633/WS_RFID.asmx" />
+      <soap:address location="http://172.16.1.226:8091/WS_RFID.asmx" />
     </wsdl:port>
     <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
-      <soap12:address location="http://localhost:50633/WS_RFID.asmx" />
+      <soap12:address location="http://172.16.1.226:8091/WS_RFID.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

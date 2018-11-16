@@ -33,7 +33,7 @@ Namespace WS_RFID
         '''<remarks/>
         Public Sub New()
             MyBase.New
-            Me.Url = "http://localhost:50633/WS_RFID.asmx"
+            Me.Url = "http://172.16.1.226:8091/WS_RFID.asmx"
         End Sub
         
         '''<remarks/>
