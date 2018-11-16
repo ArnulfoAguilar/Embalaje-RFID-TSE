@@ -28,6 +28,7 @@
     <NativePlatformName>Windows Mobile 5.0 Pocket PC SDK</NativePlatformName>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
+    <StartupObject>Inicio</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -60,6 +61,7 @@
     <Reference Include="Microsoft.WindowsCE.Forms">
       <Name>Microsoft.WindowsCE.Forms</Name>
     </Reference>
+    <Reference Include="Symbol.MagStripe2.Design, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL" />
     <Reference Include="Symbol.RFID3.Device">
       <Name>Symbol.RFID3.Device</Name>
       <SpecificVersion>False</SpecificVersion>
@@ -67,12 +69,16 @@
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing">
       <Name>System.Drawing</Name>
     </Reference>
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms">
       <Name>System.Windows.Forms</Name>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataGrid" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -102,6 +108,12 @@
     <Compile Include="HelpForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="KillForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +132,12 @@
     <Compile Include="TagDataForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="variablesGlobales.vb" />
+    <Compile Include="Web References\WS_RFID\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="WriteForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -134,11 +152,40 @@
     <EmbeddedResource Include="CapabilitiesForm.resources" />
     <EmbeddedResource Include="ConnectionForm.resources" />
     <EmbeddedResource Include="HelpForm.resources" />
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KillForm.resources" />
     <EmbeddedResource Include="LockForm.resources" />
     <EmbeddedResource Include="ReadForm.resources" />
     <EmbeddedResource Include="TagDataForm.resources" />
     <EmbeddedResource Include="WriteForm.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:50633/WS_RFID.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\WS_RFID\</RelPath>
+      <UpdateFromURL>http://localhost:50633/WS_RFID.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WS_RFID\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_RFID\WS_RFID.disco" />
+    <None Include="Web References\WS_RFID\WS_RFID.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="My Project\" />

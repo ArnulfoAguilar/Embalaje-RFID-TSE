@@ -9,3 +9,6 @@ C:\Users\Public\Motorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3Sample5\ob
 C:\Users\Public\Motorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3Sample5\obj\Debug\VB_RFID3Sample5.pdb
 C:\Users\Public\Motorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3Sample5\obj\Debug\VB_RFID3Sample5.AppForm.resources
 C:\Users\Public\Motorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3Sample5\obj\Debug\VB_RFID3Sample5.vbproj.GenerateResource.Cache
+C:\Embalaje-RFID-TSE\HH\obj\Debug\VB_RFID3Sample5.exe
+C:\Embalaje-RFID-TSE\HH\obj\Debug\VB_RFID3Sample5.xml
+C:\Embalaje-RFID-TSE\HH\obj\Debug\VB_RFID3Sample5.pdb

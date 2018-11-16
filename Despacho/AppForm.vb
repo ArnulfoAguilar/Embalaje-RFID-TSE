@@ -32,8 +32,8 @@ Namespace VB_RFID3_Host_Sample1
             Me.m_TagTotalCount = 0
         End Sub
         'Variables
-        Dim id_paquete As Integer ' variable para guardar el id de la sede y hacer consulta de la caja
-        Dim id_sede As Integer 'Variable para guardar el id del paquete y hacer consulta a la caja
+        Dim id_paquete As Integer ' variable para guardar el id del paquete y hacer consulta de la caja
+        Dim id_ruta As Integer 'Variable para guardar el id de la RUTA y hacer consulta a la caja
         Dim BANDERA_BUTTON_READ As Integer = 0
         Dim box_read As Integer ' para Guardar el ID de la caja leida y meterlo en el grid
         Dim barcode_read As String ' para Guardar el abrcode de la caja leida y meterlo en el grid
@@ -380,7 +380,7 @@ Namespace VB_RFID3_Host_Sample1
             Me.DGViewInconsistentes = New System.Windows.Forms.DataGridView
             Me.Label14 = New System.Windows.Forms.Label
             Me.txtCantidad_inconsistentes = New System.Windows.Forms.Label
-            Me.ComboSede = New System.Windows.Forms.ComboBox
+            Me.ComboRuta = New System.Windows.Forms.ComboBox
             Me.Label15 = New System.Windows.Forms.Label
             Me.Label16 = New System.Windows.Forms.Label
             Me.ComboPaquete = New System.Windows.Forms.ComboBox
@@ -821,23 +821,23 @@ Namespace VB_RFID3_Host_Sample1
             Me.txtCantidad_inconsistentes.TabIndex = 44
             Me.txtCantidad_inconsistentes.Text = "0"
             '
-            'ComboSede
+            'ComboRuta
             '
-            Me.ComboSede.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-            Me.ComboSede.FormattingEnabled = True
-            Me.ComboSede.Location = New System.Drawing.Point(374, 113)
-            Me.ComboSede.Name = "ComboSede"
-            Me.ComboSede.Size = New System.Drawing.Size(156, 21)
-            Me.ComboSede.TabIndex = 51
+            Me.ComboRuta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+            Me.ComboRuta.FormattingEnabled = True
+            Me.ComboRuta.Location = New System.Drawing.Point(374, 113)
+            Me.ComboRuta.Name = "ComboRuta"
+            Me.ComboRuta.Size = New System.Drawing.Size(156, 21)
+            Me.ComboRuta.TabIndex = 51
             '
             'Label15
             '
             Me.Label15.AutoSize = True
             Me.Label15.Location = New System.Drawing.Point(371, 97)
             Me.Label15.Name = "Label15"
-            Me.Label15.Size = New System.Drawing.Size(77, 13)
+            Me.Label15.Size = New System.Drawing.Size(30, 13)
             Me.Label15.TabIndex = 52
-            Me.Label15.Text = "Sede Logistica"
+            Me.Label15.Text = "Ruta"
             '
             'Label16
             '
@@ -905,7 +905,7 @@ Namespace VB_RFID3_Host_Sample1
             Me.ClientSize = New System.Drawing.Size(1068, 570)
             Me.Controls.Add(Me.Label15)
             Me.Controls.Add(Me.ComboPaquete)
-            Me.Controls.Add(Me.ComboSede)
+            Me.Controls.Add(Me.ComboRuta)
             Me.Controls.Add(Me.btn_stop)
             Me.Controls.Add(Me.btn_aceptar)
             Me.Controls.Add(Me.Label16)
@@ -1043,7 +1043,7 @@ Namespace VB_RFID3_Host_Sample1
         Friend WithEvents DGViewInconsistentes As System.Windows.Forms.DataGridView
         Friend WithEvents Label14 As System.Windows.Forms.Label
         Friend WithEvents txtCantidad_inconsistentes As System.Windows.Forms.Label
-        Friend WithEvents ComboSede As System.Windows.Forms.ComboBox
+        Friend WithEvents ComboRuta As System.Windows.Forms.ComboBox
         Friend WithEvents Label15 As System.Windows.Forms.Label
         Friend WithEvents Label16 As System.Windows.Forms.Label
         Friend WithEvents ComboPaquete As System.Windows.Forms.ComboBox
@@ -1052,6 +1052,7 @@ Namespace VB_RFID3_Host_Sample1
 
         'Funcion para actualizar el articulo cuando ya se detecto por RFID 
         Private Sub actualizar_Caja_despachada()
+            conn.Close()
             Try
                 Dim sqlConsulta_actualizar_articulo As String = "update caja set id_estado=2 where id_caja=:id_caja"
                 Dim comando1 As New OracleCommand(sqlConsulta_actualizar_articulo, conn)
@@ -1068,19 +1069,20 @@ Namespace VB_RFID3_Host_Sample1
         End Sub
 
 
-        'FUNCION PARA HACER EL UPDATE AL ARTICULO, SI SE ENCUENTRA CON EL CODIGO RFID
+
         'Funciona de la siguiente manera:
         'primero toma el valor leido desde la antena RFID y hace una consulta a la base de datos, si este valor no se encuentra en la base,
         'no hace nada. En cambio si el valor se encuentra en la base de datos, hace un update de el atributo id_est_art de la tabla Articulo
         'y actualiza el data grid con los articulos no recibidos
         Private Sub consulta_Articulos(ByVal parametroConsulta As String)
             ' If bandera = 0 Then
-
+            conn.Close()
             Try
                 Dim sqlConsulta_Seleccionar_caja_articulos As String = "select c.id_caja caja, c.codebar " & _
                                                                         " from detalle_caja det" & _
                                                                         " join caja c on det.id_caja=c.id_caja" & _
-                                                                        " where det.RFID=:CODIGO_RFID_ARTICULO and c.id_estado = 1"
+                                                                        " where det.RFID=:CODIGO_RFID_ARTICULO and c.id_estado = 1" & _
+                                                                        " and det.ID_ARTICULO=51"
                 Dim comando As New OracleCommand(sqlConsulta_Seleccionar_caja_articulos, conn)
                 comando.Parameters.Add(":CODIGO_RFID_ARTICULO", OracleType.VarChar, 32).Value = parametroConsulta
                 Dim lector2 As OracleDataReader = Nothing
@@ -1111,17 +1113,20 @@ Namespace VB_RFID3_Host_Sample1
 
 
         'FUNCION para verificar que CAJA pertenezca a la SEDE LOGISTICA correcta
-        ' Sirve para comprobar que el codigo RFID leido, pertenezca a una caja de la SEDE LOGISTICA elegida
+        ' Sirve para comprobar que el codigo RFID leido, pertenezca a una caja de la RUTA elegida
         Private Sub verificar_caja_correcta(ByVal parametroConsulta As String)
+            conn.Close()
             Try
                 Dim sqlConsulta_Seleccionar_caja_articulos As String = " select c.id_caja caja" & _
                                                                         " from detalle_caja det" & _
                                                                         " join caja c on det.id_caja=c.id_caja" & _
-                                                                        " where det.RFID=:CODIGO_RFID_ARTICULO and c.id_sede=:sede and c.id_paquete=:paquete"
+                                                                        " join sede_logistica se on C.ID_SEDE=SE.ID_SEDE " & _
+                                                                        " where det.RFID=:CODIGO_RFID_ARTICULO and SE.RUTA_SEDE=:RUTA " & _
+                                                                        " and c.id_paquete=:paquete and det.id_articulo=51"
 
                 Dim comando As New OracleCommand(sqlConsulta_Seleccionar_caja_articulos, conn)
                 comando.Parameters.Add(":CODIGO_RFID_ARTICULO", OracleType.VarChar, 32).Value = parametroConsulta
-                comando.Parameters.Add(":sede", OracleType.VarChar, 32).Value = id_sede
+                comando.Parameters.Add(":RUTA", OracleType.VarChar, 32).Value = id_ruta
                 comando.Parameters.Add(":paquete", OracleType.VarChar, 32).Value = id_paquete
 
                 Dim lector2 As OracleDataReader = Nothing
@@ -1131,13 +1136,11 @@ Namespace VB_RFID3_Host_Sample1
                     lector2.Read()
                     id_caja = lector2.GetInt32(0)
                     conn.Close()
-                    actualizar_Caja_despachada()
-                    txt_tags_encontrados.Text += 1
-
+                    is_Caja_Completa(id_caja)
                 Else
                     conn.Close()
                     ' Se actualiza la caja como inconsistente,
-                    'Agregandole el ID de la sede en la que se encontro
+                    'Agregandole el ID de la ruta en la que se encontro
                     actualizar_articulo_no_pertenece(parametroConsulta)
 
                 End If
@@ -1146,8 +1149,34 @@ Namespace VB_RFID3_Host_Sample1
                 MessageBox.Show(ex.ToString)
             End Try
         End Sub
+        'Funcion para ver si la caja esta completa, si no muestra un error
+        Private Sub is_Caja_Completa(ByVal id_caja As Integer)
+            conn.Close()
+            Try
+                Dim sqlConsulta_Seleccionar_caja_articulos As String = " select id_caja caja " & _
+                                                                        " from caja " & _
+                                                                        " where ID_COMPLETO=1 and ID_CAJA=:CAJA"
+
+                Dim comando As New OracleCommand(sqlConsulta_Seleccionar_caja_articulos, conn)
+                comando.Parameters.Add(":CAJA", OracleType.VarChar, 32).Value = id_caja
+                Dim lector2 As OracleDataReader = Nothing
+                conn.Open()
+                lector2 = comando.ExecuteReader()
+                If lector2.HasRows Then
+                    actualizar_Caja_despachada()
+                    txt_tags_encontrados.Text += 1
+                Else
+                    conn.Close()
+                    MessageBox.Show("Hay una caja Incompleta El numero de la caja es: " + id_caja.ToString)
+                End If
+            Catch ex As Exception
+                conn.Close()
+                MessageBox.Show(ex.ToString)
+            End Try
+        End Sub
         'FUNCION para actualizar el Articulo con inconsistencia, cuando se encuentre en una CAJA distinta a la que pertenece
         Private Sub actualizar_articulo_no_pertenece(ByVal parametroConsulta As String)
+            conn.Close()
             Try
                 ' Se consulta si el articulo que se detecto, aun no ha pasado y no tiene inconsistencia 
                 Dim sqlConsulta_Seleccionar_CAJA_ARTICULOS As String = " select c.id_caja caja " & _
@@ -1340,11 +1369,13 @@ Namespace VB_RFID3_Host_Sample1
         Private Sub empezar()
 
             Try
-                id_sede = ComboSede.SelectedValue.ToString
+                id_ruta = ComboRuta.SelectedValue.ToString
                 id_paquete = ComboPaquete.SelectedValue.ToString
-                Dim paquete As String = "select id_caja from caja where id_sede=:sede and id_paquete=:paquete and id_estado=1"
+                Dim paquete As String = "select id_caja from caja c " & _
+                                        " join sede_logistica se on C.ID_SEDE=SE.ID_SEDE " & _
+                                        " where se.RUTA_SEDE=:RUTA and id_paquete=:paquete and id_estado=1"
                 Dim comando As New OracleCommand(paquete, conn)
-                comando.Parameters.Add(":sede", OracleType.Char, 50).Value = id_sede
+                comando.Parameters.Add(":RUTA", OracleType.Char, 50).Value = id_ruta
                 comando.Parameters.Add(":paquete", OracleType.Char, 50).Value = id_paquete
                 Dim lector As OracleDataReader = Nothing
                 '
@@ -1393,11 +1424,11 @@ Namespace VB_RFID3_Host_Sample1
                     'End If
 
                 Else
-                    MessageBox.Show(" SEDE completa, todas las cajas verificadas fueron despachadas.")
+                    MessageBox.Show(" RUTA completa, todas las cajas verificadas fueron despachadas.")
                     conn.Close()
                     lector.Close()
                     readButton.Enabled = False
-                    ComboSede.Enabled = True
+                    ComboRuta.Enabled = True
                     ComboPaquete.Enabled = True
                     btn_aceptar.Text = "Aceptar"
                     btn_aceptar.Focus()
@@ -1429,7 +1460,7 @@ Namespace VB_RFID3_Host_Sample1
             DataGridENCONTRADOS.Enabled = False
             DataGrid_no_encontrados.Enabled = False
             readButton.Enabled = False
-            CargarCombobox_sede()
+            CargarCombobox_ruta()
             CargarCombobox_Paquete()
             DataGridENCONTRADOS.Columns.Add("id_caja", "CAJA")
             DataGridENCONTRADOS.Columns.Add("barcode", "BarCode")
@@ -1448,15 +1479,15 @@ Namespace VB_RFID3_Host_Sample1
         Private Sub myUpdateStatus(ByVal eventData As Events.StatusEventData)
 
         End Sub
-        Private Sub CargarCombobox_sede()
+        Private Sub CargarCombobox_ruta()
             Try
-                Dim sqlConsult As String = "select ID_SEDE, NOMBRE_SEDE from SEDE_LOGISTICA"
+                Dim sqlConsult As String = "select Distinct RUTA_SEDE from SEDE_LOGISTICA order by 1"
                 Dim dataAdapter As New OracleDataAdapter(sqlConsult, conn)
                 Dim DT As New DataTable
                 dataAdapter.Fill(DT)
-                Me.ComboSede.DataSource = DT
-                ComboSede.ValueMember = "ID_SEDE"
-                ComboSede.DisplayMember = "NOMBRE_SEDE"
+                Me.ComboRuta.DataSource = DT
+                ComboRuta.ValueMember = "RUTA_SEDE"
+                ComboRuta.DisplayMember = "RUTA_SEDE"
             Catch ex As Exception
                 MessageBox.Show(ex.ToString)
             End Try
@@ -1479,15 +1510,17 @@ Namespace VB_RFID3_Host_Sample1
 
         Private Sub btn_aceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_aceptar.Click
             If btn_aceptar.Text = "Aceptar" Then
-                If ComboSede.Items.Count <= 0 Or ComboPaquete.Items.Count <= 0 Then
+                If ComboRuta.Items.Count <= 0 Or ComboPaquete.Items.Count <= 0 Then
                     MessageBox.Show("Hay campos Vacios")
                 Else
                     Try
-                        id_sede = ComboSede.SelectedValue.ToString
+                        id_ruta = ComboRuta.SelectedValue.ToString
                         id_paquete = ComboPaquete.SelectedValue.ToString
-                        Dim paquete As String = "select id_caja from caja where id_sede=:sede and id_paquete=:paquete and id_estado=1"
+                        Dim paquete As String = " select id_caja from caja c join " & _
+                                                " sede_logistica se on C.ID_SEDE=SE.ID_SEDE " & _
+                                                " where se.RUTA_SEDE=:RUTA and id_paquete=:paquete and id_estado=1"
                         Dim comando As New OracleCommand(paquete, conn)
-                        comando.Parameters.Add(":sede", OracleType.Char, 50).Value = id_sede
+                        comando.Parameters.Add(":RUTA", OracleType.Char, 50).Value = id_ruta
                         comando.Parameters.Add(":paquete", OracleType.Char, 50).Value = id_paquete
                         Dim lector As OracleDataReader = Nothing
                         '
@@ -1502,13 +1535,13 @@ Namespace VB_RFID3_Host_Sample1
                         If lector.HasRows Then
                             conn.Close()
 
-                            ComboSede.Enabled = False
+                            ComboRuta.Enabled = False
                             ComboPaquete.Enabled = False
                             readButton.Enabled = True
                             btn_aceptar.Text = "Cancelar"
 
                         Else
-                            MessageBox.Show("Sede Logistica completa, todas las cajas fueron despachadas.")
+                            MessageBox.Show("RUTA completa, todas las cajas fueron despachadas.")
                             conn.Close()
                             lector.Close()
                         End If
@@ -1518,7 +1551,7 @@ Namespace VB_RFID3_Host_Sample1
                 End If
 
             ElseIf btn_aceptar.Text = "Cancelar" Then
-                ComboSede.Enabled = True
+                ComboRuta.Enabled = True
                 ComboPaquete.Enabled = True
                 readButton.Enabled = False
                 btn_aceptar.Text = "Aceptar"

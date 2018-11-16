@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://WebService_tse_RFID/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://WebService_tse_RFID/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://WebService_tse_RFID/">
+      <s:element name="comprobar_sede">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id_sede" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="comprobar_sedeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="comprobar_sedeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CajasListasDespacho">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id_sede" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CajasListasDespachoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CajasListasDespachoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ComprobarRFID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rfid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ComprobarRFIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ComprobarRFIDResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Caja_pertenezca_sede">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id_caja" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_sede" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Caja_pertenezca_sedeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Caja_pertenezca_sedeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="comprobar_caja_completa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id_caja" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="comprobar_caja_completaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="comprobar_caja_completaResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizar_caja">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id_caja" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizar_cajaResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="actualizar_caja_inconsistente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id_caja" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_sede" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizar_caja_inconsistenteResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ComprobarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ComprobarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ComprobarUsuarioResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="comprobar_sedeSoapIn">
+    <wsdl:part name="parameters" element="tns:comprobar_sede" />
+  </wsdl:message>
+  <wsdl:message name="comprobar_sedeSoapOut">
+    <wsdl:part name="parameters" element="tns:comprobar_sedeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CajasListasDespachoSoapIn">
+    <wsdl:part name="parameters" element="tns:CajasListasDespacho" />
+  </wsdl:message>
+  <wsdl:message name="CajasListasDespachoSoapOut">
+    <wsdl:part name="parameters" element="tns:CajasListasDespachoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ComprobarRFIDSoapIn">
+    <wsdl:part name="parameters" element="tns:ComprobarRFID" />
+  </wsdl:message>
+  <wsdl:message name="ComprobarRFIDSoapOut">
+    <wsdl:part name="parameters" element="tns:ComprobarRFIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="Caja_pertenezca_sedeSoapIn">
+    <wsdl:part name="parameters" element="tns:Caja_pertenezca_sede" />
+  </wsdl:message>
+  <wsdl:message name="Caja_pertenezca_sedeSoapOut">
+    <wsdl:part name="parameters" element="tns:Caja_pertenezca_sedeResponse" />
+  </wsdl:message>
+  <wsdl:message name="comprobar_caja_completaSoapIn">
+    <wsdl:part name="parameters" element="tns:comprobar_caja_completa" />
+  </wsdl:message>
+  <wsdl:message name="comprobar_caja_completaSoapOut">
+    <wsdl:part name="parameters" element="tns:comprobar_caja_completaResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizar_cajaSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizar_caja" />
+  </wsdl:message>
+  <wsdl:message name="actualizar_cajaSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizar_cajaResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizar_caja_inconsistenteSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizar_caja_inconsistente" />
+  </wsdl:message>
+  <wsdl:message name="actualizar_caja_inconsistenteSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizar_caja_inconsistenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="ComprobarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ComprobarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ComprobarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ComprobarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="comprobar_sede">
+      <wsdl:input message="tns:comprobar_sedeSoapIn" />
+      <wsdl:output message="tns:comprobar_sedeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CajasListasDespacho">
+      <wsdl:input message="tns:CajasListasDespachoSoapIn" />
+      <wsdl:output message="tns:CajasListasDespachoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarRFID">
+      <wsdl:input message="tns:ComprobarRFIDSoapIn" />
+      <wsdl:output message="tns:ComprobarRFIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Caja_pertenezca_sede">
+      <wsdl:input message="tns:Caja_pertenezca_sedeSoapIn" />
+      <wsdl:output message="tns:Caja_pertenezca_sedeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="comprobar_caja_completa">
+      <wsdl:input message="tns:comprobar_caja_completaSoapIn" />
+      <wsdl:output message="tns:comprobar_caja_completaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_caja">
+      <wsdl:input message="tns:actualizar_cajaSoapIn" />
+      <wsdl:output message="tns:actualizar_cajaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_caja_inconsistente">
+      <wsdl:input message="tns:actualizar_caja_inconsistenteSoapIn" />
+      <wsdl:output message="tns:actualizar_caja_inconsistenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarUsuario">
+      <wsdl:input message="tns:ComprobarUsuarioSoapIn" />
+      <wsdl:output message="tns:ComprobarUsuarioSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="comprobar_sede">
+      <soap:operation soapAction="http://WebService_tse_RFID/comprobar_sede" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CajasListasDespacho">
+      <soap:operation soapAction="http://WebService_tse_RFID/CajasListasDespacho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarRFID">
+      <soap:operation soapAction="http://WebService_tse_RFID/ComprobarRFID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Caja_pertenezca_sede">
+      <soap:operation soapAction="http://WebService_tse_RFID/Caja_pertenezca_sede" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="comprobar_caja_completa">
+      <soap:operation soapAction="http://WebService_tse_RFID/comprobar_caja_completa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_caja">
+      <soap:operation soapAction="http://WebService_tse_RFID/actualizar_caja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_caja_inconsistente">
+      <soap:operation soapAction="http://WebService_tse_RFID/actualizar_caja_inconsistente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://WebService_tse_RFID/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarUsuario">
+      <soap:operation soapAction="http://WebService_tse_RFID/ComprobarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="comprobar_sede">
+      <soap12:operation soapAction="http://WebService_tse_RFID/comprobar_sede" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CajasListasDespacho">
+      <soap12:operation soapAction="http://WebService_tse_RFID/CajasListasDespacho" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarRFID">
+      <soap12:operation soapAction="http://WebService_tse_RFID/ComprobarRFID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Caja_pertenezca_sede">
+      <soap12:operation soapAction="http://WebService_tse_RFID/Caja_pertenezca_sede" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="comprobar_caja_completa">
+      <soap12:operation soapAction="http://WebService_tse_RFID/comprobar_caja_completa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_caja">
+      <soap12:operation soapAction="http://WebService_tse_RFID/actualizar_caja" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_caja_inconsistente">
+      <soap12:operation soapAction="http://WebService_tse_RFID/actualizar_caja_inconsistente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://WebService_tse_RFID/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarUsuario">
+      <soap12:operation soapAction="http://WebService_tse_RFID/ComprobarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="http://localhost:50633/WS_RFID.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="http://localhost:50633/WS_RFID.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
