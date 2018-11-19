@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Embalaje-RFID-TSE\WebSite" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="WS_RFID.asmx" publishTime="11/08/2018 09:27:21" />
+    <file relUrl="bin/WS_Prueba.dll" publishTime="11/08/2018 15:52:13" />
+    <file relUrl="Web.config" publishTime="11/14/2018 09:05:06" />
+    <file relUrl="bin/WS_Prueba.pdb" publishTime="11/08/2018 15:52:13" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,5 @@
+c:\users\tse\documents\visual studio 2010\Projects\WS_Prueba\WS_Prueba\bin\WS_Prueba.dll
+c:\users\tse\documents\visual studio 2010\Projects\WS_Prueba\WS_Prueba\bin\WS_Prueba.pdb
+c:\users\tse\documents\visual studio 2010\Projects\WS_Prueba\WS_Prueba\obj\Debug\WS_Prueba.dll
+c:\users\tse\documents\visual studio 2010\Projects\WS_Prueba\WS_Prueba\obj\Debug\WS_Prueba.pdb
+C:\Users\TSE\Documents\Visual Studio 2010\Projects\WS_Prueba\WS_Prueba\obj\Debug\WS_Prueba.csprojResolveAssemblyReference.cache
