@@ -29,9 +29,9 @@ Partial Class Imprimir
         Me.btn_Excel = New System.Windows.Forms.Button()
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.rb_articulo = New System.Windows.Forms.RadioButton()
-        Me.rb_caja = New System.Windows.Forms.RadioButton()
         Me.rb_individual = New System.Windows.Forms.RadioButton()
+        Me.rb_caja = New System.Windows.Forms.RadioButton()
+        Me.rb_articulo = New System.Windows.Forms.RadioButton()
         Me.txt_caja = New System.Windows.Forms.TextBox()
         Me.lbl_caja = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
@@ -103,16 +103,16 @@ Partial Class Imprimir
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tipo de Impresion"
         '
-        'rb_articulo
+        'rb_individual
         '
-        Me.rb_articulo.AutoSize = True
-        Me.rb_articulo.Location = New System.Drawing.Point(28, 29)
-        Me.rb_articulo.Name = "rb_articulo"
-        Me.rb_articulo.Size = New System.Drawing.Size(79, 17)
-        Me.rb_articulo.TabIndex = 0
-        Me.rb_articulo.TabStop = True
-        Me.rb_articulo.Text = "Por Articulo"
-        Me.rb_articulo.UseVisualStyleBackColor = True
+        Me.rb_individual.AutoSize = True
+        Me.rb_individual.Location = New System.Drawing.Point(338, 29)
+        Me.rb_individual.Name = "rb_individual"
+        Me.rb_individual.Size = New System.Drawing.Size(107, 17)
+        Me.rb_individual.TabIndex = 2
+        Me.rb_individual.TabStop = True
+        Me.rb_individual.Text = "Articulo individual"
+        Me.rb_individual.UseVisualStyleBackColor = True
         '
         'rb_caja
         '
@@ -125,16 +125,16 @@ Partial Class Imprimir
         Me.rb_caja.Text = "Caja completa"
         Me.rb_caja.UseVisualStyleBackColor = True
         '
-        'rb_individual
+        'rb_articulo
         '
-        Me.rb_individual.AutoSize = True
-        Me.rb_individual.Location = New System.Drawing.Point(338, 29)
-        Me.rb_individual.Name = "rb_individual"
-        Me.rb_individual.Size = New System.Drawing.Size(107, 17)
-        Me.rb_individual.TabIndex = 2
-        Me.rb_individual.TabStop = True
-        Me.rb_individual.Text = "Articulo individual"
-        Me.rb_individual.UseVisualStyleBackColor = True
+        Me.rb_articulo.AutoSize = True
+        Me.rb_articulo.Location = New System.Drawing.Point(28, 29)
+        Me.rb_articulo.Name = "rb_articulo"
+        Me.rb_articulo.Size = New System.Drawing.Size(79, 17)
+        Me.rb_articulo.TabIndex = 0
+        Me.rb_articulo.TabStop = True
+        Me.rb_articulo.Text = "Por Articulo"
+        Me.rb_articulo.UseVisualStyleBackColor = True
         '
         'txt_caja
         '
@@ -167,6 +167,7 @@ Partial Class Imprimir
         Me.Controls.Add(Me.comboSede)
         Me.Controls.Add(Me.comboArticulo)
         Me.Name = "Imprimir"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Imprimir"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
