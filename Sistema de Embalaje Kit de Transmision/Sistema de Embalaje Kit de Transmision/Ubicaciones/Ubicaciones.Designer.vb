@@ -71,6 +71,11 @@ Partial Class Ubicaciones
         '
         'DGView_ubicaciones
         '
+        Me.DGView_ubicaciones.AllowUserToAddRows = False
+        Me.DGView_ubicaciones.AllowUserToDeleteRows = False
+        Me.DGView_ubicaciones.AllowUserToResizeColumns = False
+        Me.DGView_ubicaciones.AllowUserToResizeRows = False
+        Me.DGView_ubicaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGView_ubicaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGView_ubicaciones.Location = New System.Drawing.Point(23, 157)
         Me.DGView_ubicaciones.Name = "DGView_ubicaciones"
@@ -220,6 +225,7 @@ Partial Class Ubicaciones
         Me.Controls.Add(Me.btn_agregar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "Ubicaciones"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Ubicaciones"
         CType(Me.DGView_ubicaciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)

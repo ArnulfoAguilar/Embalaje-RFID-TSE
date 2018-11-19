@@ -192,6 +192,7 @@ Partial Class Frm_Paquete_Edit
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Frm_Paquete_Edit"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Editar Paquete"
         CType(Me.dtg_art, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

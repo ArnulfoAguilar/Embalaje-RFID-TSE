@@ -6,7 +6,6 @@ Public Class Edit_User
     Dim id As Integer
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        User.Show()
         Me.Close()
     End Sub
 
@@ -31,7 +30,7 @@ Public Class Edit_User
         con.Close()
         'Cargar datagrid
         Try
-            Dim sqlConsult As String = " select ID_USER,NOMBRE_USER, CONTRASENIA,ID_ROL from USUARIOS"
+            Dim sqlConsult As String = " select ID_USER,NOMBRE_USER, CONTRASENIA,ID_ROL from VISTA_USERS"
             Dim comando As New OracleCommand(sqlConsult, con)
             Dim lector As OracleDataReader = Nothing
             con.Open()

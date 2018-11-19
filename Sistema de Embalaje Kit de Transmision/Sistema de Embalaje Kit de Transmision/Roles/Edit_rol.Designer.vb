@@ -101,6 +101,7 @@ Partial Class Edit_rol
         Me.Controls.Add(Me.btn_Ingresar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "Edit_rol"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Modificar Rol"
         CType(Me.DGView_Roles, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -141,6 +141,10 @@ Partial Class Frm_Mtn_Articulo
         '
         'dtg_Art
         '
+        Me.dtg_Art.AllowUserToAddRows = False
+        Me.dtg_Art.AllowUserToDeleteRows = False
+        Me.dtg_Art.AllowUserToResizeColumns = False
+        Me.dtg_Art.AllowUserToResizeRows = False
         Me.dtg_Art.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dtg_Art.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtg_Art.Location = New System.Drawing.Point(51, 152)
@@ -176,6 +180,7 @@ Partial Class Frm_Mtn_Articulo
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Frm_Mtn_Articulo"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Frm_Mtn_Articulo"
         CType(Me.dtg_Art, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

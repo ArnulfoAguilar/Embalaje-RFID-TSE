@@ -115,6 +115,7 @@ Partial Class Frm_Articulo_Edit
         Me.Controls.Add(Me.txt_nombre)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Frm_Articulo_Edit"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Editar Articulo"
         Me.ResumeLayout(False)
         Me.PerformLayout()

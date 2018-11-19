@@ -55,6 +55,10 @@ Partial Class Frm_Articulo
         '
         'dtg_Articulo
         '
+        Me.dtg_Articulo.AllowUserToAddRows = False
+        Me.dtg_Articulo.AllowUserToDeleteRows = False
+        Me.dtg_Articulo.AllowUserToResizeColumns = False
+        Me.dtg_Articulo.AllowUserToResizeRows = False
         Me.dtg_Articulo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dtg_Articulo.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dtg_Articulo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -182,7 +186,7 @@ Partial Class Frm_Articulo
         '
         Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUsuarioToolStripMenuItem, Me.ModificarUsuarioToolStripMenuItem})
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'CrearUsuarioToolStripMenuItem
@@ -200,20 +204,20 @@ Partial Class Frm_Articulo
         'EventoToolStripMenuItem
         '
         Me.EventoToolStripMenuItem.Name = "EventoToolStripMenuItem"
-        Me.EventoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EventoToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.EventoToolStripMenuItem.Text = "Evento"
         '
         'PaqueteToolStripMenuItem
         '
         Me.PaqueteToolStripMenuItem.Name = "PaqueteToolStripMenuItem"
-        Me.PaqueteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PaqueteToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.PaqueteToolStripMenuItem.Text = "Paquete"
         '
         'UbicacionToolStripMenuItem
         '
         Me.UbicacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUbicacionToolStripMenuItem, Me.EditarUbicacionToolStripMenuItem})
         Me.UbicacionToolStripMenuItem.Name = "UbicacionToolStripMenuItem"
-        Me.UbicacionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UbicacionToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.UbicacionToolStripMenuItem.Text = "Ubicacion"
         '
         'CrearUbicacionToolStripMenuItem
@@ -232,25 +236,25 @@ Partial Class Frm_Articulo
         '
         Me.RolesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearRolToolStripMenuItem, Me.ActualizarRolToolStripMenuItem})
         Me.RolesToolStripMenuItem.Name = "RolesToolStripMenuItem"
-        Me.RolesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RolesToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.RolesToolStripMenuItem.Text = "Roles"
         '
         'CrearRolToolStripMenuItem
         '
         Me.CrearRolToolStripMenuItem.Name = "CrearRolToolStripMenuItem"
-        Me.CrearRolToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CrearRolToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.CrearRolToolStripMenuItem.Text = "Crear Rol"
         '
         'ActualizarRolToolStripMenuItem
         '
         Me.ActualizarRolToolStripMenuItem.Name = "ActualizarRolToolStripMenuItem"
-        Me.ActualizarRolToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ActualizarRolToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.ActualizarRolToolStripMenuItem.Text = "Editar Rol"
         '
         'ImprimirToolStripMenuItem
         '
         Me.ImprimirToolStripMenuItem.Name = "ImprimirToolStripMenuItem"
-        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(92, 20)
+        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(93, 20)
         Me.ImprimirToolStripMenuItem.Text = "Imprimir Tags"
         '
         'Frm_Articulo
@@ -268,6 +272,7 @@ Partial Class Frm_Articulo
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dtg_Articulo)
         Me.Name = "Frm_Articulo"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Articulos"
         CType(Me.dtg_Articulo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)

@@ -142,6 +142,7 @@ Partial Class Edit_User
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "Edit_User"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Edit_User"
         CType(Me.DGView_Usuarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

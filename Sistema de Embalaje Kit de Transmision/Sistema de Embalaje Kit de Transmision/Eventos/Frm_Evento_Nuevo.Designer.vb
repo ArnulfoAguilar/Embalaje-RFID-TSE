@@ -115,7 +115,7 @@ Partial Class Frm_Evento_nuevo
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Frm_Evento_nuevo"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Ingresar Evento"
         Me.ResumeLayout(False)
         Me.PerformLayout()

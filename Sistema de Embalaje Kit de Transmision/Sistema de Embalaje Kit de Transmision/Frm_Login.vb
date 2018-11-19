@@ -2,6 +2,7 @@
 Public Class Frm_Login
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
+        con.Close()
         Dim pas As Boolean = False
         If txt_user.Text = "" Then
             MessageBox.Show("Ingrese un Usuario")
@@ -39,4 +40,7 @@ Public Class Frm_Login
         Me.Close()
     End Sub
 
+    Private Sub Frm_Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        con.Open()
+    End Sub
 End Class
