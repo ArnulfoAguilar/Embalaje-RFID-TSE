@@ -40,7 +40,7 @@ Public Class LoginForm1
                     USUARIO = lector.GetString(2)
                 Loop
 
-                MessageBox.Show("BIENVENIDO AL SISTEMA " + USUARIO)
+                'MessageBox.Show("BIENVENIDO AL SISTEMA " + USUARIO)
                 conn.Close()
                 lector.Close()
                 AppForm.Show()

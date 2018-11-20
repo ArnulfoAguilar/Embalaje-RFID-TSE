@@ -1046,12 +1046,12 @@ Namespace VB_RFID3_Host_Sample1
             Me.Controls.Add(Me.readButton)
             Me.Controls.Add(Me.totalTagValueLabel)
             Me.Controls.Add(Me.Label1)
-            Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+            Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
             Me.MaximizeBox = False
             Me.MinimizeBox = False
             Me.MinimumSize = New System.Drawing.Size(8, 250)
             Me.Name = "AppForm"
-            Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+            Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
             Me.Text = "Escaneo"
             Me.mainMenuStrip.ResumeLayout(False)
             Me.mainMenuStrip.PerformLayout()
