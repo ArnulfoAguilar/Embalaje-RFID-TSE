@@ -42,10 +42,6 @@ Partial Class Frm_principal
         Me.CrearRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ActualizarRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImprimirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CrearSedeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificarSedeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarSedeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SedesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -84,7 +80,7 @@ Partial Class Frm_principal
         '
         'MantenimientosToolStripMenuItem
         '
-        Me.MantenimientosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.SedesToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.EventoToolStripMenuItem, Me.PaqueteToolStripMenuItem, Me.UbicacionToolStripMenuItem, Me.RolesToolStripMenuItem})
+        Me.MantenimientosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.EventoToolStripMenuItem, Me.PaqueteToolStripMenuItem, Me.UbicacionToolStripMenuItem, Me.RolesToolStripMenuItem})
         Me.MantenimientosToolStripMenuItem.Name = "MantenimientosToolStripMenuItem"
         Me.MantenimientosToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
         Me.MantenimientosToolStripMenuItem.Text = "Mantenimientos"
@@ -167,33 +163,8 @@ Partial Class Frm_principal
         'ImprimirToolStripMenuItem
         '
         Me.ImprimirToolStripMenuItem.Name = "ImprimirToolStripMenuItem"
-        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(92, 20)
+        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(93, 20)
         Me.ImprimirToolStripMenuItem.Text = "Imprimir Tags"
-        '
-        'CrearSedeToolStripMenuItem
-        '
-        Me.CrearSedeToolStripMenuItem.Name = "CrearSedeToolStripMenuItem"
-        Me.CrearSedeToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
-        Me.CrearSedeToolStripMenuItem.Text = "Crear Sede"
-        '
-        'ModificarSedeToolStripMenuItem
-        '
-        Me.ModificarSedeToolStripMenuItem.Name = "ModificarSedeToolStripMenuItem"
-        Me.ModificarSedeToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
-        Me.ModificarSedeToolStripMenuItem.Text = "Modificar Sede"
-        '
-        'EliminarSedeToolStripMenuItem
-        '
-        Me.EliminarSedeToolStripMenuItem.Name = "EliminarSedeToolStripMenuItem"
-        Me.EliminarSedeToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
-        Me.EliminarSedeToolStripMenuItem.Text = "Eliminar Sede"
-        '
-        'SedesToolStripMenuItem
-        '
-        Me.SedesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearSedeToolStripMenuItem, Me.ModificarSedeToolStripMenuItem, Me.EliminarSedeToolStripMenuItem})
-        Me.SedesToolStripMenuItem.Name = "SedesToolStripMenuItem"
-        Me.SedesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.SedesToolStripMenuItem.Text = "Sedes"
         '
         'Frm_principal
         '
@@ -233,9 +204,5 @@ Partial Class Frm_principal
     Friend WithEvents RolesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CrearRolToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ActualizarRolToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SedesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CrearSedeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ModificarSedeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EliminarSedeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
