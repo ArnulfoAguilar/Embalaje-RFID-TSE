@@ -1552,6 +1552,7 @@ Namespace VB_RFID3_Host_Sample1
                 If Me.m_IsConnected Then
                     If (Me.readButton.Text = "Empezar") Then
                         Caja_completa = 0
+                        btn_aceptar.Enabled = False
                         Try
                             'HACER CONSULTA DE CAJA
                             Try
@@ -1661,6 +1662,7 @@ Namespace VB_RFID3_Host_Sample1
         End Sub
         Private Sub parar()
             TextBox1.Focus()
+            btn_aceptar.Enabled = True
             totalTagValueLabel.Text = 0
             txt_tags_encontrados.Text = 0
             txtCantidad_inconsistentes.Text = 0
