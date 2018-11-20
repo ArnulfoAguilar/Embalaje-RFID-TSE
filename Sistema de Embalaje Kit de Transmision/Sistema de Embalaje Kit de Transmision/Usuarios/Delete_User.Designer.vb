@@ -114,7 +114,7 @@ Partial Class Delete_User
         Me.Controls.Add(Me.btn_cancelar)
         Me.Controls.Add(Me.t)
         Me.Controls.Add(Me.DataGridView1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Delete_User"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Delete_User"

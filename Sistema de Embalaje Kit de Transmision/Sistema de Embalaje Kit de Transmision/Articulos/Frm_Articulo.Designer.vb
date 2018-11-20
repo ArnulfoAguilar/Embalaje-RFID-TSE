@@ -271,6 +271,7 @@ Partial Class Frm_Articulo
         Me.Controls.Add(Me.lb_reg)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dtg_Articulo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Frm_Articulo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Articulos"

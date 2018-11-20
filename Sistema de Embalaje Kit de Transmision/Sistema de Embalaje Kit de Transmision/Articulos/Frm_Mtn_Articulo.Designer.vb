@@ -179,6 +179,7 @@ Partial Class Frm_Mtn_Articulo
         Me.Controls.Add(Me.txt_numcaja)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Frm_Mtn_Articulo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Frm_Mtn_Articulo"

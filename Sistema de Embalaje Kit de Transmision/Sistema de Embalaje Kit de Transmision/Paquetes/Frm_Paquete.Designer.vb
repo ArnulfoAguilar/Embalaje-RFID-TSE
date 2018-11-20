@@ -246,6 +246,7 @@ Partial Class Frm_Paquete
         Me.Controls.Add(Me.lb_reg)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dtg_Paquete)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Frm_Paquete"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Frm_Paquete"

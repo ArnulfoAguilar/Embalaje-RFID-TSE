@@ -223,7 +223,7 @@ Partial Class Ubicaciones
         Me.Controls.Add(Me.DGView_ubicaciones)
         Me.Controls.Add(Me.btn_modificar)
         Me.Controls.Add(Me.btn_agregar)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Ubicaciones"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Ubicaciones"

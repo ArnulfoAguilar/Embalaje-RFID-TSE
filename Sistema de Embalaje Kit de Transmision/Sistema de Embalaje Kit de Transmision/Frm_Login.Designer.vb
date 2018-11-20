@@ -115,7 +115,7 @@ Partial Class Frm_Login
         Me.Controls.Add(Me.Contraseña)
         Me.Controls.Add(Me.Usuario)
         Me.Controls.Add(Me.LogoPictureBox)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Frm_Login"

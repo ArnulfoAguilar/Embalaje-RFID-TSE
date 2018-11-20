@@ -221,7 +221,7 @@ Partial Class User
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DGView_user)
         Me.Controls.Add(Me.btn_Add_User)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "User"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "User"

@@ -166,6 +166,7 @@ Partial Class Imprimir
         Me.Controls.Add(Me.lbl_articulo)
         Me.Controls.Add(Me.comboSede)
         Me.Controls.Add(Me.comboArticulo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Imprimir"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Imprimir"

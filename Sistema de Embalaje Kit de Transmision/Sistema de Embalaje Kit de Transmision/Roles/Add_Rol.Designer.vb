@@ -99,7 +99,7 @@ Partial Class Add_Rol
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TXT_NOMBRE)
         Me.Controls.Add(Me.btn_Ingresar)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Add_Rol"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Nuevo Rol"

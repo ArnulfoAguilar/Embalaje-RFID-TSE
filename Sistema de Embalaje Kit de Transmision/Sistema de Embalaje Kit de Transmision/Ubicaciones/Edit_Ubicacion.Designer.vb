@@ -120,7 +120,7 @@ Partial Class Edit_Ubicacion
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.DGView_ubicaciones)
         Me.Controls.Add(Me.btn_agregar)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Edit_Ubicacion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Editar Ubicacion"

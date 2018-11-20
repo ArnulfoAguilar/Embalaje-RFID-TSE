@@ -114,6 +114,7 @@ Partial Class Frm_Articulo_Edit
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txt_nombre)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Frm_Articulo_Edit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Editar Articulo"

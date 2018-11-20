@@ -99,7 +99,7 @@ Partial Class Edit_rol
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_rol)
         Me.Controls.Add(Me.btn_Ingresar)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Edit_rol"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Modificar Rol"

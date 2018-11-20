@@ -63,6 +63,7 @@
             MantenimientosToolStripMenuItem.HideDropDown()
             MantenimientosToolStripMenuItem.Enabled = False
         End If
+        RecepcionToolStripMenuItem.Enabled = False
 	End Sub
     Private Sub ImprimirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ImprimirToolStripMenuItem.Click
         Imprimir.ShowDialog()

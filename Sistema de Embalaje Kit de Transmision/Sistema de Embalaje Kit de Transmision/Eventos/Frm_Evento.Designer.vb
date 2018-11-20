@@ -248,6 +248,7 @@ Partial Class Frm_Evento
         Me.Controls.Add(Me.btn_editar)
         Me.Controls.Add(Me.btn_nuevo)
         Me.Controls.Add(Me.dtg_Evento)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Frm_Evento"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Eventos"
