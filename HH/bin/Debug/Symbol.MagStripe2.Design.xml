@@ -1,0 +1,1591 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Symbol.MagStripe2.Design</name>
+    </assembly>
+    <members>
+        <member name="T:Symbol.MagStripe2.Resource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.ERROR_CREATEEVENT">
+            <summary>
+              Looks up a localized string similar to Failure in creating event.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.ERROR_RESETEVENT">
+            <summary>
+              Looks up a localized string similar to Failure in resetting event.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.ERROR_SETEVENT">
+            <summary>
+              Looks up a localized string similar to Failure in setting event.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.INVALID_DEVICE">
+            <summary>
+              Looks up a localized string similar to The MSR device chosen is not valid.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.INVALID_TIMEOUT">
+            <summary>
+              Looks up a localized string similar to Invalid value. Allowed range for Timeout: Minimum = 0 and Maximum = 0xFFFF.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.INVALIDPARAM">
+            <summary>
+              Looks up a localized string similar to The parameter passed is not valid. It cannot be null or empty..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_API_NOTSUPPORTED">
+            <summary>
+              Looks up a localized string similar to Not Supported..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_BAD_ANS">
+            <summary>
+              Looks up a localized string similar to Erroneous response from the MSR device..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_BADREAD">
+            <summary>
+              Looks up a localized string similar to Read failed..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_BATTERYLOW">
+            <summary>
+              Looks up a localized string similar to An asynchronous close due to low battery voltage..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_BUFFERED_MODE">
+            <summary>
+              Looks up a localized string similar to Application trying to read buffered mode data while the MSR device is still in unbuffered mode..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_BUSY">
+            <summary>
+              Looks up a localized string similar to MSR device is still busy in previous function state..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_CHECKSUM">
+            <summary>
+              Looks up a localized string similar to Check sum error..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_EEPROM">
+            <summary>
+              Looks up a localized string similar to MSR device EEPROM error..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_GLOBAL">
+            <summary>
+              Looks up a localized string similar to Global parameter error..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_MEMORY">
+            <summary>
+              Looks up a localized string similar to An error occurred while allocating memory..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_NAK">
+            <summary>
+              Looks up a localized string similar to Unable to access the MSR device. Usually occurs when the device is not connected to the Serial I/O port..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_NODATA">
+            <summary>
+              Looks up a localized string similar to No data available..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_NOTOPEN">
+            <summary>
+              Looks up a localized string similar to The MSR API is not opened. Call MSR_Open first and try again..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_NULLPOINTER">
+            <summary>
+              Looks up a localized string similar to A NULL parameter pointer passed as a parameter..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_OPENFAILURE">
+            <summary>
+              Looks up a localized string similar to Failure to open the MSR device..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_OSERROR">
+            <summary>
+              Looks up a localized string similar to If the driver function returns error due to Operating System.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_PARAMETER">
+            <summary>
+              Looks up a localized string similar to An error occurred due to invalid parameter..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_PORTEVENT">
+            <summary>
+              Looks up a localized string similar to A failure in Serial I/O Function..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_POWERDOWN">
+            <summary>
+              Looks up a localized string similar to Power is switched off to MSR device during the execution of the driver function call..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_RAM">
+            <summary>
+              Looks up a localized string similar to MSR device RAM error..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_RES">
+            <summary>
+              Looks up a localized string similar to Reserved error value..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_ROM">
+            <summary>
+              Looks up a localized string similar to MSR device ROM error..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_SIZE">
+            <summary>
+              Looks up a localized string similar to Card information read is greater than 400 bytes..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_STILLOPEN">
+            <summary>
+              Looks up a localized string similar to The MSR API is already opened..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_TIMEOUT">
+            <summary>
+              Looks up a localized string similar to Timeout occurred while waiting for response from MSR device..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_UNBUFFERED_MODE">
+            <summary>
+              Looks up a localized string similar to Application trying to read unbuffered mode data while the MSR device is still in buffered mode..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_ERR_WAKEUP">
+            <summary>
+              Looks up a localized string similar to MSR device failed to wake up..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR_SUCCESS">
+            <summary>
+              Looks up a localized string similar to The function completed successfully..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.MSR3000_ERR_DEVICEREMOVED">
+            <summary>
+              Looks up a localized string similar to MSR device is removed..
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.NEGATIVENUM">
+            <summary>
+              Looks up a localized string similar to Negative values are not allowed. .
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.NOT_DCR_DEVICE">
+            <summary>
+              Looks up a localized string similar to Not a DCR device.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Resource.NOT_ENABLED">
+            <summary>
+              Looks up a localized string similar to The reader not enabled, Call Enable() first..
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.Version">
+            <summary>
+            Defines an object that contains the version information of an Imager
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Version.APIVersion">
+            <summary>
+            Native API Version information.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Version.DLLVersion">
+            <summary>
+            DLL Version Information
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Version.FWVersion">
+            <summary>
+            Firmware Version Information
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Version.Assembly">
+            <summary>
+            Version of the Assembly.
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.MagStripe2">
+            <summary>
+            The MagStripe2 class can be considered the primary class of the MagStripe2 class library. It provides access to all Config, Version and MSR method calls for the Mag stripe reader.
+            </summary>
+            <remarks>
+            The MagStripe2 Library has 3 constructors that are easy to use:
+            1. Use the first available reader device:
+            <example>
+            <code>
+             MagStripe2 myMagStripe = new MagStripe2();
+            </code>
+            </example>
+            
+            2. Use a Device Object in the constructor:
+            <example>
+            <code>
+             Device myDevice = Devices.SupportedDevices[0]; //selects the first device
+             MagStripe2 myMagStripe = new MagStripe2(myDevice);
+            </code>
+            </example>
+            3. Use a DLL name in the constructor:
+            <example>
+            <code>
+             MagStripe2 myMagStripe = new MagStripe2("MSR3000.DLL");
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.#ctor">
+             <summary>
+             Default MagStripe2 constructor creates an instance using the first available device.   
+             </summary>
+              <example>
+             <code>
+             // Create new MagStripe object, first available reader will be used.
+             Symbol.MagStripe2 MyReader = new Symbol.MagStripe2();
+             </code>
+            </example>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.#ctor(Symbol.MagStripe2.Device)">
+             <summary>
+             Default MagStripe2 constructor creates an instance using the passed Device object.
+             </summary>
+             <param name="device"><see cref="T:Symbol.MagStripe2.Device"/> object</param>
+             <example>
+             <code>
+             //Create a reader with the selected 1st supported reader attached.
+             Symbol.MagStripe2() MyReader = new Symbol.MagStripe2(Devices.SupportedDevices[0]);
+             </code>
+            </example>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.#ctor(System.String)">
+             <summary>
+             Default MagStripe2 constructor creates an instance using the passed DLLname string. It is not case sensitive. Eg "MSR3000.dll".
+             </summary>
+             <param name="DllName">DLL Name string. Eg "MSR3000.dll"</param>
+            <example>
+             <code>
+             //Create a reader with the dll name
+             Symbol.MagStripe2() MyReader = new Symbol.MagStripe2("MSR3000.dll");
+             </code>
+            </example>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.Enable">
+            <summary>
+             Enables the MSR hardware.  
+            </summary>
+            <remarks>
+            The Enable() method may take a while to process due to the fact that the initialization of the hardware may take some time. The Enable() method allows this initialization to be done when it least impacts the user experience (e.g. entry to a form). To perform the read of a magnetic stripe additional methods must be called. 
+            </remarks>
+            <example>
+            <code>
+            MagStripe2 MyMag = new MagStripe2(Devices.SupportedDevices[0]);
+            MyMag.Enable();
+            </code>
+            </example>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.Disable">
+            <summary>
+            Flushes any pending Swipes and closes the reader by closing the communication port.
+            </summary>
+            <example>
+            <code>
+            MyMag.Disable();
+            </code>
+            </example>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.Flush">
+            <summary>
+            Removes all pending reads from the MagStripe2. 
+            <seealso cref="M:Symbol.MagStripe2.MagStripe2.SwipeCancel"/>
+            </summary>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.SwipeWait(System.Int32)">
+            <summary>      
+            Starts a pending Swipe read. The MSR will be put into a state in which a swipe of a 
+            magnetic stripe can take place. This is a blocking call. It will also return INVALID_VALUE in the result field if the timeout passed is not in the acceptabel range.
+            </summary>
+            <returns><see cref="T:Symbol.MagStripe2.MagStripeData"/> object</returns>
+            <param name="timeout">int value (in milliseconds) to wait for card to be swiped. Must be between 1000 milliseconds and 5 minutes (1 second to 5 minutes.)</param>
+            <example>
+            <code>
+            private void Form1_Load(object sender, EventArgs e)
+            {
+               MagStripe2 MyMag= new MagStripe2(); 
+               
+               //Issue a swipe coommand and wait for a card swipe for 5 seconds
+               MagStripeData magData= MyMag.SwipeWait(5000);  
+            
+               if (magData.Result == Results.SUCCESS)
+               {
+                   textBox1.Text = magData.Data.ToString();
+               }	
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.Swipe">
+             <summary>
+             Starts a pending Swipe read. The MSR will be put into a state in which a swipe of a 
+             magnetic stripe can take place. This is an asynchronous call.
+             </summary>
+             <returns>Results</returns>
+             <example>
+             <code>
+              private void Form1_Load(object sender, EventArgs e)
+              {
+                  MagStripe2 MyMag = new MagStripe2();
+                  MyMag.OnSwipe += new MagStripe2.OnSwipeHandler(MyMag_OnSwipe);
+                  MyMag.Swipe();
+              }
+            
+             .....
+            
+              void MyMag_OnSwipe(MagStripeData md)
+              {
+                  textBox1.Text = md.Data.ToString();
+              }
+             </code>
+             </example>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.SwipeCancel">
+             <summary>
+             Removes all pending Swipe reads from the MagStripe2. 
+             </summary>
+             <example>
+             <code>
+             public void TermMagStripe()
+            {
+                // If we have a reader
+                if (myMagStripe2 != null)
+                {
+                    // Stop all swipe calls.
+                    myMagStripe2.SwipeCancel();
+            
+                    // Free it up.
+                    myMagStripe2.Dispose();
+            
+                    // Make the reference null.
+                    myMagStripe2 = null;
+                }
+            }
+             </code> 
+            </example> 
+             <returns>Returns the <see cref="T:Symbol.MagStripe2.Results"/> of the operation. Returns <see cref="F:Symbol.MagStripe2.Results.SUCCESS"/> if there is a pending swipe, and <see cref="F:Symbol.MagStripe2.Results.NOSWIPEISSUED"/> if there are no pending swipes</returns>  
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.EnterDebitPIN(System.Int32,System.String)">
+             <summary>
+             Prompt DCR for Debit PIN Entry. This is an asynchronous call
+             </summary>
+             <param name="Timeout">int timeout for PIN entry in milliseconds up to 65535 milliseconds.</param>
+             <param name="PANData">string. PANData from card swipe.</param>
+             <returns><see cref="T:Symbol.MagStripe2.Results"/>.</returns>
+             <example>
+             <code>
+             private void Form1_Load(object sender, EventArgs e)
+             {
+                 MyMag = new MagStripe2();
+             
+                 // Attach a scan notification handler.
+                 MyMag.OnSwipe += new MagStripe2.OnSwipeHandler(myMagStripe2_SwipeNotify);
+             
+                 // Attach a PIN entry notification handler.
+                 MyMag.OnPINEnter += new MagStripe2.OnPINEnterHandler(MyMag_OnPINEnter);
+             
+                 //Issue an async swipe command
+                 MyMag.myMagStripe2.Swipe();
+             }
+             
+             ...
+             
+             private void myMagStripe2_SwipeNotify(MagStripeData magData)
+             {
+                 // If it is a successful Swipe (as opposed to a failed one)
+                 if (magData.Result == Results.SUCCESS)
+                 {
+                     // Handle the data from this swipe
+                     // All the data available to you about the card used is accessible in the magData object 
+                     if (myMagStripe2.Config.IsDCR == true)
+                     {
+                         SwipeDataTextBox1.Text += "\r\nEnter PIN on DCR:\r\n";
+                         // Read DCR PIN data
+                         Results result = myMagStripe2.EnterDebitPIN(10000, magData.PANData); //wait 10 seconds for a PIN # to be entered
+                         //This will callback to the OnPINEnter event
+                     }
+                 }
+                 else
+                 {
+                     string sMsg = "Swipe Failed\r\n"
+                             + "Result = "
+                             + (magData.Result).ToString();
+                     this.SwipeDataTextBox1.Text = sMsg;
+                 }
+             }
+             
+             ...
+             
+             void MyMag_OnPINEnter(PINData PINdata)
+             {
+                 if(PINdata.Result == SUCCESS)
+                 {
+                     string PINEncryptedData = null;
+                     for (int i = 0; i &lt; PINData.PINEncryptedData.Length; i++)
+                     {
+                        PINEncryptedData += PINData.PINEncryptedData[i].ToString("X2");
+                     }
+                     this.PINInfoTextBox.Text += "    " + PINEncryptedData + "\r\n";
+                 }
+                 else
+                 {
+                     string sMsg = "PIN Entry Failed\r\n"
+                               + "Result = "
+                               + (PINData.Result).ToString();
+                       this.PINInfoTextBox.Text = sMsg;
+                 }
+             }
+            
+             </code>
+             </example>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.EnterDebitPINWait(System.Int32,System.String)">
+             <summary>
+             Prompt DCR for Debit PIN Entry. This is a blocking/synchronous call.
+             </summary>
+             <param name="Timeout">int timeout for PIN entry in milliseconds up to 65535 milliseconds</param>
+             <param name="PANData">string. PANData from card swipe.</param>
+             <returns>PINData.</returns>
+             <example>
+             <code>
+             private void Form1_Load(object sender, EventArgs e)
+             {
+                 MyMag = new MagStripe2();
+             
+                 // Attach a scan notification handler.
+                 MyMag.OnSwipe += new MagStripe2.OnSwipeHandler(myMagStripe2_SwipeNotify);
+                 //Issue an async swipe command
+                 MyMag.myMagStripe2.Swipe();
+             }
+             
+             ...
+             
+            private void myMagStripe2_SwipeNotify(MagStripeData magData)
+            {
+                 // If it is a successful read (as opposed to a failed one)
+                 if (magData.Result == Results.SUCCESS)
+                 {
+                     // Handle the data from this swipe
+                     // All the data available to you about the card used is accessible in the magData object 
+                     if (myMagStripe2.Config.IsDCR == true)
+                     {
+                         SwipeDataTextBox1.Text += "\r\nEnter PIN on DCR:\r\n";
+                         // Read DCR PIN data
+                         PINData pindata = myMagStripe2.EnterDebitPINWait(10000, magData.PANData); //wait 10 seconds for a PIn # to be entered
+                         this.SwipeDataTextBox1.Text += "\r\nEncoded PIN Data:\r\n";
+                         string PINEncryptedData = null;
+                         for (int i = 0; i &lt; pindata.PINEncryptedData.Length; i++)
+                         {
+                             PINEncryptedData += pindata.PINEncryptedData[i].ToString("X2");
+                         }
+                         this.SwipeDataTextBox1.Text += "    " + PINEncryptedData + "\r\n";
+                     }
+                 }
+                 else
+                 {
+                     string sMsg = "Swipe Failed\r\n"
+                             + "Result = "
+                             + (magData.Result).ToString();
+                     this.SwipeDataTextBox1.Text = sMsg;
+                 }
+            }
+             </code>
+             </example>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.Dispose">
+            <summary>
+            Frees up all resources used by the MagStripe2, including any objects it has created. 
+            It is strongly recommended that this method be called when the Reader is no 
+            longer needed by the application.  
+            </summary>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripe2.Finalize">
+            <summary>
+            Finalizer
+            </summary>
+        </member>
+        <member name="E:Symbol.MagStripe2.MagStripe2.OnSwipe">
+             <summary>
+             Attach to this notification event to be called back when a swipe event occurs.
+             </summary>
+             <value>
+             A <see cref="T:Symbol.MagStripe2.MagStripe2.OnSwipeHandler"/> delegate of the method that will be invoked
+             when a swipe event occurs.
+             </value>
+             <example>
+             <code>
+            private void myMagStripe_SwipeNotify(MagStripeData magData)
+            {
+                // If it is a successful read (as opposed to a failed one)
+                if (magData.Result == Results.SUCCESS)
+                {                     
+                      this.textBox1.Text += "\r\nCard Data:\r\n";
+                         this.textBox1.Text += md.CreditCardData.CardHolderName;
+                         this.textBox1.Text += md.Data;                         
+                }
+                else
+                {
+                    string sMsg = "Swipe Failed\r\n"
+                            + "Result = "
+                            + (magData.Result).ToString();
+                    this.SwipeDataTextBox1.Text = sMsg;
+                }
+            }
+             </code> 
+            </example>
+        </member>
+        <member name="E:Symbol.MagStripe2.MagStripe2.OnPINEnter">
+             <summary>
+             Attach to this notification event to be called back when a PIN is entered.  
+             </summary>
+             <example>
+            <code>
+            void MyMag_OnPINEnter(PINData PINdata)
+            {
+               this.textBox1.Text += "\r\nEncoded PIN Data:\r\n";
+               string PINEncryptedData = null;
+               for (int i = 0; i &lt; PINdata.PINEncryptedData.Length; i++)
+               {
+                   PINEncryptedData += PINdata.PINEncryptedData[i].ToString("X2");
+               }
+               this.textBox1.Text += "    " + PINEncryptedData + "\r\n";
+            }
+             </code> 
+            </example>
+        </member>
+        <member name="E:Symbol.MagStripe2.MagStripe2.OnStatus">
+             <summary>
+             Attach to this notification event to be called back when a MSR event occurs.  
+             </summary>
+             <value>
+             A <see cref="T:Symbol.MagStripe2.MagStripe2.OnStatusHandler"/> delegate of the method that will be invoked
+             when a event/status changes.
+             </value>
+             <example>
+             <code>
+            void MyMag_OnStatus(StatusData statusData)
+            {
+               textBox2.Text = statusData.Text.ToString();
+            }
+             </code> 
+            </example>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripe2.IsSwipePending">
+            <summary>
+            Returns if there is a pending swipe in the reader
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripe2.IsPINPending">
+            <summary>
+            Returns if there is a pending PIN read waiting to be entered.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripe2.Config">
+            <summary>
+            Gets a Config object that contains the Configuration settings an Imager. 
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripe2.Version">
+            <summary>
+            Gets a Version object that provides version information of this Imager.  
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripe2.IsEnabled">
+            <summary>
+            Returns if the reader is enabled or not
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.MagStripe2.OnSwipeHandler">
+            <summary>
+            Delegate of the method that will be invoked when a swipe event occurs.
+            </summary>
+            <param name="magData"><see cref="T:Symbol.MagStripe2.MagStripeData"/> object</param>
+        </member>
+        <member name="T:Symbol.MagStripe2.MagStripe2.OnPINEnterHandler">
+            <summary>
+            Delegate of the method that will be invoked when a pin entry is made.
+            </summary>
+            <param name="PINdata"><see cref="T:Symbol.MagStripe2.PINData"/> object</param>
+        </member>
+        <member name="T:Symbol.MagStripe2.MagStripe2.OnStatusHandler">
+            <summary>
+            Delegate of the method that will be invoked when a pin entry is made.
+            </summary>
+            <param name="statusData"><see cref="T:Symbol.MagStripe2.StatusData"/> object</param>
+        </member>
+        <member name="T:Symbol.MagStripe2.UnimplementedFunctionException">
+            <summary>
+            UnimplementedFunctionException is thrown when a method is 
+            not available for use.
+            </summary>
+            <remarks>
+            Derived off of the System.Exception class, this exception provides
+            no additional functionality over its derived class.
+            </remarks>
+        </member>
+        <member name="M:Symbol.MagStripe2.UnimplementedFunctionException.#ctor(System.String)">
+            <summary>
+            UnimplementedFunctionException constructor with settable 
+            string.
+            </summary>
+            <param name="sMessage">A string the contain information about
+            the exception.</param>
+        </member>
+        <member name="T:Symbol.MagStripe2.WrongMarshalSizeException">
+            <summary>
+            WrongMarshalSizeException is thrown when marshalling fails to work
+            correctly. In particular, when a size of the marshaled buffer is not the
+            correct size.
+            </summary>
+            <remarks>
+            Derived off of the System.Exception class, this exception provides
+            no additional functionality over its derived class.
+            </remarks>
+        </member>
+        <member name="M:Symbol.MagStripe2.WrongMarshalSizeException.#ctor(System.String)">
+            <summary>
+            WrongMarshalSizeException constructor with settable 
+            string.
+            </summary>
+            <param name="sMessage">A string the contain information about
+            the exception.</param>
+        </member>
+        <member name="T:Symbol.MagStripe2.OperationFailureException">
+            <summary>
+            OperationFailureException is thrown when a failure occurs in the 
+            class libraries. This failure usually is one that stops the proper
+            functioning of the class libraries.
+            </summary>
+            <remarks>
+            Derived off of the System.Exception class, this exception provides
+            a results enum or integer to be associated with the exception. The
+            number is returned in integer form via the Result property.
+            </remarks>
+        </member>
+        <member name="M:Symbol.MagStripe2.OperationFailureException.#ctor(System.String,Symbol.MagStripe2.Results)">
+            <summary>
+            OperationFailureException constructor with settable string and 
+            results enum.
+            </summary>
+            <param name="sMessage">A string the contains information about
+            the exception.</param>
+            <param name="resResults">A Results enumerated type that contains
+            information about the exception.</param>
+        </member>
+        <member name="M:Symbol.MagStripe2.OperationFailureException.#ctor(System.String,System.Int32)">
+            <summary>
+            OperationFailureException constructor with settable string and 
+            integer value.
+            </summary>
+            <param name="sMessage">A string the contains information about
+            the exception.</param>
+            <param name="nResults">A integer that contains information about
+            the exception.</param>
+        </member>
+        <member name="P:Symbol.MagStripe2.OperationFailureException.Result">
+            <summary>
+            The number associated with the exception.
+            </summary>
+            <value>
+            An integer result that contains information about what caused the
+            exception.
+            </value>
+        </member>
+        <member name="T:Symbol.MagStripe2.InvalidUsageException">
+            <summary>
+            InvalidUsageException is thrown when a class library method or property
+            is not used correctly.
+            </summary>
+            <remarks>
+            Derived off of the System.Exception class, this exception provides
+            no additional functionality over its derived class.
+            </remarks>
+        </member>
+        <member name="M:Symbol.MagStripe2.InvalidUsageException.#ctor">
+            <summary>
+            Default InvalidUsageException constructor.
+            </summary>
+        </member>
+        <member name="M:Symbol.MagStripe2.InvalidUsageException.#ctor(System.String)">
+            <summary>
+            InvalidUsageException constructor with settable string.
+            </summary>
+            <param name="sMessage">A string that contains information about
+            the exception.</param>
+        </member>
+        <member name="T:Symbol.MagStripe2.InvalidDataTypeException">
+            <summary>
+            InvalidDataTypeException is thrown when a class library accesses an
+            invalid data type.
+            </summary>
+            <remarks>
+            Derived off of the <see cref="T:Symbol.MagStripe2.InvalidUsageException"/> class, 
+            this exception provides no additional functionality over its
+            derived class.
+            </remarks>
+        </member>
+        <member name="M:Symbol.MagStripe2.InvalidDataTypeException.#ctor">
+            <summary>
+            Default InvalidDataTypeException constructor.
+            </summary>
+        </member>
+        <member name="M:Symbol.MagStripe2.InvalidDataTypeException.#ctor(System.String)">
+            <summary>
+            InvalidDataTypeException constructor with settable string.
+            </summary>
+            <param name="sMessage">A string that contains information about
+            the exception.</param>
+        </member>
+        <member name="T:Symbol.MagStripe2.InvalidRequestException">
+            <summary>
+            InvalidRequestException is thrown when a class library trys to perform
+            an invalid request.
+            </summary>
+            <remarks>
+            Derived off of the <see cref="T:Symbol.MagStripe2.InvalidUsageException"/> class, 
+            this exception provides no additional functionality over its
+            derived class.
+            </remarks>
+        </member>
+        <member name="M:Symbol.MagStripe2.InvalidRequestException.#ctor">
+            <summary>
+            Default InvalidRequestException constructor.
+            </summary>
+        </member>
+        <member name="M:Symbol.MagStripe2.InvalidRequestException.#ctor(System.String)">
+            <summary>
+            InvalidRequestException constructor with settable string.
+            </summary>
+            <param name="sMessage">A string that contains information about
+            the exception.</param>
+        </member>
+        <member name="T:Symbol.MagStripe2.InvalidIndexerException">
+            <summary>
+            InvalidIndexerException is thrown when a class library trys to access
+            an invalid indexer.
+            </summary>
+            <remarks>
+            Derived off of the <see cref="T:Symbol.MagStripe2.InvalidUsageException"/> class, 
+            this exception provides no additional functionality over its
+            derived class.
+            </remarks>
+        </member>
+        <member name="M:Symbol.MagStripe2.InvalidIndexerException.#ctor">
+            <summary>
+            Default InvalidIndexerException constructor.
+            </summary>
+        </member>
+        <member name="M:Symbol.MagStripe2.InvalidIndexerException.#ctor(System.String)">
+            <summary>
+            InvalidIndexerException constructor with settable string.
+            </summary>
+            <param name="sMessage">A string that contains information about
+            the exception.</param>
+        </member>
+        <member name="T:Symbol.MagStripe2.DebugModeException">
+            <summary>
+            DebugModeException is thrown when a class library trys to perform
+            functions that are invalid but not fatal.
+            </summary>
+            <remarks>
+            Derived off of the System.Exception class, this exception provides
+            the capability of associated the exception with an integer.
+            </remarks>
+        </member>
+        <member name="M:Symbol.MagStripe2.DebugModeException.#ctor(System.String,System.Int32)">
+            <summary>
+            DebugModeException constructor with settable string and integer
+            information.
+            </summary>
+            <param name="sMessage">A string that contains information about
+            the exception.</param>
+            <param name="debugInfo">An integer that contains information about
+            the exception.</param>
+        </member>
+        <member name="P:Symbol.MagStripe2.DebugModeException.DebugResult">
+            <summary>
+            The number associated with the exception.
+            </summary>
+            <value>
+            An integer result that contains information about what caused the
+            exception.
+            </value>
+        </member>
+        <member name="T:Symbol.MagStripe2.DebugModeUnsupportedEnumValue">
+            <summary>
+            DebugModeUnsupportedEnumValue is thrown when a class library trys to
+            access an enumerated type that is not valid.
+            </summary>
+            <remarks>
+            Derived off of the <see cref="T:Symbol.MagStripe2.DebugModeException"/> class, this
+            exception provides no additional functionality.
+            </remarks>
+        </member>
+        <member name="M:Symbol.MagStripe2.DebugModeUnsupportedEnumValue.#ctor(System.String,System.Int32)">
+            <summary>
+            DebugModeUnsupportedEnumValue constructor with settable string and integer
+            information.
+            </summary>
+            <param name="sMessage">A string that contains information about
+            the exception.</param>
+            <param name="debugInfo">An integer that contains information about
+            the exception.</param>
+        </member>
+        <member name="T:Symbol.MagStripe2.MagStripeData">
+            <summary>
+            MagStripeData class encapsulates all the MSR data and meta-data for a given read. 
+            </summary>
+        </member>
+        <member name="M:Symbol.MagStripe2.MagStripeData.#ctor(System.Int32)">
+            <summary>
+            ReaderData constructor with integer based buffer size.
+            </summary>
+            <param name="bufferSize">An integer that specifies the size of the memory buffer
+            in bytes.</param>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripeData.CreditCardData">
+            <summary>
+            CreditCardData class encapsulates all the MSR data and meta-data into a 
+            CreditCard aware object.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripeData.PANData">
+            <summary>
+            If the previously swiped card is a valid credit or debit card, this field will be
+            populated with the PAN (personal account number) data.   
+            When using a DCR (debit card reader), the value of this field will be used for generating 
+            the PIN encrypted data. Refer to the page “Using DCR (debit card reader)” under the 
+            section “MagStripe” in the Programmer’s Guide of the EMDK help file.
+            </summary>
+            <value>
+            A string value used in generating the PIN encrypted data.
+            </value> 
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripeData.Result">
+            <summary>
+            The result of the Swipe request.
+            </summary>
+            <remarks>
+            This result is a managed code version of the actual result returned by the
+            underlying scan driver stack. It can be used to determine whether or not the 
+            read was successful or failed. 
+            </remarks>
+            <value>
+            A <see cref="T:Symbol.MagStripe2.Results"/> member that indicates whether or not the Swipe was 
+            successful.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripeData.Data">
+            <summary>
+            Returns the MSR data text.
+            </summary>
+            <value>
+            A string of the MSR data.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripeData.EventStatus">
+            <summary>
+            Returns the event status in string form.
+            </summary>
+            <value>
+            A stirng that provides information about the status of the current read.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripeData.BufferSize">
+            <summary>
+            Size of the ReaderData buffer.
+            </summary>
+            <value>
+            An integer that contains the current memory buffer size allocated for MSR data.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripeData.Track1Data">
+            <summary>
+            Information data on track 1.
+            </summary>
+            <value>
+            A string that contains only the data from track 1.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripeData.Track2Data">
+            <summary>
+            Information data on track 2.
+            </summary>
+            <value>
+            A string that contains only the data from track 2.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripeData.Track3Data">
+            <summary>
+            Information data on track 3.
+            </summary>
+            <value>
+            A string that contains only the data from track 3.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripeData.Track1Decode">
+            <summary>
+            Information on track 1 successful decode.
+            </summary>
+            <value>
+            A boolean flag that specifies whether or not track 1 contained information.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripeData.Track2Decode">
+            <summary>
+            Information on track 2 successful decode.
+            </summary>
+            <value>
+            A boolean flag that specifies whether or not track 2 contained information.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.MagStripeData.Track3Decode">
+            <summary>
+            Information on track 3 successful decode.
+            </summary>
+            <value>
+            A boolean flag that specifies whether or not track 3 contained information.
+            </value>
+        </member>
+        <member name="T:Symbol.MagStripe2.PINData">
+            <summary>
+            If the previously swiped card is a valid credit or debit card, this field will be populated with the PIN data. Or if there is no need for swiping the debit or credit card, this field can be manually entered. When using a DCR (debit card reader).  
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.PINData.PANData">
+            <summary>
+            If the previously swiped card is a valid credit or debit card, this field will be
+            populated with the PAN (personal acoount number) data.  Or if there is no need for  
+            swiping the debit or credit card, this field can be manually entered.
+            
+            When using a DCR (debit card reader), the value of this field will be used for generating 
+            the PIN encrypted data. Refer to the page “Using DCR (debit card reader)” under the 
+            section “MagStripe” in the Programmer’s Guide of the EMDK help file.
+            </summary>
+            <value>
+            A string value used in generating the PIN encrypted data.
+            </value> 
+        </member>
+        <member name="P:Symbol.MagStripe2.PINData.PINEncryptedData">
+            <summary>
+            Stores the encrypted data.
+            As per the DUKPT spec, this buffer must be a minimum of 18 bytes long 
+            (10 bytes for KSN and 8 for EPB).
+            </summary>
+            <value>
+            A byte array that stores the encrypted data
+            </value> 
+        </member>
+        <member name="P:Symbol.MagStripe2.PINData.TimeStamp">
+            <summary>
+            The time at which the MSR data was obtained.
+            </summary>
+            <value>
+            A DateTime structure that contains the time information.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.PINData.Result">
+            <summary>
+            The result of the Swipe request.
+            </summary>
+            <remarks>
+            This result is a managed code version of the actual result returned by the
+            underlying scan driver stack. It can be used to determine whether or not the 
+            Swipe was successful or failed. 
+            </remarks>
+            <value>
+            A <see cref="T:Symbol.MagStripe2.Results"/> member that indicates whether or not the Swipe was 
+            successful.
+            </value>
+        </member>
+        <member name="T:Symbol.MagStripe2.CreditCardData">
+            <summary>
+            CreditCardData class encapsulates all the MSR data and meta-data into a 
+            CreditCard aware object.
+            </summary>
+            <remarks>
+            The CreditCardData class is most commonly used to create a ReaderData object
+            that will be used to parse out Credit Card information from an MSR swipe. This class
+            provides functions to quickly obtain the information through Credit Card aware
+            properties. <para> Use this class the same way a normal ReaderData class would be 
+            used.</para>
+            </remarks>
+        </member>
+        <member name="M:Symbol.MagStripe2.CreditCardData.#ctor(Symbol.MagStripe2.MagStripeData)">
+            <summary>
+            Default CreditCardData constructor.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.CreditCardData.CardHolderName">
+            <summary>
+            Returns the credit card holders name.
+            </summary>
+            <value>
+            A string that contains the card holders name. If the card does not have the proper
+            information then "" is returned.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.CreditCardData.CardNumber">
+            <summary>
+            Returns the credit card holders number.
+            </summary>
+            <value>
+            A string that contains the card holders credit card number. This string is ""
+            if the card does not contain the information.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.CreditCardData.CardNumberMasked">
+            <summary>
+            Returns credit card number in masked format.
+            </summary>
+            <remarks>
+            Masked format includes having X's across the card number except for the last
+            4 digits.
+            </remarks>
+            <value>
+            A string that contains the card holders number in masked format. If the 
+            information is not found then "" is returned.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.CreditCardData.ExpirationDate">
+            <summary>
+            Returns the expiration date of credit card.
+            </summary>
+            <value>
+            A string that contains the expiration date of the credit card. If the information
+            could not be found then "" is returned.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.CreditCardData.IsValid">
+            <summary>
+            Denotes whether or not data is a valid credit card.
+            </summary>
+            <value>
+            A boolean flag that specifies whether or not the credit card has the proper
+            information on its data tracks.
+            </value>
+        </member>
+        <member name="T:Symbol.MagStripe2.StatusData">
+            <summary>
+            The StatusData class provides access to notification information. 
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.StatusData.State">
+            <summary>
+            Retrieves the MagStripe2 event state.  
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.StatusData.Text">
+            <summary>
+            Retrieves the MagStripe2 state in string form. 
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.Devices">
+            <summary>
+            Encapsulates the static information of imagers on the device.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Devices.SupportedDevices">
+            <summary>
+            Gets a static array that list all supported imaging devices in the system.  
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.Device">
+            <summary>
+            Encapsulates the static information of an imaging device.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Device.DeviceName">
+            <summary>
+            Returns the port or driver name of the device.
+            </summary>
+            <value>
+            A string that contains the port (COMx) or driver (MSRx) name of the device.
+            </value>
+        </member>
+        <member name="P:Symbol.MagStripe2.Device.PortName">
+            <summary>
+            Provides read access to the port name of the device.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Device.DllName">
+            <summary>
+            Provides read access to the DLL name associated with the device.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Device.FriendlyName">
+            <summary>
+            Provides read access to the friendly name of the device.
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.Config">
+            <summary>
+            The Config class holds access to all the parameters inside MSR object. Thru this object all setting and parameters can be accessed and modified.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Config.IsDCR">
+            <summary>
+            Boolean value if the card is a Debit Card or not
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Config.BufferSize">
+            <summary>
+            Size of the MagStripeData buffer. Default is 2048 bytes. Do not change this value.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Config.PINEncryptionFormat">
+            <summary>
+            Specifies the format used to encrypt the PAN and user’s PIN data. Currently only the value ISO-0 format is supported. For the current release, the caller should supply 0x00 for this parameter. The default value is 0.  
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Config.TrackSentinels">
+            <summary>
+            The characters delimiting each track. They can be modified at any time.
+            </summary>
+            <remarks>
+            The default sentinels are: in Track 1 = ("%", "?"). Track2 = (";", "?"). 
+            And Track3 = (";", "?"), ("%", "?") and ("+", "?")
+            </remarks>
+        </member>
+        <member name="P:Symbol.MagStripe2.Config.PANDataSentinels">
+            <summary>
+            The characters delimiting each track in the PANData. They can be modified at any time.
+            </summary>
+            <remarks>
+            The default sentinels are: ("%B", "^") and (";", "=") 
+            </remarks>
+        </member>
+        <member name="T:Symbol.MagStripe2.Config.SentinelsClass">
+            <summary>
+            The characters delimiting each track in the PANData. They can be modified at any time.
+            </summary>
+        </member>
+        <member name="M:Symbol.MagStripe2.Config.SentinelsClass.Add(System.String,System.String)">
+            <summary>
+            Add a new Sentinel pair
+            </summary>
+            <param name="startSentinel">Start sentinal parameter. (String)</param>
+            <param name="endSentinel">End sentinal parameter. (String)</param>
+            <returns><see cref="T:Symbol.MagStripe2.Results"/> object</returns>
+        </member>
+        <member name="M:Symbol.MagStripe2.Config.SentinelsClass.Delete(System.String,System.String)">
+            <summary>
+             Delete a sentinel item from the array of sentinels corresponding to the start and end sentinel parameters.
+            </summary>
+            <param name="startSentinel">Start sentinal parameter</param>
+            <param name="endSentinel">End sentinal parameter</param>
+            <returns><see cref="T:Symbol.MagStripe2.Results"/> object</returns>
+        </member>
+        <member name="M:Symbol.MagStripe2.Config.SentinelsClass.Delete(System.Int32)">
+            <summary>
+            Delete a sentinel item from the array of sentinels
+            </summary>
+            <param name="index">index in the array of sentinel to be removed</param>
+            <returns><see cref="T:Symbol.MagStripe2.Results"/> object</returns>
+        </member>
+        <member name="M:Symbol.MagStripe2.Config.SentinelsClass.DeleteAll">
+            <summary>
+            Delete all sentinels.
+            </summary>
+            <returns><see cref="T:Symbol.MagStripe2.Results"/> object</returns>
+        </member>
+        <member name="P:Symbol.MagStripe2.Config.SentinelsClass.Length">
+            <summary>
+            The number of sentinels.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Config.SentinelsClass.Item(System.Int32)">
+            <summary>
+            An indexer that returns the sentinels at the indexed entry.  
+            </summary>
+            <param name="index">index</param>
+            <returns><see cref="T:Symbol.MagStripe2.Config.SentinelSet"/></returns>
+        </member>
+        <member name="T:Symbol.MagStripe2.Config.SentinelSet">
+            <summary>
+            This class provides storage for the sentinel pairs
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Config.SentinelSet.StartSentinel">
+            <summary>
+            Specifies the starting character string.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Config.SentinelSet.EndSentinel">
+            <summary>
+            Specifies the ending character string.
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.Config.TrackSentinelsClass">
+            <summary>
+            The characters delimiting each track. They can be modified at any time.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Config.TrackSentinelsClass.Track1">
+            <summary>
+            Track1 format property.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Config.TrackSentinelsClass.Track2">
+            <summary>
+            Track2 format property.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Config.TrackSentinelsClass.Track3">
+            <summary>
+            Track3 format property.
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.Design.MagStripe2">
+            <summary>
+            A public MagStripe class which creates design time toolbox component for MSR
+            </summary>
+        </member>
+        <member name="M:Symbol.MagStripe2.Design.MagStripe2.Enable">
+            <summary>
+            Initialize the reader, start status notifications and start a read on the reader
+            </summary>
+        </member>
+        <member name="M:Symbol.MagStripe2.Design.MagStripe2.pMagStripe2_OnStatus(Symbol.MagStripe2.StatusData)">
+            <summary>
+            Status notification
+            </summary>
+        </member>
+        <member name="M:Symbol.MagStripe2.Design.MagStripe2.pMagStripe2_OnSwipe(Symbol.MagStripe2.MagStripeData)">
+            <summary>
+            Swipe notification
+            </summary>
+        </member>
+        <member name="M:Symbol.MagStripe2.Design.MagStripe2.GetMagStripe2">
+            <summary>
+            Provides the MagStripe2 object that controls the Magstripe device.
+            </summary>
+            <returns>A Symbol.MagStripe2.MagStripe2 object</returns>
+        </member>
+        <member name="M:Symbol.MagStripe2.Design.MagStripe2.Disable">
+            <summary>
+            Stop reading and disable/close reader, stop all reads and stop all status notifications.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Design.MagStripe2.DeviceName">
+            <summary>
+            The name of the MSR device DLL. Should be in the form of MSR API dll name without 
+            the extension. (ie "MSR3000", "MSROneil", "MSRCameo", etc.). If the DeviceName 
+            is not provided, the first available device will be chosen
+            </summary>
+        </member>
+        <member name="E:Symbol.MagStripe2.Design.MagStripe2.OnSwipe">
+            <summary>
+            Provides notification to the application when the MSR reads swiped data
+            </summary>
+        </member>
+        <member name="E:Symbol.MagStripe2.Design.MagStripe2.OnStatus">
+            <summary>
+            Attaches or removes an event for status event.
+            </summary>
+        </member>
+        <member name="P:Symbol.MagStripe2.Design.MagStripe2.EnableMagstripe">
+            <summary>
+            Enables or Disables the MSR
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.Design.MagStripe2.OnSwipeEventHandler">
+            <summary>
+            A delegate used for providing notification to the application when the MSR reads swiped data
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.Design.MagStripe2.OnStatusEventHandler">
+            <summary>
+            A delegate used for providing notification to the application when the MSR status changes
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.Results">
+            <summary>
+            Enumerated type that maps its members to underlying C API return codes. 
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.SUCCESS">
+            <summary>
+            The task was successful.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.CANCELED">
+            <summary>
+            The task was cancelled.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.NOTENABLED">
+            <summary>
+            The device is not enabled.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.PENDING">
+            <summary>
+            The task is pending.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.ITEM_NOTFOUND">
+            <summary>
+            Item not found.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.INVALID_DEVICE">
+            <summary>
+            The MSR device provided is not valid
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_SUCCESS">
+            <summary>
+            The function completed successfully.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_GLOBAL">
+            <summary>
+            Global parameter error.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_PARAMETER">
+            <summary>
+            An error occurred due to invalid parameter.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_NOTOPEN">
+            <summary>
+            The MSR API is not opened (call MSR_Open).
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_STILLOPEN">
+            <summary>
+            The MSR API is already opened.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_MEMORY">
+            <summary>
+            An error occurred while allocating memory.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_SIZE">
+            <summary>
+            Card information Swipe is greater than 400 bytes.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_NAK">
+            <summary>
+            Unable to access the MSR device. Usually occurs when the device is not connected to the Serial I/O port.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_BAD_ANS">
+            <summary>
+            Erroneous response from the MSR device.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_TIMEOUT">
+            <summary>
+            Timeout occurred while waiting for response from MSR device.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_ROM">
+            <summary>
+            MSR device ROM error.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_RAM">
+            <summary>
+            MSR device RAM error.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_EEPROM">
+            <summary>
+            MSR device EEPROM error.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_RES">
+            <summary>
+            Reserved error value.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_CHECKSUM">
+            <summary>
+            Check sum error.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_BADREAD">
+            <summary>
+            Swipe failed.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_NODATA">
+            <summary>
+            Swipe succeeded, no data.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_NULLPOINTER">
+            <summary>
+            A NULL parameter pointer passed as a parameter.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_BUSY">
+            <summary>
+            MSR device is still busy in previous function state.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_WAKEUP">
+            <summary>
+            MSR device failed to wake up.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_BUFFERED_MODE">
+            <summary>
+            Application trying to read buffered mode data while the MSR device is still in unbuffered mode.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_UNBUFFERED_MODE">
+            <summary>
+            Application trying to read unbuffered mode data while the MSR device is still in buffered mode.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_PORTEVENT">
+            <summary>
+            A failure in Serial I/O Function.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_OPENFAILURE">
+            <summary>
+            Failure to open the MSR device.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_BATTERYLOW">
+            <summary>
+            An asynchronous close due to low battery voltage.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_POWERDOWN">
+            <summary>
+            Power is switched off to MSR device during the execution of the driver function call.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR_ERR_OSERROR">
+            <summary>
+            If the driver function returns error due to Operating System
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR3000_ERR_PARAMETER">
+            <summary>
+            Incorrect parameter sent to MSR C API.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR3000_ERR_SIZE">
+            <summary>
+            Incorrect buffer size for MSR C API.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR3000_ERR_NODATA">
+            <summary>
+            No data read from MSR C API.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR3000_ERR_OSERROR">
+            <summary>
+            An Operating System error occured while accessing MSR C API.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.MSR3000_ERR_DEVICEREMOVED">
+            <summary>
+            MSR hardware was removed.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.NOSWIPEISSUED">
+            <summary>
+            There are no pending swipes.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.Results.INVALID_TIMEOUT">
+            <summary>
+            Value used is invalid or out of acceptable range.
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.States">
+            <summary>
+            Defines the different states of the MagStripe Reader.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.States.STOPPED">
+            <summary>
+            MSR is not enabled.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.States.IDLE">
+            <summary>
+            MSR is enabled but no reads are pending.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.States.READY">
+            <summary>
+            MSR device is ready to have a card swiped.
+            </summary>
+        </member>
+        <member name="T:Symbol.MagStripe2.EventTypes">
+            <summary>
+            Defines the different types of events that can occur for the MagStripe Reader.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.EventTypes.STATE_CHANGE">
+            <summary>
+            The state of the MSR has changed.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.EventTypes.ERROR">
+            <summary>
+            An error occurred while trying to wait for an event.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.EventTypes.FIRST">
+            <summary>
+            The first item in the EventTypes enumeration. This item is 
+            used during simulation mode to cycle through all event types.
+            </summary>
+        </member>
+        <member name="F:Symbol.MagStripe2.EventTypes.LAST">
+            <summary>
+            The last item in the EventTypes enumeration. This item is 
+            used during simulation mode to cycle through all event types.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -6,6 +6,64 @@ VB_RFID3Sample5
 </name>
 </assembly>
 <members>
-
+<member name="M:WS_RFID.WebService1.#ctor">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.comprobar_sede(System.Int32)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.Begincomprobar_sede(System.Int32,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.Endcomprobar_sede(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.CajasListasDespacho(System.Int32)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.BeginCajasListasDespacho(System.Int32,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.EndCajasListasDespacho(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.ComprobarRFID(System.String)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.BeginComprobarRFID(System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.EndComprobarRFID(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.Caja_pertenezca_sede(System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.BeginCaja_pertenezca_sede(System.Int32,System.Int32,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.EndCaja_pertenezca_sede(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.comprobar_caja_completa(System.Int32)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.Begincomprobar_caja_completa(System.Int32,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.Endcomprobar_caja_completa(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.actualizar_caja(System.Int32)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.Beginactualizar_caja(System.Int32,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.Endactualizar_caja(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.actualizar_caja_inconsistente(System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.Beginactualizar_caja_inconsistente(System.Int32,System.Int32,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.Endactualizar_caja_inconsistente(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.HelloWorld">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.BeginHelloWorld(System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.EndHelloWorld(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.ComprobarUsuario(System.String,System.String)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.BeginComprobarUsuario(System.String,System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:WS_RFID.WebService1.EndComprobarUsuario(System.IAsyncResult)">
+	<remarks/>
+</member><member name="T:WS_RFID.WebService1">
+	<remarks/>
+</member>
 </members>
 </doc>

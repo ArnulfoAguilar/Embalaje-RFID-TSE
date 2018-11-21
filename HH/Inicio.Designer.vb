@@ -33,7 +33,7 @@ Partial Public Class Inicio
         '
         'btn_aceptar
         '
-        Me.btn_aceptar.Location = New System.Drawing.Point(22, 214)
+        Me.btn_aceptar.Location = New System.Drawing.Point(23, 141)
         Me.btn_aceptar.Name = "btn_aceptar"
         Me.btn_aceptar.Size = New System.Drawing.Size(72, 20)
         Me.btn_aceptar.TabIndex = 0
@@ -41,17 +41,17 @@ Partial Public Class Inicio
         '
         'txt_Sede
         '
-        Me.txt_Sede.Location = New System.Drawing.Point(59, 164)
+        Me.txt_Sede.Location = New System.Drawing.Point(146, 106)
         Me.txt_Sede.Name = "txt_Sede"
-        Me.txt_Sede.Size = New System.Drawing.Size(100, 21)
+        Me.txt_Sede.Size = New System.Drawing.Size(55, 21)
         Me.txt_Sede.TabIndex = 1
         '
         'Label1
         '
-        Me.Label1.Location = New System.Drawing.Point(59, 141)
+        Me.Label1.Location = New System.Drawing.Point(3, 106)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(100, 20)
-        Me.Label1.Text = "Sede Logistica"
+        Me.Label1.Size = New System.Drawing.Size(137, 20)
+        Me.Label1.Text = "Ruta De Sede Logistica"
         '
         'PictureBox1
         '
@@ -63,7 +63,7 @@ Partial Public Class Inicio
         '
         'btn_salir
         '
-        Me.btn_salir.Location = New System.Drawing.Point(140, 214)
+        Me.btn_salir.Location = New System.Drawing.Point(129, 141)
         Me.btn_salir.Name = "btn_salir"
         Me.btn_salir.Size = New System.Drawing.Size(72, 20)
         Me.btn_salir.TabIndex = 4
@@ -71,16 +71,16 @@ Partial Public Class Inicio
         '
         'lbl_tema
         '
-        Me.lbl_tema.Font = New System.Drawing.Font("Tahoma", 17.0!, System.Drawing.FontStyle.Bold)
-        Me.lbl_tema.Location = New System.Drawing.Point(3, 95)
+        Me.lbl_tema.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.lbl_tema.Location = New System.Drawing.Point(3, 3)
         Me.lbl_tema.Name = "lbl_tema"
-        Me.lbl_tema.Size = New System.Drawing.Size(234, 26)
+        Me.lbl_tema.Size = New System.Drawing.Size(140, 20)
         Me.lbl_tema.Text = "Despacho de Cajas"
         '
         'lbl_error
         '
         Me.lbl_error.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular)
-        Me.lbl_error.Location = New System.Drawing.Point(22, 248)
+        Me.lbl_error.Location = New System.Drawing.Point(40, 86)
         Me.lbl_error.Name = "lbl_error"
         Me.lbl_error.Size = New System.Drawing.Size(100, 20)
         Me.lbl_error.Text = "Error"

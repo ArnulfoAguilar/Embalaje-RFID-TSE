@@ -29,6 +29,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <StartupObject>Inicio</StartupObject>
+    <ApplicationIcon>tse.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -186,6 +187,10 @@
     </None>
     <None Include="Web References\WS_RFID\WS_RFID.disco" />
     <None Include="Web References\WS_RFID\WS_RFID.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tse.ico" />
+    <Content Include="tse_logo2.ico" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="My Project\" />
