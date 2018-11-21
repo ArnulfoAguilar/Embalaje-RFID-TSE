@@ -29,26 +29,7 @@ Partial Class Frm_Paquete
         Me.btn_editar = New System.Windows.Forms.Button()
         Me.btn_nuevo = New System.Windows.Forms.Button()
         Me.btn_elim = New System.Windows.Forms.Button()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.InicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EscaneoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DespachoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RecepcionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MantenimientosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CrearUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EventoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UbicacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CrearUbicacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EditarUbicacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RolesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CrearRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ActualizarRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ImprimirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.dtg_Paquete, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'lb_reg
@@ -119,127 +100,11 @@ Partial Class Frm_Paquete
         Me.btn_elim.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btn_elim.UseVisualStyleBackColor = True
         '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicioToolStripMenuItem, Me.EscaneoToolStripMenuItem, Me.DespachoToolStripMenuItem, Me.RecepcionToolStripMenuItem, Me.MantenimientosToolStripMenuItem, Me.ImprimirToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(574, 24)
-        Me.MenuStrip1.TabIndex = 17
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'InicioToolStripMenuItem
-        '
-        Me.InicioToolStripMenuItem.Name = "InicioToolStripMenuItem"
-        Me.InicioToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
-        Me.InicioToolStripMenuItem.Text = "Inicio"
-        '
-        'EscaneoToolStripMenuItem
-        '
-        Me.EscaneoToolStripMenuItem.Name = "EscaneoToolStripMenuItem"
-        Me.EscaneoToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
-        Me.EscaneoToolStripMenuItem.Text = "Escaneo"
-        '
-        'DespachoToolStripMenuItem
-        '
-        Me.DespachoToolStripMenuItem.Name = "DespachoToolStripMenuItem"
-        Me.DespachoToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
-        Me.DespachoToolStripMenuItem.Text = "Despacho"
-        '
-        'RecepcionToolStripMenuItem
-        '
-        Me.RecepcionToolStripMenuItem.Name = "RecepcionToolStripMenuItem"
-        Me.RecepcionToolStripMenuItem.Size = New System.Drawing.Size(74, 20)
-        Me.RecepcionToolStripMenuItem.Text = "Recepcion"
-        '
-        'MantenimientosToolStripMenuItem
-        '
-        Me.MantenimientosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.EventoToolStripMenuItem, Me.UbicacionToolStripMenuItem, Me.RolesToolStripMenuItem})
-        Me.MantenimientosToolStripMenuItem.Name = "MantenimientosToolStripMenuItem"
-        Me.MantenimientosToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
-        Me.MantenimientosToolStripMenuItem.Text = "Mantenimientos"
-        '
-        'UsuariosToolStripMenuItem
-        '
-        Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUsuarioToolStripMenuItem, Me.ModificarUsuarioToolStripMenuItem})
-        Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.UsuariosToolStripMenuItem.Text = "Usuarios"
-        '
-        'CrearUsuarioToolStripMenuItem
-        '
-        Me.CrearUsuarioToolStripMenuItem.Name = "CrearUsuarioToolStripMenuItem"
-        Me.CrearUsuarioToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
-        Me.CrearUsuarioToolStripMenuItem.Text = "Crear usuario"
-        '
-        'ModificarUsuarioToolStripMenuItem
-        '
-        Me.ModificarUsuarioToolStripMenuItem.Name = "ModificarUsuarioToolStripMenuItem"
-        Me.ModificarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
-        Me.ModificarUsuarioToolStripMenuItem.Text = "Modificar usuario"
-        '
-        'ProductosToolStripMenuItem
-        '
-        Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.ProductosToolStripMenuItem.Text = "Articulo"
-        '
-        'EventoToolStripMenuItem
-        '
-        Me.EventoToolStripMenuItem.Name = "EventoToolStripMenuItem"
-        Me.EventoToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.EventoToolStripMenuItem.Text = "Evento"
-        '
-        'UbicacionToolStripMenuItem
-        '
-        Me.UbicacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUbicacionToolStripMenuItem, Me.EditarUbicacionToolStripMenuItem})
-        Me.UbicacionToolStripMenuItem.Name = "UbicacionToolStripMenuItem"
-        Me.UbicacionToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.UbicacionToolStripMenuItem.Text = "Ubicacion"
-        '
-        'CrearUbicacionToolStripMenuItem
-        '
-        Me.CrearUbicacionToolStripMenuItem.Name = "CrearUbicacionToolStripMenuItem"
-        Me.CrearUbicacionToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.CrearUbicacionToolStripMenuItem.Text = "Crear ubicacion"
-        '
-        'EditarUbicacionToolStripMenuItem
-        '
-        Me.EditarUbicacionToolStripMenuItem.Name = "EditarUbicacionToolStripMenuItem"
-        Me.EditarUbicacionToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.EditarUbicacionToolStripMenuItem.Text = "Editar Ubicacion"
-        '
-        'RolesToolStripMenuItem
-        '
-        Me.RolesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearRolToolStripMenuItem, Me.ActualizarRolToolStripMenuItem})
-        Me.RolesToolStripMenuItem.Name = "RolesToolStripMenuItem"
-        Me.RolesToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.RolesToolStripMenuItem.Text = "Roles"
-        '
-        'CrearRolToolStripMenuItem
-        '
-        Me.CrearRolToolStripMenuItem.Name = "CrearRolToolStripMenuItem"
-        Me.CrearRolToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
-        Me.CrearRolToolStripMenuItem.Text = "Crear Rol"
-        '
-        'ActualizarRolToolStripMenuItem
-        '
-        Me.ActualizarRolToolStripMenuItem.Name = "ActualizarRolToolStripMenuItem"
-        Me.ActualizarRolToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
-        Me.ActualizarRolToolStripMenuItem.Text = "Editar Rol"
-        '
-        'ImprimirToolStripMenuItem
-        '
-        Me.ImprimirToolStripMenuItem.Name = "ImprimirToolStripMenuItem"
-        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(93, 20)
-        Me.ImprimirToolStripMenuItem.Text = "Imprimir Tags"
-        '
         'Frm_Paquete
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(574, 447)
-        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.btn_elim)
         Me.Controls.Add(Me.btn_editar)
         Me.Controls.Add(Me.btn_nuevo)
@@ -251,8 +116,6 @@ Partial Class Frm_Paquete
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Frm_Paquete"
         CType(Me.dtg_Paquete, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -263,22 +126,4 @@ Partial Class Frm_Paquete
     Friend WithEvents btn_editar As System.Windows.Forms.Button
     Friend WithEvents btn_nuevo As System.Windows.Forms.Button
     Friend WithEvents btn_elim As System.Windows.Forms.Button
-    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents InicioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EscaneoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents DespachoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents RecepcionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents MantenimientosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents UsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CrearUsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ModificarUsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ProductosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EventoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents UbicacionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CrearUbicacionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EditarUbicacionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents RolesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CrearRolToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ActualizarRolToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ImprimirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
