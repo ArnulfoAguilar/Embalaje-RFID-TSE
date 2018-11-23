@@ -1082,7 +1082,7 @@ Namespace VB_RFID3_Host_Sample1
                                                                         " from detalle_caja det" & _
                                                                         " join caja c on det.id_caja=c.id_caja" & _
                                                                         " where det.RFID=:CODIGO_RFID_ARTICULO and c.id_estado = 1" & _
-                                                                        " and det.ID_ARTICULO=51"
+                                                                        " and det.ID_ARTICULO=1"
                 Dim comando As New OracleCommand(sqlConsulta_Seleccionar_caja_articulos, conn)
                 comando.Parameters.Add(":CODIGO_RFID_ARTICULO", OracleType.VarChar, 32).Value = parametroConsulta
                 Dim lector2 As OracleDataReader = Nothing
@@ -1122,7 +1122,7 @@ Namespace VB_RFID3_Host_Sample1
                                                                         " join caja c on det.id_caja=c.id_caja" & _
                                                                         " join sede_logistica se on C.ID_SEDE=SE.ID_SEDE " & _
                                                                         " where det.RFID=:CODIGO_RFID_ARTICULO and SE.RUTA_SEDE=:RUTA " & _
-                                                                        " and c.id_paquete=:paquete and det.id_articulo=51"
+                                                                        " and c.id_paquete=:paquete and det.id_articulo=1"
 
                 Dim comando As New OracleCommand(sqlConsulta_Seleccionar_caja_articulos, conn)
                 comando.Parameters.Add(":CODIGO_RFID_ARTICULO", OracleType.VarChar, 32).Value = parametroConsulta

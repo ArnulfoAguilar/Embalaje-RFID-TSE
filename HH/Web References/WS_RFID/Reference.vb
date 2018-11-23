@@ -38,14 +38,14 @@ Namespace WS_RFID
         
         '''<remarks/>
         <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://WebService_tse_RFID/comprobar_sede", RequestNamespace:="http://WebService_tse_RFID/", ResponseNamespace:="http://WebService_tse_RFID/", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)>  _
-        Public Function comprobar_sede(ByVal id_sede As Integer) As Integer
-            Dim results() As Object = Me.Invoke("comprobar_sede", New Object() {id_sede})
+        Public Function comprobar_sede(ByVal id_ruta As Integer) As Integer
+            Dim results() As Object = Me.Invoke("comprobar_sede", New Object() {id_ruta})
             Return CType(results(0),Integer)
         End Function
         
         '''<remarks/>
-        Public Function Begincomprobar_sede(ByVal id_sede As Integer, ByVal callback As System.AsyncCallback, ByVal asyncState As Object) As System.IAsyncResult
-            Return Me.BeginInvoke("comprobar_sede", New Object() {id_sede}, callback, asyncState)
+        Public Function Begincomprobar_sede(ByVal id_ruta As Integer, ByVal callback As System.AsyncCallback, ByVal asyncState As Object) As System.IAsyncResult
+            Return Me.BeginInvoke("comprobar_sede", New Object() {id_ruta}, callback, asyncState)
         End Function
         
         '''<remarks/>
@@ -56,14 +56,14 @@ Namespace WS_RFID
         
         '''<remarks/>
         <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://WebService_tse_RFID/CajasListasDespacho", RequestNamespace:="http://WebService_tse_RFID/", ResponseNamespace:="http://WebService_tse_RFID/", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)>  _
-        Public Function CajasListasDespacho(ByVal id_sede As Integer) As Integer
-            Dim results() As Object = Me.Invoke("CajasListasDespacho", New Object() {id_sede})
+        Public Function CajasListasDespacho(ByVal id_ruta As Integer) As Integer
+            Dim results() As Object = Me.Invoke("CajasListasDespacho", New Object() {id_ruta})
             Return CType(results(0),Integer)
         End Function
         
         '''<remarks/>
-        Public Function BeginCajasListasDespacho(ByVal id_sede As Integer, ByVal callback As System.AsyncCallback, ByVal asyncState As Object) As System.IAsyncResult
-            Return Me.BeginInvoke("CajasListasDespacho", New Object() {id_sede}, callback, asyncState)
+        Public Function BeginCajasListasDespacho(ByVal id_ruta As Integer, ByVal callback As System.AsyncCallback, ByVal asyncState As Object) As System.IAsyncResult
+            Return Me.BeginInvoke("CajasListasDespacho", New Object() {id_ruta}, callback, asyncState)
         End Function
         
         '''<remarks/>
@@ -92,14 +92,14 @@ Namespace WS_RFID
         
         '''<remarks/>
         <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://WebService_tse_RFID/Caja_pertenezca_sede", RequestNamespace:="http://WebService_tse_RFID/", ResponseNamespace:="http://WebService_tse_RFID/", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)>  _
-        Public Function Caja_pertenezca_sede(ByVal id_caja As Integer, ByVal id_sede As Integer) As Integer
-            Dim results() As Object = Me.Invoke("Caja_pertenezca_sede", New Object() {id_caja, id_sede})
+        Public Function Caja_pertenezca_sede(ByVal id_caja As Integer, ByVal id_ruta As Integer) As Integer
+            Dim results() As Object = Me.Invoke("Caja_pertenezca_sede", New Object() {id_caja, id_ruta})
             Return CType(results(0),Integer)
         End Function
         
         '''<remarks/>
-        Public Function BeginCaja_pertenezca_sede(ByVal id_caja As Integer, ByVal id_sede As Integer, ByVal callback As System.AsyncCallback, ByVal asyncState As Object) As System.IAsyncResult
-            Return Me.BeginInvoke("Caja_pertenezca_sede", New Object() {id_caja, id_sede}, callback, asyncState)
+        Public Function BeginCaja_pertenezca_sede(ByVal id_caja As Integer, ByVal id_ruta As Integer, ByVal callback As System.AsyncCallback, ByVal asyncState As Object) As System.IAsyncResult
+            Return Me.BeginInvoke("Caja_pertenezca_sede", New Object() {id_caja, id_ruta}, callback, asyncState)
         End Function
         
         '''<remarks/>
@@ -144,13 +144,13 @@ Namespace WS_RFID
         
         '''<remarks/>
         <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://WebService_tse_RFID/actualizar_caja_inconsistente", RequestNamespace:="http://WebService_tse_RFID/", ResponseNamespace:="http://WebService_tse_RFID/", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)>  _
-        Public Sub actualizar_caja_inconsistente(ByVal id_caja As Integer, ByVal id_sede As Integer)
-            Me.Invoke("actualizar_caja_inconsistente", New Object() {id_caja, id_sede})
+        Public Sub actualizar_caja_inconsistente(ByVal id_caja As Integer, ByVal id_ruta As Integer)
+            Me.Invoke("actualizar_caja_inconsistente", New Object() {id_caja, id_ruta})
         End Sub
         
         '''<remarks/>
-        Public Function Beginactualizar_caja_inconsistente(ByVal id_caja As Integer, ByVal id_sede As Integer, ByVal callback As System.AsyncCallback, ByVal asyncState As Object) As System.IAsyncResult
-            Return Me.BeginInvoke("actualizar_caja_inconsistente", New Object() {id_caja, id_sede}, callback, asyncState)
+        Public Function Beginactualizar_caja_inconsistente(ByVal id_caja As Integer, ByVal id_ruta As Integer, ByVal callback As System.AsyncCallback, ByVal asyncState As Object) As System.IAsyncResult
+            Return Me.BeginInvoke("actualizar_caja_inconsistente", New Object() {id_caja, id_ruta}, callback, asyncState)
         End Function
         
         '''<remarks/>

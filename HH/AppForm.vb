@@ -2,6 +2,7 @@
 Imports Symbol.RFID3
 Imports Symbol.RFID3.Events
 Imports System
+Imports System.Data
 Imports System.Collections
 Imports System.ComponentModel
 Imports System.Drawing
@@ -26,6 +27,7 @@ Namespace VB_RFID3Sample5
             Me.m_AccessOpResult = New AccessOperationResult
             Me.m_IsConnected = False
             Me.m_TagTotalCount = 0
+
         End Sub
 
         Private Sub AppForm_Closing(ByVal sender As Object, ByVal e As CancelEventArgs) Handles MyBase.Closing
@@ -243,8 +245,9 @@ Namespace VB_RFID3Sample5
             Me.readTimeValueLabel = New System.Windows.Forms.Label
             Me.functionCallStatusLabel = New Microsoft.WindowsCE.Forms.Notification
             Me.lbl_cajas_leidas = New System.Windows.Forms.Label
-            Me.GridCajasEncontradas = New System.Windows.Forms.ListView
             Me.GridInconsistentes = New System.Windows.Forms.ListView
+            Me.dbug_lbl = New System.Windows.Forms.Label
+            Me.GridCajasEncontradas = New System.Windows.Forms.ListView
             Me.SuspendLayout()
             '
             'appFormMenu
@@ -351,9 +354,9 @@ Namespace VB_RFID3Sample5
             Me.inventoryList.ContextMenu = Me.dataContextMenu
             Me.inventoryList.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular)
             Me.inventoryList.FullRowSelect = True
-            Me.inventoryList.Location = New System.Drawing.Point(43, 71)
+            Me.inventoryList.Location = New System.Drawing.Point(43, 97)
             Me.inventoryList.Name = "inventoryList"
-            Me.inventoryList.Size = New System.Drawing.Size(24, 26)
+            Me.inventoryList.Size = New System.Drawing.Size(10, 0)
             Me.inventoryList.TabIndex = 3
             Me.inventoryList.View = System.Windows.Forms.View.Details
             '
@@ -490,16 +493,16 @@ Namespace VB_RFID3Sample5
             '
             Me.totalTagLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
             Me.totalTagLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular)
-            Me.totalTagLabel.Location = New System.Drawing.Point(3, 170)
+            Me.totalTagLabel.Location = New System.Drawing.Point(0, 161)
             Me.totalTagLabel.Name = "totalTagLabel"
-            Me.totalTagLabel.Size = New System.Drawing.Size(59, 16)
+            Me.totalTagLabel.Size = New System.Drawing.Size(59, 32)
             Me.totalTagLabel.Text = "Cajas Leidas "
             '
             'totalTagValueLabel
             '
             Me.totalTagValueLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
             Me.totalTagValueLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular)
-            Me.totalTagValueLabel.Location = New System.Drawing.Point(57, 126)
+            Me.totalTagValueLabel.Location = New System.Drawing.Point(57, 94)
             Me.totalTagValueLabel.Name = "totalTagValueLabel"
             Me.totalTagValueLabel.Size = New System.Drawing.Size(41, 16)
             Me.totalTagValueLabel.Text = "0(0)"
@@ -527,13 +530,6 @@ Namespace VB_RFID3Sample5
             Me.lbl_cajas_leidas.Size = New System.Drawing.Size(41, 16)
             Me.lbl_cajas_leidas.Text = "0(0)"
             '
-            'GridCajasEncontradas
-            '
-            Me.GridCajasEncontradas.Location = New System.Drawing.Point(3, 32)
-            Me.GridCajasEncontradas.Name = "GridCajasEncontradas"
-            Me.GridCajasEncontradas.Size = New System.Drawing.Size(100, 133)
-            Me.GridCajasEncontradas.TabIndex = 11
-            '
             'GridInconsistentes
             '
             Me.GridInconsistentes.Location = New System.Drawing.Point(137, 34)
@@ -541,11 +537,26 @@ Namespace VB_RFID3Sample5
             Me.GridInconsistentes.Size = New System.Drawing.Size(100, 133)
             Me.GridInconsistentes.TabIndex = 12
             '
+            'dbug_lbl
+            '
+            Me.dbug_lbl.Location = New System.Drawing.Point(94, 6)
+            Me.dbug_lbl.Name = "dbug_lbl"
+            Me.dbug_lbl.Size = New System.Drawing.Size(100, 20)
+            Me.dbug_lbl.Text = "Label1"
+            '
+            'GridCajasEncontradas
+            '
+            Me.GridCajasEncontradas.Location = New System.Drawing.Point(3, 34)
+            Me.GridCajasEncontradas.Name = "GridCajasEncontradas"
+            Me.GridCajasEncontradas.Size = New System.Drawing.Size(113, 124)
+            Me.GridCajasEncontradas.TabIndex = 11
+            '
             'AppForm
             '
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
             Me.AutoScroll = True
             Me.ClientSize = New System.Drawing.Size(240, 188)
+            Me.Controls.Add(Me.dbug_lbl)
             Me.Controls.Add(Me.GridInconsistentes)
             Me.Controls.Add(Me.GridCajasEncontradas)
             Me.Controls.Add(Me.lbl_cajas_leidas)
@@ -1073,26 +1084,29 @@ Namespace VB_RFID3Sample5
         End Sub
         Private Sub comprobar_RFID(ByVal parametroConsulta As String)
             id_caja = ws.ComprobarRFID(parametroConsulta)
+            dbug_lbl.Text = id_caja.ToString + "ya entro " + parametroConsulta
             If id_caja <> 0 Then
                 Dim caja_pertenece_sede As Integer
                 ' Si la caja pertenece a la Sede toma el valor de 1,
                 'Si no pertenece toma el valor de cero
                 caja_pertenece_sede = ws.Caja_pertenezca_sede(id_caja, id_sede)
+                dbug_lbl.Text = id_caja.ToString + "Caja Pertenece"
                 If caja_pertenece_sede <> 0 Then
                     Dim caja_completa As Integer
                     caja_completa = ws.comprobar_caja_completa(id_caja)
+                    dbug_lbl.Text = id_caja.ToString + "Caja Completa"
                     If caja_completa = 1 Then
                         ws.actualizar_caja(id_caja)
-                        Dim item As New ListViewItem(id_caja)
+                        dbug_lbl.Text = id_caja.ToString + "Actualizar caja"
+                        Dim item As New ListViewItem(id_caja.ToString)
                         GridCajasEncontradas.Items.Add(item)
                     Else
-                        Dim item As New ListViewItem(id_caja)
-                        GridCajasEncontradas.Items.Add(item)
+                        dbug_lbl.Text = "La caja no esta completa"
                     End If
-                    
+
                 Else
                     ws.actualizar_caja_inconsistente(id_caja, id_sede)
-                    Dim item As New ListViewItem(id_caja)
+                    Dim item As New ListViewItem(id_caja.ToString)
                     GridCajasEncontradas.Items.Add(item)
                 End If
             End If
@@ -1164,8 +1178,9 @@ Namespace VB_RFID3Sample5
         Private totalTagValueLabel As Label
         Private WithEvents writeContextMenuItem As MenuItem
         Private WithEvents lbl_cajas_leidas As System.Windows.Forms.Label
-        Friend WithEvents GridCajasEncontradas As System.Windows.Forms.ListView
         Friend WithEvents GridInconsistentes As System.Windows.Forms.ListView
+        Friend WithEvents dbug_lbl As System.Windows.Forms.Label
+        Friend WithEvents GridCajasEncontradas As System.Windows.Forms.ListView
         Private WithEvents writeMenuItem As MenuItem
 
         ' Nested Types

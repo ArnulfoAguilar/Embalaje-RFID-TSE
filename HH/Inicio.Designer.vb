@@ -79,10 +79,10 @@ Partial Public Class Inicio
         '
         'lbl_error
         '
-        Me.lbl_error.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular)
-        Me.lbl_error.Location = New System.Drawing.Point(40, 86)
+        Me.lbl_error.Font = New System.Drawing.Font("Tahoma", 5.0!, System.Drawing.FontStyle.Regular)
+        Me.lbl_error.Location = New System.Drawing.Point(3, 86)
         Me.lbl_error.Name = "lbl_error"
-        Me.lbl_error.Size = New System.Drawing.Size(100, 20)
+        Me.lbl_error.Size = New System.Drawing.Size(234, 20)
         Me.lbl_error.Text = "Error"
         '
         'Inicio

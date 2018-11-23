@@ -166,6 +166,16 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="tse.ico" />
+    <Content Include="tse_logo2.ico" />
+    <None Include="Web References\WS_RFID\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_RFID\WS_RFID.disco" />
+    <None Include="Web References\WS_RFID\WS_RFID.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
     <WebReferenceUrl Include="http://172.16.1.226:8091/WS_RFID.asmx">
       <UrlBehavior>Static</UrlBehavior>
       <RelPath>Web References\WS_RFID\</RelPath>
@@ -179,18 +189,6 @@
       <CachedSettingsPropName>
       </CachedSettingsPropName>
     </WebReferenceUrl>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Web References\WS_RFID\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.vb</LastGenOutput>
-    </None>
-    <None Include="Web References\WS_RFID\WS_RFID.disco" />
-    <None Include="Web References\WS_RFID\WS_RFID.wsdl" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="tse.ico" />
-    <Content Include="tse_logo2.ico" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="My Project\" />

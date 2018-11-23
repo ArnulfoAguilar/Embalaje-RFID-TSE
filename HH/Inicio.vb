@@ -18,22 +18,24 @@ Public Class Inicio
             'mandando como parametro el Textbox
             SedeExiste = ws.comprobar_sede(txt_Sede.Text)
             If SedeExiste = 1 Then
-                ' Verifico que las hayan cajas listas para despacho en esa sede
+                ' Verifico que hayan cajas listas para despacho en esa sede
                 Dim hay_cajas As Integer
                 hay_cajas = ws.CajasListasDespacho(txt_Sede.Text)
                 If hay_cajas = 1 Then
                     id_sede = txt_Sede.Text
                     AppForm.Show()
-                    Me.Close()
                 Else
                     lbl_error.Text = "Todas las cajas Verificadas de esta sede se han despachado"
                     lbl_error.Show()
                 End If
 
             Else
-                lbl_error.Text = "Esta Sede Logistica no Existe"
-                lbl_error.Show()
+                ' lbl_error.Text = "Esta  Ruta de Sede Logistica no Existe" + SedeExiste.ToString + txt_Sede.Text
+                ' lbl_error.Show()
             End If
+        Else
+           ' lbl_error.Text = "Digite una ruta"
+            lbl_error.Show()
         End If
     End Sub
 
