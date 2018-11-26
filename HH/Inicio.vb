@@ -41,5 +41,6 @@ Public Class Inicio
 
     Private Sub Inicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         lbl_error.Hide()
+        txt_Sede.Focus()
     End Sub
 End Class
