@@ -33,7 +33,7 @@ Namespace VB_RFID3_Host_Sample1
         End Sub
         'Variables
         Dim id_paquete As Integer ' variable para guardar el id de la sede y hacer consulta de la caja
-        Dim id_ruta As Integer 'Variable para guardar el id del paquete y hacer consulta a la caja
+        Dim id_sede As Integer 'Variable para guardar el id del paquete y hacer consulta a la caja
         Dim BANDERA_BUTTON_READ As Integer = 0 ' VARIABLE PARA ACTIVAR LA BANDERA Y HABILITAR LA LECTURA
         Dim Caja_completa As Integer = 0 'bandera para determinar si la caja esta completa y que no siga leyendo
 
@@ -320,15 +320,15 @@ Namespace VB_RFID3_Host_Sample1
         Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AppForm))
-            Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
             Me.mainMenuStrip = New System.Windows.Forms.MenuStrip
             Me.configToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
             Me.connectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -387,7 +387,7 @@ Namespace VB_RFID3_Host_Sample1
             Me.Municipio = New System.Windows.Forms.Label
             Me.txt_Departamento = New System.Windows.Forms.Label
             Me.txt_Municipio = New System.Windows.Forms.Label
-            Me.ComboRuta = New System.Windows.Forms.ComboBox
+            Me.ComboSede = New System.Windows.Forms.ComboBox
             Me.Label15 = New System.Windows.Forms.Label
             Me.Label16 = New System.Windows.Forms.Label
             Me.ComboPaquete = New System.Windows.Forms.ComboBox
@@ -759,35 +759,35 @@ Namespace VB_RFID3_Host_Sample1
             Me.DataGViewFaltantes.AllowUserToResizeColumns = False
             Me.DataGViewFaltantes.AllowUserToResizeRows = False
             Me.DataGViewFaltantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-            DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-            DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-            DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-            Me.DataGViewFaltantes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+            DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control
+            DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText
+            DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+            Me.DataGViewFaltantes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
             Me.DataGViewFaltantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-            DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-            DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-            DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-            Me.DataGViewFaltantes.DefaultCellStyle = DataGridViewCellStyle2
+            DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window
+            DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText
+            DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+            Me.DataGViewFaltantes.DefaultCellStyle = DataGridViewCellStyle11
             Me.DataGViewFaltantes.Enabled = False
             Me.DataGViewFaltantes.Location = New System.Drawing.Point(367, 196)
             Me.DataGViewFaltantes.Name = "DataGViewFaltantes"
             Me.DataGViewFaltantes.ReadOnly = True
-            DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-            DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-            DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-            Me.DataGViewFaltantes.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+            DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control
+            DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText
+            DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+            Me.DataGViewFaltantes.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
             Me.DataGViewFaltantes.Size = New System.Drawing.Size(236, 325)
             Me.DataGViewFaltantes.TabIndex = 34
             '
@@ -832,35 +832,35 @@ Namespace VB_RFID3_Host_Sample1
             Me.DataGridENCONTRADOS.AllowUserToResizeColumns = False
             Me.DataGridENCONTRADOS.AllowUserToResizeRows = False
             Me.DataGridENCONTRADOS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-            DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
-            DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-            DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-            Me.DataGridENCONTRADOS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+            DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control
+            DataGridViewCellStyle13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText
+            DataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+            Me.DataGridENCONTRADOS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
             Me.DataGridENCONTRADOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-            DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
-            DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
-            DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-            Me.DataGridENCONTRADOS.DefaultCellStyle = DataGridViewCellStyle5
+            DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
+            DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText
+            DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+            Me.DataGridENCONTRADOS.DefaultCellStyle = DataGridViewCellStyle14
             Me.DataGridENCONTRADOS.Enabled = False
             Me.DataGridENCONTRADOS.Location = New System.Drawing.Point(645, 196)
             Me.DataGridENCONTRADOS.Name = "DataGridENCONTRADOS"
             Me.DataGridENCONTRADOS.ReadOnly = True
-            DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
-            DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
-            DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-            Me.DataGridENCONTRADOS.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
+            DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control
+            DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText
+            DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+            Me.DataGridENCONTRADOS.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
             Me.DataGridENCONTRADOS.Size = New System.Drawing.Size(237, 325)
             Me.DataGridENCONTRADOS.TabIndex = 41
             '
@@ -871,35 +871,35 @@ Namespace VB_RFID3_Host_Sample1
             Me.DGViewInconsistentes.AllowUserToResizeColumns = False
             Me.DGViewInconsistentes.AllowUserToResizeRows = False
             Me.DGViewInconsistentes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-            DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
-            DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
-            DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-            Me.DGViewInconsistentes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+            DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control
+            DataGridViewCellStyle16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText
+            DataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+            Me.DGViewInconsistentes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle16
             Me.DGViewInconsistentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-            DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
-            DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
-            DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-            Me.DGViewInconsistentes.DefaultCellStyle = DataGridViewCellStyle8
+            DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window
+            DataGridViewCellStyle17.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText
+            DataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+            Me.DGViewInconsistentes.DefaultCellStyle = DataGridViewCellStyle17
             Me.DGViewInconsistentes.Enabled = False
             Me.DGViewInconsistentes.Location = New System.Drawing.Point(924, 196)
             Me.DGViewInconsistentes.Name = "DGViewInconsistentes"
             Me.DGViewInconsistentes.ReadOnly = True
-            DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
-            DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
-            DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-            Me.DGViewInconsistentes.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
+            DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control
+            DataGridViewCellStyle18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText
+            DataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+            Me.DGViewInconsistentes.RowHeadersDefaultCellStyle = DataGridViewCellStyle18
             Me.DGViewInconsistentes.Size = New System.Drawing.Size(237, 325)
             Me.DGViewInconsistentes.TabIndex = 43
             '
@@ -957,23 +957,23 @@ Namespace VB_RFID3_Host_Sample1
             Me.txt_Municipio.TabIndex = 50
             Me.txt_Municipio.Text = "Municipio"
             '
-            'ComboRuta
+            'ComboSede
             '
-            Me.ComboRuta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-            Me.ComboRuta.FormattingEnabled = True
-            Me.ComboRuta.Location = New System.Drawing.Point(398, 127)
-            Me.ComboRuta.Name = "ComboRuta"
-            Me.ComboRuta.Size = New System.Drawing.Size(172, 21)
-            Me.ComboRuta.TabIndex = 51
+            Me.ComboSede.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+            Me.ComboSede.FormattingEnabled = True
+            Me.ComboSede.Location = New System.Drawing.Point(398, 127)
+            Me.ComboSede.Name = "ComboSede"
+            Me.ComboSede.Size = New System.Drawing.Size(172, 21)
+            Me.ComboSede.TabIndex = 51
             '
             'Label15
             '
             Me.Label15.AutoSize = True
             Me.Label15.Location = New System.Drawing.Point(395, 111)
             Me.Label15.Name = "Label15"
-            Me.Label15.Size = New System.Drawing.Size(37, 13)
+            Me.Label15.Size = New System.Drawing.Size(77, 13)
             Me.Label15.TabIndex = 52
-            Me.Label15.Text = "RUTA"
+            Me.Label15.Text = "Sede Logistica"
             '
             'Label16
             '
@@ -1023,7 +1023,7 @@ Namespace VB_RFID3_Host_Sample1
             Me.Controls.Add(Me.ComboPaquete)
             Me.Controls.Add(Me.DGViewInconsistentes)
             Me.Controls.Add(Me.Label15)
-            Me.Controls.Add(Me.ComboRuta)
+            Me.Controls.Add(Me.ComboSede)
             Me.Controls.Add(Me.txt_Departamento)
             Me.Controls.Add(Me.txt_Municipio)
             Me.Controls.Add(Me.TextBox1)
@@ -1174,7 +1174,7 @@ Namespace VB_RFID3_Host_Sample1
         Friend WithEvents Municipio As System.Windows.Forms.Label
         Friend WithEvents txt_Departamento As System.Windows.Forms.Label
         Friend WithEvents txt_Municipio As System.Windows.Forms.Label
-        Friend WithEvents ComboRuta As System.Windows.Forms.ComboBox
+        Friend WithEvents ComboSede As System.Windows.Forms.ComboBox
         Friend WithEvents Label15 As System.Windows.Forms.Label
         Friend WithEvents Label16 As System.Windows.Forms.Label
         Friend WithEvents ComboPaquete As System.Windows.Forms.ComboBox
@@ -1580,11 +1580,11 @@ Namespace VB_RFID3_Host_Sample1
                                                                     "  join departamento d on C.ID_DEPTO=D.ID_DEPTO " & _
                                                                     " join sede_logistica se on C.ID_SEDE=SE.ID_SEDE " & _
                                                                     " where M.ID_DEPTO=D.ID_DEPTO and codebar=:codigo_CAJA " & _
-                                                                    " and SE.RUTA_SEDE=:RUTA and c.ID_PAQUETE=:PAQUETE " & _
+                                                                    " and SE.ID_SEDE=:SEDE and c.ID_PAQUETE=:PAQUETE " & _
                                                                     " and SE.ID_DEPTO=D.ID_DEPTO "
                                         Dim comando_sede As New OracleCommand(paquete_sede, conn)
                                         comando_sede.Parameters.Add(":codigo_CAJA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
-                                        comando_sede.Parameters.Add(":RUTA", OracleType.Int32, 50).Value = ComboRuta.SelectedValue.ToString
+                                        comando_sede.Parameters.Add(":SEDE", OracleType.Int32, 50).Value = ComboSede.SelectedValue.ToString
                                         comando_sede.Parameters.Add(":PAQUETE", OracleType.Int32, 50).Value = ComboPaquete.SelectedValue.ToString
                                         Dim lector_sede As OracleDataReader = Nothing
                                         '
@@ -1601,6 +1601,8 @@ Namespace VB_RFID3_Host_Sample1
                                                 '    'Le asigno valor a la variable global
                                                 id_caja = lector_sede.GetInt32(0)
                                                 '    'Le asigno los siguientes valores a los LABEL
+                                                txt_Departamento.Show()
+                                                txt_Municipio.Show()
                                                 txt_Departamento.Text = lector_sede.GetString(2)
                                                 txt_Municipio.Text = lector_sede.GetString(1)
                                             Loop
@@ -1617,7 +1619,7 @@ Namespace VB_RFID3_Host_Sample1
                                             End If
                                             Caja_completa = 0
                                         Else
-                                            MessageBox.Show("Esta caja no pertenece a la Ruta o Paquete seleccionado")
+                                            MessageBox.Show("Esta caja no pertenece a la Sede Logistica o Paquete seleccionado")
                                             conn.Close()
                                             parar()
                                             Caja_completa = 0
@@ -1685,9 +1687,11 @@ Namespace VB_RFID3_Host_Sample1
 
         Private Sub AppForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
             DataGridENCONTRADOS.Enabled = False
+            txt_Departamento.Hide()
+            txt_Departamento.Hide()
             DataGrid_no_encontrados.Enabled = False
             DataGViewFaltantes.Enabled = False
-            CargarCombobox_ruta()
+            CargarCombobox_sede()
             CargarCombobox_Paquete()
             Try
                 connectBackgroundWorker.RunWorkerAsync("Connect")
@@ -1713,16 +1717,16 @@ Namespace VB_RFID3_Host_Sample1
         Private Sub myUpdateStatus(ByVal eventData As Events.StatusEventData)
 
         End Sub
-        Private Sub CargarCombobox_ruta()
+        Private Sub CargarCombobox_sede()
             Try
 
-                Dim sqlConsult As String = "select distinct RUTA_SEDE from SEDE_LOGISTICA order by 1"
+                Dim sqlConsult As String = "select id_sede, nombre_sede from sede_logistica order by 1"
                 Dim dataAdapter As New OracleDataAdapter(sqlConsult, conn)
                 Dim DT As New DataTable
                 dataAdapter.Fill(DT)
-                Me.ComboRuta.DataSource = DT
-                ComboRuta.ValueMember = "RUTA_SEDE"
-                ComboRuta.DisplayMember = "RUTA_SEDE"
+                Me.ComboSede.DataSource = DT
+                ComboSede.ValueMember = "id_sede"
+                ComboSede.DisplayMember = "nombre_sede"
             Catch ex As Exception
                 MessageBox.Show(ex.ToString)
             End Try
@@ -1744,12 +1748,12 @@ Namespace VB_RFID3_Host_Sample1
 
         Private Sub btn_aceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_aceptar.Click
             If btn_aceptar.Text = "Aceptar" Then
-                If ComboRuta.Items.Count <= 0 Or ComboPaquete.Items.Count <= 0 Then
+                If ComboSede.Items.Count <= 0 Or ComboPaquete.Items.Count <= 0 Then
                     MessageBox.Show("Hay campos Vacios")
                 Else
-                    id_ruta = ComboRuta.SelectedValue.ToString
+                    id_sede = ComboSede.SelectedValue.ToString
                     id_paquete = ComboPaquete.SelectedValue.ToString
-                    ComboRuta.Enabled = False
+                    ComboSede.Enabled = False
                     ComboPaquete.Enabled = False
                     TextBox1.Enabled = True
                     BANDERA_BUTTON_READ = 1
@@ -1758,7 +1762,7 @@ Namespace VB_RFID3_Host_Sample1
                     TextBox1.Focus()
                 End If
             ElseIf btn_aceptar.Text = "Cancelar" Then
-                ComboRuta.Enabled = True
+                ComboSede.Enabled = True
                 ComboPaquete.Enabled = True
                 TextBox1.Enabled = False
                 readButton.Enabled = False
