@@ -11,7 +11,9 @@ Public Class Inicio
     Private Sub btn_salir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_salir.Click
         Me.Close()
     End Sub
-
+    Friend Sub notifyUser(ByVal notificationMessage As String, ByVal notificationSource As String)
+        Dim result As DialogResult = MessageBox.Show(notificationMessage, notificationSource)
+    End Sub
     Private Sub btn_aceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_aceptar.Click
         If txt_Sede.Text <> "" Then
             'Guardo en la variable, la respuesta del webservice 
@@ -25,17 +27,20 @@ Public Class Inicio
                     id_sede = txt_Sede.Text
                     AppForm.Show()
                 Else
-                    lbl_error.Text = "Todas las cajas Verificadas de esta sede se han despachado"
-                    lbl_error.Show()
+                    notifyUser("Todas las cajas Verificadas de esta sede se han despachado", "Notificacion")
+                    'lbl_error.Text = "Todas las cajas Verificadas de esta sede se han despachado"
+                    'lbl_error.Show()
                 End If
 
             Else
+                notifyUser("Esta ruta no existe", "Error")
                 ' lbl_error.Text = "Esta  Ruta de Sede Logistica no Existe" + SedeExiste.ToString + txt_Sede.Text
                 ' lbl_error.Show()
             End If
         Else
-           ' lbl_error.Text = "Digite una ruta"
-            lbl_error.Show()
+            notifyUser("Digite una ruta", "Error")
+            ' lbl_error.Text = "Digite una ruta"
+            ' lbl_error.Show()
         End If
     End Sub
 

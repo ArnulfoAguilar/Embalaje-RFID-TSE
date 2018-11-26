@@ -35,9 +35,12 @@ Namespace VB_RFID3Sample5
         End Sub
 
         Private Sub AppForm_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+            Label_inconsistencia.Hide()
+            dbug_lbl.Hide()
             Me.memBank_CB.SelectedIndex = 0
             Me.Connect("Connect")
             readButton.Focus()
+
         End Sub
 
         Private Sub blockEraseContextMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles blockWriteContextMenuItem.Click
@@ -76,8 +79,8 @@ Namespace VB_RFID3Sample5
         End Sub
 
         Private Sub clearReportMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles clearReportContextMenuItem.Click
-            Me.totalTagValueLabel.Text = ""
-            Me.readTimeValueLabel.Text = ""
+            'Me.totalTagValueLabel.Text = ""
+            'Me.readTimeValueLabel.Text = ""
             Me.inventoryList.Items.Clear()
             Me.m_TagTable.Clear()
         End Sub
@@ -201,6 +204,7 @@ Namespace VB_RFID3Sample5
         End Sub
 
         Private Sub InitializeComponent()
+            Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AppForm))
             Me.appFormMenu = New System.Windows.Forms.MainMenu
             Me.connectionMenuItem = New System.Windows.Forms.MenuItem
             Me.sampleAppMenuItem = New System.Windows.Forms.MenuItem
@@ -240,15 +244,11 @@ Namespace VB_RFID3Sample5
             Me.clearReportContextMenuItem = New System.Windows.Forms.MenuItem
             Me.memBank_CB = New System.Windows.Forms.ComboBox
             Me.readButton = New System.Windows.Forms.Button
-            Me.readTimeLabel = New System.Windows.Forms.Label
-            Me.totalTagLabel = New System.Windows.Forms.Label
-            Me.totalTagValueLabel = New System.Windows.Forms.Label
-            Me.readTimeValueLabel = New System.Windows.Forms.Label
             Me.functionCallStatusLabel = New Microsoft.WindowsCE.Forms.Notification
-            Me.lbl_cajas_leidas = New System.Windows.Forms.Label
-            Me.GridInconsistentes = New System.Windows.Forms.ListView
+            Me.Label_inconsistencia = New System.Windows.Forms.Label
+            Me.Label_leida = New System.Windows.Forms.Label
             Me.dbug_lbl = New System.Windows.Forms.Label
-            Me.GridCajasEncontradas = New System.Windows.Forms.ListView
+            Me.PictureBox1 = New System.Windows.Forms.PictureBox
             Me.SuspendLayout()
             '
             'appFormMenu
@@ -355,7 +355,7 @@ Namespace VB_RFID3Sample5
             Me.inventoryList.ContextMenu = Me.dataContextMenu
             Me.inventoryList.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular)
             Me.inventoryList.FullRowSelect = True
-            Me.inventoryList.Location = New System.Drawing.Point(43, 97)
+            Me.inventoryList.Location = New System.Drawing.Point(247, 15)
             Me.inventoryList.Name = "inventoryList"
             Me.inventoryList.Size = New System.Drawing.Size(10, 10)
             Me.inventoryList.TabIndex = 3
@@ -466,7 +466,7 @@ Namespace VB_RFID3Sample5
             Me.memBank_CB.Items.Add("EPC")
             Me.memBank_CB.Items.Add("TID")
             Me.memBank_CB.Items.Add("USER")
-            Me.memBank_CB.Location = New System.Drawing.Point(43, 6)
+            Me.memBank_CB.Location = New System.Drawing.Point(212, 15)
             Me.memBank_CB.Name = "memBank_CB"
             Me.memBank_CB.Size = New System.Drawing.Size(10, 20)
             Me.memBank_CB.TabIndex = 2
@@ -475,97 +475,58 @@ Namespace VB_RFID3Sample5
             '
             Me.readButton.Enabled = False
             Me.readButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular)
-            Me.readButton.Location = New System.Drawing.Point(3, 6)
+            Me.readButton.Location = New System.Drawing.Point(212, 15)
             Me.readButton.Name = "readButton"
             Me.readButton.Size = New System.Drawing.Size(75, 20)
             Me.readButton.TabIndex = 1
             Me.readButton.Text = "Comenzar"
-            '
-            'readTimeLabel
-            '
-            Me.readTimeLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-            Me.readTimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular)
-            Me.readTimeLabel.Location = New System.Drawing.Point(135, 220)
-            Me.readTimeLabel.Name = "readTimeLabel"
-            Me.readTimeLabel.Size = New System.Drawing.Size(49, 18)
-            Me.readTimeLabel.Text = "Tiempo:"
-            '
-            'totalTagLabel
-            '
-            Me.totalTagLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-            Me.totalTagLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular)
-            Me.totalTagLabel.Location = New System.Drawing.Point(3, 220)
-            Me.totalTagLabel.Name = "totalTagLabel"
-            Me.totalTagLabel.Size = New System.Drawing.Size(59, 32)
-            Me.totalTagLabel.Text = "Cajas Leidas "
-            '
-            'totalTagValueLabel
-            '
-            Me.totalTagValueLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-            Me.totalTagValueLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular)
-            Me.totalTagValueLabel.Location = New System.Drawing.Point(56, 220)
-            Me.totalTagValueLabel.Name = "totalTagValueLabel"
-            Me.totalTagValueLabel.Size = New System.Drawing.Size(41, 16)
-            Me.totalTagValueLabel.Text = "0(0)"
-            '
-            'readTimeValueLabel
-            '
-            Me.readTimeValueLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-            Me.readTimeValueLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular)
-            Me.readTimeValueLabel.Location = New System.Drawing.Point(190, 220)
-            Me.readTimeValueLabel.Name = "readTimeValueLabel"
-            Me.readTimeValueLabel.Size = New System.Drawing.Size(40, 12)
-            Me.readTimeValueLabel.Text = "0 Sec"
             '
             'functionCallStatusLabel
             '
             Me.functionCallStatusLabel.Caption = "API Call Result"
             Me.functionCallStatusLabel.Text = "Function Success"
             '
-            'lbl_cajas_leidas
+            'Label_inconsistencia
             '
-            Me.lbl_cajas_leidas.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-            Me.lbl_cajas_leidas.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular)
-            Me.lbl_cajas_leidas.Location = New System.Drawing.Point(19, 120)
-            Me.lbl_cajas_leidas.Name = "lbl_cajas_leidas"
-            Me.lbl_cajas_leidas.Size = New System.Drawing.Size(31, 20)
-            Me.lbl_cajas_leidas.Text = "0(0)"
+            Me.Label_inconsistencia.Location = New System.Drawing.Point(166, 54)
+            Me.Label_inconsistencia.Name = "Label_inconsistencia"
+            Me.Label_inconsistencia.Size = New System.Drawing.Size(100, 153)
+            Me.Label_inconsistencia.Text = "Inconsistencias"
             '
-            'GridInconsistentes
+            'Label_leida
             '
-            Me.GridInconsistentes.Location = New System.Drawing.Point(135, 32)
-            Me.GridInconsistentes.Name = "GridInconsistentes"
-            Me.GridInconsistentes.Size = New System.Drawing.Size(84, 169)
-            Me.GridInconsistentes.TabIndex = 12
+            Me.Label_leida.BackColor = System.Drawing.Color.MidnightBlue
+            Me.Label_leida.ForeColor = System.Drawing.SystemColors.ControlLight
+            Me.Label_leida.Location = New System.Drawing.Point(3, 54)
+            Me.Label_leida.Name = "Label_leida"
+            Me.Label_leida.Size = New System.Drawing.Size(100, 153)
+            Me.Label_leida.Text = "Cajas Leidas"
             '
             'dbug_lbl
             '
-            Me.dbug_lbl.Location = New System.Drawing.Point(94, 6)
+            Me.dbug_lbl.Location = New System.Drawing.Point(3, 207)
             Me.dbug_lbl.Name = "dbug_lbl"
-            Me.dbug_lbl.Size = New System.Drawing.Size(223, 20)
+            Me.dbug_lbl.Size = New System.Drawing.Size(263, 30)
             Me.dbug_lbl.Text = "Label1"
             '
-            'GridCajasEncontradas
+            'PictureBox1
             '
-            Me.GridCajasEncontradas.Location = New System.Drawing.Point(3, 32)
-            Me.GridCajasEncontradas.Name = "GridCajasEncontradas"
-            Me.GridCajasEncontradas.Size = New System.Drawing.Size(76, 169)
-            Me.GridCajasEncontradas.TabIndex = 11
+            Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+            Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+            Me.PictureBox1.Name = "PictureBox1"
+            Me.PictureBox1.Size = New System.Drawing.Size(114, 51)
+            Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
             '
             'AppForm
             '
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
             Me.AutoScroll = True
             Me.ClientSize = New System.Drawing.Size(320, 320)
+            Me.Controls.Add(Me.PictureBox1)
+            Me.Controls.Add(Me.Label_leida)
+            Me.Controls.Add(Me.Label_inconsistencia)
             Me.Controls.Add(Me.dbug_lbl)
-            Me.Controls.Add(Me.GridInconsistentes)
-            Me.Controls.Add(Me.GridCajasEncontradas)
-            Me.Controls.Add(Me.lbl_cajas_leidas)
             Me.Controls.Add(Me.readButton)
-            Me.Controls.Add(Me.readTimeValueLabel)
-            Me.Controls.Add(Me.totalTagValueLabel)
-            Me.Controls.Add(Me.totalTagLabel)
-            Me.Controls.Add(Me.readTimeLabel)
             Me.Controls.Add(Me.memBank_CB)
             Me.Controls.Add(Me.inventoryList)
             Me.Menu = Me.appFormMenu
@@ -755,7 +716,7 @@ Namespace VB_RFID3Sample5
                 ' * Update front panel Tag Count while changing inventory list 
                 ' 
 
-                Me.totalTagValueLabel.Text = (m_TagTable.Count.ToString() & "(") + m_TagTotalCount.ToString() & ")"
+                'Me.totalTagValueLabel.Text = (m_TagTable.Count.ToString() & "(") + m_TagTotalCount.ToString() & ")"
             End If
         End Sub
 
@@ -770,7 +731,7 @@ Namespace VB_RFID3Sample5
 
                     If Me.m_DurationTriggerTime > 0 Then
                         Dim triggerDuration As TimeSpan = TimeSpan.FromMilliseconds(m_DurationTriggerTime)
-                        readTimeValueLabel.Text = (triggerDuration.Seconds & ".") + triggerDuration.Milliseconds / 100 & " Sec"
+                        'readTimeValueLabel.Text = (triggerDuration.Seconds & ".") + triggerDuration.Milliseconds / 100 & " Sec"
                     End If
                     Exit Select
                 Case Symbol.RFID3.Events.STATUS_EVENT_TYPE.ACCESS_START_EVENT
@@ -809,10 +770,13 @@ Namespace VB_RFID3Sample5
             Try
                 If Me.m_IsConnected Then
                     If (Me.readButton.Text = "Comenzar") Then
+                        bander_inconsistencia = 0
                         readButton.Focus()
                         Me.StartReading()
                         readButton.Focus()
                     ElseIf (Me.readButton.Text = "Parar") Then
+                        bander_inconsistencia = 0
+                        Label_leida.Text = "Cajas Leidas "
                         readButton.Focus()
                         Me.StopReading()
                         readButton.Focus()
@@ -956,7 +920,7 @@ Namespace VB_RFID3Sample5
         Private Sub StopReading()
             If (Me.m_DurationTriggerTime = 0) Then
                 Dim duration As TimeSpan = TimeSpan.FromMilliseconds(CDbl(Environment.TickCount)).Subtract(Me.m_StartTime).Duration
-                Me.readTimeValueLabel.Text = String.Concat(New Object() {duration.Seconds, ".", (duration.Milliseconds / 100), " Sec"})
+                ' Me.readTimeValueLabel.Text = String.Concat(New Object() {duration.Seconds, ".", (duration.Milliseconds / 100), " Sec"})
             End If
             Try
                 If (Me.m_ReaderAPI.Actions.TagAccess.OperationSequence.Length > 0) Then
@@ -1102,17 +1066,25 @@ Namespace VB_RFID3Sample5
                     'dbug_lbl.Text = id_caja.ToString + "Caja Completa"
                     If caja_completa = 1 Then
                         ws.actualizar_caja(id_caja)
-                        'dbug_lbl.Text = id_caja.ToString + "Actualizar caja"
-                        Dim item As New ListViewItem(id_caja.ToString)
-                        GridCajasEncontradas.Items.Add(item)
+                        Label_leida.Text += "                              "
+                        Label_leida.Text += id_caja.ToString + ","
+                        'Dim item As New ListViewItem(id_caja.ToString)
+                        'GridCajasEncontradas.Items.Add(item)
                     Else
-                        dbug_lbl.Text = "La caja no esta completa"
+                        Me.notifyUser("Hay una caja Incompleta", "Lectura")
+                        'dbug_lbl.Show()
+                        'dbug_lbl.Text = "Hay una  caja que no esta completa"
                     End If
 
                 Else
                     ws.actualizar_caja_inconsistente(id_caja, id_sede)
-                    Dim item As New ListViewItem(id_caja.ToString)
-                    GridCajasEncontradas.Items.Add(item)
+                    Label_inconsistencia.Show()
+                    If bander_inconsistencia = 0 Then
+                        Label_inconsistencia.Text = " Cajas con inconsistencias "
+                    End If
+                    Label_inconsistencia.Text = "                         "
+                    Label_inconsistencia.Text += id_caja.ToString + ","
+                    Me.notifyUser("Hay una caja Inconsistente", "Lectura")
                 End If
             End If
         End Sub
@@ -1174,18 +1146,14 @@ Namespace VB_RFID3Sample5
         Private WithEvents readButton As Button
         Private WithEvents readContextMenuItem As MenuItem
         Private WithEvents readMenuItem As MenuItem
-        Private readTimeLabel As Label
-        Private readTimeValueLabel As Label
         Private WithEvents ResetMenuItem As MenuItem
         Private sampleAppMenuItem As MenuItem
         Private WithEvents tagDataMenuItem As MenuItem
-        Private totalTagLabel As Label
-        Private totalTagValueLabel As Label
         Private WithEvents writeContextMenuItem As MenuItem
-        Private WithEvents lbl_cajas_leidas As System.Windows.Forms.Label
-        Friend WithEvents GridInconsistentes As System.Windows.Forms.ListView
+        Friend WithEvents Label_inconsistencia As System.Windows.Forms.Label
+        Friend WithEvents Label_leida As System.Windows.Forms.Label
         Friend WithEvents dbug_lbl As System.Windows.Forms.Label
-        Friend WithEvents GridCajasEncontradas As System.Windows.Forms.ListView
+        Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
         Private WithEvents writeMenuItem As MenuItem
 
         ' Nested Types
@@ -1201,7 +1169,6 @@ Namespace VB_RFID3Sample5
         Private Delegate Sub updateStatusResult(ByVal eventData As StatusEventData)
 
         Private Delegate Sub UpdateStatusLabel(ByVal [text] As String)
-
     End Class
 End Namespace
 
