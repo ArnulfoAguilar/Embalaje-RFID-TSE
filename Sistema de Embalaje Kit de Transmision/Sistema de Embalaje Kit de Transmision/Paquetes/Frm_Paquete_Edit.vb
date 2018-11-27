@@ -174,6 +174,10 @@ Public Class Frm_Paquete_Edit
             txt_art.Hide()
             dtg_art.Hide()
             btn_add.Hide()
+            txt_nombre.Enabled = True
+            cbx_evento.Enabled = True
+            btn_guardar.Enabled = True
+            btn_elim.Hide()
         Else
             lb_titulo.Show()
             lb_art.Show()
@@ -182,6 +186,7 @@ Public Class Frm_Paquete_Edit
             txt_art.Show()
             dtg_art.Show()
             btn_add.Show()
+            btn_elim.Show()
             txt_nombre.Enabled = False
             cbx_evento.Enabled = False
             btn_guardar.Enabled = False
@@ -217,7 +222,7 @@ Public Class Frm_Paquete_Edit
     End Sub
 
     Private Sub btn_cancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cancelar.Click
-        Frm_principal.Show()
+        cambiar(ban)
         Me.Close()
     End Sub
 End Class

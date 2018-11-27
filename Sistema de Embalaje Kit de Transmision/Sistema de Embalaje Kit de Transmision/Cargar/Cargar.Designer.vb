@@ -52,6 +52,7 @@ Partial Class Cargar
         '
         'cbx_paq
         '
+        Me.cbx_paq.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbx_paq.FormattingEnabled = True
         Me.cbx_paq.Location = New System.Drawing.Point(76, 66)
         Me.cbx_paq.Name = "cbx_paq"

@@ -26,20 +26,25 @@ Public Class Cargar
 
     Private Sub btnCargar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCargar.Click
         Dim ban As Integer = 0
-
-        Dim sql_caja As String = "exec llenar_caja(:num)"
         Dim cmd As New OracleCommand()
-        cmd.Connection = con2
-        cmd.CommandText = sql_caja
-        cmd.CommandType = CommandType.StoredProcedure
-        cmd.Parameters.Add("num", OracleType.UInt32).Value = cbx_paq.SelectedValue
-        Dim MyDA As New OracleDataAdapter(cmd)
-        Dim Ds As New DataSet
         Try
-            con2.Open()
-            cmd.ExecuteNonQuery()
+            With cmd
+                .CommandType = CommandType.StoredProcedure
+                .CommandText = "llenar_caja"
+                Dim p_num As New OracleParameter
+                p_num.ParameterName = "paq"
+                p_num.OracleType = OracleType.Int32
+                p_num.Direction = ParameterDirection.Input
+                p_num.Value = cbx_paq.SelectedValue
+                .Parameters.Add(p_num)
+                .Connection = con2
+                .Connection.Open()
+                .ExecuteNonQuery()
+                .Connection.Close()
+                .Dispose()
+            End With
+            MessageBox.Show("La hizo Prro")
             ban = 1
-            con2.Close()
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         End Try
@@ -47,14 +52,24 @@ Public Class Cargar
 
         If ban = 1 Then
             Dim sql_art As String = "exec llenar_detalle_caja(:num)"
+            Dim cmd1 As New OracleCommand()
             Try
-                Dim cmd1 As New OracleCommand(sql_art, con2)
-                cmd1.Parameters.Add("num", OracleType.UInt32).Value = cbx_paq.SelectedValue
-
-                con2.Open()
-                cmd1.ExecuteNonQuery()
-                ban = 1
-                con2.Close()
+                With cmd1
+                    .CommandType = CommandType.StoredProcedure
+                    .CommandText = "llenar_detalle_caja"
+                    Dim p_num1 As New OracleParameter
+                    p_num1.ParameterName = "paq"
+                    p_num1.OracleType = OracleType.Int32
+                    p_num1.Direction = ParameterDirection.Input
+                    p_num1.Value = cbx_paq.SelectedValue
+                    .Parameters.Add(p_num1)
+                    .Connection = con2
+                    .Connection.Open()
+                    .ExecuteNonQuery()
+                    .Connection.Close()
+                    .Dispose()
+                End With
+                MessageBox.Show("La hizo Prro x2")
             Catch ex As Exception
                 MessageBox.Show(e.ToString)
             End Try

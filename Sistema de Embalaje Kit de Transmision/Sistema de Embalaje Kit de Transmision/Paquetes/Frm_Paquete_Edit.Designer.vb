@@ -169,7 +169,7 @@ Partial Class Frm_Paquete_Edit
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Size = New System.Drawing.Size(83, 23)
         Me.btn_cancelar.TabIndex = 24
-        Me.btn_cancelar.Text = "Cancelar"
+        Me.btn_cancelar.Text = "Salir"
         Me.btn_cancelar.UseVisualStyleBackColor = True
         '
         'Frm_Paquete_Edit
