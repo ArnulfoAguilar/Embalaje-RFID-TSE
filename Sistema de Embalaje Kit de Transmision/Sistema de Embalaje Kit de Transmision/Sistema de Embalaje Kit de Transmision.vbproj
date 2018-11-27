@@ -244,6 +244,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Cargar\Cargar.resx">
+      <DependentUpon>Cargar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Eventos\Frm_Evento.resx">
       <DependentUpon>Frm_Evento.vb</DependentUpon>
     </EmbeddedResource>

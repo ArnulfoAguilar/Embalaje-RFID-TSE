@@ -69,4 +69,8 @@
         Imprimir.ShowDialog()
     End Sub
 
+    Private Sub CargarDatosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CargarDatosToolStripMenuItem.Click
+        con.Close()
+        Cargar.ShowDialog()
+    End Sub
 End Class
