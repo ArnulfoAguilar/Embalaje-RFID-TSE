@@ -42,12 +42,13 @@ Partial Class Frm_principal
         Me.CrearRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ActualizarRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImprimirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicioToolStripMenuItem, Me.EscaneoToolStripMenuItem, Me.DespachoToolStripMenuItem, Me.RecepcionToolStripMenuItem, Me.MantenimientosToolStripMenuItem, Me.ImprimirToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicioToolStripMenuItem, Me.EscaneoToolStripMenuItem, Me.DespachoToolStripMenuItem, Me.RecepcionToolStripMenuItem, Me.MantenimientosToolStripMenuItem, Me.ImprimirToolStripMenuItem, Me.ReportesToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(838, 24)
@@ -89,7 +90,7 @@ Partial Class Frm_principal
         '
         Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUsuarioToolStripMenuItem, Me.ModificarUsuarioToolStripMenuItem})
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'CrearUsuarioToolStripMenuItem
@@ -107,26 +108,26 @@ Partial Class Frm_principal
         'ProductosToolStripMenuItem
         '
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.ProductosToolStripMenuItem.Text = "Articulo"
         '
         'EventoToolStripMenuItem
         '
         Me.EventoToolStripMenuItem.Name = "EventoToolStripMenuItem"
-        Me.EventoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EventoToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.EventoToolStripMenuItem.Text = "Evento"
         '
         'PaqueteToolStripMenuItem
         '
         Me.PaqueteToolStripMenuItem.Name = "PaqueteToolStripMenuItem"
-        Me.PaqueteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PaqueteToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.PaqueteToolStripMenuItem.Text = "Paquete"
         '
         'UbicacionToolStripMenuItem
         '
         Me.UbicacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUbicacionToolStripMenuItem, Me.EditarUbicacionToolStripMenuItem})
         Me.UbicacionToolStripMenuItem.Name = "UbicacionToolStripMenuItem"
-        Me.UbicacionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UbicacionToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.UbicacionToolStripMenuItem.Text = "Ubicacion"
         '
         'CrearUbicacionToolStripMenuItem
@@ -145,7 +146,7 @@ Partial Class Frm_principal
         '
         Me.RolesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearRolToolStripMenuItem, Me.ActualizarRolToolStripMenuItem})
         Me.RolesToolStripMenuItem.Name = "RolesToolStripMenuItem"
-        Me.RolesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RolesToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.RolesToolStripMenuItem.Text = "Roles"
         '
         'CrearRolToolStripMenuItem
@@ -165,6 +166,12 @@ Partial Class Frm_principal
         Me.ImprimirToolStripMenuItem.Name = "ImprimirToolStripMenuItem"
         Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(93, 20)
         Me.ImprimirToolStripMenuItem.Text = "Imprimir Tags"
+        '
+        'ReportesToolStripMenuItem
+        '
+        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
+        Me.ReportesToolStripMenuItem.Text = "Reportes"
         '
         'Frm_principal
         '
@@ -204,5 +211,6 @@ Partial Class Frm_principal
     Friend WithEvents RolesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CrearRolToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ActualizarRolToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReportesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
