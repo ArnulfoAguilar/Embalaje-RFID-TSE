@@ -999,9 +999,9 @@ Namespace VB_RFID3_Host_Sample1
             Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.Label17.Location = New System.Drawing.Point(564, 45)
             Me.Label17.Name = "Label17"
-            Me.Label17.Size = New System.Drawing.Size(318, 37)
+            Me.Label17.Size = New System.Drawing.Size(301, 37)
             Me.Label17.TabIndex = 55
-            Me.Label17.Text = "Verificacion de Cajas"
+            Me.Label17.Text = "Recepcion de Cajas"
             '
             'btn_aceptar
             '
@@ -1052,7 +1052,7 @@ Namespace VB_RFID3_Host_Sample1
             Me.MinimumSize = New System.Drawing.Size(8, 250)
             Me.Name = "AppForm"
             Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-            Me.Text = "Escaneo"
+            Me.Text = "Recepcion de paquetes"
             Me.mainMenuStrip.ResumeLayout(False)
             Me.mainMenuStrip.PerformLayout()
             Me.statusStrip.ResumeLayout(False)
@@ -1224,11 +1224,11 @@ Namespace VB_RFID3_Host_Sample1
             ' If bandera = 0 Then
 
             Try
-                Dim sqlConsulta_Seleccionar_caja_articulos As String = " select * from detalle_caja det  " & _
-                                                                        " join articulo a on DET.ID_ARTICULO=A.ID_ARTICULO" & _
-                                                                        " where A.ID_RETORNO=1 and DET.RFID=:RFID"
+                Dim sqlConsulta_Seleccionar_caja_articulos As String = "select RFID from detalle_caja det " & _
+                                                                        " join articulo a on det.ID_ARTICULO=a.ID_ARTICULO" & _
+                                                                        " where det.RFID=:CODIGO_RFID_ARTICULO and a.ID_RETORNO=1"
                 Dim comando As New OracleCommand(sqlConsulta_Seleccionar_caja_articulos, conn)
-                comando.Parameters.Add(":RFID", OracleType.VarChar, 32).Value = parametroConsulta
+                comando.Parameters.Add(":CODIGO_RFID_ARTICULO", OracleType.VarChar, 32).Value = parametroConsulta
                 Dim lector2 As OracleDataReader = Nothing
                 conn.Open()
                 lector2 = comando.ExecuteReader()
@@ -1249,13 +1249,13 @@ Namespace VB_RFID3_Host_Sample1
             conn.Close()
         End Sub
 
-        'FUNCION PARA CARGAR EL GRID CON TODOS LOS ARTICULOS NO DETECTADOS que retornaran
+        'FUNCION PARA CARGAR EL GRID CON TODOS LOS ARTICULOS NO DETECTADOS
         Public Sub cargar_GRID()
             conn.Close()
             Dim sqlConsult As String = "select ART.NOMBRE_ARTICULO from caja c join " & _
-                                        " Detalle_caja deta on c.id_caja=deta.id_caja" & _
+                                        "  Detalle_caja deta on c.id_caja=deta.id_caja " & _
                                         " join ARTICULO art on ART.ID_ARTICULO=deta.id_articulo " & _
-                                        " where c.codebar=:barcode_CAJA and deta.id_est_art=1 and ART.ID_RETORNO=1 "
+                                        " where c.codebar=:barcode_CAJA and deta.id_est_art=1 and art.ID_RETORNO=1"
             Dim comando1 As New OracleCommand(sqlConsult, conn)
             comando1.Parameters.Add(":barcode_CAJA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
             Dim lector As OracleDataReader = Nothing
@@ -1330,7 +1330,7 @@ Namespace VB_RFID3_Host_Sample1
                 ' Se consulta si el articulo que se detecto, aun no ha pasado y no tiene inconsistencia 
                 Dim sqlConsulta_Seleccionar_CAJA_ARTICULOS As String = "select * from detalle_caja " & _
                                                                         " where RFID=:CODIGO_RFID_articulo " & _
-                                                                        " and ID_EST_ART <> 2 and INCONSISTENCIA=0 "
+                                                                        " and ID_EST_ART=1 and INCONSISTENCIA=0 "
 
                 Dim comando As New OracleCommand(sqlConsulta_Seleccionar_CAJA_ARTICULOS, conn)
                 comando.Parameters.Add(":CODIGO_RFID_articulo", OracleType.VarChar, 32).Value = parametroConsulta
@@ -1367,7 +1367,7 @@ Namespace VB_RFID3_Host_Sample1
             Dim sqlConsult As String = "select ART.NOMBRE_ARTICULO from caja c join " & _
                                         "  Detalle_caja deta on c.id_caja=deta.id_caja " & _
                                         " join ARTICULO art on ART.ID_ARTICULO=deta.id_articulo " & _
-                                        " where c.codebar=:barcode_CAJA and deta.id_est_art=2 "
+                                        " where c.codebar=:barcode_CAJA and deta.id_est_art=2 and art.ID_RETORNO=1 "
             Dim comando1 As New OracleCommand(sqlConsult, conn)
             comando1.Parameters.Add(":barcode_CAJA", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
             Dim dataAdapter As New OracleDataAdapter(comando1)
@@ -1385,7 +1385,7 @@ Namespace VB_RFID3_Host_Sample1
             Dim sqlConsult As String = " select art.nombre_articulo  Articulo, det.id_caja Caja from detalle_caja det " & _
                                         " join caja c on det.Inconsistencia=c.id_caja " & _
                                         " join articulo art on ART.ID_ARTICULO=det.id_articulo" & _
-                                        " where c.codebar=:codigo_barra_caja and id_est_art=1 "
+                                        " where c.codebar=:codigo_barra_caja and art.ID_RETORNO=1"
             Dim comando1 As New OracleCommand(sqlConsult, conn)
             comando1.Parameters.Add(":codigo_barra_caja", OracleType.Char, 50).Value = TextBox1.Text.ToUpper
             Dim dataAdapter As New OracleDataAdapter(comando1)

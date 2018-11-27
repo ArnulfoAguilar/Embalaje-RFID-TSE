@@ -1,0 +1,13 @@
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Debug\Resources.resources
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Debug\VB_RFID3_Host_Sample1.vbproj.GenerateResource.Cache
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\Debug\VB_RFID3_Host_Sample1.exe
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\Debug\VB_RFID3_Host_Sample1.pdb
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\Debug\VB_RFID3_Host_Sample1.xml
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\Debug\Symbol.RFID3.Host.dll
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\bin\Debug\Symbol.RFID3.Host.xml
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Debug\VB_RFID3_Host_Sample1.exe
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Debug\VB_RFID3_Host_Sample1.xml
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Debug\VB_RFID3_Host_Sample1.pdb
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Debug\VB_RFID3_Host_Sample1.AppForm.resources
+C:\Users\Arnulfo\Desktop\RESPALDOPMotorola EMDK for .NET\v2.9\Samples VS2008\VB\VB_RFID3_Host_Sample1\obj\Debug\VB_RFID3_Host_Sample1.ConnectionForm.resources
