@@ -20,6 +20,7 @@ C:\Users\TSE\Desktop\Embalaje RFID\Sistema de Embalaje Kit de Transmision\Sistem
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\bin\Debug\Sistema de Embalaje Kit de Transmision.exe
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\bin\Debug\Sistema de Embalaje Kit de Transmision.pdb
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\bin\Debug\Sistema de Embalaje Kit de Transmision.xml
+C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Cargar.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Evento.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Articulo.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Articulo_Edit.resources
@@ -48,4 +49,3 @@ C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje 
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema de Embalaje Kit de Transmision.exe
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema de Embalaje Kit de Transmision.xml
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema de Embalaje Kit de Transmision.pdb
-C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Cargar.resources
