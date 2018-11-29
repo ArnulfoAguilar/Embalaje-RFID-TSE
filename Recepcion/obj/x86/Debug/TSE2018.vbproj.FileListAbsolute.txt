@@ -183,9 +183,9 @@ C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\TSE2018.vbproj.GenerateResource.Cache
 C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\TSE2018.exe
 C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\TSE2018.xml
 C:\Embalaje-RFID-TSE\Escaneo\obj\x86\Debug\TSE2018.pdb
-C:\Embalaje-RFID-TSE\Recepcion\bin\x86\Debug\TSE2018.exe
-C:\Embalaje-RFID-TSE\Recepcion\bin\x86\Debug\TSE2018.pdb
-C:\Embalaje-RFID-TSE\Recepcion\bin\x86\Debug\TSE2018.xml
+C:\Embalaje-RFID-TSE\Recepcion\bin\x86\Debug\RecepcionEmbalaje2019.exe
+C:\Embalaje-RFID-TSE\Recepcion\bin\x86\Debug\RecepcionEmbalaje2019.pdb
+C:\Embalaje-RFID-TSE\Recepcion\bin\x86\Debug\RecepcionEmbalaje2019.xml
 C:\Embalaje-RFID-TSE\Recepcion\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
 C:\Embalaje-RFID-TSE\Recepcion\bin\x86\Debug\Symbol.RFID3.Host.dll
 C:\Embalaje-RFID-TSE\Recepcion\bin\x86\Debug\office.dll
@@ -202,6 +202,6 @@ C:\Embalaje-RFID-TSE\Recepcion\obj\x86\Debug\LoginForm1.resources
 C:\Embalaje-RFID-TSE\Recepcion\obj\x86\Debug\Resources.resources
 C:\Embalaje-RFID-TSE\Recepcion\obj\x86\Debug\UsuarioCrear.resources
 C:\Embalaje-RFID-TSE\Recepcion\obj\x86\Debug\TSE2018.vbproj.GenerateResource.Cache
-C:\Embalaje-RFID-TSE\Recepcion\obj\x86\Debug\TSE2018.exe
-C:\Embalaje-RFID-TSE\Recepcion\obj\x86\Debug\TSE2018.xml
-C:\Embalaje-RFID-TSE\Recepcion\obj\x86\Debug\TSE2018.pdb
+C:\Embalaje-RFID-TSE\Recepcion\obj\x86\Debug\RecepcionEmbalaje2019.exe
+C:\Embalaje-RFID-TSE\Recepcion\obj\x86\Debug\RecepcionEmbalaje2019.xml
+C:\Embalaje-RFID-TSE\Recepcion\obj\x86\Debug\RecepcionEmbalaje2019.pdb
