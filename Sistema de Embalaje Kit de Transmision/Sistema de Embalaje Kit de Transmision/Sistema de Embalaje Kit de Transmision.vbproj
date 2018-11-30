@@ -163,6 +163,12 @@
     <Compile Include="Paquetes\Frm_Paquete_Nuevo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Frm_Rep_Escaneo.Designer.vb">
+      <DependentUpon>Frm_Rep_Escaneo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rep_Escaneo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Roles\Add_Rol.Designer.vb">
       <DependentUpon>Add_Rol.vb</DependentUpon>
     </Compile>
@@ -286,6 +292,9 @@
     <EmbeddedResource Include="Paquetes\Frm_Paquete_Nuevo.resx">
       <DependentUpon>Frm_Paquete_Nuevo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rep_Escaneo.resx">
+      <DependentUpon>Frm_Rep_Escaneo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Roles\Add_Rol.resx">
       <DependentUpon>Add_Rol.vb</DependentUpon>
     </EmbeddedResource>
@@ -341,6 +350,7 @@
     <Content Include="business_inventory_maintenance_product_box_boxes_2326.ico" />
     <Content Include="shoppaymentorderbuy-33_icon-icons.com_73869.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

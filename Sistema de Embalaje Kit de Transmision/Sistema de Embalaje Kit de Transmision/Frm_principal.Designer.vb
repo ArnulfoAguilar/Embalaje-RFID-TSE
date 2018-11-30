@@ -41,9 +41,12 @@ Partial Class Frm_principal
         Me.RolesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ActualizarRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CargarDatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImprimirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CargarDatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesEscaneoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesDespachoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesRecepcionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -91,7 +94,7 @@ Partial Class Frm_principal
         '
         Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUsuarioToolStripMenuItem, Me.ModificarUsuarioToolStripMenuItem})
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'CrearUsuarioToolStripMenuItem
@@ -109,26 +112,26 @@ Partial Class Frm_principal
         'ProductosToolStripMenuItem
         '
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
         Me.ProductosToolStripMenuItem.Text = "Articulo"
         '
         'EventoToolStripMenuItem
         '
         Me.EventoToolStripMenuItem.Name = "EventoToolStripMenuItem"
-        Me.EventoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EventoToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
         Me.EventoToolStripMenuItem.Text = "Evento"
         '
         'PaqueteToolStripMenuItem
         '
         Me.PaqueteToolStripMenuItem.Name = "PaqueteToolStripMenuItem"
-        Me.PaqueteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PaqueteToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
         Me.PaqueteToolStripMenuItem.Text = "Paquete"
         '
         'UbicacionToolStripMenuItem
         '
         Me.UbicacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearUbicacionToolStripMenuItem, Me.EditarUbicacionToolStripMenuItem})
         Me.UbicacionToolStripMenuItem.Name = "UbicacionToolStripMenuItem"
-        Me.UbicacionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UbicacionToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
         Me.UbicacionToolStripMenuItem.Text = "Ubicacion"
         '
         'CrearUbicacionToolStripMenuItem
@@ -147,7 +150,7 @@ Partial Class Frm_principal
         '
         Me.RolesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearRolToolStripMenuItem, Me.ActualizarRolToolStripMenuItem})
         Me.RolesToolStripMenuItem.Name = "RolesToolStripMenuItem"
-        Me.RolesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RolesToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
         Me.RolesToolStripMenuItem.Text = "Roles"
         '
         'CrearRolToolStripMenuItem
@@ -162,6 +165,12 @@ Partial Class Frm_principal
         Me.ActualizarRolToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.ActualizarRolToolStripMenuItem.Text = "Editar Rol"
         '
+        'CargarDatosToolStripMenuItem
+        '
+        Me.CargarDatosToolStripMenuItem.Name = "CargarDatosToolStripMenuItem"
+        Me.CargarDatosToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.CargarDatosToolStripMenuItem.Text = "Cargar Datos"
+        '
         'ImprimirToolStripMenuItem
         '
         Me.ImprimirToolStripMenuItem.Name = "ImprimirToolStripMenuItem"
@@ -170,15 +179,28 @@ Partial Class Frm_principal
         '
         'ReportesToolStripMenuItem
         '
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReportesEscaneoToolStripMenuItem, Me.ReportesDespachoToolStripMenuItem, Me.ReportesRecepcionToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.ReportesToolStripMenuItem.Text = "Reportes"
         '
-        'CargarDatosToolStripMenuItem
+        'ReportesEscaneoToolStripMenuItem
         '
-        Me.CargarDatosToolStripMenuItem.Name = "CargarDatosToolStripMenuItem"
-        Me.CargarDatosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.CargarDatosToolStripMenuItem.Text = "Cargar Datos"
+        Me.ReportesEscaneoToolStripMenuItem.Name = "ReportesEscaneoToolStripMenuItem"
+        Me.ReportesEscaneoToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.ReportesEscaneoToolStripMenuItem.Text = "Reportes Escaneo"
+        '
+        'ReportesDespachoToolStripMenuItem
+        '
+        Me.ReportesDespachoToolStripMenuItem.Name = "ReportesDespachoToolStripMenuItem"
+        Me.ReportesDespachoToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.ReportesDespachoToolStripMenuItem.Text = "Reportes Despacho"
+        '
+        'ReportesRecepcionToolStripMenuItem
+        '
+        Me.ReportesRecepcionToolStripMenuItem.Name = "ReportesRecepcionToolStripMenuItem"
+        Me.ReportesRecepcionToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.ReportesRecepcionToolStripMenuItem.Text = "Reportes Recepcion"
         '
         'Frm_principal
         '
@@ -220,5 +242,8 @@ Partial Class Frm_principal
     Friend WithEvents ActualizarRolToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CargarDatosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReportesEscaneoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReportesDespachoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReportesRecepcionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
