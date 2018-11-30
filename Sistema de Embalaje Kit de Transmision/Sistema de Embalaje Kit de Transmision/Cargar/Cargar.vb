@@ -1,5 +1,4 @@
-﻿
-Imports System.Data.OracleClient
+﻿Imports System.Data.OracleClient
 Public Class Cargar
     Private Sub Cargar_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         combobox_paq()
