@@ -334,12 +334,12 @@ Namespace VB_RFID3_Host_Sample1
         Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AppForm))
-            Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-            Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+            Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
             Me.mainMenuStrip = New System.Windows.Forms.MenuStrip
             Me.configToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
             Me.connectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -748,35 +748,35 @@ Namespace VB_RFID3_Host_Sample1
             Me.DataGridENCONTRADOS.AllowUserToResizeColumns = False
             Me.DataGridENCONTRADOS.AllowUserToResizeRows = False
             Me.DataGridENCONTRADOS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-            DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
-            DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
-            DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-            Me.DataGridENCONTRADOS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+            DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control
+            DataGridViewCellStyle19.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText
+            DataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+            Me.DataGridENCONTRADOS.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle19
             Me.DataGridENCONTRADOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-            DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
-            DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
-            DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-            Me.DataGridENCONTRADOS.DefaultCellStyle = DataGridViewCellStyle8
+            DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window
+            DataGridViewCellStyle20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText
+            DataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+            Me.DataGridENCONTRADOS.DefaultCellStyle = DataGridViewCellStyle20
             Me.DataGridENCONTRADOS.Enabled = False
             Me.DataGridENCONTRADOS.Location = New System.Drawing.Point(374, 196)
             Me.DataGridENCONTRADOS.Name = "DataGridENCONTRADOS"
             Me.DataGridENCONTRADOS.ReadOnly = True
-            DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
-            DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
-            DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-            Me.DataGridENCONTRADOS.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
+            DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control
+            DataGridViewCellStyle21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText
+            DataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+            Me.DataGridENCONTRADOS.RowHeadersDefaultCellStyle = DataGridViewCellStyle21
             Me.DataGridENCONTRADOS.Size = New System.Drawing.Size(319, 325)
             Me.DataGridENCONTRADOS.TabIndex = 41
             '
@@ -787,35 +787,35 @@ Namespace VB_RFID3_Host_Sample1
             Me.DGViewInconsistentes.AllowUserToResizeColumns = False
             Me.DGViewInconsistentes.AllowUserToResizeRows = False
             Me.DGViewInconsistentes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-            DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control
-            DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText
-            DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-            Me.DGViewInconsistentes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+            DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control
+            DataGridViewCellStyle22.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText
+            DataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+            Me.DGViewInconsistentes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle22
             Me.DGViewInconsistentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-            DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window
-            DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText
-            DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-            Me.DGViewInconsistentes.DefaultCellStyle = DataGridViewCellStyle11
+            DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window
+            DataGridViewCellStyle23.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText
+            DataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+            Me.DGViewInconsistentes.DefaultCellStyle = DataGridViewCellStyle23
             Me.DGViewInconsistentes.Enabled = False
             Me.DGViewInconsistentes.Location = New System.Drawing.Point(742, 196)
             Me.DGViewInconsistentes.Name = "DGViewInconsistentes"
             Me.DGViewInconsistentes.ReadOnly = True
-            DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-            DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control
-            DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText
-            DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
-            DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-            DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-            Me.DGViewInconsistentes.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
+            DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+            DataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control
+            DataGridViewCellStyle24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText
+            DataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight
+            DataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+            DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+            Me.DGViewInconsistentes.RowHeadersDefaultCellStyle = DataGridViewCellStyle24
             Me.DGViewInconsistentes.Size = New System.Drawing.Size(314, 325)
             Me.DGViewInconsistentes.TabIndex = 43
             '
@@ -897,11 +897,11 @@ Namespace VB_RFID3_Host_Sample1
             '
             Me.Label17.AutoSize = True
             Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.Label17.Location = New System.Drawing.Point(367, 24)
+            Me.Label17.Location = New System.Drawing.Point(506, 24)
             Me.Label17.Name = "Label17"
-            Me.Label17.Size = New System.Drawing.Size(541, 37)
+            Me.Label17.Size = New System.Drawing.Size(296, 37)
             Me.Label17.TabIndex = 55
-            Me.Label17.Text = "Despacho de Cajas a Sede Logistica"
+            Me.Label17.Text = "Despacho de Cajas"
             '
             'btn_stop
             '
@@ -995,8 +995,8 @@ Namespace VB_RFID3_Host_Sample1
             Me.Controls.Add(Me.Label16)
             Me.Controls.Add(Me.DGViewInconsistentes)
             Me.Controls.Add(Me.txtCantidad_inconsistentes)
-            Me.Controls.Add(Me.Label17)
             Me.Controls.Add(Me.Label14)
+            Me.Controls.Add(Me.Label17)
             Me.Controls.Add(Me.statusStrip)
             Me.Controls.Add(Me.DataGridENCONTRADOS)
             Me.Controls.Add(Me.PictureBox1)
@@ -1150,6 +1150,8 @@ Namespace VB_RFID3_Host_Sample1
                 conn.Open()
                 comando1.ExecuteNonQuery()
                 conn.Close()
+                total_cajas_leidas_sede()
+                LabelCleidas.Text = cajas_leidas_sede.ToString
                 cargar_GRID_recibidas()
                 conn.Close()
             Catch ex As Exception
