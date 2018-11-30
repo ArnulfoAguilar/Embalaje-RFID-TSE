@@ -1670,6 +1670,7 @@ Namespace VB_RFID3_Host_Sample1
         End Sub
 
         Private Sub total_cajas_sede()
+            'Total de cajas por ruta
             conn.Close()
             Try
                 Dim total_cajas_sede As String = "select count(id_caja) from caja c " & _
@@ -1696,11 +1697,12 @@ Namespace VB_RFID3_Host_Sample1
         End Sub
 
         Private Sub total_cajas_leidas_sede()
+            'Total de las cajas leidas por ruta
             conn.Close()
             Try
                 Dim total_cajas_sede As String = "select count(id_caja) from caja c " & _
                                                 " join sede_logistica se on C.ID_SEDE=SE.ID_SEDE " & _
-                                                " where C.ID_PAQUETE=:PAQUETE and SE.RUTA_SEDE=:RUTA and C.ID_ESTADO=1"
+                                                " where C.ID_PAQUETE=:PAQUETE and SE.RUTA_SEDE=:RUTA and C.ID_ESTADO=2"
                 Dim comando_sede As New OracleCommand(total_cajas_sede, conn)
                 comando_sede.Parameters.Add(":RUTA", OracleType.Int32, 50).Value = ComboRuta.SelectedValue.ToString
                 comando_sede.Parameters.Add(":PAQUETE", OracleType.Int32, 50).Value = ComboPaquete.SelectedValue.ToString
