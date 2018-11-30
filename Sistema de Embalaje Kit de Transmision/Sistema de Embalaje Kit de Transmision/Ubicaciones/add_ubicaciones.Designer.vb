@@ -134,7 +134,7 @@ Partial Class add_ubicaciones
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "add_ubicaciones"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "add_ubicaciones"
+        Me.Text = "Agregar Ubicacion"
         CType(Me.DGView_ubicaciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

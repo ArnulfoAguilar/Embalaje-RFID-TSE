@@ -157,7 +157,7 @@ Partial Class Crear_Usuario
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Crear_Usuario"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Crear_Usuario"
+        Me.Text = "Crear Usuario"
         CType(Me.DGView_Usuarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

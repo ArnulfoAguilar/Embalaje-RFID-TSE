@@ -33,6 +33,7 @@ C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje 
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Paquete.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Paquete_Edit.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Paquete_Nuevo.resources
+C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Frm_Rep_Escaneo.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Add_Rol.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Edit_rol.resources
 C:\Embalaje-RFID-TSE\Sistema de Embalaje Kit de Transmision\Sistema de Embalaje Kit de Transmision\obj\x86\Debug\Sistema_de_Embalaje_Kit_de_Transmision.Rol.resources

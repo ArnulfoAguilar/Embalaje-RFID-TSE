@@ -114,7 +114,7 @@ Partial Class Frm_Paquete
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Frm_Paquete"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Frm_Paquete"
+        Me.Text = "Paquete"
         CType(Me.dtg_Paquete, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
