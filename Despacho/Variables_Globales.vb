@@ -12,4 +12,6 @@ Module Variables_Globales
     'Datos del usuario
     Public ROL As String
     Public USUARIO As String
+    Public cajas_sede As Integer
+    Public cajas_leidas_sede As Integer
 End Module
