@@ -133,7 +133,7 @@ Partial Class Frm_Rep_Escaneo
         Me.btn_cargar.Name = "btn_cargar"
         Me.btn_cargar.Size = New System.Drawing.Size(151, 34)
         Me.btn_cargar.TabIndex = 23
-        Me.btn_cargar.Text = "Button1"
+        Me.btn_cargar.Text = "Buscar"
         Me.btn_cargar.UseVisualStyleBackColor = True
         '
         'Frm_Rep_Escaneo
