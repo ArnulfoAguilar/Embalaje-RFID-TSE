@@ -34,6 +34,7 @@ Partial Class Frm_Rep_Escaneo
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cbx_sede = New System.Windows.Forms.ComboBox()
         Me.btn_cargar = New System.Windows.Forms.Button()
+        Me.btn_rep = New System.Windows.Forms.Button()
         CType(Me.pic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtg_leido, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -136,11 +137,21 @@ Partial Class Frm_Rep_Escaneo
         Me.btn_cargar.Text = "Buscar"
         Me.btn_cargar.UseVisualStyleBackColor = True
         '
+        'btn_rep
+        '
+        Me.btn_rep.Location = New System.Drawing.Point(778, 414)
+        Me.btn_rep.Name = "btn_rep"
+        Me.btn_rep.Size = New System.Drawing.Size(108, 23)
+        Me.btn_rep.TabIndex = 24
+        Me.btn_rep.Text = "Reporte"
+        Me.btn_rep.UseVisualStyleBackColor = True
+        '
         'Frm_Rep_Escaneo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(943, 447)
+        Me.Controls.Add(Me.btn_rep)
         Me.Controls.Add(Me.btn_cargar)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.cbx_sede)
@@ -172,4 +183,5 @@ Partial Class Frm_Rep_Escaneo
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents cbx_sede As System.Windows.Forms.ComboBox
     Friend WithEvents btn_cargar As System.Windows.Forms.Button
+    Friend WithEvents btn_rep As System.Windows.Forms.Button
 End Class

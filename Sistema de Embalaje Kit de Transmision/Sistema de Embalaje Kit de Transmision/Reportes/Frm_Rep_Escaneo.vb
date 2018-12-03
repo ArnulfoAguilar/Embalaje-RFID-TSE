@@ -37,4 +37,24 @@ Public Class Frm_Rep_Escaneo
             MessageBox.Show(ex.ToString)
         End Try
     End Sub
+
+    Private Sub btn_cargar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cargar.Click
+        Dim sql As String = "select ID_CAJA, DEPTO, MUNI, CENTRO, CODEBAR from VIN_REPORT " & _
+                              "where ID_SEDE=:sede and ID_PAQUETE=:paq and ID_ESTADO=2"
+        Dim cmd As New OracleCommand(sql, con)
+        cmd.Parameters.Add("paq", OracleType.UInt32).Value = cbx_paq.SelectedValue
+        cmd.Parameters.Add("sede", OracleType.UInt32).Value = cbx_sede.SelectedValue
+        Dim lector As OracleDataReader = Nothing
+        Try
+            con.Open()
+            Dim dataAdapter As New OracleDataAdapter(cmd)
+            Dim dataSet As New DataSet
+            dataAdapter.Fill(dataSet, "CAJA")
+            Me.dtg_leido.DataSource = dataSet.Tables("CAJA")
+            con.Close()
+
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
+    End Sub
 End Class
