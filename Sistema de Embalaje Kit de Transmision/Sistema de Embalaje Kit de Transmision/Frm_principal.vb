@@ -1,16 +1,16 @@
 ﻿Public Class Frm_principal
 
     Private Sub EscaneoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EscaneoToolStripMenuItem.Click
-        Shell("C:\Embalaje-RFID-TSE\Escaneo\bin\x86\Debug\TSE2018.exe", 1)
+        Shell("C:\Embalaje\Escaneo\VerificacionEmbalaje.exe", 1)
 
     End Sub
 
     Private Sub DespachoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DespachoToolStripMenuItem.Click
-        Shell("C:\Embalaje-RFID-TSE\Despacho\bin\x86\Debug\TSE2018.exe", 1)
+        Shell("C:\Embalaje\Despacho\TSE2018.exe", 1)
     End Sub
 
     Private Sub RecepcionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RecepcionToolStripMenuItem.Click
-        Shell("C:\Embalaje-RFID-TSE\Recepcion\bin\x86\Debug\TSE2018.EXE", 1)
+        Shell("C:\Embalaje\Recepcion\RecepcionEmbalaje2019.EXE", 1)
     End Sub
 
     Private Sub CrearUsuarioToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CrearUsuarioToolStripMenuItem.Click
@@ -63,7 +63,6 @@
             MantenimientosToolStripMenuItem.HideDropDown()
             MantenimientosToolStripMenuItem.Enabled = False
         End If
-        RecepcionToolStripMenuItem.Enabled = False
 	End Sub
     Private Sub ImprimirToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ImprimirToolStripMenuItem.Click
         Imprimir.ShowDialog()

@@ -348,7 +348,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="business_inventory_maintenance_product_box_boxes_2326.ico" />
-    <Content Include="shoppaymentorderbuy-33_icon-icons.com_73869.ico" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
