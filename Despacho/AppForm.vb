@@ -1525,6 +1525,8 @@ Namespace VB_RFID3_Host_Sample1
                     ComboRuta.Enabled = True
                     ComboPaquete.Enabled = True
                     btn_aceptar.Text = "Aceptar"
+                    LabelCleidas.Text = 0
+                    LabelCtotal.Text = 0
                     btn_aceptar.Focus()
                 End If
             Catch ex As Exception
@@ -1639,6 +1641,8 @@ Namespace VB_RFID3_Host_Sample1
 
                         Else
                             MessageBox.Show("RUTA completa, todas las cajas fueron despachadas.")
+                            LabelCleidas.Text = 0
+                            LabelCtotal.Text = 0
                             conn.Close()
                             lector.Close()
                         End If
