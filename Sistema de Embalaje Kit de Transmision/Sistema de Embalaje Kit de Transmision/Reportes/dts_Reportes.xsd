@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dts_Reportes" targetNamespace="http://tempuri.org/dts_Reportes.xsd" xmlns:mstns="http://tempuri.org/dts_Reportes.xsd" xmlns="http://tempuri.org/dts_Reportes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dts_Reportes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dts_Reportes" msprop:Generator_UserDSName="dts_Reportes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_Consolidado" msprop:Generator_TableClassName="dt_ConsolidadoDataTable" msprop:Generator_TableVarName="tabledt_Consolidado" msprop:Generator_TablePropName="dt_Consolidado" msprop:Generator_RowDeletingName="dt_ConsolidadoRowDeleting" msprop:Generator_RowChangingName="dt_ConsolidadoRowChanging" msprop:Generator_RowEvHandlerName="dt_ConsolidadoRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_ConsolidadoRowDeleted" msprop:Generator_UserTableName="dt_Consolidado" msprop:Generator_RowChangedName="dt_ConsolidadoRowChanged" msprop:Generator_RowEvArgName="dt_ConsolidadoRowChangeEvent" msprop:Generator_RowClassName="dt_ConsolidadoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PAQUETES" msprop:Generator_ColumnVarNameInTable="columnPAQUETES" msprop:Generator_ColumnPropNameInRow="PAQUETES" msprop:Generator_ColumnPropNameInTable="PAQUETESColumn" msprop:Generator_UserColumnName="PAQUETES" type="xs:string" minOccurs="0" />
+              <xs:element name="SEDE" msprop:Generator_ColumnVarNameInTable="columnSEDE" msprop:Generator_ColumnPropNameInRow="SEDE" msprop:Generator_ColumnPropNameInTable="SEDEColumn" msprop:Generator_UserColumnName="SEDE" type="xs:string" minOccurs="0" />
+              <xs:element name="RUTA" msprop:Generator_ColumnVarNameInTable="columnRUTA" msprop:Generator_ColumnPropNameInRow="RUTA" msprop:Generator_ColumnPropNameInTable="RUTAColumn" msprop:Generator_UserColumnName="RUTA" type="xs:string" minOccurs="0" />
+              <xs:element name="NOM_EVENTO" msprop:Generator_ColumnVarNameInTable="columnNOM_EVENTO" msprop:Generator_ColumnPropNameInRow="NOM_EVENTO" msprop:Generator_ColumnPropNameInTable="NOM_EVENTOColumn" msprop:Generator_UserColumnName="NOM_EVENTO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dt_Listado" msprop:Generator_TableClassName="dt_ListadoDataTable" msprop:Generator_TableVarName="tabledt_Listado" msprop:Generator_TablePropName="dt_Listado" msprop:Generator_RowDeletingName="dt_ListadoRowDeleting" msprop:Generator_RowChangingName="dt_ListadoRowChanging" msprop:Generator_RowEvHandlerName="dt_ListadoRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_ListadoRowDeleted" msprop:Generator_UserTableName="dt_Listado" msprop:Generator_RowChangedName="dt_ListadoRowChanged" msprop:Generator_RowEvArgName="dt_ListadoRowChangeEvent" msprop:Generator_RowClassName="dt_ListadoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnDataColumn1" msprop:Generator_ColumnPropNameInRow="DataColumn1" msprop:Generator_ColumnPropNameInTable="DataColumn1Column" msprop:Generator_UserColumnName="DataColumn1" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

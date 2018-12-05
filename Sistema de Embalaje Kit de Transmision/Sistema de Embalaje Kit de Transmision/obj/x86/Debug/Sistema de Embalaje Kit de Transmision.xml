@@ -6,7 +6,35 @@ SistemadeEmbalajeKitdeTransmision
 </name>
 </assembly>
 <members>
-<member name="P:Sistema_de_Embalaje_Kit_de_Transmision.My.Resources.Resources.ResourceManager">
+<member name="T:Sistema_de_Embalaje_Kit_de_Transmision.dts_Reportes.dt_ConsolidadoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_de_Embalaje_Kit_de_Transmision.dts_Reportes.dt_ListadoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_de_Embalaje_Kit_de_Transmision.dts_Reportes.dt_ConsolidadoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_de_Embalaje_Kit_de_Transmision.dts_Reportes.dt_ListadoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_de_Embalaje_Kit_de_Transmision.dts_Reportes.dt_ConsolidadoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_de_Embalaje_Kit_de_Transmision.dts_Reportes.dt_ListadoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_de_Embalaje_Kit_de_Transmision.dts_Reportes">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Sistema_de_Embalaje_Kit_de_Transmision.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>

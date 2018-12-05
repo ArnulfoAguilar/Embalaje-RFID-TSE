@@ -35,8 +35,11 @@ Partial Class Frm_Rep_Escaneo
         Me.cbx_sede = New System.Windows.Forms.ComboBox()
         Me.btn_cargar = New System.Windows.Forms.Button()
         Me.btn_rep = New System.Windows.Forms.Button()
+        Me.dtg_unido = New System.Windows.Forms.DataGridView()
+        Me.btn_listado = New System.Windows.Forms.Button()
         CType(Me.pic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtg_leido, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtg_unido, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pic
@@ -53,7 +56,7 @@ Partial Class Frm_Rep_Escaneo
         '
         Me.dtg_leido.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dtg_leido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtg_leido.Location = New System.Drawing.Point(12, 141)
+        Me.dtg_leido.Location = New System.Drawing.Point(14, 141)
         Me.dtg_leido.Name = "dtg_leido"
         Me.dtg_leido.Size = New System.Drawing.Size(917, 267)
         Me.dtg_leido.TabIndex = 14
@@ -116,9 +119,9 @@ Partial Class Frm_Rep_Escaneo
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(649, 39)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(91, 13)
+        Me.Label4.Size = New System.Drawing.Size(77, 13)
         Me.Label4.TabIndex = 22
-        Me.Label4.Text = "Paquete Electoral"
+        Me.Label4.Text = "Sede Logistica"
         '
         'cbx_sede
         '
@@ -139,18 +142,37 @@ Partial Class Frm_Rep_Escaneo
         '
         'btn_rep
         '
-        Me.btn_rep.Location = New System.Drawing.Point(778, 414)
+        Me.btn_rep.Location = New System.Drawing.Point(791, 414)
         Me.btn_rep.Name = "btn_rep"
         Me.btn_rep.Size = New System.Drawing.Size(108, 23)
         Me.btn_rep.TabIndex = 24
-        Me.btn_rep.Text = "Reporte"
+        Me.btn_rep.Text = "Acta de Entrega"
         Me.btn_rep.UseVisualStyleBackColor = True
+        '
+        'dtg_unido
+        '
+        Me.dtg_unido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtg_unido.Location = New System.Drawing.Point(142, 248)
+        Me.dtg_unido.Name = "dtg_unido"
+        Me.dtg_unido.Size = New System.Drawing.Size(617, 150)
+        Me.dtg_unido.TabIndex = 25
+        '
+        'btn_listado
+        '
+        Me.btn_listado.Location = New System.Drawing.Point(618, 414)
+        Me.btn_listado.Name = "btn_listado"
+        Me.btn_listado.Size = New System.Drawing.Size(108, 23)
+        Me.btn_listado.TabIndex = 26
+        Me.btn_listado.Text = "Reporte Articulos"
+        Me.btn_listado.UseVisualStyleBackColor = True
         '
         'Frm_Rep_Escaneo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(943, 447)
+        Me.ClientSize = New System.Drawing.Size(943, 442)
+        Me.Controls.Add(Me.btn_listado)
+        Me.Controls.Add(Me.dtg_unido)
         Me.Controls.Add(Me.btn_rep)
         Me.Controls.Add(Me.btn_cargar)
         Me.Controls.Add(Me.Label4)
@@ -168,6 +190,7 @@ Partial Class Frm_Rep_Escaneo
         Me.Text = "Reportes Escaneo"
         CType(Me.pic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtg_leido, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtg_unido, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -184,4 +207,6 @@ Partial Class Frm_Rep_Escaneo
     Friend WithEvents cbx_sede As System.Windows.Forms.ComboBox
     Friend WithEvents btn_cargar As System.Windows.Forms.Button
     Friend WithEvents btn_rep As System.Windows.Forms.Button
+    Friend WithEvents dtg_unido As System.Windows.Forms.DataGridView
+    Friend WithEvents btn_listado As System.Windows.Forms.Button
 End Class
