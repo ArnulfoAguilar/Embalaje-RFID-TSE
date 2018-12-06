@@ -1,8 +1,6 @@
 ﻿Imports System.Data
 Imports System.Data.OracleClient
 Imports Microsoft.VisualBasic
-Imports Crys
-
 Public Class Frm_Rep_Escaneo
     Dim band As Integer = 0
     Private Sub Frm_Rep_Escaneo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -50,7 +48,7 @@ Public Class Frm_Rep_Escaneo
     End Sub
     Private Sub btn_cargar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cargar.Click
         Dim sql As String = "select ID_CAJA, DEPTO, SEDE, MUNI, CENTRO, CODEBAR, RUTA from vin_report " & _
-                              "where ID_SEDE=:sede and ID_PAQUETE=:paq and ID_ESTADO=2 order by 1"
+                              "where ID_SEDE=:sede and ID_PAQUETE=:paq and ID_ESTADO=2 and ID_COMPLETO=1 order by 1"
         Dim cmd As New OracleCommand(sql, con)
         cmd.Parameters.Add("paq", OracleType.UInt32).Value = cbx_paq.SelectedValue
         cmd.Parameters.Add("sede", OracleType.UInt32).Value = cbx_sede.SelectedValue

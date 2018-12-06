@@ -72,4 +72,9 @@
         con.Close()
         Cargar.ShowDialog()
     End Sub
+
+    Private Sub ReportesDespachoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ReportesDespachoToolStripMenuItem.Click
+        con.Close()
+        Frm_Rep_Escaneo.ShowDialog()
+    End Sub
 End Class

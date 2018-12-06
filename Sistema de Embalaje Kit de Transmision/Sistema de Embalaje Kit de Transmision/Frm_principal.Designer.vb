@@ -44,7 +44,6 @@ Partial Class Frm_principal
         Me.CargarDatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImprimirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReportesEscaneoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesDespachoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesRecepcionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
@@ -174,21 +173,15 @@ Partial Class Frm_principal
         'ImprimirToolStripMenuItem
         '
         Me.ImprimirToolStripMenuItem.Name = "ImprimirToolStripMenuItem"
-        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(93, 20)
+        Me.ImprimirToolStripMenuItem.Size = New System.Drawing.Size(92, 20)
         Me.ImprimirToolStripMenuItem.Text = "Imprimir Tags"
         '
         'ReportesToolStripMenuItem
         '
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReportesEscaneoToolStripMenuItem, Me.ReportesDespachoToolStripMenuItem, Me.ReportesRecepcionToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReportesDespachoToolStripMenuItem, Me.ReportesRecepcionToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.ReportesToolStripMenuItem.Text = "Reportes"
-        '
-        'ReportesEscaneoToolStripMenuItem
-        '
-        Me.ReportesEscaneoToolStripMenuItem.Name = "ReportesEscaneoToolStripMenuItem"
-        Me.ReportesEscaneoToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
-        Me.ReportesEscaneoToolStripMenuItem.Text = "Reportes Escaneo"
         '
         'ReportesDespachoToolStripMenuItem
         '
@@ -242,7 +235,6 @@ Partial Class Frm_principal
     Friend WithEvents ActualizarRolToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CargarDatosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ReportesEscaneoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportesDespachoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportesRecepcionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 

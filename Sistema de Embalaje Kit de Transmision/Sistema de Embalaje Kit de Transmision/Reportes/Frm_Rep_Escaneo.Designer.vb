@@ -54,6 +54,7 @@ Partial Class Frm_Rep_Escaneo
         '
         'dtg_leido
         '
+        Me.dtg_leido.AllowUserToAddRows = False
         Me.dtg_leido.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dtg_leido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtg_leido.Location = New System.Drawing.Point(14, 141)
@@ -151,6 +152,7 @@ Partial Class Frm_Rep_Escaneo
         '
         'dtg_unido
         '
+        Me.dtg_unido.AllowUserToAddRows = False
         Me.dtg_unido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtg_unido.Location = New System.Drawing.Point(142, 248)
         Me.dtg_unido.Name = "dtg_unido"
