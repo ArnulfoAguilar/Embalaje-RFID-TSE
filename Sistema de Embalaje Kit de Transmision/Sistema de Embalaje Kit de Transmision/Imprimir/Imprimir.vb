@@ -7,6 +7,21 @@ Public Class Imprimir
         Frm_principal.Show()
         Me.Close()
     End Sub
+    Private Sub cargar_combobox_paquetes()
+        Try
+
+            Dim sqlConsult As String = "select ID_PAQUETE, NOMBRE_PAQUETE from PAQUETE"
+            Dim dataAdapter As New OracleDataAdapter(sqlConsult, con)
+            Dim DT As New System.Data.DataTable
+            dataAdapter.Fill(DT)
+            Me.comboSede.DataSource = DT
+            ComboPAQUETE.ValueMember = "ID_PAQUETE"
+            ComboPAQUETE.DisplayMember = "NOMBRE_PAQUETE"
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
+    End Sub
+
     Private Sub cargar_combobox_sedes()
         Try
 
@@ -39,6 +54,7 @@ Public Class Imprimir
     Private Sub Imprimir_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cargar_combobox_sedes()
         cargar_combobox_articulos()
+        CARGAR_COMBOBOX_PAQUETES()
         rb_articulo.Checked = True
 
     End Sub
@@ -111,54 +127,114 @@ Public Class Imprimir
             Dim formatRange As Excel.Range
             formatRange = shXL.Range("a2,b2")
             formatRange.EntireColumn.NumberFormat = "@"
-            shXL.Cells(1, 1).Value = "BARCODE"
-            shXL.Cells(1, 2).Value = "RFID"
-            shXL.Cells(1, 3).Value = "ARTICULO"
+            shXL.Cells(1, 1).Value = "CAJA"
+            shXL.Cells(1, 2).Value = "ARTICULO"
+            shXL.Cells(1, 3).Value = "MUNICIPIO"
+            shXL.Cells(1, 4).Value = "SEDE"
+            shXL.Cells(1, 5).Value = "DEPARTAMENTO"
+            shXL.Cells(1, 6).Value = "CODIGO_BARRA"
+            shXL.Cells(1, 7).Value = "RFID"
 
             ' Obtenemos los datos que queremos exportar desde base de datos.
             'Elegimos la consulta dependiendo de el radiobutton seleccionado
             Dim consulta As String
             If rb_articulo.Checked Then
 
-                consulta = "SELECT DET.CODEBAR BARCODE, DET.RFID,A.NOMBRE_ARTICULO ARTICULO FROM DETALLE_CAJA det " & _
-                            " JOIN ARTICULO a on DET.ID_ARTICULO=A.ID_ARTICULO " & _
-                            " JOIN CAJA c on DET.ID_CAJA=C.ID_CAJA " & _
-                            " where DET.ID_ARTICULO=:ID_ARTICULO and " & _
-                            " C.ID_SEDE=:ID_SEDE"
+                consulta = " SELECT  " & _
+                            " C.ID_CAJA CAJA, " & _
+                            " A.NOMBRE_ARTICULO ARTICULO," & _
+                            " MUN.NOMBRE_MUNI MUNICIPIO," & _
+                            " SED.NOMBRE_SEDE SEDE," & _
+                            " DEP.NOMBRE_DEPTO DEPARTAMENTO, " & _
+                            " DET.CODEBAR CODIGO_BARRA," & _
+                            " DET.RFID " & _
+                            " FROM DETALLE_CAJA det" & _
+                            " join ARTICULO a         on A.ID_ARTICULO=DET.ID_ARTICULO" & _
+                            " join caja c             on DET.ID_CAJA = C.ID_CAJA" & _
+                            " join paquete p          on DET.ID_PAQUETE=P.ID_PAQUETE" & _
+                            " join MUNICIPIO mun      on C.ID_MUNI=MUN.ID_MUNI" & _
+                            " join SEDE_LOGISTICA sed on C.ID_SEDE=SED.ID_SEDE" & _
+                            " join DEPARTAMENTO dep   on C.ID_DEPTO=DEP.ID_DEPTO" & _
+                            " where" & _
+                            " C.ID_PAQUETE=P.ID_PAQUETE   AND" & _
+                            " MUN.ID_SEDE=SED.ID_SEDE     AND" & _
+                            " SED.ID_DEPTO=DEP.ID_DEPTO   AND" & _
+                            " DET.ID_ARTICULO=:ARTICULO   AND " & _
+                            " C.ID_SEDE=:SEDE             AND" & _
+                            " DET.ID_PAQUETE=:PAQUETE"
             ElseIf rb_caja.Checked Then
-                consulta = "SELECT DET.CODEBAR BARCODE, DET.RFID,A.NOMBRE_ARTICULO ARTICULO FROM DETALLE_CAJA det " & _
-                            " JOIN ARTICULO a on DET.ID_ARTICULO=A.ID_ARTICULO " & _
-                            " JOIN CAJA c on DET.ID_CAJA=C.ID_CAJA " & _
-                            " where " & _
-                            " C.ID_CAJA=:ID_CAJA "
+                consulta = " SELECT  " & _
+                            " C.ID_CAJA CAJA, " & _
+                            " A.NOMBRE_ARTICULO ARTICULO," & _
+                            " MUN.NOMBRE_MUNI MUNICIPIO," & _
+                            " SED.NOMBRE_SEDE SEDE," & _
+                            " DEP.NOMBRE_DEPTO DEPARTAMENTO, " & _
+                            " DET.CODEBAR CODIGO_BARRA," & _
+                            " DET.RFID " & _
+                            " FROM DETALLE_CAJA det" & _
+                            " join ARTICULO a         on A.ID_ARTICULO=DET.ID_ARTICULO" & _
+                            " join caja c             on DET.ID_CAJA = C.ID_CAJA" & _
+                            " join paquete p          on DET.ID_PAQUETE=P.ID_PAQUETE" & _
+                            " join MUNICIPIO mun      on C.ID_MUNI=MUN.ID_MUNI" & _
+                            " join SEDE_LOGISTICA sed on C.ID_SEDE=SED.ID_SEDE" & _
+                            " join DEPARTAMENTO dep   on C.ID_DEPTO=DEP.ID_DEPTO" & _
+                            " where" & _
+                            " C.ID_PAQUETE=P.ID_PAQUETE   AND" & _
+                            " MUN.ID_SEDE=SED.ID_SEDE     AND" & _
+                            " SED.ID_DEPTO=DEP.ID_DEPTO   AND" & _
+                            " DET.ID_CAJA=:CAJA   AND " & _
+                            " DET.ID_PAQUETE=:PAQUETE"
             ElseIf rb_individual.Checked Then
 
-                consulta = "SELECT DET.CODEBAR BARCODE, DET.RFID,A.NOMBRE_ARTICULO ARTICULO FROM DETALLE_CAJA det " & _
-                            "JOIN ARTICULO a on DET.ID_ARTICULO=A.ID_ARTICULO" & _
-                            " JOIN CAJA c on DET.ID_CAJA=C.ID_CAJA " & _
-                            " where DET.ID_ARTICULO=:ID_ARTICULO and " & _
-                            " C.ID_CAJA=:ID_CAJA "
+                consulta = " SELECT  " & _
+                            " C.ID_CAJA CAJA, " & _
+                            " A.NOMBRE_ARTICULO ARTICULO," & _
+                            " MUN.NOMBRE_MUNI MUNICIPIO," & _
+                            " SED.NOMBRE_SEDE SEDE," & _
+                            " DEP.NOMBRE_DEPTO DEPARTAMENTO, " & _
+                            " DET.CODEBAR CODIGO_BARRA," & _
+                            " DET.RFID " & _
+                            " FROM DETALLE_CAJA det" & _
+                            " join ARTICULO a         on A.ID_ARTICULO=DET.ID_ARTICULO" & _
+                            " join caja c             on DET.ID_CAJA = C.ID_CAJA" & _
+                            " join paquete p          on DET.ID_PAQUETE=P.ID_PAQUETE" & _
+                            " join MUNICIPIO mun      on C.ID_MUNI=MUN.ID_MUNI" & _
+                            " join SEDE_LOGISTICA sed on C.ID_SEDE=SED.ID_SEDE" & _
+                            " join DEPARTAMENTO dep   on C.ID_DEPTO=DEP.ID_DEPTO" & _
+                            " where" & _
+                            " C.ID_PAQUETE=P.ID_PAQUETE   AND" & _
+                            " MUN.ID_SEDE=SED.ID_SEDE     AND" & _
+                            " SED.ID_DEPTO=DEP.ID_DEPTO   AND" & _
+                            " DET.ID_CAJA=:CAJA   AND " & _
+                            " DET.ID_ARTICULO=:ARTICULO " & _
+                            " DET.ID_PAQUETE=:PAQUETE"
             End If
-            
+
             Dim myCommand As New OracleCommand(consulta, con)
             If rb_articulo.Checked Then
-                myCommand.Parameters.Add(":ID_ARTICULO", OracleType.Int32, 30).Value = comboArticulo.SelectedValue.ToString
-                myCommand.Parameters.Add(":ID_SEDE", OracleType.Int32, 30).Value = comboSede.SelectedValue.ToString
-
+                myCommand.Parameters.Add(":ARTICULO", OracleType.Int32, 30).Value = comboArticulo.SelectedValue.ToString
+                myCommand.Parameters.Add(":SEDE", OracleType.Int32, 30).Value = comboSede.SelectedValue.ToString
+                myCommand.Parameters.Add(":PAQUETE", OracleType.Int32, 30).Value = ComboPAQUETE.SelectedValue.ToString
             ElseIf rb_caja.Checked Then
-                myCommand.Parameters.Add(":ID_CAJA", OracleType.VarChar, 30).Value = txt_caja.Text
+                myCommand.Parameters.Add(":CAJA", OracleType.VarChar, 30).Value = txt_caja.Text
+                myCommand.Parameters.Add(":PAQUETE", OracleType.Int32, 30).Value = ComboPAQUETE.SelectedValue.ToString
             ElseIf rb_individual.Checked Then
                 myCommand.Parameters.Add(":ID_ARTICULO", OracleType.Int32, 30).Value = comboArticulo.SelectedValue.ToString
                 myCommand.Parameters.Add(":ID_CAJA", OracleType.VarChar, 30).Value = txt_caja.Text
+                myCommand.Parameters.Add(":PAQUETE", OracleType.Int32, 30).Value = ComboPAQUETE.SelectedValue.ToString
             End If
             con.Open()
             Dim myReader As OracleDataReader = myCommand.ExecuteReader()
             If myReader.HasRows Then
                 While myReader.Read()
                     ' Cargamos la información en el excel
-                    shXL.Cells(indice, 1).Value = myReader("BARCODE")
-                    shXL.Cells(indice, 2).Value = myReader("RFID")
-                    shXL.Cells(indice, 3).Value = myReader("ARTICULO")
+                    shXL.Cells(indice, 1).Value = myReader("CAJA")
+                    shXL.Cells(indice, 2).Value = myReader("ARTICULO")
+                    shXL.Cells(indice, 3).Value = myReader("MUNICIPIO")
+                    shXL.Cells(indice, 4).Value = myReader("SEDE")
+                    shXL.Cells(indice, 5).Value = myReader("DEPARTAMENTO")
+                    shXL.Cells(indice, 6).Value = myReader("CODIGO_BARRA")
+                    shXL.Cells(indice, 7).Value = myReader("RFID")
                     indice += 1
                 End While
                 ' Cerramos el reader
@@ -180,8 +256,8 @@ Public Class Imprimir
                 con.Close()
                 MessageBox.Show("No se tienen registros")
             End If
-           
-            
+
+
         Catch ex As Exception
             MessageBox.Show("Errorxportar los datos a excel.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally

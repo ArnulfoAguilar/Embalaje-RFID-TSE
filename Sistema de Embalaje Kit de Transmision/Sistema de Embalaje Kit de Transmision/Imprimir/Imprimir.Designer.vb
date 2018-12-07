@@ -34,6 +34,8 @@ Partial Class Imprimir
         Me.rb_articulo = New System.Windows.Forms.RadioButton()
         Me.txt_caja = New System.Windows.Forms.TextBox()
         Me.lbl_caja = New System.Windows.Forms.Label()
+        Me.ComboPAQUETE = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -152,11 +154,31 @@ Partial Class Imprimir
         Me.lbl_caja.TabIndex = 8
         Me.lbl_caja.Text = "Numero de caja"
         '
+        'ComboPAQUETE
+        '
+        Me.ComboPAQUETE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboPAQUETE.FormattingEnabled = True
+        Me.ComboPAQUETE.Location = New System.Drawing.Point(291, 124)
+        Me.ComboPAQUETE.Name = "ComboPAQUETE"
+        Me.ComboPAQUETE.Size = New System.Drawing.Size(156, 21)
+        Me.ComboPAQUETE.TabIndex = 9
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(288, 108)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(47, 13)
+        Me.Label1.TabIndex = 10
+        Me.Label1.Text = "Paquete"
+        '
         'Imprimir
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(520, 332)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ComboPAQUETE)
         Me.Controls.Add(Me.lbl_caja)
         Me.Controls.Add(Me.txt_caja)
         Me.Controls.Add(Me.GroupBox1)
@@ -188,4 +210,6 @@ Partial Class Imprimir
     Friend WithEvents rb_articulo As System.Windows.Forms.RadioButton
     Friend WithEvents txt_caja As System.Windows.Forms.TextBox
     Friend WithEvents lbl_caja As System.Windows.Forms.Label
+    Friend WithEvents ComboPAQUETE As System.Windows.Forms.ComboBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
