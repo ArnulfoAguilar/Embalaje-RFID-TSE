@@ -100,6 +100,7 @@ Partial Class Frm_Rep_Escaneo
         '
         'cbx_paq
         '
+        Me.cbx_paq.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbx_paq.FormattingEnabled = True
         Me.cbx_paq.Location = New System.Drawing.Point(478, 36)
         Me.cbx_paq.Name = "cbx_paq"
@@ -126,6 +127,7 @@ Partial Class Frm_Rep_Escaneo
         '
         'cbx_sede
         '
+        Me.cbx_sede.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbx_sede.FormattingEnabled = True
         Me.cbx_sede.Location = New System.Drawing.Point(748, 36)
         Me.cbx_sede.Name = "cbx_sede"

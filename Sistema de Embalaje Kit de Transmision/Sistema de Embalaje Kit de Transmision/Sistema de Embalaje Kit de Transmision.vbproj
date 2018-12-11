@@ -170,6 +170,12 @@
     <Compile Include="Paquetes\Frm_Paquete_Nuevo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Rep_Acta.vb">
+      <DependentUpon>Rep_Acta.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Reportes\dts_Reportes.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -187,10 +193,10 @@
     <Compile Include="Reportes\Frm_Rep_Escaneo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\Rep_Escaneo.vb">
+    <Compile Include="Reportes\Rep_Listado.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Rep_Escaneo.rpt</DependentUpon>
+      <DependentUpon>Rep_Listado.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Roles\Add_Rol.Designer.vb">
@@ -316,15 +322,19 @@
     <EmbeddedResource Include="Paquetes\Frm_Paquete_Nuevo.resx">
       <DependentUpon>Frm_Paquete_Nuevo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rep_Acta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rep_Acta.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Frm_Rep_Escaneo.resx">
       <DependentUpon>Frm_Rep_Escaneo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\Rep_Escaneo.rpt">
+    <EmbeddedResource Include="Reportes\Rep_Listado.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Rep_Escaneo.vb</LastGenOutput>
+      <LastGenOutput>Rep_Listado.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Roles\Add_Rol.resx">
       <DependentUpon>Add_Rol.vb</DependentUpon>

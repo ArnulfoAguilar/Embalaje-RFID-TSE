@@ -18,7 +18,7 @@ Imports System
 Imports System.ComponentModel
 
 
-Public Class Rep_Escaneo
+Public Class Rep_Listado
     Inherits ReportClass
     
     Public Sub New()
@@ -27,7 +27,7 @@ Public Class Rep_Escaneo
     
     Public Overrides Property ResourceName() As String
         Get
-            Return "Rep_Escaneo.rpt"
+            Return "Rep_Listado.rpt"
         End Get
         Set
             'Do nothing
@@ -45,7 +45,7 @@ Public Class Rep_Escaneo
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "Sistema_de_Embalaje_Kit_de_Transmision.Rep_Escaneo.rpt"
+            Return "Sistema_de_Embalaje_Kit_de_Transmision.Rep_Listado.rpt"
         End Get
         Set
             'Do nothing
@@ -94,7 +94,7 @@ Public Class Rep_Escaneo
 End Class
 
 <System.Drawing.ToolboxBitmapAttribute(GetType(CrystalDecisions.[Shared].ExportOptions), "report.bmp")>  _
-Public Class CachedRep_Escaneo
+Public Class CachedRep_Listado
     Inherits Component
     Implements ICachedReport
     
@@ -136,7 +136,7 @@ Public Class CachedRep_Escaneo
     End Property
     
     Public Overridable Function CreateReport() As CrystalDecisions.CrystalReports.Engine.ReportDocument Implements CrystalDecisions.ReportSource.ICachedReport.CreateReport
-        Dim rpt As Rep_Escaneo = New Rep_Escaneo()
+        Dim rpt As Rep_Listado = New Rep_Listado()
         rpt.Site = Me.Site
         Return rpt
     End Function
