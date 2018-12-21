@@ -29,7 +29,7 @@ Public Class Frm_Rep_Escaneo
     Private Sub combobox_sede()
         If band = 1 Then
             Dim sql As String = "select distinct C.ID_SEDE, S.NOMBRE_SEDE from CAJA c join SEDE_LOGISTICA s " & _
-                            " on C.ID_SEDE=S.ID_SEDE where C.ID_DEPTO=S.ID_DEPTO and ID_PAQUETE =:num order by 1"
+                            " on C.ID_SEDE=S.ID_SEDE where C.ID_DEPTO=S.ID_DEPTO and ID_PAQUETE =:num"
             Try
                 Dim cmd As New OracleCommand(sql, con2)
                 cmd.Parameters.Add("num", OracleType.UInt32).Value = cbx_paq.SelectedValue
@@ -50,7 +50,7 @@ Public Class Frm_Rep_Escaneo
         combobox_sede()
     End Sub
     Private Sub cbx_sede_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbx_sede.SelectedIndexChanged
-        dtg_leido.DataSource = Nothing
+         dtg_leido.DataSource = Nothing
         esconder()
     End Sub
     Private Sub reg_existentes()
